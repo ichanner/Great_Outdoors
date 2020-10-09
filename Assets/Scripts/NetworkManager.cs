@@ -55,6 +55,7 @@ namespace TGOV.Network
             JoinRoom("TestRoom");
 
             Debug.Log("Joined Lobby");
+         
         }
 
         public override void OnJoinedRoom()
@@ -63,6 +64,9 @@ namespace TGOV.Network
             Debug.Log("Joined Room");
 
             PhotonNetwork.Instantiate("PlayerAsset 1", Vector3.zero, Quaternion.identity);
+
+            Debug.Log(PhotonNetwork.LocalPlayer.UserId);
+            Debug.Log(PhotonNetwork.CloudRegion);
         }
 
         //Functions
@@ -70,7 +74,7 @@ namespace TGOV.Network
         public void JoinRoom(string room)
         {
 
-            PhotonNetwork.JoinOrCreateRoom(room, new Photon.Realtime.RoomOptions { MaxPlayers = 4 }, Photon.Realtime.TypedLobby.Default);
+            PhotonNetwork.JoinOrCreateRoom(room, new Photon.Realtime.RoomOptions { MaxPlayers = 20 }, Photon.Realtime.TypedLobby.Default);
         }
 
 

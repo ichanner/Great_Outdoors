@@ -549,6 +549,8 @@ struct IntPtrU5BU5D_t4DC01DCB9A6DF6C9792A6513595D7A11E637DCDD;
 struct NotSupportedException_tE75B318D6590A02A5D9B29FD97409B1750FA0010;
 // System.Object[]
 struct ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A;
+// System.OperatingSystem
+struct OperatingSystem_tBB05846D5AA6960FFEB42C59E5FE359255C2BE83;
 // System.Reflection.Binder
 struct Binder_t4D5CB06963501D32847C057B57157D6DC49CA759;
 // System.Reflection.MemberFilter
@@ -565,6 +567,10 @@ struct StringBuilder_t;
 struct Type_t;
 // System.Type[]
 struct TypeU5BU5D_t7FE623A666B49176DE123306221193E888A12F5F;
+// System.UInt32[]
+struct UInt32U5BU5D_t9AA834AF2940E75BBF8E3F08FF0D20D266DB71CB;
+// System.Version
+struct Version_tDBE6876C59B6F56D4F8CAA03851177ABC6FE0DFD;
 // System.Void
 struct Void_t22962CB4C05B1D89B55A6E1139F0E87A90987017;
 // UnityEngine.Behaviour
@@ -611,6 +617,8 @@ struct AppOverrideKeys_tU5BU5D_t8E3FAFC2ECE6BA2F593AD1A6EC68F77AC1C7FA31;
 struct CVRCompositor_t7E9A7ACFAB7C4BC0CAFC520CB63213C2C5AA1F4A;
 // Valve.VR.CVROverlay
 struct CVROverlay_t98FB767D8969B5694A45224BD8D432ACBEE020A8;
+// Valve.VR.CVRSpatialAnchors
+struct CVRSpatialAnchors_t8AC8493CD007B0B9969C0A3905701E6D9F42F021;
 // Valve.VR.CVRSystem
 struct CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380;
 // Valve.VR.CVRSystem/_GetControllerStatePacked
@@ -881,12 +889,106 @@ struct _SuspendRendering_tC812DC4CE9D26AF62AC7E37E0FF3E120EC2DC008;
 struct _UnlockGLSharedTextureForAccess_tF654CBBC933AAC2FAB5B9E7702A1F6E130250B67;
 // Valve.VR.IVRCompositor/_WaitGetPoses
 struct _WaitGetPoses_t44D69BD3F698D7DB94A2351E1FDFEA3D1DA9C3B5;
+// Valve.VR.IVRSpatialAnchors/_CreateSpatialAnchorFromDescriptor
+struct _CreateSpatialAnchorFromDescriptor_t2E66C0CBFD10B5373CACE12F8014611A21EF9CF6;
+// Valve.VR.IVRSpatialAnchors/_CreateSpatialAnchorFromPose
+struct _CreateSpatialAnchorFromPose_t5A3E72BE3A6C3F2D5369F3999966798A6BC1D206;
+// Valve.VR.IVRSpatialAnchors/_GetSpatialAnchorDescriptor
+struct _GetSpatialAnchorDescriptor_t1FB7B58451C5A5D46E31D351AD774C19CBF4A5D8;
+// Valve.VR.IVRSpatialAnchors/_GetSpatialAnchorPose
+struct _GetSpatialAnchorPose_t4B210A925511757F99AD4C1BEA761E83A19C34EF;
+// Valve.VR.IVRSystem/_AcknowledgeQuit_Exiting
+struct _AcknowledgeQuit_Exiting_t7CA8BE614EBD0F2BCA93CD0C5408A2CCA2E4CBF7;
+// Valve.VR.IVRSystem/_ApplyTransform
+struct _ApplyTransform_t1460CC6B57C623D10CFD75BD7313393F0FF1093A;
+// Valve.VR.IVRSystem/_ComputeDistortion
+struct _ComputeDistortion_t719BD22B71759B13D28CDE23EDDC8350045BC32E;
+// Valve.VR.IVRSystem/_GetAppContainerFilePaths
+struct _GetAppContainerFilePaths_tB65F788ECB67D004E546E0591490B05FD19CBAB9;
+// Valve.VR.IVRSystem/_GetArrayTrackedDeviceProperty
+struct _GetArrayTrackedDeviceProperty_tADF405FD8E332618692476BDD849D03061C3E325;
+// Valve.VR.IVRSystem/_GetBoolTrackedDeviceProperty
+struct _GetBoolTrackedDeviceProperty_tC55A46EA23EB82A5454F486EA911184FACC0FDD5;
+// Valve.VR.IVRSystem/_GetButtonIdNameFromEnum
+struct _GetButtonIdNameFromEnum_t5C01154979EC6989BC57A2FEB4C7E8C60EEA098F;
+// Valve.VR.IVRSystem/_GetControllerAxisTypeNameFromEnum
+struct _GetControllerAxisTypeNameFromEnum_t859320E3852DA4C7ED3DE13035EEF7BF0C06F56C;
+// Valve.VR.IVRSystem/_GetControllerRoleForTrackedDeviceIndex
+struct _GetControllerRoleForTrackedDeviceIndex_tAEFD675C6BF7EF093C850DF6B298210AC65DBD80;
 // Valve.VR.IVRSystem/_GetControllerState
 struct _GetControllerState_t5374B3F47A1F23E6C363CC6BE74EEA8EE1AA77C0;
 // Valve.VR.IVRSystem/_GetControllerStateWithPose
 struct _GetControllerStateWithPose_t098A600FCC0FA005ADC4CE8A90BD37D386F8F3B6;
+// Valve.VR.IVRSystem/_GetD3D9AdapterIndex
+struct _GetD3D9AdapterIndex_t79F96C6F38A372CDE020184E338D10AD3E39B4C3;
+// Valve.VR.IVRSystem/_GetDXGIOutputInfo
+struct _GetDXGIOutputInfo_t89F93974084C1442DC49C151ABB1BFB226624E43;
+// Valve.VR.IVRSystem/_GetDeviceToAbsoluteTrackingPose
+struct _GetDeviceToAbsoluteTrackingPose_t77E758F4E0070CABF13C3555BFF30DAEFBD0FD58;
+// Valve.VR.IVRSystem/_GetEventTypeNameFromEnum
+struct _GetEventTypeNameFromEnum_t3BE9E81AEEBCED93E758200D4111889CF3B2DC7E;
+// Valve.VR.IVRSystem/_GetEyeToHeadTransform
+struct _GetEyeToHeadTransform_t4FDEF0F67D0B94B3EE9986E663B1B191DC6EB68E;
+// Valve.VR.IVRSystem/_GetFloatTrackedDeviceProperty
+struct _GetFloatTrackedDeviceProperty_t48FEAB5031B7BC323FE10D82D91C8A329B9FE7E4;
+// Valve.VR.IVRSystem/_GetHiddenAreaMesh
+struct _GetHiddenAreaMesh_t5B6377A7F1241F1DD338C70678B037A30DFAD861;
+// Valve.VR.IVRSystem/_GetInt32TrackedDeviceProperty
+struct _GetInt32TrackedDeviceProperty_t7C4B75D1EE69B5522B8906131367CFBB3C1FFD47;
+// Valve.VR.IVRSystem/_GetMatrix34TrackedDeviceProperty
+struct _GetMatrix34TrackedDeviceProperty_t1A97BE783D0E0DB9825D7573B8FC8CDCD0DB3F0C;
+// Valve.VR.IVRSystem/_GetOutputDevice
+struct _GetOutputDevice_t6BF96BF9D2E6A3F92835255792C37619B829FDA3;
+// Valve.VR.IVRSystem/_GetProjectionMatrix
+struct _GetProjectionMatrix_t2CF3AE1A256AEA542CFB4DEC53E725B76A23EEDB;
+// Valve.VR.IVRSystem/_GetProjectionRaw
+struct _GetProjectionRaw_t5E30E5CA05AE78709F9785D48BB116C87AF7BCC9;
+// Valve.VR.IVRSystem/_GetPropErrorNameFromEnum
+struct _GetPropErrorNameFromEnum_t842E8D3448564F3E5B410FF8C05CAEBE8DECF4EB;
+// Valve.VR.IVRSystem/_GetRawZeroPoseToStandingAbsoluteTrackingPose
+struct _GetRawZeroPoseToStandingAbsoluteTrackingPose_t2C18EC000505B376DAD6E5BE63CAC4060B8C61D9;
+// Valve.VR.IVRSystem/_GetRecommendedRenderTargetSize
+struct _GetRecommendedRenderTargetSize_tDF279E3E06C367158BDF68B7D2FA80B319DC206C;
+// Valve.VR.IVRSystem/_GetRuntimeVersion
+struct _GetRuntimeVersion_tB06601CFD929892DD241CD7F5B84501B34B235FE;
+// Valve.VR.IVRSystem/_GetSeatedZeroPoseToStandingAbsoluteTrackingPose
+struct _GetSeatedZeroPoseToStandingAbsoluteTrackingPose_t5AAFDB6578F55052724BDD65BBE5E12ADA7BE95D;
+// Valve.VR.IVRSystem/_GetSortedTrackedDeviceIndicesOfClass
+struct _GetSortedTrackedDeviceIndicesOfClass_tB35BA9284660A003ED3813C85504C5A5C860E1B1;
+// Valve.VR.IVRSystem/_GetStringTrackedDeviceProperty
+struct _GetStringTrackedDeviceProperty_tA012B3D010E504C65179E3BDADFF1D6C459FBF0B;
+// Valve.VR.IVRSystem/_GetTimeSinceLastVsync
+struct _GetTimeSinceLastVsync_tDE7531951DB64E37FFDE61F85BEB667E797E1322;
+// Valve.VR.IVRSystem/_GetTrackedDeviceActivityLevel
+struct _GetTrackedDeviceActivityLevel_tE2BCFC93FA210CE75BDA7321E88D375BBA350D48;
+// Valve.VR.IVRSystem/_GetTrackedDeviceClass
+struct _GetTrackedDeviceClass_t17330133ED77B95EEB556E8140F4CDF15E25A771;
+// Valve.VR.IVRSystem/_GetTrackedDeviceIndexForControllerRole
+struct _GetTrackedDeviceIndexForControllerRole_t7E5E4E2D668C9C7C2E51C687E4D1DE241C243A30;
+// Valve.VR.IVRSystem/_GetUint64TrackedDeviceProperty
+struct _GetUint64TrackedDeviceProperty_tB3590D7FDFA05A6ABEB31DC8672F5BCFDD416AEC;
+// Valve.VR.IVRSystem/_IsDisplayOnDesktop
+struct _IsDisplayOnDesktop_t69820AEAD1C17A5F9A9E4B4A9AE0B8D8A393E96C;
+// Valve.VR.IVRSystem/_IsInputAvailable
+struct _IsInputAvailable_t83CB75E728F5CB080F637304688AA8E57222CCCD;
+// Valve.VR.IVRSystem/_IsSteamVRDrawingControllers
+struct _IsSteamVRDrawingControllers_t3321FAD389E87E62F6C706EF0B3DA51863552453;
+// Valve.VR.IVRSystem/_IsTrackedDeviceConnected
+struct _IsTrackedDeviceConnected_tEF53EC2DE9F52B433A8A1ED0EDC01D7EEEB532F4;
+// Valve.VR.IVRSystem/_PerformFirmwareUpdate
+struct _PerformFirmwareUpdate_tE48B2BC4E4C414312E1450B625C5342A993FE358;
 // Valve.VR.IVRSystem/_PollNextEvent
 struct _PollNextEvent_tB2378588E343F870ED18B667ACA1FFE83F933F14;
+// Valve.VR.IVRSystem/_PollNextEventWithPose
+struct _PollNextEventWithPose_t4A2212063C519B0F5E90C7E0BE77480B12431F23;
+// Valve.VR.IVRSystem/_SetDisplayVisibility
+struct _SetDisplayVisibility_t185E797B0E0E6AE787694675A7AE498112816ACC;
+// Valve.VR.IVRSystem/_ShouldApplicationPause
+struct _ShouldApplicationPause_t81B174FD0D6E94F0A59237ACB1EB279ED38E65C0;
+// Valve.VR.IVRSystem/_ShouldApplicationReduceRenderingWork
+struct _ShouldApplicationReduceRenderingWork_tE999E2AE619B6EA5C5D3D1F27D066E667338B029;
+// Valve.VR.IVRSystem/_TriggerHapticPulse
+struct _TriggerHapticPulse_tB89A00BCA1E57CD019E0A8868C32EF7E5C271B52;
 // Valve.VR.IVRTrackedCamera/_AcquireVideoStreamingService
 struct _AcquireVideoStreamingService_tAF887F6B65CD66DA12F36C75B13BA98B12AEE33C;
 // Valve.VR.IVRTrackedCamera/_GetCameraErrorNameFromEnum
@@ -974,7 +1076,6 @@ IL2CPP_EXTERN_C RuntimeClass* EChaperoneConfigFile_tB349A080618F20B036F7FD74FBFD
 IL2CPP_EXTERN_C RuntimeClass* ETrackingUniverseOrigin_t3002504453445C01FD1564845C065DDDEE23937B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* EVRApplicationError_tEC35EF4F1D912CBA645A7C0D04AB70F4B96AC32E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* EVRApplicationProperty_tD72B89886977A9A21A02C37817DB04C5C4ABCDF0_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* EVREye_t7C413729402C81A69293253E13D4496F15B2F68A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* EVRSceneApplicationState_t35BEA89D4C9295967B0F89A05F04E0AD3BC28FC7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GazeEventArgs_t47F03981FE19884897B110C49EFBE6A9642D69C8_il2cpp_TypeInfo_var;
@@ -982,6 +1083,8 @@ IL2CPP_EXTERN_C RuntimeClass* GazeEventHandler_t6DF6725FDC6551AD542EF58F87CF7091
 IL2CPP_EXTERN_C RuntimeClass* HmdColor_t_t914B9271AB1D89C1F555A8C243B657E98C622C15_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* HmdQuad_t_tDBF6124E2E3CD674446A7347E54A99528B2858C9_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IVRSpatialAnchors_tBF0FCA0EBC3C47019CE4EB74C8A2E16DCE848758_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IVRTrackedCamera_tBFBE421D7D2BDDC5E3F819B8FD22E8D6CF3255C1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Int32_t585191389E07734F19F3156FF88FB3EF4800D102_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IntPtr_t_il2cpp_TypeInfo_var;
@@ -1002,6 +1105,7 @@ IL2CPP_EXTERN_C RuntimeClass* Type_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CStartU3Ed__2_t3C8A5D84E4A28228A2610D8799B2C3CC7F0B9104_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UInt32_t4980FA09003AFAAB5A6E361BA2748EA9A005709B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UInt64_tA02DF3B59C8FC4A849BD207DA11038CC64E4CB4E_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Utils_t5262407426334600BBD8159D021B5BEBC629CD5D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* VRControllerState_t_Packed_tEFACCF0282B2419CDAA858BC7D3DC83A8059CD9A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* VREvent_t_Packed_tA4998F133F28A9AFF4CDA75D8B5E2ACE02E1383F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector2_tA85D2DD88578276CA8A8796756458277E72D073D_il2cpp_TypeInfo_var;
@@ -1147,7 +1251,22 @@ IL2CPP_EXTERN_C const RuntimeMethod* Object_FindObjectsOfType_TisSteamVR_Tracked
 IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisGameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_mC4AB712D7F18E0991E1542CE53F11385E21E7B90_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* SteamVR_Input_GetAction_TisSteamVR_Action_Boolean_tE41AFE2395D4C8B9ED8BE1298F3545B4832E8C20_m3F169EBDCCF7CCE51C14ABDEE7FDAA03E5224AF2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CStartU3Ed__2_System_Collections_IEnumerator_Reset_mF2B91DEA8FC8BC457D152C92213A475FD4762AFE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* IVRSpatialAnchors_tBF0FCA0EBC3C47019CE4EB74C8A2E16DCE848758_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* IVRTrackedCamera_tBFBE421D7D2BDDC5E3F819B8FD22E8D6CF3255C1_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* VRControllerState_t_Packed_tEFACCF0282B2419CDAA858BC7D3DC83A8059CD9A_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* VREvent_t_Packed_tA4998F133F28A9AFF4CDA75D8B5E2ACE02E1383F_0_0_0_var;
+IL2CPP_EXTERN_C const uint32_t CVRSpatialAnchors_CreateSpatialAnchorFromDescriptor_m6FD381006D6C34A1D8E9D742B0F2A9DF04E562FE_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t CVRSpatialAnchors__ctor_m9A57E32984D034F66300CFA22D6218011FCC2F67_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t CVRSystem_GetButtonIdNameFromEnum_mFB39E28826940CDC7770FE22D68599D6BD0CEBD9_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t CVRSystem_GetControllerAxisTypeNameFromEnum_mA99753C502BDD22F711C0A68985F3D34A8711116_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t CVRSystem_GetControllerStateWithPose_m263076795EA23A846BE713CCFA78E2D53B76FC72_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t CVRSystem_GetControllerState_m4505BA2E62588A69647E5CBC9C03EBC0794A914A_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t CVRSystem_GetEventTypeNameFromEnum_mC11987D24B4B08614A6E56F0A4A7DAB5C9EC20D9_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t CVRSystem_GetPropErrorNameFromEnum_m6EA52518A3451FD436DC4A34FFFCEBDE400ECD65_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t CVRSystem_GetRuntimeVersion_m23FCDBEAD7D51173B9FE114B34B709E15CBFB74D_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t CVRSystem_PollNextEvent_m59B3B6957C486CAC116E40C86B444D6006E39DEB_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t CVRSystem__ctor_m63DFE27854B9A4D82DD4D96DC6354AD1B629F7A8_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t CVRTrackedCamera_GetCameraErrorNameFromEnum_m411FC376D89E2D42B6C7A7176432AFBE2310E823_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t CVRTrackedCamera__ctor_m66B05E747B22F1D721B164317B94B0F84BA662ED_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t GazeEventHandler_BeginInvoke_mEE566A87EBC0A54526E1A6DDFB46FCDF92212A40_MetadataUsageId;
@@ -1228,15 +1347,10 @@ IL2CPP_EXTERN_C const uint32_t _GetLastPosePredictionIDs_BeginInvoke_m1442940E74
 IL2CPP_EXTERN_C const uint32_t _GetLastPoses_BeginInvoke_mE36236C4A4D1B49C6A8E39BF7943490D3C2C67E3_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t _GetLiveCollisionBoundsInfo_BeginInvoke_mE0F475C87C146639280A3C9D7A57DA5C54BD379E_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t _GetLiveSeatedZeroPoseToRawTrackingPose_BeginInvoke_mF9822E7E0749B0C68CAE907A4A327DB7F4811077_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t _GetMirrorTextureD3D11_BeginInvoke_mFAEA3344CA3BD18E0877F75CE4B4D44817953DB9_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t _GetMirrorTextureGL_BeginInvoke_m614A5D1564FBDD2B3725D9E613DF66430C81D217_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t _GetPlayAreaRect_BeginInvoke_m24BBC0AE295E9060868627CCA8EE5D54EA905CD7_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t _GetPlayAreaSize_BeginInvoke_m8CE46DDBEF08AE0EBA53BB60F50D661BC8746492_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t _GetPosesForFrame_BeginInvoke_m255B5D07904916E0DDC578EBA1401ADC44220C31_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t _GetSceneApplicationStateNameFromEnum_BeginInvoke_m6AFAA83993475D380E91A2956709FB27CFAFC15F_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t _GetStartingApplication_BeginInvoke_m3B30D03AFB0945D25E8518B016A894A30AAD74D8_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t _GetVulkanDeviceExtensionsRequired_BeginInvoke_mC366F300E2649D0CA7C84A43206A47C2B12AA502_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t _GetVulkanInstanceExtensionsRequired_BeginInvoke_mF1B7A68DE137E02BD091E6F9F8E49AB90C54690E_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t _GetWorkingCollisionBoundsInfo_BeginInvoke_m7ED19066EA5EAE476FF31522834C0222A64ECAD4_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t _GetWorkingPlayAreaRect_BeginInvoke_mE86FC4CD404E7263639ACA94021DCFCAD2F80BD4_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t _GetWorkingPlayAreaSize_BeginInvoke_m8A378460B4E7A17CFCCD12745B54C85721218B03_MetadataUsageId;
@@ -1250,7 +1364,6 @@ IL2CPP_EXTERN_C const uint32_t _LaunchApplication_BeginInvoke_m58D7DA01E54F77B38
 IL2CPP_EXTERN_C const uint32_t _LaunchDashboardOverlay_BeginInvoke_mE956578CC5F41B09F885DBAD03DB83A7A2488EBA_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t _LaunchInternalProcess_BeginInvoke_mA56F963469303E9007BC1EC6C7ED6B56549FA6FD_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t _LaunchTemplateApplication_BeginInvoke_m537469382AFF628A35CB41F3D2B608B2A6284329_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t _LockGLSharedTextureForAccess_BeginInvoke_m64B4F9E987E8F249A0D78A3790954EE9630072C6_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t _PerformApplicationPrelaunchCheck_BeginInvoke_mC12EF481177AAAB953ACEC2C67D12CAA7A2BAB9E_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t _PollNextEventPacked_BeginInvoke_m4D2929DE758E565F8A6FF66FA060FFA398C23A35_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t _QueueHasReader_BeginInvoke_mA5514D4B53868B8C78C782906F89C11CC6713702_MetadataUsageId;
@@ -1274,6 +1387,7 @@ struct Exception_t_marshaled_com;
 struct Exception_t_marshaled_pinvoke;
 
 struct DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86;
+struct UInt32U5BU5D_t9AA834AF2940E75BBF8E3F08FF0D20D266DB71CB;
 struct GameObjectU5BU5D_tBF9D474747511CF34A040A1697E34C74C19BB520;
 struct AppOverrideKeys_tU5BU5D_t8E3FAFC2ECE6BA2F593AD1A6EC68F77AC1C7FA31;
 struct Compositor_FrameTimingU5BU5D_t7BC7198A8E98ED8E8D8548EAB23A6F96DD85E911;
@@ -1456,6 +1570,10 @@ public:
 	RuntimeObject * ___U3CU3E2__current_1;
 	// Valve.VR.Extras.SteamVR_ForceSteamVRMode Valve.VR.Extras.SteamVR_ForceSteamVRMode_<Start>d__2::<>4__this
 	SteamVR_ForceSteamVRMode_t36385ACFF1FC934ACDD76A65DDD6D24D39FBF9FF * ___U3CU3E4__this_2;
+	// System.Int32 Valve.VR.Extras.SteamVR_ForceSteamVRMode_<Start>d__2::<disableIndex>5__1
+	int32_t ___U3CdisableIndexU3E5__1_3;
+	// UnityEngine.GameObject Valve.VR.Extras.SteamVR_ForceSteamVRMode_<Start>d__2::<toDisable>5__2
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___U3CtoDisableU3E5__2_4;
 
 public:
 	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CStartU3Ed__2_t3C8A5D84E4A28228A2610D8799B2C3CC7F0B9104, ___U3CU3E1__state_0)); }
@@ -1482,6 +1600,23 @@ public:
 	{
 		___U3CU3E4__this_2 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_U3CdisableIndexU3E5__1_3() { return static_cast<int32_t>(offsetof(U3CStartU3Ed__2_t3C8A5D84E4A28228A2610D8799B2C3CC7F0B9104, ___U3CdisableIndexU3E5__1_3)); }
+	inline int32_t get_U3CdisableIndexU3E5__1_3() const { return ___U3CdisableIndexU3E5__1_3; }
+	inline int32_t* get_address_of_U3CdisableIndexU3E5__1_3() { return &___U3CdisableIndexU3E5__1_3; }
+	inline void set_U3CdisableIndexU3E5__1_3(int32_t value)
+	{
+		___U3CdisableIndexU3E5__1_3 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CtoDisableU3E5__2_4() { return static_cast<int32_t>(offsetof(U3CStartU3Ed__2_t3C8A5D84E4A28228A2610D8799B2C3CC7F0B9104, ___U3CtoDisableU3E5__2_4)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_U3CtoDisableU3E5__2_4() const { return ___U3CtoDisableU3E5__2_4; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_U3CtoDisableU3E5__2_4() { return &___U3CtoDisableU3E5__2_4; }
+	inline void set_U3CtoDisableU3E5__2_4(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___U3CtoDisableU3E5__2_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CtoDisableU3E5__2_4), (void*)value);
 	}
 };
 
@@ -1686,6 +1821,24 @@ public:
 	inline float get_m_value_0() const { return ___m_value_0; }
 	inline float* get_address_of_m_value_0() { return &___m_value_0; }
 	inline void set_m_value_0(float value)
+	{
+		___m_value_0 = value;
+	}
+};
+
+
+// System.UInt16
+struct  UInt16_tAE45CEF73BF720100519F6867F32145D075F928E 
+{
+public:
+	// System.UInt16 System.UInt16::m_value
+	uint16_t ___m_value_0;
+
+public:
+	inline static int32_t get_offset_of_m_value_0() { return static_cast<int32_t>(offsetof(UInt16_tAE45CEF73BF720100519F6867F32145D075F928E, ___m_value_0)); }
+	inline uint16_t get_m_value_0() const { return ___m_value_0; }
+	inline uint16_t* get_address_of_m_value_0() { return &___m_value_0; }
+	inline void set_m_value_0(uint16_t value)
 	{
 		___m_value_0 = value;
 	}
@@ -5104,6 +5257,688 @@ struct IVRCompositor_tFE42E74D04012ECD93FDB8D1BB38B13547649554_marshaled_com
 	Il2CppMethodPointer ___GetPosesForFrame_50;
 };
 
+// Valve.VR.IVRSpatialAnchors
+struct  IVRSpatialAnchors_tBF0FCA0EBC3C47019CE4EB74C8A2E16DCE848758 
+{
+public:
+	// Valve.VR.IVRSpatialAnchors__CreateSpatialAnchorFromDescriptor Valve.VR.IVRSpatialAnchors::CreateSpatialAnchorFromDescriptor
+	_CreateSpatialAnchorFromDescriptor_t2E66C0CBFD10B5373CACE12F8014611A21EF9CF6 * ___CreateSpatialAnchorFromDescriptor_0;
+	// Valve.VR.IVRSpatialAnchors__CreateSpatialAnchorFromPose Valve.VR.IVRSpatialAnchors::CreateSpatialAnchorFromPose
+	_CreateSpatialAnchorFromPose_t5A3E72BE3A6C3F2D5369F3999966798A6BC1D206 * ___CreateSpatialAnchorFromPose_1;
+	// Valve.VR.IVRSpatialAnchors__GetSpatialAnchorPose Valve.VR.IVRSpatialAnchors::GetSpatialAnchorPose
+	_GetSpatialAnchorPose_t4B210A925511757F99AD4C1BEA761E83A19C34EF * ___GetSpatialAnchorPose_2;
+	// Valve.VR.IVRSpatialAnchors__GetSpatialAnchorDescriptor Valve.VR.IVRSpatialAnchors::GetSpatialAnchorDescriptor
+	_GetSpatialAnchorDescriptor_t1FB7B58451C5A5D46E31D351AD774C19CBF4A5D8 * ___GetSpatialAnchorDescriptor_3;
+
+public:
+	inline static int32_t get_offset_of_CreateSpatialAnchorFromDescriptor_0() { return static_cast<int32_t>(offsetof(IVRSpatialAnchors_tBF0FCA0EBC3C47019CE4EB74C8A2E16DCE848758, ___CreateSpatialAnchorFromDescriptor_0)); }
+	inline _CreateSpatialAnchorFromDescriptor_t2E66C0CBFD10B5373CACE12F8014611A21EF9CF6 * get_CreateSpatialAnchorFromDescriptor_0() const { return ___CreateSpatialAnchorFromDescriptor_0; }
+	inline _CreateSpatialAnchorFromDescriptor_t2E66C0CBFD10B5373CACE12F8014611A21EF9CF6 ** get_address_of_CreateSpatialAnchorFromDescriptor_0() { return &___CreateSpatialAnchorFromDescriptor_0; }
+	inline void set_CreateSpatialAnchorFromDescriptor_0(_CreateSpatialAnchorFromDescriptor_t2E66C0CBFD10B5373CACE12F8014611A21EF9CF6 * value)
+	{
+		___CreateSpatialAnchorFromDescriptor_0 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___CreateSpatialAnchorFromDescriptor_0), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_CreateSpatialAnchorFromPose_1() { return static_cast<int32_t>(offsetof(IVRSpatialAnchors_tBF0FCA0EBC3C47019CE4EB74C8A2E16DCE848758, ___CreateSpatialAnchorFromPose_1)); }
+	inline _CreateSpatialAnchorFromPose_t5A3E72BE3A6C3F2D5369F3999966798A6BC1D206 * get_CreateSpatialAnchorFromPose_1() const { return ___CreateSpatialAnchorFromPose_1; }
+	inline _CreateSpatialAnchorFromPose_t5A3E72BE3A6C3F2D5369F3999966798A6BC1D206 ** get_address_of_CreateSpatialAnchorFromPose_1() { return &___CreateSpatialAnchorFromPose_1; }
+	inline void set_CreateSpatialAnchorFromPose_1(_CreateSpatialAnchorFromPose_t5A3E72BE3A6C3F2D5369F3999966798A6BC1D206 * value)
+	{
+		___CreateSpatialAnchorFromPose_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___CreateSpatialAnchorFromPose_1), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetSpatialAnchorPose_2() { return static_cast<int32_t>(offsetof(IVRSpatialAnchors_tBF0FCA0EBC3C47019CE4EB74C8A2E16DCE848758, ___GetSpatialAnchorPose_2)); }
+	inline _GetSpatialAnchorPose_t4B210A925511757F99AD4C1BEA761E83A19C34EF * get_GetSpatialAnchorPose_2() const { return ___GetSpatialAnchorPose_2; }
+	inline _GetSpatialAnchorPose_t4B210A925511757F99AD4C1BEA761E83A19C34EF ** get_address_of_GetSpatialAnchorPose_2() { return &___GetSpatialAnchorPose_2; }
+	inline void set_GetSpatialAnchorPose_2(_GetSpatialAnchorPose_t4B210A925511757F99AD4C1BEA761E83A19C34EF * value)
+	{
+		___GetSpatialAnchorPose_2 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetSpatialAnchorPose_2), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetSpatialAnchorDescriptor_3() { return static_cast<int32_t>(offsetof(IVRSpatialAnchors_tBF0FCA0EBC3C47019CE4EB74C8A2E16DCE848758, ___GetSpatialAnchorDescriptor_3)); }
+	inline _GetSpatialAnchorDescriptor_t1FB7B58451C5A5D46E31D351AD774C19CBF4A5D8 * get_GetSpatialAnchorDescriptor_3() const { return ___GetSpatialAnchorDescriptor_3; }
+	inline _GetSpatialAnchorDescriptor_t1FB7B58451C5A5D46E31D351AD774C19CBF4A5D8 ** get_address_of_GetSpatialAnchorDescriptor_3() { return &___GetSpatialAnchorDescriptor_3; }
+	inline void set_GetSpatialAnchorDescriptor_3(_GetSpatialAnchorDescriptor_t1FB7B58451C5A5D46E31D351AD774C19CBF4A5D8 * value)
+	{
+		___GetSpatialAnchorDescriptor_3 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetSpatialAnchorDescriptor_3), (void*)value);
+	}
+};
+
+// Native definition for P/Invoke marshalling of Valve.VR.IVRSpatialAnchors
+struct IVRSpatialAnchors_tBF0FCA0EBC3C47019CE4EB74C8A2E16DCE848758_marshaled_pinvoke
+{
+	Il2CppMethodPointer ___CreateSpatialAnchorFromDescriptor_0;
+	Il2CppMethodPointer ___CreateSpatialAnchorFromPose_1;
+	Il2CppMethodPointer ___GetSpatialAnchorPose_2;
+	Il2CppMethodPointer ___GetSpatialAnchorDescriptor_3;
+};
+// Native definition for COM marshalling of Valve.VR.IVRSpatialAnchors
+struct IVRSpatialAnchors_tBF0FCA0EBC3C47019CE4EB74C8A2E16DCE848758_marshaled_com
+{
+	Il2CppMethodPointer ___CreateSpatialAnchorFromDescriptor_0;
+	Il2CppMethodPointer ___CreateSpatialAnchorFromPose_1;
+	Il2CppMethodPointer ___GetSpatialAnchorPose_2;
+	Il2CppMethodPointer ___GetSpatialAnchorDescriptor_3;
+};
+
+// Valve.VR.IVRSystem
+struct  IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 
+{
+public:
+	// Valve.VR.IVRSystem__GetRecommendedRenderTargetSize Valve.VR.IVRSystem::GetRecommendedRenderTargetSize
+	_GetRecommendedRenderTargetSize_tDF279E3E06C367158BDF68B7D2FA80B319DC206C * ___GetRecommendedRenderTargetSize_0;
+	// Valve.VR.IVRSystem__GetProjectionMatrix Valve.VR.IVRSystem::GetProjectionMatrix
+	_GetProjectionMatrix_t2CF3AE1A256AEA542CFB4DEC53E725B76A23EEDB * ___GetProjectionMatrix_1;
+	// Valve.VR.IVRSystem__GetProjectionRaw Valve.VR.IVRSystem::GetProjectionRaw
+	_GetProjectionRaw_t5E30E5CA05AE78709F9785D48BB116C87AF7BCC9 * ___GetProjectionRaw_2;
+	// Valve.VR.IVRSystem__ComputeDistortion Valve.VR.IVRSystem::ComputeDistortion
+	_ComputeDistortion_t719BD22B71759B13D28CDE23EDDC8350045BC32E * ___ComputeDistortion_3;
+	// Valve.VR.IVRSystem__GetEyeToHeadTransform Valve.VR.IVRSystem::GetEyeToHeadTransform
+	_GetEyeToHeadTransform_t4FDEF0F67D0B94B3EE9986E663B1B191DC6EB68E * ___GetEyeToHeadTransform_4;
+	// Valve.VR.IVRSystem__GetTimeSinceLastVsync Valve.VR.IVRSystem::GetTimeSinceLastVsync
+	_GetTimeSinceLastVsync_tDE7531951DB64E37FFDE61F85BEB667E797E1322 * ___GetTimeSinceLastVsync_5;
+	// Valve.VR.IVRSystem__GetD3D9AdapterIndex Valve.VR.IVRSystem::GetD3D9AdapterIndex
+	_GetD3D9AdapterIndex_t79F96C6F38A372CDE020184E338D10AD3E39B4C3 * ___GetD3D9AdapterIndex_6;
+	// Valve.VR.IVRSystem__GetDXGIOutputInfo Valve.VR.IVRSystem::GetDXGIOutputInfo
+	_GetDXGIOutputInfo_t89F93974084C1442DC49C151ABB1BFB226624E43 * ___GetDXGIOutputInfo_7;
+	// Valve.VR.IVRSystem__GetOutputDevice Valve.VR.IVRSystem::GetOutputDevice
+	_GetOutputDevice_t6BF96BF9D2E6A3F92835255792C37619B829FDA3 * ___GetOutputDevice_8;
+	// Valve.VR.IVRSystem__IsDisplayOnDesktop Valve.VR.IVRSystem::IsDisplayOnDesktop
+	_IsDisplayOnDesktop_t69820AEAD1C17A5F9A9E4B4A9AE0B8D8A393E96C * ___IsDisplayOnDesktop_9;
+	// Valve.VR.IVRSystem__SetDisplayVisibility Valve.VR.IVRSystem::SetDisplayVisibility
+	_SetDisplayVisibility_t185E797B0E0E6AE787694675A7AE498112816ACC * ___SetDisplayVisibility_10;
+	// Valve.VR.IVRSystem__GetDeviceToAbsoluteTrackingPose Valve.VR.IVRSystem::GetDeviceToAbsoluteTrackingPose
+	_GetDeviceToAbsoluteTrackingPose_t77E758F4E0070CABF13C3555BFF30DAEFBD0FD58 * ___GetDeviceToAbsoluteTrackingPose_11;
+	// Valve.VR.IVRSystem__GetSeatedZeroPoseToStandingAbsoluteTrackingPose Valve.VR.IVRSystem::GetSeatedZeroPoseToStandingAbsoluteTrackingPose
+	_GetSeatedZeroPoseToStandingAbsoluteTrackingPose_t5AAFDB6578F55052724BDD65BBE5E12ADA7BE95D * ___GetSeatedZeroPoseToStandingAbsoluteTrackingPose_12;
+	// Valve.VR.IVRSystem__GetRawZeroPoseToStandingAbsoluteTrackingPose Valve.VR.IVRSystem::GetRawZeroPoseToStandingAbsoluteTrackingPose
+	_GetRawZeroPoseToStandingAbsoluteTrackingPose_t2C18EC000505B376DAD6E5BE63CAC4060B8C61D9 * ___GetRawZeroPoseToStandingAbsoluteTrackingPose_13;
+	// Valve.VR.IVRSystem__GetSortedTrackedDeviceIndicesOfClass Valve.VR.IVRSystem::GetSortedTrackedDeviceIndicesOfClass
+	_GetSortedTrackedDeviceIndicesOfClass_tB35BA9284660A003ED3813C85504C5A5C860E1B1 * ___GetSortedTrackedDeviceIndicesOfClass_14;
+	// Valve.VR.IVRSystem__GetTrackedDeviceActivityLevel Valve.VR.IVRSystem::GetTrackedDeviceActivityLevel
+	_GetTrackedDeviceActivityLevel_tE2BCFC93FA210CE75BDA7321E88D375BBA350D48 * ___GetTrackedDeviceActivityLevel_15;
+	// Valve.VR.IVRSystem__ApplyTransform Valve.VR.IVRSystem::ApplyTransform
+	_ApplyTransform_t1460CC6B57C623D10CFD75BD7313393F0FF1093A * ___ApplyTransform_16;
+	// Valve.VR.IVRSystem__GetTrackedDeviceIndexForControllerRole Valve.VR.IVRSystem::GetTrackedDeviceIndexForControllerRole
+	_GetTrackedDeviceIndexForControllerRole_t7E5E4E2D668C9C7C2E51C687E4D1DE241C243A30 * ___GetTrackedDeviceIndexForControllerRole_17;
+	// Valve.VR.IVRSystem__GetControllerRoleForTrackedDeviceIndex Valve.VR.IVRSystem::GetControllerRoleForTrackedDeviceIndex
+	_GetControllerRoleForTrackedDeviceIndex_tAEFD675C6BF7EF093C850DF6B298210AC65DBD80 * ___GetControllerRoleForTrackedDeviceIndex_18;
+	// Valve.VR.IVRSystem__GetTrackedDeviceClass Valve.VR.IVRSystem::GetTrackedDeviceClass
+	_GetTrackedDeviceClass_t17330133ED77B95EEB556E8140F4CDF15E25A771 * ___GetTrackedDeviceClass_19;
+	// Valve.VR.IVRSystem__IsTrackedDeviceConnected Valve.VR.IVRSystem::IsTrackedDeviceConnected
+	_IsTrackedDeviceConnected_tEF53EC2DE9F52B433A8A1ED0EDC01D7EEEB532F4 * ___IsTrackedDeviceConnected_20;
+	// Valve.VR.IVRSystem__GetBoolTrackedDeviceProperty Valve.VR.IVRSystem::GetBoolTrackedDeviceProperty
+	_GetBoolTrackedDeviceProperty_tC55A46EA23EB82A5454F486EA911184FACC0FDD5 * ___GetBoolTrackedDeviceProperty_21;
+	// Valve.VR.IVRSystem__GetFloatTrackedDeviceProperty Valve.VR.IVRSystem::GetFloatTrackedDeviceProperty
+	_GetFloatTrackedDeviceProperty_t48FEAB5031B7BC323FE10D82D91C8A329B9FE7E4 * ___GetFloatTrackedDeviceProperty_22;
+	// Valve.VR.IVRSystem__GetInt32TrackedDeviceProperty Valve.VR.IVRSystem::GetInt32TrackedDeviceProperty
+	_GetInt32TrackedDeviceProperty_t7C4B75D1EE69B5522B8906131367CFBB3C1FFD47 * ___GetInt32TrackedDeviceProperty_23;
+	// Valve.VR.IVRSystem__GetUint64TrackedDeviceProperty Valve.VR.IVRSystem::GetUint64TrackedDeviceProperty
+	_GetUint64TrackedDeviceProperty_tB3590D7FDFA05A6ABEB31DC8672F5BCFDD416AEC * ___GetUint64TrackedDeviceProperty_24;
+	// Valve.VR.IVRSystem__GetMatrix34TrackedDeviceProperty Valve.VR.IVRSystem::GetMatrix34TrackedDeviceProperty
+	_GetMatrix34TrackedDeviceProperty_t1A97BE783D0E0DB9825D7573B8FC8CDCD0DB3F0C * ___GetMatrix34TrackedDeviceProperty_25;
+	// Valve.VR.IVRSystem__GetArrayTrackedDeviceProperty Valve.VR.IVRSystem::GetArrayTrackedDeviceProperty
+	_GetArrayTrackedDeviceProperty_tADF405FD8E332618692476BDD849D03061C3E325 * ___GetArrayTrackedDeviceProperty_26;
+	// Valve.VR.IVRSystem__GetStringTrackedDeviceProperty Valve.VR.IVRSystem::GetStringTrackedDeviceProperty
+	_GetStringTrackedDeviceProperty_tA012B3D010E504C65179E3BDADFF1D6C459FBF0B * ___GetStringTrackedDeviceProperty_27;
+	// Valve.VR.IVRSystem__GetPropErrorNameFromEnum Valve.VR.IVRSystem::GetPropErrorNameFromEnum
+	_GetPropErrorNameFromEnum_t842E8D3448564F3E5B410FF8C05CAEBE8DECF4EB * ___GetPropErrorNameFromEnum_28;
+	// Valve.VR.IVRSystem__PollNextEvent Valve.VR.IVRSystem::PollNextEvent
+	_PollNextEvent_tB2378588E343F870ED18B667ACA1FFE83F933F14 * ___PollNextEvent_29;
+	// Valve.VR.IVRSystem__PollNextEventWithPose Valve.VR.IVRSystem::PollNextEventWithPose
+	_PollNextEventWithPose_t4A2212063C519B0F5E90C7E0BE77480B12431F23 * ___PollNextEventWithPose_30;
+	// Valve.VR.IVRSystem__GetEventTypeNameFromEnum Valve.VR.IVRSystem::GetEventTypeNameFromEnum
+	_GetEventTypeNameFromEnum_t3BE9E81AEEBCED93E758200D4111889CF3B2DC7E * ___GetEventTypeNameFromEnum_31;
+	// Valve.VR.IVRSystem__GetHiddenAreaMesh Valve.VR.IVRSystem::GetHiddenAreaMesh
+	_GetHiddenAreaMesh_t5B6377A7F1241F1DD338C70678B037A30DFAD861 * ___GetHiddenAreaMesh_32;
+	// Valve.VR.IVRSystem__GetControllerState Valve.VR.IVRSystem::GetControllerState
+	_GetControllerState_t5374B3F47A1F23E6C363CC6BE74EEA8EE1AA77C0 * ___GetControllerState_33;
+	// Valve.VR.IVRSystem__GetControllerStateWithPose Valve.VR.IVRSystem::GetControllerStateWithPose
+	_GetControllerStateWithPose_t098A600FCC0FA005ADC4CE8A90BD37D386F8F3B6 * ___GetControllerStateWithPose_34;
+	// Valve.VR.IVRSystem__TriggerHapticPulse Valve.VR.IVRSystem::TriggerHapticPulse
+	_TriggerHapticPulse_tB89A00BCA1E57CD019E0A8868C32EF7E5C271B52 * ___TriggerHapticPulse_35;
+	// Valve.VR.IVRSystem__GetButtonIdNameFromEnum Valve.VR.IVRSystem::GetButtonIdNameFromEnum
+	_GetButtonIdNameFromEnum_t5C01154979EC6989BC57A2FEB4C7E8C60EEA098F * ___GetButtonIdNameFromEnum_36;
+	// Valve.VR.IVRSystem__GetControllerAxisTypeNameFromEnum Valve.VR.IVRSystem::GetControllerAxisTypeNameFromEnum
+	_GetControllerAxisTypeNameFromEnum_t859320E3852DA4C7ED3DE13035EEF7BF0C06F56C * ___GetControllerAxisTypeNameFromEnum_37;
+	// Valve.VR.IVRSystem__IsInputAvailable Valve.VR.IVRSystem::IsInputAvailable
+	_IsInputAvailable_t83CB75E728F5CB080F637304688AA8E57222CCCD * ___IsInputAvailable_38;
+	// Valve.VR.IVRSystem__IsSteamVRDrawingControllers Valve.VR.IVRSystem::IsSteamVRDrawingControllers
+	_IsSteamVRDrawingControllers_t3321FAD389E87E62F6C706EF0B3DA51863552453 * ___IsSteamVRDrawingControllers_39;
+	// Valve.VR.IVRSystem__ShouldApplicationPause Valve.VR.IVRSystem::ShouldApplicationPause
+	_ShouldApplicationPause_t81B174FD0D6E94F0A59237ACB1EB279ED38E65C0 * ___ShouldApplicationPause_40;
+	// Valve.VR.IVRSystem__ShouldApplicationReduceRenderingWork Valve.VR.IVRSystem::ShouldApplicationReduceRenderingWork
+	_ShouldApplicationReduceRenderingWork_tE999E2AE619B6EA5C5D3D1F27D066E667338B029 * ___ShouldApplicationReduceRenderingWork_41;
+	// Valve.VR.IVRSystem__PerformFirmwareUpdate Valve.VR.IVRSystem::PerformFirmwareUpdate
+	_PerformFirmwareUpdate_tE48B2BC4E4C414312E1450B625C5342A993FE358 * ___PerformFirmwareUpdate_42;
+	// Valve.VR.IVRSystem__AcknowledgeQuit_Exiting Valve.VR.IVRSystem::AcknowledgeQuit_Exiting
+	_AcknowledgeQuit_Exiting_t7CA8BE614EBD0F2BCA93CD0C5408A2CCA2E4CBF7 * ___AcknowledgeQuit_Exiting_43;
+	// Valve.VR.IVRSystem__GetAppContainerFilePaths Valve.VR.IVRSystem::GetAppContainerFilePaths
+	_GetAppContainerFilePaths_tB65F788ECB67D004E546E0591490B05FD19CBAB9 * ___GetAppContainerFilePaths_44;
+	// Valve.VR.IVRSystem__GetRuntimeVersion Valve.VR.IVRSystem::GetRuntimeVersion
+	_GetRuntimeVersion_tB06601CFD929892DD241CD7F5B84501B34B235FE * ___GetRuntimeVersion_45;
+
+public:
+	inline static int32_t get_offset_of_GetRecommendedRenderTargetSize_0() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetRecommendedRenderTargetSize_0)); }
+	inline _GetRecommendedRenderTargetSize_tDF279E3E06C367158BDF68B7D2FA80B319DC206C * get_GetRecommendedRenderTargetSize_0() const { return ___GetRecommendedRenderTargetSize_0; }
+	inline _GetRecommendedRenderTargetSize_tDF279E3E06C367158BDF68B7D2FA80B319DC206C ** get_address_of_GetRecommendedRenderTargetSize_0() { return &___GetRecommendedRenderTargetSize_0; }
+	inline void set_GetRecommendedRenderTargetSize_0(_GetRecommendedRenderTargetSize_tDF279E3E06C367158BDF68B7D2FA80B319DC206C * value)
+	{
+		___GetRecommendedRenderTargetSize_0 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetRecommendedRenderTargetSize_0), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetProjectionMatrix_1() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetProjectionMatrix_1)); }
+	inline _GetProjectionMatrix_t2CF3AE1A256AEA542CFB4DEC53E725B76A23EEDB * get_GetProjectionMatrix_1() const { return ___GetProjectionMatrix_1; }
+	inline _GetProjectionMatrix_t2CF3AE1A256AEA542CFB4DEC53E725B76A23EEDB ** get_address_of_GetProjectionMatrix_1() { return &___GetProjectionMatrix_1; }
+	inline void set_GetProjectionMatrix_1(_GetProjectionMatrix_t2CF3AE1A256AEA542CFB4DEC53E725B76A23EEDB * value)
+	{
+		___GetProjectionMatrix_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetProjectionMatrix_1), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetProjectionRaw_2() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetProjectionRaw_2)); }
+	inline _GetProjectionRaw_t5E30E5CA05AE78709F9785D48BB116C87AF7BCC9 * get_GetProjectionRaw_2() const { return ___GetProjectionRaw_2; }
+	inline _GetProjectionRaw_t5E30E5CA05AE78709F9785D48BB116C87AF7BCC9 ** get_address_of_GetProjectionRaw_2() { return &___GetProjectionRaw_2; }
+	inline void set_GetProjectionRaw_2(_GetProjectionRaw_t5E30E5CA05AE78709F9785D48BB116C87AF7BCC9 * value)
+	{
+		___GetProjectionRaw_2 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetProjectionRaw_2), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_ComputeDistortion_3() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___ComputeDistortion_3)); }
+	inline _ComputeDistortion_t719BD22B71759B13D28CDE23EDDC8350045BC32E * get_ComputeDistortion_3() const { return ___ComputeDistortion_3; }
+	inline _ComputeDistortion_t719BD22B71759B13D28CDE23EDDC8350045BC32E ** get_address_of_ComputeDistortion_3() { return &___ComputeDistortion_3; }
+	inline void set_ComputeDistortion_3(_ComputeDistortion_t719BD22B71759B13D28CDE23EDDC8350045BC32E * value)
+	{
+		___ComputeDistortion_3 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___ComputeDistortion_3), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetEyeToHeadTransform_4() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetEyeToHeadTransform_4)); }
+	inline _GetEyeToHeadTransform_t4FDEF0F67D0B94B3EE9986E663B1B191DC6EB68E * get_GetEyeToHeadTransform_4() const { return ___GetEyeToHeadTransform_4; }
+	inline _GetEyeToHeadTransform_t4FDEF0F67D0B94B3EE9986E663B1B191DC6EB68E ** get_address_of_GetEyeToHeadTransform_4() { return &___GetEyeToHeadTransform_4; }
+	inline void set_GetEyeToHeadTransform_4(_GetEyeToHeadTransform_t4FDEF0F67D0B94B3EE9986E663B1B191DC6EB68E * value)
+	{
+		___GetEyeToHeadTransform_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetEyeToHeadTransform_4), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetTimeSinceLastVsync_5() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetTimeSinceLastVsync_5)); }
+	inline _GetTimeSinceLastVsync_tDE7531951DB64E37FFDE61F85BEB667E797E1322 * get_GetTimeSinceLastVsync_5() const { return ___GetTimeSinceLastVsync_5; }
+	inline _GetTimeSinceLastVsync_tDE7531951DB64E37FFDE61F85BEB667E797E1322 ** get_address_of_GetTimeSinceLastVsync_5() { return &___GetTimeSinceLastVsync_5; }
+	inline void set_GetTimeSinceLastVsync_5(_GetTimeSinceLastVsync_tDE7531951DB64E37FFDE61F85BEB667E797E1322 * value)
+	{
+		___GetTimeSinceLastVsync_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetTimeSinceLastVsync_5), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetD3D9AdapterIndex_6() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetD3D9AdapterIndex_6)); }
+	inline _GetD3D9AdapterIndex_t79F96C6F38A372CDE020184E338D10AD3E39B4C3 * get_GetD3D9AdapterIndex_6() const { return ___GetD3D9AdapterIndex_6; }
+	inline _GetD3D9AdapterIndex_t79F96C6F38A372CDE020184E338D10AD3E39B4C3 ** get_address_of_GetD3D9AdapterIndex_6() { return &___GetD3D9AdapterIndex_6; }
+	inline void set_GetD3D9AdapterIndex_6(_GetD3D9AdapterIndex_t79F96C6F38A372CDE020184E338D10AD3E39B4C3 * value)
+	{
+		___GetD3D9AdapterIndex_6 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetD3D9AdapterIndex_6), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetDXGIOutputInfo_7() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetDXGIOutputInfo_7)); }
+	inline _GetDXGIOutputInfo_t89F93974084C1442DC49C151ABB1BFB226624E43 * get_GetDXGIOutputInfo_7() const { return ___GetDXGIOutputInfo_7; }
+	inline _GetDXGIOutputInfo_t89F93974084C1442DC49C151ABB1BFB226624E43 ** get_address_of_GetDXGIOutputInfo_7() { return &___GetDXGIOutputInfo_7; }
+	inline void set_GetDXGIOutputInfo_7(_GetDXGIOutputInfo_t89F93974084C1442DC49C151ABB1BFB226624E43 * value)
+	{
+		___GetDXGIOutputInfo_7 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetDXGIOutputInfo_7), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetOutputDevice_8() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetOutputDevice_8)); }
+	inline _GetOutputDevice_t6BF96BF9D2E6A3F92835255792C37619B829FDA3 * get_GetOutputDevice_8() const { return ___GetOutputDevice_8; }
+	inline _GetOutputDevice_t6BF96BF9D2E6A3F92835255792C37619B829FDA3 ** get_address_of_GetOutputDevice_8() { return &___GetOutputDevice_8; }
+	inline void set_GetOutputDevice_8(_GetOutputDevice_t6BF96BF9D2E6A3F92835255792C37619B829FDA3 * value)
+	{
+		___GetOutputDevice_8 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetOutputDevice_8), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_IsDisplayOnDesktop_9() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___IsDisplayOnDesktop_9)); }
+	inline _IsDisplayOnDesktop_t69820AEAD1C17A5F9A9E4B4A9AE0B8D8A393E96C * get_IsDisplayOnDesktop_9() const { return ___IsDisplayOnDesktop_9; }
+	inline _IsDisplayOnDesktop_t69820AEAD1C17A5F9A9E4B4A9AE0B8D8A393E96C ** get_address_of_IsDisplayOnDesktop_9() { return &___IsDisplayOnDesktop_9; }
+	inline void set_IsDisplayOnDesktop_9(_IsDisplayOnDesktop_t69820AEAD1C17A5F9A9E4B4A9AE0B8D8A393E96C * value)
+	{
+		___IsDisplayOnDesktop_9 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___IsDisplayOnDesktop_9), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_SetDisplayVisibility_10() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___SetDisplayVisibility_10)); }
+	inline _SetDisplayVisibility_t185E797B0E0E6AE787694675A7AE498112816ACC * get_SetDisplayVisibility_10() const { return ___SetDisplayVisibility_10; }
+	inline _SetDisplayVisibility_t185E797B0E0E6AE787694675A7AE498112816ACC ** get_address_of_SetDisplayVisibility_10() { return &___SetDisplayVisibility_10; }
+	inline void set_SetDisplayVisibility_10(_SetDisplayVisibility_t185E797B0E0E6AE787694675A7AE498112816ACC * value)
+	{
+		___SetDisplayVisibility_10 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___SetDisplayVisibility_10), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetDeviceToAbsoluteTrackingPose_11() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetDeviceToAbsoluteTrackingPose_11)); }
+	inline _GetDeviceToAbsoluteTrackingPose_t77E758F4E0070CABF13C3555BFF30DAEFBD0FD58 * get_GetDeviceToAbsoluteTrackingPose_11() const { return ___GetDeviceToAbsoluteTrackingPose_11; }
+	inline _GetDeviceToAbsoluteTrackingPose_t77E758F4E0070CABF13C3555BFF30DAEFBD0FD58 ** get_address_of_GetDeviceToAbsoluteTrackingPose_11() { return &___GetDeviceToAbsoluteTrackingPose_11; }
+	inline void set_GetDeviceToAbsoluteTrackingPose_11(_GetDeviceToAbsoluteTrackingPose_t77E758F4E0070CABF13C3555BFF30DAEFBD0FD58 * value)
+	{
+		___GetDeviceToAbsoluteTrackingPose_11 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetDeviceToAbsoluteTrackingPose_11), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetSeatedZeroPoseToStandingAbsoluteTrackingPose_12() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetSeatedZeroPoseToStandingAbsoluteTrackingPose_12)); }
+	inline _GetSeatedZeroPoseToStandingAbsoluteTrackingPose_t5AAFDB6578F55052724BDD65BBE5E12ADA7BE95D * get_GetSeatedZeroPoseToStandingAbsoluteTrackingPose_12() const { return ___GetSeatedZeroPoseToStandingAbsoluteTrackingPose_12; }
+	inline _GetSeatedZeroPoseToStandingAbsoluteTrackingPose_t5AAFDB6578F55052724BDD65BBE5E12ADA7BE95D ** get_address_of_GetSeatedZeroPoseToStandingAbsoluteTrackingPose_12() { return &___GetSeatedZeroPoseToStandingAbsoluteTrackingPose_12; }
+	inline void set_GetSeatedZeroPoseToStandingAbsoluteTrackingPose_12(_GetSeatedZeroPoseToStandingAbsoluteTrackingPose_t5AAFDB6578F55052724BDD65BBE5E12ADA7BE95D * value)
+	{
+		___GetSeatedZeroPoseToStandingAbsoluteTrackingPose_12 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetSeatedZeroPoseToStandingAbsoluteTrackingPose_12), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetRawZeroPoseToStandingAbsoluteTrackingPose_13() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetRawZeroPoseToStandingAbsoluteTrackingPose_13)); }
+	inline _GetRawZeroPoseToStandingAbsoluteTrackingPose_t2C18EC000505B376DAD6E5BE63CAC4060B8C61D9 * get_GetRawZeroPoseToStandingAbsoluteTrackingPose_13() const { return ___GetRawZeroPoseToStandingAbsoluteTrackingPose_13; }
+	inline _GetRawZeroPoseToStandingAbsoluteTrackingPose_t2C18EC000505B376DAD6E5BE63CAC4060B8C61D9 ** get_address_of_GetRawZeroPoseToStandingAbsoluteTrackingPose_13() { return &___GetRawZeroPoseToStandingAbsoluteTrackingPose_13; }
+	inline void set_GetRawZeroPoseToStandingAbsoluteTrackingPose_13(_GetRawZeroPoseToStandingAbsoluteTrackingPose_t2C18EC000505B376DAD6E5BE63CAC4060B8C61D9 * value)
+	{
+		___GetRawZeroPoseToStandingAbsoluteTrackingPose_13 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetRawZeroPoseToStandingAbsoluteTrackingPose_13), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetSortedTrackedDeviceIndicesOfClass_14() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetSortedTrackedDeviceIndicesOfClass_14)); }
+	inline _GetSortedTrackedDeviceIndicesOfClass_tB35BA9284660A003ED3813C85504C5A5C860E1B1 * get_GetSortedTrackedDeviceIndicesOfClass_14() const { return ___GetSortedTrackedDeviceIndicesOfClass_14; }
+	inline _GetSortedTrackedDeviceIndicesOfClass_tB35BA9284660A003ED3813C85504C5A5C860E1B1 ** get_address_of_GetSortedTrackedDeviceIndicesOfClass_14() { return &___GetSortedTrackedDeviceIndicesOfClass_14; }
+	inline void set_GetSortedTrackedDeviceIndicesOfClass_14(_GetSortedTrackedDeviceIndicesOfClass_tB35BA9284660A003ED3813C85504C5A5C860E1B1 * value)
+	{
+		___GetSortedTrackedDeviceIndicesOfClass_14 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetSortedTrackedDeviceIndicesOfClass_14), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetTrackedDeviceActivityLevel_15() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetTrackedDeviceActivityLevel_15)); }
+	inline _GetTrackedDeviceActivityLevel_tE2BCFC93FA210CE75BDA7321E88D375BBA350D48 * get_GetTrackedDeviceActivityLevel_15() const { return ___GetTrackedDeviceActivityLevel_15; }
+	inline _GetTrackedDeviceActivityLevel_tE2BCFC93FA210CE75BDA7321E88D375BBA350D48 ** get_address_of_GetTrackedDeviceActivityLevel_15() { return &___GetTrackedDeviceActivityLevel_15; }
+	inline void set_GetTrackedDeviceActivityLevel_15(_GetTrackedDeviceActivityLevel_tE2BCFC93FA210CE75BDA7321E88D375BBA350D48 * value)
+	{
+		___GetTrackedDeviceActivityLevel_15 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetTrackedDeviceActivityLevel_15), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_ApplyTransform_16() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___ApplyTransform_16)); }
+	inline _ApplyTransform_t1460CC6B57C623D10CFD75BD7313393F0FF1093A * get_ApplyTransform_16() const { return ___ApplyTransform_16; }
+	inline _ApplyTransform_t1460CC6B57C623D10CFD75BD7313393F0FF1093A ** get_address_of_ApplyTransform_16() { return &___ApplyTransform_16; }
+	inline void set_ApplyTransform_16(_ApplyTransform_t1460CC6B57C623D10CFD75BD7313393F0FF1093A * value)
+	{
+		___ApplyTransform_16 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___ApplyTransform_16), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetTrackedDeviceIndexForControllerRole_17() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetTrackedDeviceIndexForControllerRole_17)); }
+	inline _GetTrackedDeviceIndexForControllerRole_t7E5E4E2D668C9C7C2E51C687E4D1DE241C243A30 * get_GetTrackedDeviceIndexForControllerRole_17() const { return ___GetTrackedDeviceIndexForControllerRole_17; }
+	inline _GetTrackedDeviceIndexForControllerRole_t7E5E4E2D668C9C7C2E51C687E4D1DE241C243A30 ** get_address_of_GetTrackedDeviceIndexForControllerRole_17() { return &___GetTrackedDeviceIndexForControllerRole_17; }
+	inline void set_GetTrackedDeviceIndexForControllerRole_17(_GetTrackedDeviceIndexForControllerRole_t7E5E4E2D668C9C7C2E51C687E4D1DE241C243A30 * value)
+	{
+		___GetTrackedDeviceIndexForControllerRole_17 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetTrackedDeviceIndexForControllerRole_17), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetControllerRoleForTrackedDeviceIndex_18() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetControllerRoleForTrackedDeviceIndex_18)); }
+	inline _GetControllerRoleForTrackedDeviceIndex_tAEFD675C6BF7EF093C850DF6B298210AC65DBD80 * get_GetControllerRoleForTrackedDeviceIndex_18() const { return ___GetControllerRoleForTrackedDeviceIndex_18; }
+	inline _GetControllerRoleForTrackedDeviceIndex_tAEFD675C6BF7EF093C850DF6B298210AC65DBD80 ** get_address_of_GetControllerRoleForTrackedDeviceIndex_18() { return &___GetControllerRoleForTrackedDeviceIndex_18; }
+	inline void set_GetControllerRoleForTrackedDeviceIndex_18(_GetControllerRoleForTrackedDeviceIndex_tAEFD675C6BF7EF093C850DF6B298210AC65DBD80 * value)
+	{
+		___GetControllerRoleForTrackedDeviceIndex_18 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetControllerRoleForTrackedDeviceIndex_18), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetTrackedDeviceClass_19() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetTrackedDeviceClass_19)); }
+	inline _GetTrackedDeviceClass_t17330133ED77B95EEB556E8140F4CDF15E25A771 * get_GetTrackedDeviceClass_19() const { return ___GetTrackedDeviceClass_19; }
+	inline _GetTrackedDeviceClass_t17330133ED77B95EEB556E8140F4CDF15E25A771 ** get_address_of_GetTrackedDeviceClass_19() { return &___GetTrackedDeviceClass_19; }
+	inline void set_GetTrackedDeviceClass_19(_GetTrackedDeviceClass_t17330133ED77B95EEB556E8140F4CDF15E25A771 * value)
+	{
+		___GetTrackedDeviceClass_19 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetTrackedDeviceClass_19), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_IsTrackedDeviceConnected_20() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___IsTrackedDeviceConnected_20)); }
+	inline _IsTrackedDeviceConnected_tEF53EC2DE9F52B433A8A1ED0EDC01D7EEEB532F4 * get_IsTrackedDeviceConnected_20() const { return ___IsTrackedDeviceConnected_20; }
+	inline _IsTrackedDeviceConnected_tEF53EC2DE9F52B433A8A1ED0EDC01D7EEEB532F4 ** get_address_of_IsTrackedDeviceConnected_20() { return &___IsTrackedDeviceConnected_20; }
+	inline void set_IsTrackedDeviceConnected_20(_IsTrackedDeviceConnected_tEF53EC2DE9F52B433A8A1ED0EDC01D7EEEB532F4 * value)
+	{
+		___IsTrackedDeviceConnected_20 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___IsTrackedDeviceConnected_20), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetBoolTrackedDeviceProperty_21() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetBoolTrackedDeviceProperty_21)); }
+	inline _GetBoolTrackedDeviceProperty_tC55A46EA23EB82A5454F486EA911184FACC0FDD5 * get_GetBoolTrackedDeviceProperty_21() const { return ___GetBoolTrackedDeviceProperty_21; }
+	inline _GetBoolTrackedDeviceProperty_tC55A46EA23EB82A5454F486EA911184FACC0FDD5 ** get_address_of_GetBoolTrackedDeviceProperty_21() { return &___GetBoolTrackedDeviceProperty_21; }
+	inline void set_GetBoolTrackedDeviceProperty_21(_GetBoolTrackedDeviceProperty_tC55A46EA23EB82A5454F486EA911184FACC0FDD5 * value)
+	{
+		___GetBoolTrackedDeviceProperty_21 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetBoolTrackedDeviceProperty_21), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetFloatTrackedDeviceProperty_22() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetFloatTrackedDeviceProperty_22)); }
+	inline _GetFloatTrackedDeviceProperty_t48FEAB5031B7BC323FE10D82D91C8A329B9FE7E4 * get_GetFloatTrackedDeviceProperty_22() const { return ___GetFloatTrackedDeviceProperty_22; }
+	inline _GetFloatTrackedDeviceProperty_t48FEAB5031B7BC323FE10D82D91C8A329B9FE7E4 ** get_address_of_GetFloatTrackedDeviceProperty_22() { return &___GetFloatTrackedDeviceProperty_22; }
+	inline void set_GetFloatTrackedDeviceProperty_22(_GetFloatTrackedDeviceProperty_t48FEAB5031B7BC323FE10D82D91C8A329B9FE7E4 * value)
+	{
+		___GetFloatTrackedDeviceProperty_22 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetFloatTrackedDeviceProperty_22), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetInt32TrackedDeviceProperty_23() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetInt32TrackedDeviceProperty_23)); }
+	inline _GetInt32TrackedDeviceProperty_t7C4B75D1EE69B5522B8906131367CFBB3C1FFD47 * get_GetInt32TrackedDeviceProperty_23() const { return ___GetInt32TrackedDeviceProperty_23; }
+	inline _GetInt32TrackedDeviceProperty_t7C4B75D1EE69B5522B8906131367CFBB3C1FFD47 ** get_address_of_GetInt32TrackedDeviceProperty_23() { return &___GetInt32TrackedDeviceProperty_23; }
+	inline void set_GetInt32TrackedDeviceProperty_23(_GetInt32TrackedDeviceProperty_t7C4B75D1EE69B5522B8906131367CFBB3C1FFD47 * value)
+	{
+		___GetInt32TrackedDeviceProperty_23 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetInt32TrackedDeviceProperty_23), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetUint64TrackedDeviceProperty_24() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetUint64TrackedDeviceProperty_24)); }
+	inline _GetUint64TrackedDeviceProperty_tB3590D7FDFA05A6ABEB31DC8672F5BCFDD416AEC * get_GetUint64TrackedDeviceProperty_24() const { return ___GetUint64TrackedDeviceProperty_24; }
+	inline _GetUint64TrackedDeviceProperty_tB3590D7FDFA05A6ABEB31DC8672F5BCFDD416AEC ** get_address_of_GetUint64TrackedDeviceProperty_24() { return &___GetUint64TrackedDeviceProperty_24; }
+	inline void set_GetUint64TrackedDeviceProperty_24(_GetUint64TrackedDeviceProperty_tB3590D7FDFA05A6ABEB31DC8672F5BCFDD416AEC * value)
+	{
+		___GetUint64TrackedDeviceProperty_24 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetUint64TrackedDeviceProperty_24), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetMatrix34TrackedDeviceProperty_25() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetMatrix34TrackedDeviceProperty_25)); }
+	inline _GetMatrix34TrackedDeviceProperty_t1A97BE783D0E0DB9825D7573B8FC8CDCD0DB3F0C * get_GetMatrix34TrackedDeviceProperty_25() const { return ___GetMatrix34TrackedDeviceProperty_25; }
+	inline _GetMatrix34TrackedDeviceProperty_t1A97BE783D0E0DB9825D7573B8FC8CDCD0DB3F0C ** get_address_of_GetMatrix34TrackedDeviceProperty_25() { return &___GetMatrix34TrackedDeviceProperty_25; }
+	inline void set_GetMatrix34TrackedDeviceProperty_25(_GetMatrix34TrackedDeviceProperty_t1A97BE783D0E0DB9825D7573B8FC8CDCD0DB3F0C * value)
+	{
+		___GetMatrix34TrackedDeviceProperty_25 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetMatrix34TrackedDeviceProperty_25), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetArrayTrackedDeviceProperty_26() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetArrayTrackedDeviceProperty_26)); }
+	inline _GetArrayTrackedDeviceProperty_tADF405FD8E332618692476BDD849D03061C3E325 * get_GetArrayTrackedDeviceProperty_26() const { return ___GetArrayTrackedDeviceProperty_26; }
+	inline _GetArrayTrackedDeviceProperty_tADF405FD8E332618692476BDD849D03061C3E325 ** get_address_of_GetArrayTrackedDeviceProperty_26() { return &___GetArrayTrackedDeviceProperty_26; }
+	inline void set_GetArrayTrackedDeviceProperty_26(_GetArrayTrackedDeviceProperty_tADF405FD8E332618692476BDD849D03061C3E325 * value)
+	{
+		___GetArrayTrackedDeviceProperty_26 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetArrayTrackedDeviceProperty_26), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetStringTrackedDeviceProperty_27() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetStringTrackedDeviceProperty_27)); }
+	inline _GetStringTrackedDeviceProperty_tA012B3D010E504C65179E3BDADFF1D6C459FBF0B * get_GetStringTrackedDeviceProperty_27() const { return ___GetStringTrackedDeviceProperty_27; }
+	inline _GetStringTrackedDeviceProperty_tA012B3D010E504C65179E3BDADFF1D6C459FBF0B ** get_address_of_GetStringTrackedDeviceProperty_27() { return &___GetStringTrackedDeviceProperty_27; }
+	inline void set_GetStringTrackedDeviceProperty_27(_GetStringTrackedDeviceProperty_tA012B3D010E504C65179E3BDADFF1D6C459FBF0B * value)
+	{
+		___GetStringTrackedDeviceProperty_27 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetStringTrackedDeviceProperty_27), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetPropErrorNameFromEnum_28() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetPropErrorNameFromEnum_28)); }
+	inline _GetPropErrorNameFromEnum_t842E8D3448564F3E5B410FF8C05CAEBE8DECF4EB * get_GetPropErrorNameFromEnum_28() const { return ___GetPropErrorNameFromEnum_28; }
+	inline _GetPropErrorNameFromEnum_t842E8D3448564F3E5B410FF8C05CAEBE8DECF4EB ** get_address_of_GetPropErrorNameFromEnum_28() { return &___GetPropErrorNameFromEnum_28; }
+	inline void set_GetPropErrorNameFromEnum_28(_GetPropErrorNameFromEnum_t842E8D3448564F3E5B410FF8C05CAEBE8DECF4EB * value)
+	{
+		___GetPropErrorNameFromEnum_28 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetPropErrorNameFromEnum_28), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_PollNextEvent_29() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___PollNextEvent_29)); }
+	inline _PollNextEvent_tB2378588E343F870ED18B667ACA1FFE83F933F14 * get_PollNextEvent_29() const { return ___PollNextEvent_29; }
+	inline _PollNextEvent_tB2378588E343F870ED18B667ACA1FFE83F933F14 ** get_address_of_PollNextEvent_29() { return &___PollNextEvent_29; }
+	inline void set_PollNextEvent_29(_PollNextEvent_tB2378588E343F870ED18B667ACA1FFE83F933F14 * value)
+	{
+		___PollNextEvent_29 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___PollNextEvent_29), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_PollNextEventWithPose_30() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___PollNextEventWithPose_30)); }
+	inline _PollNextEventWithPose_t4A2212063C519B0F5E90C7E0BE77480B12431F23 * get_PollNextEventWithPose_30() const { return ___PollNextEventWithPose_30; }
+	inline _PollNextEventWithPose_t4A2212063C519B0F5E90C7E0BE77480B12431F23 ** get_address_of_PollNextEventWithPose_30() { return &___PollNextEventWithPose_30; }
+	inline void set_PollNextEventWithPose_30(_PollNextEventWithPose_t4A2212063C519B0F5E90C7E0BE77480B12431F23 * value)
+	{
+		___PollNextEventWithPose_30 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___PollNextEventWithPose_30), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetEventTypeNameFromEnum_31() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetEventTypeNameFromEnum_31)); }
+	inline _GetEventTypeNameFromEnum_t3BE9E81AEEBCED93E758200D4111889CF3B2DC7E * get_GetEventTypeNameFromEnum_31() const { return ___GetEventTypeNameFromEnum_31; }
+	inline _GetEventTypeNameFromEnum_t3BE9E81AEEBCED93E758200D4111889CF3B2DC7E ** get_address_of_GetEventTypeNameFromEnum_31() { return &___GetEventTypeNameFromEnum_31; }
+	inline void set_GetEventTypeNameFromEnum_31(_GetEventTypeNameFromEnum_t3BE9E81AEEBCED93E758200D4111889CF3B2DC7E * value)
+	{
+		___GetEventTypeNameFromEnum_31 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetEventTypeNameFromEnum_31), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetHiddenAreaMesh_32() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetHiddenAreaMesh_32)); }
+	inline _GetHiddenAreaMesh_t5B6377A7F1241F1DD338C70678B037A30DFAD861 * get_GetHiddenAreaMesh_32() const { return ___GetHiddenAreaMesh_32; }
+	inline _GetHiddenAreaMesh_t5B6377A7F1241F1DD338C70678B037A30DFAD861 ** get_address_of_GetHiddenAreaMesh_32() { return &___GetHiddenAreaMesh_32; }
+	inline void set_GetHiddenAreaMesh_32(_GetHiddenAreaMesh_t5B6377A7F1241F1DD338C70678B037A30DFAD861 * value)
+	{
+		___GetHiddenAreaMesh_32 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetHiddenAreaMesh_32), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetControllerState_33() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetControllerState_33)); }
+	inline _GetControllerState_t5374B3F47A1F23E6C363CC6BE74EEA8EE1AA77C0 * get_GetControllerState_33() const { return ___GetControllerState_33; }
+	inline _GetControllerState_t5374B3F47A1F23E6C363CC6BE74EEA8EE1AA77C0 ** get_address_of_GetControllerState_33() { return &___GetControllerState_33; }
+	inline void set_GetControllerState_33(_GetControllerState_t5374B3F47A1F23E6C363CC6BE74EEA8EE1AA77C0 * value)
+	{
+		___GetControllerState_33 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetControllerState_33), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetControllerStateWithPose_34() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetControllerStateWithPose_34)); }
+	inline _GetControllerStateWithPose_t098A600FCC0FA005ADC4CE8A90BD37D386F8F3B6 * get_GetControllerStateWithPose_34() const { return ___GetControllerStateWithPose_34; }
+	inline _GetControllerStateWithPose_t098A600FCC0FA005ADC4CE8A90BD37D386F8F3B6 ** get_address_of_GetControllerStateWithPose_34() { return &___GetControllerStateWithPose_34; }
+	inline void set_GetControllerStateWithPose_34(_GetControllerStateWithPose_t098A600FCC0FA005ADC4CE8A90BD37D386F8F3B6 * value)
+	{
+		___GetControllerStateWithPose_34 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetControllerStateWithPose_34), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_TriggerHapticPulse_35() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___TriggerHapticPulse_35)); }
+	inline _TriggerHapticPulse_tB89A00BCA1E57CD019E0A8868C32EF7E5C271B52 * get_TriggerHapticPulse_35() const { return ___TriggerHapticPulse_35; }
+	inline _TriggerHapticPulse_tB89A00BCA1E57CD019E0A8868C32EF7E5C271B52 ** get_address_of_TriggerHapticPulse_35() { return &___TriggerHapticPulse_35; }
+	inline void set_TriggerHapticPulse_35(_TriggerHapticPulse_tB89A00BCA1E57CD019E0A8868C32EF7E5C271B52 * value)
+	{
+		___TriggerHapticPulse_35 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___TriggerHapticPulse_35), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetButtonIdNameFromEnum_36() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetButtonIdNameFromEnum_36)); }
+	inline _GetButtonIdNameFromEnum_t5C01154979EC6989BC57A2FEB4C7E8C60EEA098F * get_GetButtonIdNameFromEnum_36() const { return ___GetButtonIdNameFromEnum_36; }
+	inline _GetButtonIdNameFromEnum_t5C01154979EC6989BC57A2FEB4C7E8C60EEA098F ** get_address_of_GetButtonIdNameFromEnum_36() { return &___GetButtonIdNameFromEnum_36; }
+	inline void set_GetButtonIdNameFromEnum_36(_GetButtonIdNameFromEnum_t5C01154979EC6989BC57A2FEB4C7E8C60EEA098F * value)
+	{
+		___GetButtonIdNameFromEnum_36 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetButtonIdNameFromEnum_36), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetControllerAxisTypeNameFromEnum_37() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetControllerAxisTypeNameFromEnum_37)); }
+	inline _GetControllerAxisTypeNameFromEnum_t859320E3852DA4C7ED3DE13035EEF7BF0C06F56C * get_GetControllerAxisTypeNameFromEnum_37() const { return ___GetControllerAxisTypeNameFromEnum_37; }
+	inline _GetControllerAxisTypeNameFromEnum_t859320E3852DA4C7ED3DE13035EEF7BF0C06F56C ** get_address_of_GetControllerAxisTypeNameFromEnum_37() { return &___GetControllerAxisTypeNameFromEnum_37; }
+	inline void set_GetControllerAxisTypeNameFromEnum_37(_GetControllerAxisTypeNameFromEnum_t859320E3852DA4C7ED3DE13035EEF7BF0C06F56C * value)
+	{
+		___GetControllerAxisTypeNameFromEnum_37 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetControllerAxisTypeNameFromEnum_37), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_IsInputAvailable_38() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___IsInputAvailable_38)); }
+	inline _IsInputAvailable_t83CB75E728F5CB080F637304688AA8E57222CCCD * get_IsInputAvailable_38() const { return ___IsInputAvailable_38; }
+	inline _IsInputAvailable_t83CB75E728F5CB080F637304688AA8E57222CCCD ** get_address_of_IsInputAvailable_38() { return &___IsInputAvailable_38; }
+	inline void set_IsInputAvailable_38(_IsInputAvailable_t83CB75E728F5CB080F637304688AA8E57222CCCD * value)
+	{
+		___IsInputAvailable_38 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___IsInputAvailable_38), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_IsSteamVRDrawingControllers_39() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___IsSteamVRDrawingControllers_39)); }
+	inline _IsSteamVRDrawingControllers_t3321FAD389E87E62F6C706EF0B3DA51863552453 * get_IsSteamVRDrawingControllers_39() const { return ___IsSteamVRDrawingControllers_39; }
+	inline _IsSteamVRDrawingControllers_t3321FAD389E87E62F6C706EF0B3DA51863552453 ** get_address_of_IsSteamVRDrawingControllers_39() { return &___IsSteamVRDrawingControllers_39; }
+	inline void set_IsSteamVRDrawingControllers_39(_IsSteamVRDrawingControllers_t3321FAD389E87E62F6C706EF0B3DA51863552453 * value)
+	{
+		___IsSteamVRDrawingControllers_39 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___IsSteamVRDrawingControllers_39), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_ShouldApplicationPause_40() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___ShouldApplicationPause_40)); }
+	inline _ShouldApplicationPause_t81B174FD0D6E94F0A59237ACB1EB279ED38E65C0 * get_ShouldApplicationPause_40() const { return ___ShouldApplicationPause_40; }
+	inline _ShouldApplicationPause_t81B174FD0D6E94F0A59237ACB1EB279ED38E65C0 ** get_address_of_ShouldApplicationPause_40() { return &___ShouldApplicationPause_40; }
+	inline void set_ShouldApplicationPause_40(_ShouldApplicationPause_t81B174FD0D6E94F0A59237ACB1EB279ED38E65C0 * value)
+	{
+		___ShouldApplicationPause_40 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___ShouldApplicationPause_40), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_ShouldApplicationReduceRenderingWork_41() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___ShouldApplicationReduceRenderingWork_41)); }
+	inline _ShouldApplicationReduceRenderingWork_tE999E2AE619B6EA5C5D3D1F27D066E667338B029 * get_ShouldApplicationReduceRenderingWork_41() const { return ___ShouldApplicationReduceRenderingWork_41; }
+	inline _ShouldApplicationReduceRenderingWork_tE999E2AE619B6EA5C5D3D1F27D066E667338B029 ** get_address_of_ShouldApplicationReduceRenderingWork_41() { return &___ShouldApplicationReduceRenderingWork_41; }
+	inline void set_ShouldApplicationReduceRenderingWork_41(_ShouldApplicationReduceRenderingWork_tE999E2AE619B6EA5C5D3D1F27D066E667338B029 * value)
+	{
+		___ShouldApplicationReduceRenderingWork_41 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___ShouldApplicationReduceRenderingWork_41), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_PerformFirmwareUpdate_42() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___PerformFirmwareUpdate_42)); }
+	inline _PerformFirmwareUpdate_tE48B2BC4E4C414312E1450B625C5342A993FE358 * get_PerformFirmwareUpdate_42() const { return ___PerformFirmwareUpdate_42; }
+	inline _PerformFirmwareUpdate_tE48B2BC4E4C414312E1450B625C5342A993FE358 ** get_address_of_PerformFirmwareUpdate_42() { return &___PerformFirmwareUpdate_42; }
+	inline void set_PerformFirmwareUpdate_42(_PerformFirmwareUpdate_tE48B2BC4E4C414312E1450B625C5342A993FE358 * value)
+	{
+		___PerformFirmwareUpdate_42 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___PerformFirmwareUpdate_42), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_AcknowledgeQuit_Exiting_43() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___AcknowledgeQuit_Exiting_43)); }
+	inline _AcknowledgeQuit_Exiting_t7CA8BE614EBD0F2BCA93CD0C5408A2CCA2E4CBF7 * get_AcknowledgeQuit_Exiting_43() const { return ___AcknowledgeQuit_Exiting_43; }
+	inline _AcknowledgeQuit_Exiting_t7CA8BE614EBD0F2BCA93CD0C5408A2CCA2E4CBF7 ** get_address_of_AcknowledgeQuit_Exiting_43() { return &___AcknowledgeQuit_Exiting_43; }
+	inline void set_AcknowledgeQuit_Exiting_43(_AcknowledgeQuit_Exiting_t7CA8BE614EBD0F2BCA93CD0C5408A2CCA2E4CBF7 * value)
+	{
+		___AcknowledgeQuit_Exiting_43 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___AcknowledgeQuit_Exiting_43), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetAppContainerFilePaths_44() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetAppContainerFilePaths_44)); }
+	inline _GetAppContainerFilePaths_tB65F788ECB67D004E546E0591490B05FD19CBAB9 * get_GetAppContainerFilePaths_44() const { return ___GetAppContainerFilePaths_44; }
+	inline _GetAppContainerFilePaths_tB65F788ECB67D004E546E0591490B05FD19CBAB9 ** get_address_of_GetAppContainerFilePaths_44() { return &___GetAppContainerFilePaths_44; }
+	inline void set_GetAppContainerFilePaths_44(_GetAppContainerFilePaths_tB65F788ECB67D004E546E0591490B05FD19CBAB9 * value)
+	{
+		___GetAppContainerFilePaths_44 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetAppContainerFilePaths_44), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_GetRuntimeVersion_45() { return static_cast<int32_t>(offsetof(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794, ___GetRuntimeVersion_45)); }
+	inline _GetRuntimeVersion_tB06601CFD929892DD241CD7F5B84501B34B235FE * get_GetRuntimeVersion_45() const { return ___GetRuntimeVersion_45; }
+	inline _GetRuntimeVersion_tB06601CFD929892DD241CD7F5B84501B34B235FE ** get_address_of_GetRuntimeVersion_45() { return &___GetRuntimeVersion_45; }
+	inline void set_GetRuntimeVersion_45(_GetRuntimeVersion_tB06601CFD929892DD241CD7F5B84501B34B235FE * value)
+	{
+		___GetRuntimeVersion_45 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GetRuntimeVersion_45), (void*)value);
+	}
+};
+
+// Native definition for P/Invoke marshalling of Valve.VR.IVRSystem
+struct IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794_marshaled_pinvoke
+{
+	Il2CppMethodPointer ___GetRecommendedRenderTargetSize_0;
+	Il2CppMethodPointer ___GetProjectionMatrix_1;
+	Il2CppMethodPointer ___GetProjectionRaw_2;
+	Il2CppMethodPointer ___ComputeDistortion_3;
+	Il2CppMethodPointer ___GetEyeToHeadTransform_4;
+	Il2CppMethodPointer ___GetTimeSinceLastVsync_5;
+	Il2CppMethodPointer ___GetD3D9AdapterIndex_6;
+	Il2CppMethodPointer ___GetDXGIOutputInfo_7;
+	Il2CppMethodPointer ___GetOutputDevice_8;
+	Il2CppMethodPointer ___IsDisplayOnDesktop_9;
+	Il2CppMethodPointer ___SetDisplayVisibility_10;
+	Il2CppMethodPointer ___GetDeviceToAbsoluteTrackingPose_11;
+	Il2CppMethodPointer ___GetSeatedZeroPoseToStandingAbsoluteTrackingPose_12;
+	Il2CppMethodPointer ___GetRawZeroPoseToStandingAbsoluteTrackingPose_13;
+	Il2CppMethodPointer ___GetSortedTrackedDeviceIndicesOfClass_14;
+	Il2CppMethodPointer ___GetTrackedDeviceActivityLevel_15;
+	Il2CppMethodPointer ___ApplyTransform_16;
+	Il2CppMethodPointer ___GetTrackedDeviceIndexForControllerRole_17;
+	Il2CppMethodPointer ___GetControllerRoleForTrackedDeviceIndex_18;
+	Il2CppMethodPointer ___GetTrackedDeviceClass_19;
+	Il2CppMethodPointer ___IsTrackedDeviceConnected_20;
+	Il2CppMethodPointer ___GetBoolTrackedDeviceProperty_21;
+	Il2CppMethodPointer ___GetFloatTrackedDeviceProperty_22;
+	Il2CppMethodPointer ___GetInt32TrackedDeviceProperty_23;
+	Il2CppMethodPointer ___GetUint64TrackedDeviceProperty_24;
+	Il2CppMethodPointer ___GetMatrix34TrackedDeviceProperty_25;
+	Il2CppMethodPointer ___GetArrayTrackedDeviceProperty_26;
+	Il2CppMethodPointer ___GetStringTrackedDeviceProperty_27;
+	Il2CppMethodPointer ___GetPropErrorNameFromEnum_28;
+	Il2CppMethodPointer ___PollNextEvent_29;
+	Il2CppMethodPointer ___PollNextEventWithPose_30;
+	Il2CppMethodPointer ___GetEventTypeNameFromEnum_31;
+	Il2CppMethodPointer ___GetHiddenAreaMesh_32;
+	Il2CppMethodPointer ___GetControllerState_33;
+	Il2CppMethodPointer ___GetControllerStateWithPose_34;
+	Il2CppMethodPointer ___TriggerHapticPulse_35;
+	Il2CppMethodPointer ___GetButtonIdNameFromEnum_36;
+	Il2CppMethodPointer ___GetControllerAxisTypeNameFromEnum_37;
+	Il2CppMethodPointer ___IsInputAvailable_38;
+	Il2CppMethodPointer ___IsSteamVRDrawingControllers_39;
+	Il2CppMethodPointer ___ShouldApplicationPause_40;
+	Il2CppMethodPointer ___ShouldApplicationReduceRenderingWork_41;
+	Il2CppMethodPointer ___PerformFirmwareUpdate_42;
+	Il2CppMethodPointer ___AcknowledgeQuit_Exiting_43;
+	Il2CppMethodPointer ___GetAppContainerFilePaths_44;
+	Il2CppMethodPointer ___GetRuntimeVersion_45;
+};
+// Native definition for COM marshalling of Valve.VR.IVRSystem
+struct IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794_marshaled_com
+{
+	Il2CppMethodPointer ___GetRecommendedRenderTargetSize_0;
+	Il2CppMethodPointer ___GetProjectionMatrix_1;
+	Il2CppMethodPointer ___GetProjectionRaw_2;
+	Il2CppMethodPointer ___ComputeDistortion_3;
+	Il2CppMethodPointer ___GetEyeToHeadTransform_4;
+	Il2CppMethodPointer ___GetTimeSinceLastVsync_5;
+	Il2CppMethodPointer ___GetD3D9AdapterIndex_6;
+	Il2CppMethodPointer ___GetDXGIOutputInfo_7;
+	Il2CppMethodPointer ___GetOutputDevice_8;
+	Il2CppMethodPointer ___IsDisplayOnDesktop_9;
+	Il2CppMethodPointer ___SetDisplayVisibility_10;
+	Il2CppMethodPointer ___GetDeviceToAbsoluteTrackingPose_11;
+	Il2CppMethodPointer ___GetSeatedZeroPoseToStandingAbsoluteTrackingPose_12;
+	Il2CppMethodPointer ___GetRawZeroPoseToStandingAbsoluteTrackingPose_13;
+	Il2CppMethodPointer ___GetSortedTrackedDeviceIndicesOfClass_14;
+	Il2CppMethodPointer ___GetTrackedDeviceActivityLevel_15;
+	Il2CppMethodPointer ___ApplyTransform_16;
+	Il2CppMethodPointer ___GetTrackedDeviceIndexForControllerRole_17;
+	Il2CppMethodPointer ___GetControllerRoleForTrackedDeviceIndex_18;
+	Il2CppMethodPointer ___GetTrackedDeviceClass_19;
+	Il2CppMethodPointer ___IsTrackedDeviceConnected_20;
+	Il2CppMethodPointer ___GetBoolTrackedDeviceProperty_21;
+	Il2CppMethodPointer ___GetFloatTrackedDeviceProperty_22;
+	Il2CppMethodPointer ___GetInt32TrackedDeviceProperty_23;
+	Il2CppMethodPointer ___GetUint64TrackedDeviceProperty_24;
+	Il2CppMethodPointer ___GetMatrix34TrackedDeviceProperty_25;
+	Il2CppMethodPointer ___GetArrayTrackedDeviceProperty_26;
+	Il2CppMethodPointer ___GetStringTrackedDeviceProperty_27;
+	Il2CppMethodPointer ___GetPropErrorNameFromEnum_28;
+	Il2CppMethodPointer ___PollNextEvent_29;
+	Il2CppMethodPointer ___PollNextEventWithPose_30;
+	Il2CppMethodPointer ___GetEventTypeNameFromEnum_31;
+	Il2CppMethodPointer ___GetHiddenAreaMesh_32;
+	Il2CppMethodPointer ___GetControllerState_33;
+	Il2CppMethodPointer ___GetControllerStateWithPose_34;
+	Il2CppMethodPointer ___TriggerHapticPulse_35;
+	Il2CppMethodPointer ___GetButtonIdNameFromEnum_36;
+	Il2CppMethodPointer ___GetControllerAxisTypeNameFromEnum_37;
+	Il2CppMethodPointer ___IsInputAvailable_38;
+	Il2CppMethodPointer ___IsSteamVRDrawingControllers_39;
+	Il2CppMethodPointer ___ShouldApplicationPause_40;
+	Il2CppMethodPointer ___ShouldApplicationReduceRenderingWork_41;
+	Il2CppMethodPointer ___PerformFirmwareUpdate_42;
+	Il2CppMethodPointer ___AcknowledgeQuit_Exiting_43;
+	Il2CppMethodPointer ___GetAppContainerFilePaths_44;
+	Il2CppMethodPointer ___GetRuntimeVersion_45;
+};
+
 // Valve.VR.IVRTrackedCamera
 struct  IVRTrackedCamera_tBFBE421D7D2BDDC5E3F819B8FD22E8D6CF3255C1 
 {
@@ -6751,6 +7586,24 @@ struct Exception_t_marshaled_com
 	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
+// System.PlatformID
+struct  PlatformID_t7969561D329B66D3E609C70CA506A519E06F2776 
+{
+public:
+	// System.Int32 System.PlatformID::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(PlatformID_t7969561D329B66D3E609C70CA506A519E06F2776, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
 // System.Reflection.BindingFlags
 struct  BindingFlags_tE35C91D046E63A1B92BB9AB909FCF9DA84379ED0 
 {
@@ -6997,6 +7850,188 @@ public:
 	inline void set_pchValue_1(intptr_t value)
 	{
 		___pchValue_1 = value;
+	}
+};
+
+
+// Valve.VR.CVRSpatialAnchors
+struct  CVRSpatialAnchors_t8AC8493CD007B0B9969C0A3905701E6D9F42F021  : public RuntimeObject
+{
+public:
+	// Valve.VR.IVRSpatialAnchors Valve.VR.CVRSpatialAnchors::FnTable
+	IVRSpatialAnchors_tBF0FCA0EBC3C47019CE4EB74C8A2E16DCE848758  ___FnTable_0;
+
+public:
+	inline static int32_t get_offset_of_FnTable_0() { return static_cast<int32_t>(offsetof(CVRSpatialAnchors_t8AC8493CD007B0B9969C0A3905701E6D9F42F021, ___FnTable_0)); }
+	inline IVRSpatialAnchors_tBF0FCA0EBC3C47019CE4EB74C8A2E16DCE848758  get_FnTable_0() const { return ___FnTable_0; }
+	inline IVRSpatialAnchors_tBF0FCA0EBC3C47019CE4EB74C8A2E16DCE848758 * get_address_of_FnTable_0() { return &___FnTable_0; }
+	inline void set_FnTable_0(IVRSpatialAnchors_tBF0FCA0EBC3C47019CE4EB74C8A2E16DCE848758  value)
+	{
+		___FnTable_0 = value;
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___CreateSpatialAnchorFromDescriptor_0), (void*)NULL);
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___CreateSpatialAnchorFromPose_1), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetSpatialAnchorPose_2), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetSpatialAnchorDescriptor_3), (void*)NULL);
+		#endif
+	}
+};
+
+
+// Valve.VR.CVRSystem
+struct  CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380  : public RuntimeObject
+{
+public:
+	// Valve.VR.IVRSystem Valve.VR.CVRSystem::FnTable
+	IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794  ___FnTable_0;
+
+public:
+	inline static int32_t get_offset_of_FnTable_0() { return static_cast<int32_t>(offsetof(CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380, ___FnTable_0)); }
+	inline IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794  get_FnTable_0() const { return ___FnTable_0; }
+	inline IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * get_address_of_FnTable_0() { return &___FnTable_0; }
+	inline void set_FnTable_0(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794  value)
+	{
+		___FnTable_0 = value;
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetRecommendedRenderTargetSize_0), (void*)NULL);
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetProjectionMatrix_1), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetProjectionRaw_2), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___ComputeDistortion_3), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetEyeToHeadTransform_4), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetTimeSinceLastVsync_5), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetD3D9AdapterIndex_6), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetDXGIOutputInfo_7), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetOutputDevice_8), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___IsDisplayOnDesktop_9), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___SetDisplayVisibility_10), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetDeviceToAbsoluteTrackingPose_11), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetSeatedZeroPoseToStandingAbsoluteTrackingPose_12), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetRawZeroPoseToStandingAbsoluteTrackingPose_13), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetSortedTrackedDeviceIndicesOfClass_14), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetTrackedDeviceActivityLevel_15), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___ApplyTransform_16), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetTrackedDeviceIndexForControllerRole_17), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetControllerRoleForTrackedDeviceIndex_18), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetTrackedDeviceClass_19), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___IsTrackedDeviceConnected_20), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetBoolTrackedDeviceProperty_21), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetFloatTrackedDeviceProperty_22), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetInt32TrackedDeviceProperty_23), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetUint64TrackedDeviceProperty_24), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetMatrix34TrackedDeviceProperty_25), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetArrayTrackedDeviceProperty_26), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetStringTrackedDeviceProperty_27), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetPropErrorNameFromEnum_28), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___PollNextEvent_29), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___PollNextEventWithPose_30), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetEventTypeNameFromEnum_31), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetHiddenAreaMesh_32), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetControllerState_33), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetControllerStateWithPose_34), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___TriggerHapticPulse_35), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetButtonIdNameFromEnum_36), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetControllerAxisTypeNameFromEnum_37), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___IsInputAvailable_38), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___IsSteamVRDrawingControllers_39), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___ShouldApplicationPause_40), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___ShouldApplicationReduceRenderingWork_41), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___PerformFirmwareUpdate_42), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___AcknowledgeQuit_Exiting_43), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetAppContainerFilePaths_44), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&___FnTable_0))->___GetRuntimeVersion_45), (void*)NULL);
+		#endif
 	}
 };
 
@@ -8621,6 +9656,24 @@ public:
 };
 
 
+// Valve.VR.SpatialAnchorPose_t
+struct  SpatialAnchorPose_t_t4C2FFB0A2A204C035D42B8E8434CA81983881234 
+{
+public:
+	// Valve.VR.HmdMatrix34_t Valve.VR.SpatialAnchorPose_t::mAnchorToAbsoluteTracking
+	HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  ___mAnchorToAbsoluteTracking_0;
+
+public:
+	inline static int32_t get_offset_of_mAnchorToAbsoluteTracking_0() { return static_cast<int32_t>(offsetof(SpatialAnchorPose_t_t4C2FFB0A2A204C035D42B8E8434CA81983881234, ___mAnchorToAbsoluteTracking_0)); }
+	inline HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  get_mAnchorToAbsoluteTracking_0() const { return ___mAnchorToAbsoluteTracking_0; }
+	inline HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669 * get_address_of_mAnchorToAbsoluteTracking_0() { return &___mAnchorToAbsoluteTracking_0; }
+	inline void set_mAnchorToAbsoluteTracking_0(HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  value)
+	{
+		___mAnchorToAbsoluteTracking_0 = value;
+	}
+};
+
+
 // Valve.VR.SteamVR_InitializedStates
 struct  InitializedStates_t2D84949EC0DFFB6C94ACBDA93736E7DEB8D4B9F9 
 {
@@ -8890,6 +9943,46 @@ struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
 {
 	Delegate_t_marshaled_com** ___delegates_11;
 };
+
+// System.OperatingSystem
+struct  OperatingSystem_tBB05846D5AA6960FFEB42C59E5FE359255C2BE83  : public RuntimeObject
+{
+public:
+	// System.PlatformID System.OperatingSystem::_platform
+	int32_t ____platform_0;
+	// System.Version System.OperatingSystem::_version
+	Version_tDBE6876C59B6F56D4F8CAA03851177ABC6FE0DFD * ____version_1;
+	// System.String System.OperatingSystem::_servicePack
+	String_t* ____servicePack_2;
+
+public:
+	inline static int32_t get_offset_of__platform_0() { return static_cast<int32_t>(offsetof(OperatingSystem_tBB05846D5AA6960FFEB42C59E5FE359255C2BE83, ____platform_0)); }
+	inline int32_t get__platform_0() const { return ____platform_0; }
+	inline int32_t* get_address_of__platform_0() { return &____platform_0; }
+	inline void set__platform_0(int32_t value)
+	{
+		____platform_0 = value;
+	}
+
+	inline static int32_t get_offset_of__version_1() { return static_cast<int32_t>(offsetof(OperatingSystem_tBB05846D5AA6960FFEB42C59E5FE359255C2BE83, ____version_1)); }
+	inline Version_tDBE6876C59B6F56D4F8CAA03851177ABC6FE0DFD * get__version_1() const { return ____version_1; }
+	inline Version_tDBE6876C59B6F56D4F8CAA03851177ABC6FE0DFD ** get_address_of__version_1() { return &____version_1; }
+	inline void set__version_1(Version_tDBE6876C59B6F56D4F8CAA03851177ABC6FE0DFD * value)
+	{
+		____version_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____version_1), (void*)value);
+	}
+
+	inline static int32_t get_offset_of__servicePack_2() { return static_cast<int32_t>(offsetof(OperatingSystem_tBB05846D5AA6960FFEB42C59E5FE359255C2BE83, ____servicePack_2)); }
+	inline String_t* get__servicePack_2() const { return ____servicePack_2; }
+	inline String_t** get_address_of__servicePack_2() { return &____servicePack_2; }
+	inline void set__servicePack_2(String_t* value)
+	{
+		____servicePack_2 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____servicePack_2), (void*)value);
+	}
+};
+
 
 // System.SystemException
 struct  SystemException_t5380468142AA850BE4A341D7AF3EAB9C78746782  : public Exception_t
@@ -11052,6 +12145,123 @@ public:
 };
 
 
+// Valve.VR.IVRSpatialAnchors__CreateSpatialAnchorFromDescriptor
+struct  _CreateSpatialAnchorFromDescriptor_t2E66C0CBFD10B5373CACE12F8014611A21EF9CF6  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSpatialAnchors__CreateSpatialAnchorFromPose
+struct  _CreateSpatialAnchorFromPose_t5A3E72BE3A6C3F2D5369F3999966798A6BC1D206  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSpatialAnchors__GetSpatialAnchorDescriptor
+struct  _GetSpatialAnchorDescriptor_t1FB7B58451C5A5D46E31D351AD774C19CBF4A5D8  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSpatialAnchors__GetSpatialAnchorPose
+struct  _GetSpatialAnchorPose_t4B210A925511757F99AD4C1BEA761E83A19C34EF  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__AcknowledgeQuit_Exiting
+struct  _AcknowledgeQuit_Exiting_t7CA8BE614EBD0F2BCA93CD0C5408A2CCA2E4CBF7  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__ApplyTransform
+struct  _ApplyTransform_t1460CC6B57C623D10CFD75BD7313393F0FF1093A  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__ComputeDistortion
+struct  _ComputeDistortion_t719BD22B71759B13D28CDE23EDDC8350045BC32E  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetAppContainerFilePaths
+struct  _GetAppContainerFilePaths_tB65F788ECB67D004E546E0591490B05FD19CBAB9  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetArrayTrackedDeviceProperty
+struct  _GetArrayTrackedDeviceProperty_tADF405FD8E332618692476BDD849D03061C3E325  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetBoolTrackedDeviceProperty
+struct  _GetBoolTrackedDeviceProperty_tC55A46EA23EB82A5454F486EA911184FACC0FDD5  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetButtonIdNameFromEnum
+struct  _GetButtonIdNameFromEnum_t5C01154979EC6989BC57A2FEB4C7E8C60EEA098F  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetControllerAxisTypeNameFromEnum
+struct  _GetControllerAxisTypeNameFromEnum_t859320E3852DA4C7ED3DE13035EEF7BF0C06F56C  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetControllerRoleForTrackedDeviceIndex
+struct  _GetControllerRoleForTrackedDeviceIndex_tAEFD675C6BF7EF093C850DF6B298210AC65DBD80  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
 // Valve.VR.IVRSystem__GetControllerState
 struct  _GetControllerState_t5374B3F47A1F23E6C363CC6BE74EEA8EE1AA77C0  : public MulticastDelegate_t
 {
@@ -11063,6 +12273,303 @@ public:
 
 // Valve.VR.IVRSystem__GetControllerStateWithPose
 struct  _GetControllerStateWithPose_t098A600FCC0FA005ADC4CE8A90BD37D386F8F3B6  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetD3D9AdapterIndex
+struct  _GetD3D9AdapterIndex_t79F96C6F38A372CDE020184E338D10AD3E39B4C3  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetDXGIOutputInfo
+struct  _GetDXGIOutputInfo_t89F93974084C1442DC49C151ABB1BFB226624E43  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetDeviceToAbsoluteTrackingPose
+struct  _GetDeviceToAbsoluteTrackingPose_t77E758F4E0070CABF13C3555BFF30DAEFBD0FD58  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetEventTypeNameFromEnum
+struct  _GetEventTypeNameFromEnum_t3BE9E81AEEBCED93E758200D4111889CF3B2DC7E  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetEyeToHeadTransform
+struct  _GetEyeToHeadTransform_t4FDEF0F67D0B94B3EE9986E663B1B191DC6EB68E  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetFloatTrackedDeviceProperty
+struct  _GetFloatTrackedDeviceProperty_t48FEAB5031B7BC323FE10D82D91C8A329B9FE7E4  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetHiddenAreaMesh
+struct  _GetHiddenAreaMesh_t5B6377A7F1241F1DD338C70678B037A30DFAD861  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetInt32TrackedDeviceProperty
+struct  _GetInt32TrackedDeviceProperty_t7C4B75D1EE69B5522B8906131367CFBB3C1FFD47  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetMatrix34TrackedDeviceProperty
+struct  _GetMatrix34TrackedDeviceProperty_t1A97BE783D0E0DB9825D7573B8FC8CDCD0DB3F0C  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetOutputDevice
+struct  _GetOutputDevice_t6BF96BF9D2E6A3F92835255792C37619B829FDA3  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetProjectionMatrix
+struct  _GetProjectionMatrix_t2CF3AE1A256AEA542CFB4DEC53E725B76A23EEDB  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetProjectionRaw
+struct  _GetProjectionRaw_t5E30E5CA05AE78709F9785D48BB116C87AF7BCC9  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetPropErrorNameFromEnum
+struct  _GetPropErrorNameFromEnum_t842E8D3448564F3E5B410FF8C05CAEBE8DECF4EB  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetRawZeroPoseToStandingAbsoluteTrackingPose
+struct  _GetRawZeroPoseToStandingAbsoluteTrackingPose_t2C18EC000505B376DAD6E5BE63CAC4060B8C61D9  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetRecommendedRenderTargetSize
+struct  _GetRecommendedRenderTargetSize_tDF279E3E06C367158BDF68B7D2FA80B319DC206C  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetRuntimeVersion
+struct  _GetRuntimeVersion_tB06601CFD929892DD241CD7F5B84501B34B235FE  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetSeatedZeroPoseToStandingAbsoluteTrackingPose
+struct  _GetSeatedZeroPoseToStandingAbsoluteTrackingPose_t5AAFDB6578F55052724BDD65BBE5E12ADA7BE95D  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetSortedTrackedDeviceIndicesOfClass
+struct  _GetSortedTrackedDeviceIndicesOfClass_tB35BA9284660A003ED3813C85504C5A5C860E1B1  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetStringTrackedDeviceProperty
+struct  _GetStringTrackedDeviceProperty_tA012B3D010E504C65179E3BDADFF1D6C459FBF0B  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetTimeSinceLastVsync
+struct  _GetTimeSinceLastVsync_tDE7531951DB64E37FFDE61F85BEB667E797E1322  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetTrackedDeviceActivityLevel
+struct  _GetTrackedDeviceActivityLevel_tE2BCFC93FA210CE75BDA7321E88D375BBA350D48  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetTrackedDeviceClass
+struct  _GetTrackedDeviceClass_t17330133ED77B95EEB556E8140F4CDF15E25A771  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetTrackedDeviceIndexForControllerRole
+struct  _GetTrackedDeviceIndexForControllerRole_t7E5E4E2D668C9C7C2E51C687E4D1DE241C243A30  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__GetUint64TrackedDeviceProperty
+struct  _GetUint64TrackedDeviceProperty_tB3590D7FDFA05A6ABEB31DC8672F5BCFDD416AEC  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__IsDisplayOnDesktop
+struct  _IsDisplayOnDesktop_t69820AEAD1C17A5F9A9E4B4A9AE0B8D8A393E96C  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__IsInputAvailable
+struct  _IsInputAvailable_t83CB75E728F5CB080F637304688AA8E57222CCCD  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__IsSteamVRDrawingControllers
+struct  _IsSteamVRDrawingControllers_t3321FAD389E87E62F6C706EF0B3DA51863552453  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__IsTrackedDeviceConnected
+struct  _IsTrackedDeviceConnected_tEF53EC2DE9F52B433A8A1ED0EDC01D7EEEB532F4  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__PerformFirmwareUpdate
+struct  _PerformFirmwareUpdate_tE48B2BC4E4C414312E1450B625C5342A993FE358  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__SetDisplayVisibility
+struct  _SetDisplayVisibility_t185E797B0E0E6AE787694675A7AE498112816ACC  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__ShouldApplicationPause
+struct  _ShouldApplicationPause_t81B174FD0D6E94F0A59237ACB1EB279ED38E65C0  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__ShouldApplicationReduceRenderingWork
+struct  _ShouldApplicationReduceRenderingWork_tE999E2AE619B6EA5C5D3D1F27D066E667338B029  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// Valve.VR.IVRSystem__TriggerHapticPulse
+struct  _TriggerHapticPulse_tB89A00BCA1E57CD019E0A8868C32EF7E5C271B52  : public MulticastDelegate_t
 {
 public:
 
@@ -12380,6 +13887,15 @@ public:
 };
 
 
+// Valve.VR.IVRSystem__PollNextEventWithPose
+struct  _PollNextEventWithPose_t4A2212063C519B0F5E90C7E0BE77480B12431F23  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
 // Valve.VR.SteamVR_Behaviour_Pose
 struct  SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
 {
@@ -12623,6 +14139,76 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+// Valve.VR.TrackedDevicePose_t[]
+struct TrackedDevicePose_tU5BU5D_tF02F8D07A99963B656F6262B11E24ECF9747D196  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365  m_Items[1];
+
+public:
+	inline TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365  GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 * GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365  value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365  GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 * GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.UInt32[]
+struct UInt32U5BU5D_t9AA834AF2940E75BBF8E3F08FF0D20D266DB71CB  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) uint32_t m_Items[1];
+
+public:
+	inline uint32_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline uint32_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, uint32_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline uint32_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline uint32_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, uint32_t value)
+	{
+		m_Items[index] = value;
+	}
+};
 // System.Delegate[]
 struct DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86  : public RuntimeArray
 {
@@ -12874,41 +14460,6 @@ public:
 		m_Items[index] = value;
 	}
 };
-// Valve.VR.TrackedDevicePose_t[]
-struct TrackedDevicePose_tU5BU5D_tF02F8D07A99963B656F6262B11E24ECF9747D196  : public RuntimeArray
-{
-public:
-	ALIGN_FIELD (8) TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365  m_Items[1];
-
-public:
-	inline TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365  GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 * GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365  value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-	}
-	inline TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365  GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 * GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365  value)
-	{
-		m_Items[index] = value;
-	}
-};
 
 
 // !!0 UnityEngine.Object::Instantiate<System.Object>(!!0)
@@ -12930,10 +14481,132 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_m925ECA5E85CA100E3FB86A4F9E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t * Type_GetTypeFromHandle_m9DC58ADF0512987012A8A016FB64B068F3B1AFF6 (RuntimeTypeHandle_t7B542280A22F0EC4EAC2061C29178845847A8B2D  ___handle0, const RuntimeMethod* method);
 // System.Object System.Runtime.InteropServices.Marshal::PtrToStructure(System.IntPtr,System.Type)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * Marshal_PtrToStructure_mE1821119EAFE83614B6A16D3F14996713502DF43 (intptr_t ___ptr0, Type_t * ___structureType1, const RuntimeMethod* method);
-// System.IntPtr Valve.VR.IVRTrackedCamera/_GetCameraErrorNameFromEnum::Invoke(Valve.VR.EVRTrackedCameraError)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t _GetCameraErrorNameFromEnum_Invoke_mA4C36B061E5CDDCCF3083943178096FEFA91B554 (_GetCameraErrorNameFromEnum_t4B1D0C0AEFAAAE003FA6D12DA25D731BF569AF70 * __this, int32_t ___eCameraError0, const RuntimeMethod* method);
+// System.IntPtr Valve.VR.Utils::ToUtf8(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Utils_ToUtf8_m5EF3057183247A7DA315C3157C711C8330E1238A (String_t* ___managedString0, const RuntimeMethod* method);
+// Valve.VR.EVRSpatialAnchorError Valve.VR.IVRSpatialAnchors/_CreateSpatialAnchorFromDescriptor::Invoke(System.IntPtr,System.UInt32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t _CreateSpatialAnchorFromDescriptor_Invoke_mF21015EDCD2DECF1F03A4B36B1C86EB27C2BB735 (_CreateSpatialAnchorFromDescriptor_t2E66C0CBFD10B5373CACE12F8014611A21EF9CF6 * __this, intptr_t ___pchDescriptor0, uint32_t* ___pHandleOut1, const RuntimeMethod* method);
+// System.Void System.Runtime.InteropServices.Marshal::FreeHGlobal(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Marshal_FreeHGlobal_mF098DF00F5341FDE4747A6F2004D5A0C9B03ED85 (intptr_t ___hglobal0, const RuntimeMethod* method);
+// Valve.VR.EVRSpatialAnchorError Valve.VR.IVRSpatialAnchors/_CreateSpatialAnchorFromPose::Invoke(System.UInt32,Valve.VR.ETrackingUniverseOrigin,Valve.VR.SpatialAnchorPose_t&,System.UInt32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t _CreateSpatialAnchorFromPose_Invoke_mA15D0B40155A6CE671698AA97604021EF3BBD918 (_CreateSpatialAnchorFromPose_t5A3E72BE3A6C3F2D5369F3999966798A6BC1D206 * __this, uint32_t ___unDeviceIndex0, int32_t ___eOrigin1, SpatialAnchorPose_t_t4C2FFB0A2A204C035D42B8E8434CA81983881234 * ___pPose2, uint32_t* ___pHandleOut3, const RuntimeMethod* method);
+// Valve.VR.EVRSpatialAnchorError Valve.VR.IVRSpatialAnchors/_GetSpatialAnchorPose::Invoke(System.UInt32,Valve.VR.ETrackingUniverseOrigin,Valve.VR.SpatialAnchorPose_t&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t _GetSpatialAnchorPose_Invoke_m22B1D4BFFC73C8C24489E611E43DA01DC0B5C2FF (_GetSpatialAnchorPose_t4B210A925511757F99AD4C1BEA761E83A19C34EF * __this, uint32_t ___unHandle0, int32_t ___eOrigin1, SpatialAnchorPose_t_t4C2FFB0A2A204C035D42B8E8434CA81983881234 * ___pPoseOut2, const RuntimeMethod* method);
+// Valve.VR.EVRSpatialAnchorError Valve.VR.IVRSpatialAnchors/_GetSpatialAnchorDescriptor::Invoke(System.UInt32,System.Text.StringBuilder,System.UInt32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t _GetSpatialAnchorDescriptor_Invoke_m7611CFA20FE225F0FD372A20044CD8BCC47BBF0D (_GetSpatialAnchorDescriptor_t1FB7B58451C5A5D46E31D351AD774C19CBF4A5D8 * __this, uint32_t ___unHandle0, StringBuilder_t * ___pchDescriptorOut1, uint32_t* ___punDescriptorBufferLenInOut2, const RuntimeMethod* method);
+// System.Void Valve.VR.IVRSystem/_GetRecommendedRenderTargetSize::Invoke(System.UInt32&,System.UInt32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _GetRecommendedRenderTargetSize_Invoke_m387255C094BFCE25326E54B3FD42E19A0F7B7706 (_GetRecommendedRenderTargetSize_tDF279E3E06C367158BDF68B7D2FA80B319DC206C * __this, uint32_t* ___pnWidth0, uint32_t* ___pnHeight1, const RuntimeMethod* method);
+// Valve.VR.HmdMatrix44_t Valve.VR.IVRSystem/_GetProjectionMatrix::Invoke(Valve.VR.EVREye,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HmdMatrix44_t_t95875BB353C776A6F1DC2AEDFDEA9EA55F75B206  _GetProjectionMatrix_Invoke_mABD2B6D1EE2E4EF3DDD60F244EAF1055136881FA (_GetProjectionMatrix_t2CF3AE1A256AEA542CFB4DEC53E725B76A23EEDB * __this, int32_t ___eEye0, float ___fNearZ1, float ___fFarZ2, const RuntimeMethod* method);
+// System.Void Valve.VR.IVRSystem/_GetProjectionRaw::Invoke(Valve.VR.EVREye,System.Single&,System.Single&,System.Single&,System.Single&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _GetProjectionRaw_Invoke_mA8E5B5067D25B838880716BC7D6547ACB3743574 (_GetProjectionRaw_t5E30E5CA05AE78709F9785D48BB116C87AF7BCC9 * __this, int32_t ___eEye0, float* ___pfLeft1, float* ___pfRight2, float* ___pfTop3, float* ___pfBottom4, const RuntimeMethod* method);
+// System.Boolean Valve.VR.IVRSystem/_ComputeDistortion::Invoke(Valve.VR.EVREye,System.Single,System.Single,Valve.VR.DistortionCoordinates_t&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _ComputeDistortion_Invoke_mE256667068A6F4739012CC58092E50227BE9BB5D (_ComputeDistortion_t719BD22B71759B13D28CDE23EDDC8350045BC32E * __this, int32_t ___eEye0, float ___fU1, float ___fV2, DistortionCoordinates_t_t66595BAF611995AF71C39D390C2B882740C83EC3 * ___pDistortionCoordinates3, const RuntimeMethod* method);
+// Valve.VR.HmdMatrix34_t Valve.VR.IVRSystem/_GetEyeToHeadTransform::Invoke(Valve.VR.EVREye)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  _GetEyeToHeadTransform_Invoke_mD25D36269AC0358AC2DB00AD1A0033A601C0F8B1 (_GetEyeToHeadTransform_t4FDEF0F67D0B94B3EE9986E663B1B191DC6EB68E * __this, int32_t ___eEye0, const RuntimeMethod* method);
+// System.Boolean Valve.VR.IVRSystem/_GetTimeSinceLastVsync::Invoke(System.Single&,System.UInt64&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _GetTimeSinceLastVsync_Invoke_m980BA6BAF55E676A88E1643018A5560661157BD2 (_GetTimeSinceLastVsync_tDE7531951DB64E37FFDE61F85BEB667E797E1322 * __this, float* ___pfSecondsSinceLastVsync0, uint64_t* ___pulFrameCounter1, const RuntimeMethod* method);
+// System.Int32 Valve.VR.IVRSystem/_GetD3D9AdapterIndex::Invoke()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t _GetD3D9AdapterIndex_Invoke_m2ACE38009FF0CCFFA7CE4261016F651DBF377CD1 (_GetD3D9AdapterIndex_t79F96C6F38A372CDE020184E338D10AD3E39B4C3 * __this, const RuntimeMethod* method);
+// System.Void Valve.VR.IVRSystem/_GetDXGIOutputInfo::Invoke(System.Int32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _GetDXGIOutputInfo_Invoke_m89180A438FB7EA1E003E50974A174CB8A037AE21 (_GetDXGIOutputInfo_t89F93974084C1442DC49C151ABB1BFB226624E43 * __this, int32_t* ___pnAdapterIndex0, const RuntimeMethod* method);
+// System.Void Valve.VR.IVRSystem/_GetOutputDevice::Invoke(System.UInt64&,Valve.VR.ETextureType,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _GetOutputDevice_Invoke_mA0022A52E2ACBAAD20728378A92E2ECE36D68F47 (_GetOutputDevice_t6BF96BF9D2E6A3F92835255792C37619B829FDA3 * __this, uint64_t* ___pnDevice0, int32_t ___textureType1, intptr_t ___pInstance2, const RuntimeMethod* method);
+// System.Boolean Valve.VR.IVRSystem/_IsDisplayOnDesktop::Invoke()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _IsDisplayOnDesktop_Invoke_m10D225F5B04C9CAAFC76FD8666C4FAF6A09D6101 (_IsDisplayOnDesktop_t69820AEAD1C17A5F9A9E4B4A9AE0B8D8A393E96C * __this, const RuntimeMethod* method);
+// System.Boolean Valve.VR.IVRSystem/_SetDisplayVisibility::Invoke(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _SetDisplayVisibility_Invoke_m39BD5596A8CF8947493196483F7948FA401E73B2 (_SetDisplayVisibility_t185E797B0E0E6AE787694675A7AE498112816ACC * __this, bool ___bIsVisibleOnDesktop0, const RuntimeMethod* method);
+// System.Void Valve.VR.IVRSystem/_GetDeviceToAbsoluteTrackingPose::Invoke(Valve.VR.ETrackingUniverseOrigin,System.Single,Valve.VR.TrackedDevicePose_t[],System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _GetDeviceToAbsoluteTrackingPose_Invoke_m418D9C1BF6B02392F9645E2FE81F3357B0ED8D27 (_GetDeviceToAbsoluteTrackingPose_t77E758F4E0070CABF13C3555BFF30DAEFBD0FD58 * __this, int32_t ___eOrigin0, float ___fPredictedSecondsToPhotonsFromNow1, TrackedDevicePose_tU5BU5D_tF02F8D07A99963B656F6262B11E24ECF9747D196* ___pTrackedDevicePoseArray2, uint32_t ___unTrackedDevicePoseArrayCount3, const RuntimeMethod* method);
+// Valve.VR.HmdMatrix34_t Valve.VR.IVRSystem/_GetSeatedZeroPoseToStandingAbsoluteTrackingPose::Invoke()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  _GetSeatedZeroPoseToStandingAbsoluteTrackingPose_Invoke_m98524DDE804869822619AEE7684A51CDC3A1CF4C (_GetSeatedZeroPoseToStandingAbsoluteTrackingPose_t5AAFDB6578F55052724BDD65BBE5E12ADA7BE95D * __this, const RuntimeMethod* method);
+// Valve.VR.HmdMatrix34_t Valve.VR.IVRSystem/_GetRawZeroPoseToStandingAbsoluteTrackingPose::Invoke()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  _GetRawZeroPoseToStandingAbsoluteTrackingPose_Invoke_mF1DC99975E0A972F5CAB563B4DE5001147F2714A (_GetRawZeroPoseToStandingAbsoluteTrackingPose_t2C18EC000505B376DAD6E5BE63CAC4060B8C61D9 * __this, const RuntimeMethod* method);
+// System.UInt32 Valve.VR.IVRSystem/_GetSortedTrackedDeviceIndicesOfClass::Invoke(Valve.VR.ETrackedDeviceClass,System.UInt32[],System.UInt32,System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t _GetSortedTrackedDeviceIndicesOfClass_Invoke_m903B1591AB4F7557C05DB1D349ED6B304E977FBF (_GetSortedTrackedDeviceIndicesOfClass_tB35BA9284660A003ED3813C85504C5A5C860E1B1 * __this, int32_t ___eTrackedDeviceClass0, UInt32U5BU5D_t9AA834AF2940E75BBF8E3F08FF0D20D266DB71CB* ___punTrackedDeviceIndexArray1, uint32_t ___unTrackedDeviceIndexArrayCount2, uint32_t ___unRelativeToTrackedDeviceIndex3, const RuntimeMethod* method);
+// Valve.VR.EDeviceActivityLevel Valve.VR.IVRSystem/_GetTrackedDeviceActivityLevel::Invoke(System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t _GetTrackedDeviceActivityLevel_Invoke_mC68A00244CF1E0FA43CB9CB01772767788CA667F (_GetTrackedDeviceActivityLevel_tE2BCFC93FA210CE75BDA7321E88D375BBA350D48 * __this, uint32_t ___unDeviceId0, const RuntimeMethod* method);
+// System.Void Valve.VR.IVRSystem/_ApplyTransform::Invoke(Valve.VR.TrackedDevicePose_t&,Valve.VR.TrackedDevicePose_t&,Valve.VR.HmdMatrix34_t&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _ApplyTransform_Invoke_m8C552B13ED6BFFAC1EF266D3D2BD2C24DC34E6C9 (_ApplyTransform_t1460CC6B57C623D10CFD75BD7313393F0FF1093A * __this, TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 * ___pOutputPose0, TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 * ___pTrackedDevicePose1, HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669 * ___pTransform2, const RuntimeMethod* method);
+// System.UInt32 Valve.VR.IVRSystem/_GetTrackedDeviceIndexForControllerRole::Invoke(Valve.VR.ETrackedControllerRole)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t _GetTrackedDeviceIndexForControllerRole_Invoke_m838CB3EB4753A949E164849B8CB8EF3D97F7CE87 (_GetTrackedDeviceIndexForControllerRole_t7E5E4E2D668C9C7C2E51C687E4D1DE241C243A30 * __this, int32_t ___unDeviceType0, const RuntimeMethod* method);
+// Valve.VR.ETrackedControllerRole Valve.VR.IVRSystem/_GetControllerRoleForTrackedDeviceIndex::Invoke(System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t _GetControllerRoleForTrackedDeviceIndex_Invoke_m8F5851D1EFB6E4FF8B999D38050D379BC8CA50FD (_GetControllerRoleForTrackedDeviceIndex_tAEFD675C6BF7EF093C850DF6B298210AC65DBD80 * __this, uint32_t ___unDeviceIndex0, const RuntimeMethod* method);
+// Valve.VR.ETrackedDeviceClass Valve.VR.IVRSystem/_GetTrackedDeviceClass::Invoke(System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t _GetTrackedDeviceClass_Invoke_m76D9AFC4E465826DFCF98E67F89915B86EB76620 (_GetTrackedDeviceClass_t17330133ED77B95EEB556E8140F4CDF15E25A771 * __this, uint32_t ___unDeviceIndex0, const RuntimeMethod* method);
+// System.Boolean Valve.VR.IVRSystem/_IsTrackedDeviceConnected::Invoke(System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _IsTrackedDeviceConnected_Invoke_m708D9AAC977DEB3CF8BE423F0FD9A638B682D9A9 (_IsTrackedDeviceConnected_tEF53EC2DE9F52B433A8A1ED0EDC01D7EEEB532F4 * __this, uint32_t ___unDeviceIndex0, const RuntimeMethod* method);
+// System.Boolean Valve.VR.IVRSystem/_GetBoolTrackedDeviceProperty::Invoke(System.UInt32,Valve.VR.ETrackedDeviceProperty,Valve.VR.ETrackedPropertyError&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _GetBoolTrackedDeviceProperty_Invoke_mA4BF9BA324D3C98629975ECD2EC5EA4D2E2273BC (_GetBoolTrackedDeviceProperty_tC55A46EA23EB82A5454F486EA911184FACC0FDD5 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, int32_t* ___pError2, const RuntimeMethod* method);
+// System.Single Valve.VR.IVRSystem/_GetFloatTrackedDeviceProperty::Invoke(System.UInt32,Valve.VR.ETrackedDeviceProperty,Valve.VR.ETrackedPropertyError&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float _GetFloatTrackedDeviceProperty_Invoke_m9BF957F2A09035F60F312A7EBC4D615631D5C3C7 (_GetFloatTrackedDeviceProperty_t48FEAB5031B7BC323FE10D82D91C8A329B9FE7E4 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, int32_t* ___pError2, const RuntimeMethod* method);
+// System.Int32 Valve.VR.IVRSystem/_GetInt32TrackedDeviceProperty::Invoke(System.UInt32,Valve.VR.ETrackedDeviceProperty,Valve.VR.ETrackedPropertyError&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t _GetInt32TrackedDeviceProperty_Invoke_m2AA407CEBAE294A9885014C56F9D6E0470288AEB (_GetInt32TrackedDeviceProperty_t7C4B75D1EE69B5522B8906131367CFBB3C1FFD47 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, int32_t* ___pError2, const RuntimeMethod* method);
+// System.UInt64 Valve.VR.IVRSystem/_GetUint64TrackedDeviceProperty::Invoke(System.UInt32,Valve.VR.ETrackedDeviceProperty,Valve.VR.ETrackedPropertyError&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t _GetUint64TrackedDeviceProperty_Invoke_mED91034AFC7E86C3B3FC5DE8C256F5686F040CBE (_GetUint64TrackedDeviceProperty_tB3590D7FDFA05A6ABEB31DC8672F5BCFDD416AEC * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, int32_t* ___pError2, const RuntimeMethod* method);
+// Valve.VR.HmdMatrix34_t Valve.VR.IVRSystem/_GetMatrix34TrackedDeviceProperty::Invoke(System.UInt32,Valve.VR.ETrackedDeviceProperty,Valve.VR.ETrackedPropertyError&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  _GetMatrix34TrackedDeviceProperty_Invoke_mF587D6584894339B54B06A971312D292A0F332C5 (_GetMatrix34TrackedDeviceProperty_t1A97BE783D0E0DB9825D7573B8FC8CDCD0DB3F0C * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, int32_t* ___pError2, const RuntimeMethod* method);
+// System.UInt32 Valve.VR.IVRSystem/_GetArrayTrackedDeviceProperty::Invoke(System.UInt32,Valve.VR.ETrackedDeviceProperty,System.UInt32,System.IntPtr,System.UInt32,Valve.VR.ETrackedPropertyError&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t _GetArrayTrackedDeviceProperty_Invoke_m0F372BA0E4BA4061A432482A1DD412347217FA87 (_GetArrayTrackedDeviceProperty_tADF405FD8E332618692476BDD849D03061C3E325 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, uint32_t ___propType2, intptr_t ___pBuffer3, uint32_t ___unBufferSize4, int32_t* ___pError5, const RuntimeMethod* method);
+// System.UInt32 Valve.VR.IVRSystem/_GetStringTrackedDeviceProperty::Invoke(System.UInt32,Valve.VR.ETrackedDeviceProperty,System.Text.StringBuilder,System.UInt32,Valve.VR.ETrackedPropertyError&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t _GetStringTrackedDeviceProperty_Invoke_mB9161F20DE0DB2318247B0F3657079FE685FE88A (_GetStringTrackedDeviceProperty_tA012B3D010E504C65179E3BDADFF1D6C459FBF0B * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, StringBuilder_t * ___pchValue2, uint32_t ___unBufferSize3, int32_t* ___pError4, const RuntimeMethod* method);
+// System.IntPtr Valve.VR.IVRSystem/_GetPropErrorNameFromEnum::Invoke(Valve.VR.ETrackedPropertyError)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t _GetPropErrorNameFromEnum_Invoke_m9E594D0378B53BE5D98E6C7500AB7CD772BFB760 (_GetPropErrorNameFromEnum_t842E8D3448564F3E5B410FF8C05CAEBE8DECF4EB * __this, int32_t ___error0, const RuntimeMethod* method);
 // System.String System.Runtime.InteropServices.Marshal::PtrToStringAnsi(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Marshal_PtrToStringAnsi_mA5D5D1AA7C0EB6A96F92454A8AF9C266E2DF5DA5 (intptr_t ___ptr0, const RuntimeMethod* method);
+// System.OperatingSystem System.Environment::get_OSVersion()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OperatingSystem_tBB05846D5AA6960FFEB42C59E5FE359255C2BE83 * Environment_get_OSVersion_mD6E99E279170E00D17F7D29F242EF65434812233 (const RuntimeMethod* method);
+// System.PlatformID System.OperatingSystem::get_Platform()
+IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR int32_t OperatingSystem_get_Platform_m36635DD0A3D5442E515AB8D2EA3C7092348A5181_inline (OperatingSystem_tBB05846D5AA6960FFEB42C59E5FE359255C2BE83 * __this, const RuntimeMethod* method);
+// System.Int32 System.Runtime.InteropServices.Marshal::SizeOf(System.Type)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Marshal_SizeOf_m4F7DA827FA7A720395E6FDD2ABE78D4B00D43130 (Type_t * ___t0, const RuntimeMethod* method);
+// System.Boolean Valve.VR.CVRSystem/_PollNextEventPacked::Invoke(Valve.VR.VREvent_t_Packed&,System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _PollNextEventPacked_Invoke_m8BCFE66DC47669214EC7159261D859AA03C20BCE (_PollNextEventPacked_tDD83858026A3290DCD98B309C2785D88381438C7 * __this, VREvent_t_Packed_tA4998F133F28A9AFF4CDA75D8B5E2ACE02E1383F * ___pEvent0, uint32_t ___uncbVREvent1, const RuntimeMethod* method);
+// System.Void Valve.VR.VREvent_t_Packed::Unpack(Valve.VR.VREvent_t&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VREvent_t_Packed_Unpack_mD972E9D744950AB766CD5BA184A9FA2F68F182AA (VREvent_t_Packed_tA4998F133F28A9AFF4CDA75D8B5E2ACE02E1383F * __this, VREvent_t_t4F330058D4B87093309E1043D17F8A3DB1BA925C * ___unpacked0, const RuntimeMethod* method);
+// System.Boolean Valve.VR.IVRSystem/_PollNextEvent::Invoke(Valve.VR.VREvent_t&,System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _PollNextEvent_Invoke_mC16698CC5E32B7D3A5CC77ADA96D1D2E2C7B7C4C (_PollNextEvent_tB2378588E343F870ED18B667ACA1FFE83F933F14 * __this, VREvent_t_t4F330058D4B87093309E1043D17F8A3DB1BA925C * ___pEvent0, uint32_t ___uncbVREvent1, const RuntimeMethod* method);
+// System.Boolean Valve.VR.IVRSystem/_PollNextEventWithPose::Invoke(Valve.VR.ETrackingUniverseOrigin,Valve.VR.VREvent_t&,System.UInt32,Valve.VR.TrackedDevicePose_t&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _PollNextEventWithPose_Invoke_m32CB2E871D60B4F1104A4972099647B1387E6C3F (_PollNextEventWithPose_t4A2212063C519B0F5E90C7E0BE77480B12431F23 * __this, int32_t ___eOrigin0, VREvent_t_t4F330058D4B87093309E1043D17F8A3DB1BA925C * ___pEvent1, uint32_t ___uncbVREvent2, TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 * ___pTrackedDevicePose3, const RuntimeMethod* method);
+// System.IntPtr Valve.VR.IVRSystem/_GetEventTypeNameFromEnum::Invoke(Valve.VR.EVREventType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t _GetEventTypeNameFromEnum_Invoke_mB57A6C8394DF03E6AAB75783BE53760B91CC3AA4 (_GetEventTypeNameFromEnum_t3BE9E81AEEBCED93E758200D4111889CF3B2DC7E * __this, int32_t ___eType0, const RuntimeMethod* method);
+// Valve.VR.HiddenAreaMesh_t Valve.VR.IVRSystem/_GetHiddenAreaMesh::Invoke(Valve.VR.EVREye,Valve.VR.EHiddenAreaMeshType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HiddenAreaMesh_t_t64868D19F4AD9AB30F0073BD61A2034E2BD7E631  _GetHiddenAreaMesh_Invoke_m80090C2EEF385389E4BD78AE8696CF542B525102 (_GetHiddenAreaMesh_t5B6377A7F1241F1DD338C70678B037A30DFAD861 * __this, int32_t ___eEye0, int32_t ___type1, const RuntimeMethod* method);
+// System.Void Valve.VR.VRControllerState_t_Packed::.ctor(Valve.VR.VRControllerState_t)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRControllerState_t_Packed__ctor_m2B36C9FB66FAECC29A48561CE282665ECEE54F75 (VRControllerState_t_Packed_tEFACCF0282B2419CDAA858BC7D3DC83A8059CD9A * __this, VRControllerState_t_t7DA56F805D6286AD969A09E744E8C241976038F1  ___unpacked0, const RuntimeMethod* method);
+// System.Boolean Valve.VR.CVRSystem/_GetControllerStatePacked::Invoke(System.UInt32,Valve.VR.VRControllerState_t_Packed&,System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _GetControllerStatePacked_Invoke_m62A45BC544E2FAD1A09AEAB85AA04E398379AE7A (_GetControllerStatePacked_t5FDBEB6C6A0F63097F3F8615DC5B16F41B175D55 * __this, uint32_t ___unControllerDeviceIndex0, VRControllerState_t_Packed_tEFACCF0282B2419CDAA858BC7D3DC83A8059CD9A * ___pControllerState1, uint32_t ___unControllerStateSize2, const RuntimeMethod* method);
+// System.Void Valve.VR.VRControllerState_t_Packed::Unpack(Valve.VR.VRControllerState_t&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRControllerState_t_Packed_Unpack_m0E8B932F021503C13DB31A81E40D40A221D34422 (VRControllerState_t_Packed_tEFACCF0282B2419CDAA858BC7D3DC83A8059CD9A * __this, VRControllerState_t_t7DA56F805D6286AD969A09E744E8C241976038F1 * ___unpacked0, const RuntimeMethod* method);
+// System.Boolean Valve.VR.IVRSystem/_GetControllerState::Invoke(System.UInt32,Valve.VR.VRControllerState_t&,System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _GetControllerState_Invoke_m4A6CADA6433C38E5868301DD694E989E0E4E5C69 (_GetControllerState_t5374B3F47A1F23E6C363CC6BE74EEA8EE1AA77C0 * __this, uint32_t ___unControllerDeviceIndex0, VRControllerState_t_t7DA56F805D6286AD969A09E744E8C241976038F1 * ___pControllerState1, uint32_t ___unControllerStateSize2, const RuntimeMethod* method);
+// System.Boolean Valve.VR.CVRSystem/_GetControllerStateWithPosePacked::Invoke(Valve.VR.ETrackingUniverseOrigin,System.UInt32,Valve.VR.VRControllerState_t_Packed&,System.UInt32,Valve.VR.TrackedDevicePose_t&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _GetControllerStateWithPosePacked_Invoke_mF65F119F9F4679E2C93D4EBB81B18D7E9A931C53 (_GetControllerStateWithPosePacked_t5FB5A16125655CEFF37BC308DA5952CA99373CE9 * __this, int32_t ___eOrigin0, uint32_t ___unControllerDeviceIndex1, VRControllerState_t_Packed_tEFACCF0282B2419CDAA858BC7D3DC83A8059CD9A * ___pControllerState2, uint32_t ___unControllerStateSize3, TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 * ___pTrackedDevicePose4, const RuntimeMethod* method);
+// System.Boolean Valve.VR.IVRSystem/_GetControllerStateWithPose::Invoke(Valve.VR.ETrackingUniverseOrigin,System.UInt32,Valve.VR.VRControllerState_t&,System.UInt32,Valve.VR.TrackedDevicePose_t&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _GetControllerStateWithPose_Invoke_m282F2B81611FFF9725E4C326B3260203E614D172 (_GetControllerStateWithPose_t098A600FCC0FA005ADC4CE8A90BD37D386F8F3B6 * __this, int32_t ___eOrigin0, uint32_t ___unControllerDeviceIndex1, VRControllerState_t_t7DA56F805D6286AD969A09E744E8C241976038F1 * ___pControllerState2, uint32_t ___unControllerStateSize3, TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 * ___pTrackedDevicePose4, const RuntimeMethod* method);
+// System.Void Valve.VR.IVRSystem/_TriggerHapticPulse::Invoke(System.UInt32,System.UInt32,System.UInt16)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _TriggerHapticPulse_Invoke_m9FA622500BF9792CE22B8F1C05EC7017D3821E07 (_TriggerHapticPulse_tB89A00BCA1E57CD019E0A8868C32EF7E5C271B52 * __this, uint32_t ___unControllerDeviceIndex0, uint32_t ___unAxisId1, uint16_t ___usDurationMicroSec2, const RuntimeMethod* method);
+// System.IntPtr Valve.VR.IVRSystem/_GetButtonIdNameFromEnum::Invoke(Valve.VR.EVRButtonId)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t _GetButtonIdNameFromEnum_Invoke_mAC79CDA07FB4C6BFCDF6028F82D457C9A20A2992 (_GetButtonIdNameFromEnum_t5C01154979EC6989BC57A2FEB4C7E8C60EEA098F * __this, int32_t ___eButtonId0, const RuntimeMethod* method);
+// System.IntPtr Valve.VR.IVRSystem/_GetControllerAxisTypeNameFromEnum::Invoke(Valve.VR.EVRControllerAxisType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t _GetControllerAxisTypeNameFromEnum_Invoke_mF4AEBC10DD220939522D7380A3460FA2C9E4DF8C (_GetControllerAxisTypeNameFromEnum_t859320E3852DA4C7ED3DE13035EEF7BF0C06F56C * __this, int32_t ___eAxisType0, const RuntimeMethod* method);
+// System.Boolean Valve.VR.IVRSystem/_IsInputAvailable::Invoke()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _IsInputAvailable_Invoke_mEEA14350544EC2FC90B2AFC2D842F71969A593E1 (_IsInputAvailable_t83CB75E728F5CB080F637304688AA8E57222CCCD * __this, const RuntimeMethod* method);
+// System.Boolean Valve.VR.IVRSystem/_IsSteamVRDrawingControllers::Invoke()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _IsSteamVRDrawingControllers_Invoke_m4691E1EAAB5E39443F80B0B68A30E75CD8C41B44 (_IsSteamVRDrawingControllers_t3321FAD389E87E62F6C706EF0B3DA51863552453 * __this, const RuntimeMethod* method);
+// System.Boolean Valve.VR.IVRSystem/_ShouldApplicationPause::Invoke()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _ShouldApplicationPause_Invoke_mE6A8C55D05969986F440B8AE47BFB851C21088EC (_ShouldApplicationPause_t81B174FD0D6E94F0A59237ACB1EB279ED38E65C0 * __this, const RuntimeMethod* method);
+// System.Boolean Valve.VR.IVRSystem/_ShouldApplicationReduceRenderingWork::Invoke()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _ShouldApplicationReduceRenderingWork_Invoke_m799F3FA98E3DCCBADFD91526B15FFE115521F318 (_ShouldApplicationReduceRenderingWork_tE999E2AE619B6EA5C5D3D1F27D066E667338B029 * __this, const RuntimeMethod* method);
+// Valve.VR.EVRFirmwareError Valve.VR.IVRSystem/_PerformFirmwareUpdate::Invoke(System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t _PerformFirmwareUpdate_Invoke_m023D879600F817ABD0BB4248763E6609DCD77B6D (_PerformFirmwareUpdate_tE48B2BC4E4C414312E1450B625C5342A993FE358 * __this, uint32_t ___unDeviceIndex0, const RuntimeMethod* method);
+// System.Void Valve.VR.IVRSystem/_AcknowledgeQuit_Exiting::Invoke()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _AcknowledgeQuit_Exiting_Invoke_m7682834AEA3A33A0381E6FD370633C8D5C1233F0 (_AcknowledgeQuit_Exiting_t7CA8BE614EBD0F2BCA93CD0C5408A2CCA2E4CBF7 * __this, const RuntimeMethod* method);
+// System.UInt32 Valve.VR.IVRSystem/_GetAppContainerFilePaths::Invoke(System.Text.StringBuilder,System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t _GetAppContainerFilePaths_Invoke_mA0CA3A8AFDCA5BF1BBD9FCFA8CAD26FAA6A0C7F3 (_GetAppContainerFilePaths_tB65F788ECB67D004E546E0591490B05FD19CBAB9 * __this, StringBuilder_t * ___pchBuffer0, uint32_t ___unBufferSize1, const RuntimeMethod* method);
+// System.IntPtr Valve.VR.IVRSystem/_GetRuntimeVersion::Invoke()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t _GetRuntimeVersion_Invoke_m580523DF7A2B25696E952F7E2CD9FA627739FFFD (_GetRuntimeVersion_tB06601CFD929892DD241CD7F5B84501B34B235FE * __this, const RuntimeMethod* method);
+// System.IntPtr Valve.VR.IVRTrackedCamera/_GetCameraErrorNameFromEnum::Invoke(Valve.VR.EVRTrackedCameraError)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t _GetCameraErrorNameFromEnum_Invoke_mA4C36B061E5CDDCCF3083943178096FEFA91B554 (_GetCameraErrorNameFromEnum_t4B1D0C0AEFAAAE003FA6D12DA25D731BF569AF70 * __this, int32_t ___eCameraError0, const RuntimeMethod* method);
 // Valve.VR.EVRTrackedCameraError Valve.VR.IVRTrackedCamera/_HasCamera::Invoke(System.UInt32,System.Boolean&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t _HasCamera_Invoke_m441B39370EB46FF448EFC3B2FE679EB2F108B7E9 (_HasCamera_t7568C77C30EFE8A15C276E62CDA4E78731AF353B * __this, uint32_t ___nDeviceIndex0, bool* ___pHasCamera1, const RuntimeMethod* method);
 // Valve.VR.EVRTrackedCameraError Valve.VR.IVRTrackedCamera/_GetCameraFrameSize::Invoke(System.UInt32,Valve.VR.EVRTrackedCameraFrameType,System.UInt32&,System.UInt32&,System.UInt32&)
@@ -13179,6 +14852,1677 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HmdMatrix34_t__copysign_m2493E19142C60ED
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Quaternion__ctor_m7502F0C38E04C6DE24C965D1CAF278DDD02B9D61 (Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357 * __this, float ___x0, float ___y1, float ___z2, float ___w3, const RuntimeMethod* method);
 // UnityEngine.Quaternion Valve.VR.HmdMatrix34_t::GetRotation()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  HmdMatrix34_t_GetRotation_m577C2567481CCDC641DD1861EC627F2663CFB381 (HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669 * __this, const RuntimeMethod* method);
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Valve.VR.CVRSpatialAnchors::.ctor(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CVRSpatialAnchors__ctor_m9A57E32984D034F66300CFA22D6218011FCC2F67 (CVRSpatialAnchors_t8AC8493CD007B0B9969C0A3905701E6D9F42F021 * __this, intptr_t ___pInterface0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRSpatialAnchors__ctor_m9A57E32984D034F66300CFA22D6218011FCC2F67_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// internal CVRSpatialAnchors(IntPtr pInterface)
+		Object__ctor_m925ECA5E85CA100E3FB86A4F9E15C120E9A184C0(__this, /*hidden argument*/NULL);
+		// FnTable = (IVRSpatialAnchors)Marshal.PtrToStructure(pInterface, typeof(IVRSpatialAnchors));
+		intptr_t L_0 = ___pInterface0;
+		RuntimeTypeHandle_t7B542280A22F0EC4EAC2061C29178845847A8B2D  L_1 = { reinterpret_cast<intptr_t> (IVRSpatialAnchors_tBF0FCA0EBC3C47019CE4EB74C8A2E16DCE848758_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_2 = Type_GetTypeFromHandle_m9DC58ADF0512987012A8A016FB64B068F3B1AFF6(L_1, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_tC795CE9CC2FFBA41EDB1AC1C0FEC04607DFA8A40_il2cpp_TypeInfo_var);
+		RuntimeObject * L_3 = Marshal_PtrToStructure_mE1821119EAFE83614B6A16D3F14996713502DF43((intptr_t)L_0, L_2, /*hidden argument*/NULL);
+		__this->set_FnTable_0(((*(IVRSpatialAnchors_tBF0FCA0EBC3C47019CE4EB74C8A2E16DCE848758 *)((IVRSpatialAnchors_tBF0FCA0EBC3C47019CE4EB74C8A2E16DCE848758 *)UnBox(L_3, IVRSpatialAnchors_tBF0FCA0EBC3C47019CE4EB74C8A2E16DCE848758_il2cpp_TypeInfo_var)))));
+		// }
+		return;
+	}
+}
+// Valve.VR.EVRSpatialAnchorError Valve.VR.CVRSpatialAnchors::CreateSpatialAnchorFromDescriptor(System.String,System.UInt32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRSpatialAnchors_CreateSpatialAnchorFromDescriptor_m6FD381006D6C34A1D8E9D742B0F2A9DF04E562FE (CVRSpatialAnchors_t8AC8493CD007B0B9969C0A3905701E6D9F42F021 * __this, String_t* ___pchDescriptor0, uint32_t* ___pHandleOut1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRSpatialAnchors_CreateSpatialAnchorFromDescriptor_m6FD381006D6C34A1D8E9D742B0F2A9DF04E562FE_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	intptr_t V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	{
+		// IntPtr pchDescriptorUtf8 = Utils.ToUtf8(pchDescriptor);
+		String_t* L_0 = ___pchDescriptor0;
+		IL2CPP_RUNTIME_CLASS_INIT(Utils_t5262407426334600BBD8159D021B5BEBC629CD5D_il2cpp_TypeInfo_var);
+		intptr_t L_1 = Utils_ToUtf8_m5EF3057183247A7DA315C3157C711C8330E1238A(L_0, /*hidden argument*/NULL);
+		V_0 = (intptr_t)L_1;
+		// pHandleOut = 0;
+		uint32_t* L_2 = ___pHandleOut1;
+		*((int32_t*)L_2) = (int32_t)0;
+		// EVRSpatialAnchorError result = FnTable.CreateSpatialAnchorFromDescriptor(pchDescriptorUtf8,ref pHandleOut);
+		IVRSpatialAnchors_tBF0FCA0EBC3C47019CE4EB74C8A2E16DCE848758 * L_3 = __this->get_address_of_FnTable_0();
+		_CreateSpatialAnchorFromDescriptor_t2E66C0CBFD10B5373CACE12F8014611A21EF9CF6 * L_4 = L_3->get_CreateSpatialAnchorFromDescriptor_0();
+		intptr_t L_5 = V_0;
+		uint32_t* L_6 = ___pHandleOut1;
+		NullCheck(L_4);
+		int32_t L_7 = _CreateSpatialAnchorFromDescriptor_Invoke_mF21015EDCD2DECF1F03A4B36B1C86EB27C2BB735(L_4, (intptr_t)L_5, (uint32_t*)L_6, /*hidden argument*/NULL);
+		V_1 = L_7;
+		// Marshal.FreeHGlobal(pchDescriptorUtf8);
+		intptr_t L_8 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_tC795CE9CC2FFBA41EDB1AC1C0FEC04607DFA8A40_il2cpp_TypeInfo_var);
+		Marshal_FreeHGlobal_mF098DF00F5341FDE4747A6F2004D5A0C9B03ED85((intptr_t)L_8, /*hidden argument*/NULL);
+		// return result;
+		int32_t L_9 = V_1;
+		V_2 = L_9;
+		goto IL_0029;
+	}
+
+IL_0029:
+	{
+		// }
+		int32_t L_10 = V_2;
+		return L_10;
+	}
+}
+// Valve.VR.EVRSpatialAnchorError Valve.VR.CVRSpatialAnchors::CreateSpatialAnchorFromPose(System.UInt32,Valve.VR.ETrackingUniverseOrigin,Valve.VR.SpatialAnchorPose_t&,System.UInt32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRSpatialAnchors_CreateSpatialAnchorFromPose_mB677E2828864A6B4A9C23675DAC29BE19B2A021D (CVRSpatialAnchors_t8AC8493CD007B0B9969C0A3905701E6D9F42F021 * __this, uint32_t ___unDeviceIndex0, int32_t ___eOrigin1, SpatialAnchorPose_t_t4C2FFB0A2A204C035D42B8E8434CA81983881234 * ___pPose2, uint32_t* ___pHandleOut3, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	{
+		// pHandleOut = 0;
+		uint32_t* L_0 = ___pHandleOut3;
+		*((int32_t*)L_0) = (int32_t)0;
+		// EVRSpatialAnchorError result = FnTable.CreateSpatialAnchorFromPose(unDeviceIndex,eOrigin,ref pPose,ref pHandleOut);
+		IVRSpatialAnchors_tBF0FCA0EBC3C47019CE4EB74C8A2E16DCE848758 * L_1 = __this->get_address_of_FnTable_0();
+		_CreateSpatialAnchorFromPose_t5A3E72BE3A6C3F2D5369F3999966798A6BC1D206 * L_2 = L_1->get_CreateSpatialAnchorFromPose_1();
+		uint32_t L_3 = ___unDeviceIndex0;
+		int32_t L_4 = ___eOrigin1;
+		SpatialAnchorPose_t_t4C2FFB0A2A204C035D42B8E8434CA81983881234 * L_5 = ___pPose2;
+		uint32_t* L_6 = ___pHandleOut3;
+		NullCheck(L_2);
+		int32_t L_7 = _CreateSpatialAnchorFromPose_Invoke_mA15D0B40155A6CE671698AA97604021EF3BBD918(L_2, L_3, L_4, (SpatialAnchorPose_t_t4C2FFB0A2A204C035D42B8E8434CA81983881234 *)L_5, (uint32_t*)L_6, /*hidden argument*/NULL);
+		V_0 = L_7;
+		// return result;
+		int32_t L_8 = V_0;
+		V_1 = L_8;
+		goto IL_001f;
+	}
+
+IL_001f:
+	{
+		// }
+		int32_t L_9 = V_1;
+		return L_9;
+	}
+}
+// Valve.VR.EVRSpatialAnchorError Valve.VR.CVRSpatialAnchors::GetSpatialAnchorPose(System.UInt32,Valve.VR.ETrackingUniverseOrigin,Valve.VR.SpatialAnchorPose_t&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRSpatialAnchors_GetSpatialAnchorPose_m6595921B73AC6D37E8A0A78C9862C3A870576868 (CVRSpatialAnchors_t8AC8493CD007B0B9969C0A3905701E6D9F42F021 * __this, uint32_t ___unHandle0, int32_t ___eOrigin1, SpatialAnchorPose_t_t4C2FFB0A2A204C035D42B8E8434CA81983881234 * ___pPoseOut2, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	{
+		// EVRSpatialAnchorError result = FnTable.GetSpatialAnchorPose(unHandle,eOrigin,ref pPoseOut);
+		IVRSpatialAnchors_tBF0FCA0EBC3C47019CE4EB74C8A2E16DCE848758 * L_0 = __this->get_address_of_FnTable_0();
+		_GetSpatialAnchorPose_t4B210A925511757F99AD4C1BEA761E83A19C34EF * L_1 = L_0->get_GetSpatialAnchorPose_2();
+		uint32_t L_2 = ___unHandle0;
+		int32_t L_3 = ___eOrigin1;
+		SpatialAnchorPose_t_t4C2FFB0A2A204C035D42B8E8434CA81983881234 * L_4 = ___pPoseOut2;
+		NullCheck(L_1);
+		int32_t L_5 = _GetSpatialAnchorPose_Invoke_m22B1D4BFFC73C8C24489E611E43DA01DC0B5C2FF(L_1, L_2, L_3, (SpatialAnchorPose_t_t4C2FFB0A2A204C035D42B8E8434CA81983881234 *)L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		// return result;
+		int32_t L_6 = V_0;
+		V_1 = L_6;
+		goto IL_0019;
+	}
+
+IL_0019:
+	{
+		// }
+		int32_t L_7 = V_1;
+		return L_7;
+	}
+}
+// Valve.VR.EVRSpatialAnchorError Valve.VR.CVRSpatialAnchors::GetSpatialAnchorDescriptor(System.UInt32,System.Text.StringBuilder,System.UInt32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRSpatialAnchors_GetSpatialAnchorDescriptor_mF02406A13319D776EBA66E3D31BBB6972769AA86 (CVRSpatialAnchors_t8AC8493CD007B0B9969C0A3905701E6D9F42F021 * __this, uint32_t ___unHandle0, StringBuilder_t * ___pchDescriptorOut1, uint32_t* ___punDescriptorBufferLenInOut2, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	{
+		// punDescriptorBufferLenInOut = 0;
+		uint32_t* L_0 = ___punDescriptorBufferLenInOut2;
+		*((int32_t*)L_0) = (int32_t)0;
+		// EVRSpatialAnchorError result = FnTable.GetSpatialAnchorDescriptor(unHandle,pchDescriptorOut,ref punDescriptorBufferLenInOut);
+		IVRSpatialAnchors_tBF0FCA0EBC3C47019CE4EB74C8A2E16DCE848758 * L_1 = __this->get_address_of_FnTable_0();
+		_GetSpatialAnchorDescriptor_t1FB7B58451C5A5D46E31D351AD774C19CBF4A5D8 * L_2 = L_1->get_GetSpatialAnchorDescriptor_3();
+		uint32_t L_3 = ___unHandle0;
+		StringBuilder_t * L_4 = ___pchDescriptorOut1;
+		uint32_t* L_5 = ___punDescriptorBufferLenInOut2;
+		NullCheck(L_2);
+		int32_t L_6 = _GetSpatialAnchorDescriptor_Invoke_m7611CFA20FE225F0FD372A20044CD8BCC47BBF0D(L_2, L_3, L_4, (uint32_t*)L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		// return result;
+		int32_t L_7 = V_0;
+		V_1 = L_7;
+		goto IL_001c;
+	}
+
+IL_001c:
+	{
+		// }
+		int32_t L_8 = V_1;
+		return L_8;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Valve.VR.CVRSystem::.ctor(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CVRSystem__ctor_m63DFE27854B9A4D82DD4D96DC6354AD1B629F7A8 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, intptr_t ___pInterface0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRSystem__ctor_m63DFE27854B9A4D82DD4D96DC6354AD1B629F7A8_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// internal CVRSystem(IntPtr pInterface)
+		Object__ctor_m925ECA5E85CA100E3FB86A4F9E15C120E9A184C0(__this, /*hidden argument*/NULL);
+		// FnTable = (IVRSystem)Marshal.PtrToStructure(pInterface, typeof(IVRSystem));
+		intptr_t L_0 = ___pInterface0;
+		RuntimeTypeHandle_t7B542280A22F0EC4EAC2061C29178845847A8B2D  L_1 = { reinterpret_cast<intptr_t> (IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_2 = Type_GetTypeFromHandle_m9DC58ADF0512987012A8A016FB64B068F3B1AFF6(L_1, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_tC795CE9CC2FFBA41EDB1AC1C0FEC04607DFA8A40_il2cpp_TypeInfo_var);
+		RuntimeObject * L_3 = Marshal_PtrToStructure_mE1821119EAFE83614B6A16D3F14996713502DF43((intptr_t)L_0, L_2, /*hidden argument*/NULL);
+		__this->set_FnTable_0(((*(IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 *)((IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 *)UnBox(L_3, IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794_il2cpp_TypeInfo_var)))));
+		// }
+		return;
+	}
+}
+// System.Void Valve.VR.CVRSystem::GetRecommendedRenderTargetSize(System.UInt32&,System.UInt32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CVRSystem_GetRecommendedRenderTargetSize_mC457663E3CF186DA828C6885D819CD74D127A8E6 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, uint32_t* ___pnWidth0, uint32_t* ___pnHeight1, const RuntimeMethod* method)
+{
+	{
+		// pnWidth = 0;
+		uint32_t* L_0 = ___pnWidth0;
+		*((int32_t*)L_0) = (int32_t)0;
+		// pnHeight = 0;
+		uint32_t* L_1 = ___pnHeight1;
+		*((int32_t*)L_1) = (int32_t)0;
+		// FnTable.GetRecommendedRenderTargetSize(ref pnWidth,ref pnHeight);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_2 = __this->get_address_of_FnTable_0();
+		_GetRecommendedRenderTargetSize_tDF279E3E06C367158BDF68B7D2FA80B319DC206C * L_3 = L_2->get_GetRecommendedRenderTargetSize_0();
+		uint32_t* L_4 = ___pnWidth0;
+		uint32_t* L_5 = ___pnHeight1;
+		NullCheck(L_3);
+		_GetRecommendedRenderTargetSize_Invoke_m387255C094BFCE25326E54B3FD42E19A0F7B7706(L_3, (uint32_t*)L_4, (uint32_t*)L_5, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// Valve.VR.HmdMatrix44_t Valve.VR.CVRSystem::GetProjectionMatrix(Valve.VR.EVREye,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HmdMatrix44_t_t95875BB353C776A6F1DC2AEDFDEA9EA55F75B206  CVRSystem_GetProjectionMatrix_m46AE753C6F4242612D26A907E1EDEE60AA4D6A13 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, int32_t ___eEye0, float ___fNearZ1, float ___fFarZ2, const RuntimeMethod* method)
+{
+	HmdMatrix44_t_t95875BB353C776A6F1DC2AEDFDEA9EA55F75B206  V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	HmdMatrix44_t_t95875BB353C776A6F1DC2AEDFDEA9EA55F75B206  V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		// HmdMatrix44_t result = FnTable.GetProjectionMatrix(eEye,fNearZ,fFarZ);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetProjectionMatrix_t2CF3AE1A256AEA542CFB4DEC53E725B76A23EEDB * L_1 = L_0->get_GetProjectionMatrix_1();
+		int32_t L_2 = ___eEye0;
+		float L_3 = ___fNearZ1;
+		float L_4 = ___fFarZ2;
+		NullCheck(L_1);
+		HmdMatrix44_t_t95875BB353C776A6F1DC2AEDFDEA9EA55F75B206  L_5 = _GetProjectionMatrix_Invoke_mABD2B6D1EE2E4EF3DDD60F244EAF1055136881FA(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		// return result;
+		HmdMatrix44_t_t95875BB353C776A6F1DC2AEDFDEA9EA55F75B206  L_6 = V_0;
+		V_1 = L_6;
+		goto IL_0019;
+	}
+
+IL_0019:
+	{
+		// }
+		HmdMatrix44_t_t95875BB353C776A6F1DC2AEDFDEA9EA55F75B206  L_7 = V_1;
+		return L_7;
+	}
+}
+// System.Void Valve.VR.CVRSystem::GetProjectionRaw(Valve.VR.EVREye,System.Single&,System.Single&,System.Single&,System.Single&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CVRSystem_GetProjectionRaw_m12D0B1CC030B012AAD585607B57A053CEE20D1A9 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, int32_t ___eEye0, float* ___pfLeft1, float* ___pfRight2, float* ___pfTop3, float* ___pfBottom4, const RuntimeMethod* method)
+{
+	{
+		// pfLeft = 0;
+		float* L_0 = ___pfLeft1;
+		*((float*)L_0) = (float)(0.0f);
+		// pfRight = 0;
+		float* L_1 = ___pfRight2;
+		*((float*)L_1) = (float)(0.0f);
+		// pfTop = 0;
+		float* L_2 = ___pfTop3;
+		*((float*)L_2) = (float)(0.0f);
+		// pfBottom = 0;
+		float* L_3 = ___pfBottom4;
+		*((float*)L_3) = (float)(0.0f);
+		// FnTable.GetProjectionRaw(eEye,ref pfLeft,ref pfRight,ref pfTop,ref pfBottom);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_4 = __this->get_address_of_FnTable_0();
+		_GetProjectionRaw_t5E30E5CA05AE78709F9785D48BB116C87AF7BCC9 * L_5 = L_4->get_GetProjectionRaw_2();
+		int32_t L_6 = ___eEye0;
+		float* L_7 = ___pfLeft1;
+		float* L_8 = ___pfRight2;
+		float* L_9 = ___pfTop3;
+		float* L_10 = ___pfBottom4;
+		NullCheck(L_5);
+		_GetProjectionRaw_Invoke_mA8E5B5067D25B838880716BC7D6547ACB3743574(L_5, L_6, (float*)L_7, (float*)L_8, (float*)L_9, (float*)L_10, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::ComputeDistortion(Valve.VR.EVREye,System.Single,System.Single,Valve.VR.DistortionCoordinates_t&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CVRSystem_ComputeDistortion_m14693EE40DE78397B97B76DBD5840C1F3A5B3DE9 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, int32_t ___eEye0, float ___fU1, float ___fV2, DistortionCoordinates_t_t66595BAF611995AF71C39D390C2B882740C83EC3 * ___pDistortionCoordinates3, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	{
+		// bool result = FnTable.ComputeDistortion(eEye,fU,fV,ref pDistortionCoordinates);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_ComputeDistortion_t719BD22B71759B13D28CDE23EDDC8350045BC32E * L_1 = L_0->get_ComputeDistortion_3();
+		int32_t L_2 = ___eEye0;
+		float L_3 = ___fU1;
+		float L_4 = ___fV2;
+		DistortionCoordinates_t_t66595BAF611995AF71C39D390C2B882740C83EC3 * L_5 = ___pDistortionCoordinates3;
+		NullCheck(L_1);
+		bool L_6 = _ComputeDistortion_Invoke_mE256667068A6F4739012CC58092E50227BE9BB5D(L_1, L_2, L_3, L_4, (DistortionCoordinates_t_t66595BAF611995AF71C39D390C2B882740C83EC3 *)L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		// return result;
+		bool L_7 = V_0;
+		V_1 = L_7;
+		goto IL_001b;
+	}
+
+IL_001b:
+	{
+		// }
+		bool L_8 = V_1;
+		return L_8;
+	}
+}
+// Valve.VR.HmdMatrix34_t Valve.VR.CVRSystem::GetEyeToHeadTransform(Valve.VR.EVREye)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  CVRSystem_GetEyeToHeadTransform_mEABED9C9BF97F0EBCC67B04FC142EA0C7474E546 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, int32_t ___eEye0, const RuntimeMethod* method)
+{
+	HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		// HmdMatrix34_t result = FnTable.GetEyeToHeadTransform(eEye);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetEyeToHeadTransform_t4FDEF0F67D0B94B3EE9986E663B1B191DC6EB68E * L_1 = L_0->get_GetEyeToHeadTransform_4();
+		int32_t L_2 = ___eEye0;
+		NullCheck(L_1);
+		HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  L_3 = _GetEyeToHeadTransform_Invoke_mD25D36269AC0358AC2DB00AD1A0033A601C0F8B1(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		// return result;
+		HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  L_4 = V_0;
+		V_1 = L_4;
+		goto IL_0017;
+	}
+
+IL_0017:
+	{
+		// }
+		HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  L_5 = V_1;
+		return L_5;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::GetTimeSinceLastVsync(System.Single&,System.UInt64&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CVRSystem_GetTimeSinceLastVsync_mEE1288E7720CB0F01F4122B1E479827E2C2612C1 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, float* ___pfSecondsSinceLastVsync0, uint64_t* ___pulFrameCounter1, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	{
+		// pfSecondsSinceLastVsync = 0;
+		float* L_0 = ___pfSecondsSinceLastVsync0;
+		*((float*)L_0) = (float)(0.0f);
+		// pulFrameCounter = 0;
+		uint64_t* L_1 = ___pulFrameCounter1;
+		*((int64_t*)L_1) = (int64_t)(((int64_t)((int64_t)0)));
+		// bool result = FnTable.GetTimeSinceLastVsync(ref pfSecondsSinceLastVsync,ref pulFrameCounter);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_2 = __this->get_address_of_FnTable_0();
+		_GetTimeSinceLastVsync_tDE7531951DB64E37FFDE61F85BEB667E797E1322 * L_3 = L_2->get_GetTimeSinceLastVsync_5();
+		float* L_4 = ___pfSecondsSinceLastVsync0;
+		uint64_t* L_5 = ___pulFrameCounter1;
+		NullCheck(L_3);
+		bool L_6 = _GetTimeSinceLastVsync_Invoke_m980BA6BAF55E676A88E1643018A5560661157BD2(L_3, (float*)L_4, (uint64_t*)L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		// return result;
+		bool L_7 = V_0;
+		V_1 = L_7;
+		goto IL_0023;
+	}
+
+IL_0023:
+	{
+		// }
+		bool L_8 = V_1;
+		return L_8;
+	}
+}
+// System.Int32 Valve.VR.CVRSystem::GetD3D9AdapterIndex()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRSystem_GetD3D9AdapterIndex_m638B2065B4498E6D4B09CB692757219A37BF01D3 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	{
+		// int result = FnTable.GetD3D9AdapterIndex();
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetD3D9AdapterIndex_t79F96C6F38A372CDE020184E338D10AD3E39B4C3 * L_1 = L_0->get_GetD3D9AdapterIndex_6();
+		NullCheck(L_1);
+		int32_t L_2 = _GetD3D9AdapterIndex_Invoke_m2ACE38009FF0CCFFA7CE4261016F651DBF377CD1(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		// return result;
+		int32_t L_3 = V_0;
+		V_1 = L_3;
+		goto IL_0016;
+	}
+
+IL_0016:
+	{
+		// }
+		int32_t L_4 = V_1;
+		return L_4;
+	}
+}
+// System.Void Valve.VR.CVRSystem::GetDXGIOutputInfo(System.Int32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CVRSystem_GetDXGIOutputInfo_m86FFB2B05A1BFFB4C917E81EA0C6DC11DE8A9A43 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, int32_t* ___pnAdapterIndex0, const RuntimeMethod* method)
+{
+	{
+		// pnAdapterIndex = 0;
+		int32_t* L_0 = ___pnAdapterIndex0;
+		*((int32_t*)L_0) = (int32_t)0;
+		// FnTable.GetDXGIOutputInfo(ref pnAdapterIndex);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_1 = __this->get_address_of_FnTable_0();
+		_GetDXGIOutputInfo_t89F93974084C1442DC49C151ABB1BFB226624E43 * L_2 = L_1->get_GetDXGIOutputInfo_7();
+		int32_t* L_3 = ___pnAdapterIndex0;
+		NullCheck(L_2);
+		_GetDXGIOutputInfo_Invoke_m89180A438FB7EA1E003E50974A174CB8A037AE21(L_2, (int32_t*)L_3, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void Valve.VR.CVRSystem::GetOutputDevice(System.UInt64&,Valve.VR.ETextureType,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CVRSystem_GetOutputDevice_m4470BD7A9FEDB35433D025AB22D7CF21E506089A (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, uint64_t* ___pnDevice0, int32_t ___textureType1, intptr_t ___pInstance2, const RuntimeMethod* method)
+{
+	{
+		// pnDevice = 0;
+		uint64_t* L_0 = ___pnDevice0;
+		*((int64_t*)L_0) = (int64_t)(((int64_t)((int64_t)0)));
+		// FnTable.GetOutputDevice(ref pnDevice,textureType,pInstance);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_1 = __this->get_address_of_FnTable_0();
+		_GetOutputDevice_t6BF96BF9D2E6A3F92835255792C37619B829FDA3 * L_2 = L_1->get_GetOutputDevice_8();
+		uint64_t* L_3 = ___pnDevice0;
+		int32_t L_4 = ___textureType1;
+		intptr_t L_5 = ___pInstance2;
+		NullCheck(L_2);
+		_GetOutputDevice_Invoke_mA0022A52E2ACBAAD20728378A92E2ECE36D68F47(L_2, (uint64_t*)L_3, L_4, (intptr_t)L_5, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::IsDisplayOnDesktop()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CVRSystem_IsDisplayOnDesktop_m447502D7F54CCE74FD4E18F3BE0BD397D551A349 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	{
+		// bool result = FnTable.IsDisplayOnDesktop();
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_IsDisplayOnDesktop_t69820AEAD1C17A5F9A9E4B4A9AE0B8D8A393E96C * L_1 = L_0->get_IsDisplayOnDesktop_9();
+		NullCheck(L_1);
+		bool L_2 = _IsDisplayOnDesktop_Invoke_m10D225F5B04C9CAAFC76FD8666C4FAF6A09D6101(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		// return result;
+		bool L_3 = V_0;
+		V_1 = L_3;
+		goto IL_0016;
+	}
+
+IL_0016:
+	{
+		// }
+		bool L_4 = V_1;
+		return L_4;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::SetDisplayVisibility(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CVRSystem_SetDisplayVisibility_m4C45950C68DA82B7522CA95BFAC77A754503D8F4 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, bool ___bIsVisibleOnDesktop0, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	{
+		// bool result = FnTable.SetDisplayVisibility(bIsVisibleOnDesktop);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_SetDisplayVisibility_t185E797B0E0E6AE787694675A7AE498112816ACC * L_1 = L_0->get_SetDisplayVisibility_10();
+		bool L_2 = ___bIsVisibleOnDesktop0;
+		NullCheck(L_1);
+		bool L_3 = _SetDisplayVisibility_Invoke_m39BD5596A8CF8947493196483F7948FA401E73B2(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		// return result;
+		bool L_4 = V_0;
+		V_1 = L_4;
+		goto IL_0017;
+	}
+
+IL_0017:
+	{
+		// }
+		bool L_5 = V_1;
+		return L_5;
+	}
+}
+// System.Void Valve.VR.CVRSystem::GetDeviceToAbsoluteTrackingPose(Valve.VR.ETrackingUniverseOrigin,System.Single,Valve.VR.TrackedDevicePose_t[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CVRSystem_GetDeviceToAbsoluteTrackingPose_m876E5B64A2738B3ECC60E64D020843E6BD5A3BF0 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, int32_t ___eOrigin0, float ___fPredictedSecondsToPhotonsFromNow1, TrackedDevicePose_tU5BU5D_tF02F8D07A99963B656F6262B11E24ECF9747D196* ___pTrackedDevicePoseArray2, const RuntimeMethod* method)
+{
+	{
+		// FnTable.GetDeviceToAbsoluteTrackingPose(eOrigin,fPredictedSecondsToPhotonsFromNow,pTrackedDevicePoseArray,(uint) pTrackedDevicePoseArray.Length);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetDeviceToAbsoluteTrackingPose_t77E758F4E0070CABF13C3555BFF30DAEFBD0FD58 * L_1 = L_0->get_GetDeviceToAbsoluteTrackingPose_11();
+		int32_t L_2 = ___eOrigin0;
+		float L_3 = ___fPredictedSecondsToPhotonsFromNow1;
+		TrackedDevicePose_tU5BU5D_tF02F8D07A99963B656F6262B11E24ECF9747D196* L_4 = ___pTrackedDevicePoseArray2;
+		TrackedDevicePose_tU5BU5D_tF02F8D07A99963B656F6262B11E24ECF9747D196* L_5 = ___pTrackedDevicePoseArray2;
+		NullCheck(L_5);
+		NullCheck(L_1);
+		_GetDeviceToAbsoluteTrackingPose_Invoke_m418D9C1BF6B02392F9645E2FE81F3357B0ED8D27(L_1, L_2, L_3, L_4, (((int32_t)((int32_t)(((RuntimeArray*)L_5)->max_length)))), /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// Valve.VR.HmdMatrix34_t Valve.VR.CVRSystem::GetSeatedZeroPoseToStandingAbsoluteTrackingPose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  CVRSystem_GetSeatedZeroPoseToStandingAbsoluteTrackingPose_mAD4A20D6278485B73033C79FB2B92D4FB84508DB (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, const RuntimeMethod* method)
+{
+	HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		// HmdMatrix34_t result = FnTable.GetSeatedZeroPoseToStandingAbsoluteTrackingPose();
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetSeatedZeroPoseToStandingAbsoluteTrackingPose_t5AAFDB6578F55052724BDD65BBE5E12ADA7BE95D * L_1 = L_0->get_GetSeatedZeroPoseToStandingAbsoluteTrackingPose_12();
+		NullCheck(L_1);
+		HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  L_2 = _GetSeatedZeroPoseToStandingAbsoluteTrackingPose_Invoke_m98524DDE804869822619AEE7684A51CDC3A1CF4C(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		// return result;
+		HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  L_3 = V_0;
+		V_1 = L_3;
+		goto IL_0016;
+	}
+
+IL_0016:
+	{
+		// }
+		HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  L_4 = V_1;
+		return L_4;
+	}
+}
+// Valve.VR.HmdMatrix34_t Valve.VR.CVRSystem::GetRawZeroPoseToStandingAbsoluteTrackingPose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  CVRSystem_GetRawZeroPoseToStandingAbsoluteTrackingPose_m1DCA145A73B9EAB7B188D3C6E6135CC1A5FE5CD2 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, const RuntimeMethod* method)
+{
+	HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		// HmdMatrix34_t result = FnTable.GetRawZeroPoseToStandingAbsoluteTrackingPose();
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetRawZeroPoseToStandingAbsoluteTrackingPose_t2C18EC000505B376DAD6E5BE63CAC4060B8C61D9 * L_1 = L_0->get_GetRawZeroPoseToStandingAbsoluteTrackingPose_13();
+		NullCheck(L_1);
+		HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  L_2 = _GetRawZeroPoseToStandingAbsoluteTrackingPose_Invoke_mF1DC99975E0A972F5CAB563B4DE5001147F2714A(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		// return result;
+		HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  L_3 = V_0;
+		V_1 = L_3;
+		goto IL_0016;
+	}
+
+IL_0016:
+	{
+		// }
+		HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  L_4 = V_1;
+		return L_4;
+	}
+}
+// System.UInt32 Valve.VR.CVRSystem::GetSortedTrackedDeviceIndicesOfClass(Valve.VR.ETrackedDeviceClass,System.UInt32[],System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t CVRSystem_GetSortedTrackedDeviceIndicesOfClass_m6FA6C54E827465A25EC33A1B20F403B5E1F011E5 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, int32_t ___eTrackedDeviceClass0, UInt32U5BU5D_t9AA834AF2940E75BBF8E3F08FF0D20D266DB71CB* ___punTrackedDeviceIndexArray1, uint32_t ___unRelativeToTrackedDeviceIndex2, const RuntimeMethod* method)
+{
+	uint32_t V_0 = 0;
+	uint32_t V_1 = 0;
+	{
+		// uint result = FnTable.GetSortedTrackedDeviceIndicesOfClass(eTrackedDeviceClass,punTrackedDeviceIndexArray,(uint) punTrackedDeviceIndexArray.Length,unRelativeToTrackedDeviceIndex);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetSortedTrackedDeviceIndicesOfClass_tB35BA9284660A003ED3813C85504C5A5C860E1B1 * L_1 = L_0->get_GetSortedTrackedDeviceIndicesOfClass_14();
+		int32_t L_2 = ___eTrackedDeviceClass0;
+		UInt32U5BU5D_t9AA834AF2940E75BBF8E3F08FF0D20D266DB71CB* L_3 = ___punTrackedDeviceIndexArray1;
+		UInt32U5BU5D_t9AA834AF2940E75BBF8E3F08FF0D20D266DB71CB* L_4 = ___punTrackedDeviceIndexArray1;
+		NullCheck(L_4);
+		uint32_t L_5 = ___unRelativeToTrackedDeviceIndex2;
+		NullCheck(L_1);
+		uint32_t L_6 = _GetSortedTrackedDeviceIndicesOfClass_Invoke_m903B1591AB4F7557C05DB1D349ED6B304E977FBF(L_1, L_2, L_3, (((int32_t)((int32_t)(((RuntimeArray*)L_4)->max_length)))), L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		// return result;
+		uint32_t L_7 = V_0;
+		V_1 = L_7;
+		goto IL_001c;
+	}
+
+IL_001c:
+	{
+		// }
+		uint32_t L_8 = V_1;
+		return L_8;
+	}
+}
+// Valve.VR.EDeviceActivityLevel Valve.VR.CVRSystem::GetTrackedDeviceActivityLevel(System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRSystem_GetTrackedDeviceActivityLevel_m5FBDE5A01C25EC4746C9A7EF7E0C1172A94188CE (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, uint32_t ___unDeviceId0, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	{
+		// EDeviceActivityLevel result = FnTable.GetTrackedDeviceActivityLevel(unDeviceId);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetTrackedDeviceActivityLevel_tE2BCFC93FA210CE75BDA7321E88D375BBA350D48 * L_1 = L_0->get_GetTrackedDeviceActivityLevel_15();
+		uint32_t L_2 = ___unDeviceId0;
+		NullCheck(L_1);
+		int32_t L_3 = _GetTrackedDeviceActivityLevel_Invoke_mC68A00244CF1E0FA43CB9CB01772767788CA667F(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		// return result;
+		int32_t L_4 = V_0;
+		V_1 = L_4;
+		goto IL_0017;
+	}
+
+IL_0017:
+	{
+		// }
+		int32_t L_5 = V_1;
+		return L_5;
+	}
+}
+// System.Void Valve.VR.CVRSystem::ApplyTransform(Valve.VR.TrackedDevicePose_t&,Valve.VR.TrackedDevicePose_t&,Valve.VR.HmdMatrix34_t&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CVRSystem_ApplyTransform_mEB4D7A8B118CE546123150B5D7549E70B3A076C3 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 * ___pOutputPose0, TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 * ___pTrackedDevicePose1, HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669 * ___pTransform2, const RuntimeMethod* method)
+{
+	{
+		// FnTable.ApplyTransform(ref pOutputPose,ref pTrackedDevicePose,ref pTransform);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_ApplyTransform_t1460CC6B57C623D10CFD75BD7313393F0FF1093A * L_1 = L_0->get_ApplyTransform_16();
+		TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 * L_2 = ___pOutputPose0;
+		TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 * L_3 = ___pTrackedDevicePose1;
+		HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669 * L_4 = ___pTransform2;
+		NullCheck(L_1);
+		_ApplyTransform_Invoke_m8C552B13ED6BFFAC1EF266D3D2BD2C24DC34E6C9(L_1, (TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 *)L_2, (TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 *)L_3, (HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669 *)L_4, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.UInt32 Valve.VR.CVRSystem::GetTrackedDeviceIndexForControllerRole(Valve.VR.ETrackedControllerRole)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t CVRSystem_GetTrackedDeviceIndexForControllerRole_m1540B2FEF3ECAC61AEB3C70697D6F07E04D85936 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, int32_t ___unDeviceType0, const RuntimeMethod* method)
+{
+	uint32_t V_0 = 0;
+	uint32_t V_1 = 0;
+	{
+		// uint result = FnTable.GetTrackedDeviceIndexForControllerRole(unDeviceType);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetTrackedDeviceIndexForControllerRole_t7E5E4E2D668C9C7C2E51C687E4D1DE241C243A30 * L_1 = L_0->get_GetTrackedDeviceIndexForControllerRole_17();
+		int32_t L_2 = ___unDeviceType0;
+		NullCheck(L_1);
+		uint32_t L_3 = _GetTrackedDeviceIndexForControllerRole_Invoke_m838CB3EB4753A949E164849B8CB8EF3D97F7CE87(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		// return result;
+		uint32_t L_4 = V_0;
+		V_1 = L_4;
+		goto IL_0017;
+	}
+
+IL_0017:
+	{
+		// }
+		uint32_t L_5 = V_1;
+		return L_5;
+	}
+}
+// Valve.VR.ETrackedControllerRole Valve.VR.CVRSystem::GetControllerRoleForTrackedDeviceIndex(System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRSystem_GetControllerRoleForTrackedDeviceIndex_mBD8CDC254EAAA49F1C2AC1195C76337DF8C8C199 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, uint32_t ___unDeviceIndex0, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	{
+		// ETrackedControllerRole result = FnTable.GetControllerRoleForTrackedDeviceIndex(unDeviceIndex);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetControllerRoleForTrackedDeviceIndex_tAEFD675C6BF7EF093C850DF6B298210AC65DBD80 * L_1 = L_0->get_GetControllerRoleForTrackedDeviceIndex_18();
+		uint32_t L_2 = ___unDeviceIndex0;
+		NullCheck(L_1);
+		int32_t L_3 = _GetControllerRoleForTrackedDeviceIndex_Invoke_m8F5851D1EFB6E4FF8B999D38050D379BC8CA50FD(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		// return result;
+		int32_t L_4 = V_0;
+		V_1 = L_4;
+		goto IL_0017;
+	}
+
+IL_0017:
+	{
+		// }
+		int32_t L_5 = V_1;
+		return L_5;
+	}
+}
+// Valve.VR.ETrackedDeviceClass Valve.VR.CVRSystem::GetTrackedDeviceClass(System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRSystem_GetTrackedDeviceClass_m2F5F0B22C0E2C9EADF7BE9C9A29B045640D22157 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, uint32_t ___unDeviceIndex0, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	{
+		// ETrackedDeviceClass result = FnTable.GetTrackedDeviceClass(unDeviceIndex);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetTrackedDeviceClass_t17330133ED77B95EEB556E8140F4CDF15E25A771 * L_1 = L_0->get_GetTrackedDeviceClass_19();
+		uint32_t L_2 = ___unDeviceIndex0;
+		NullCheck(L_1);
+		int32_t L_3 = _GetTrackedDeviceClass_Invoke_m76D9AFC4E465826DFCF98E67F89915B86EB76620(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		// return result;
+		int32_t L_4 = V_0;
+		V_1 = L_4;
+		goto IL_0017;
+	}
+
+IL_0017:
+	{
+		// }
+		int32_t L_5 = V_1;
+		return L_5;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::IsTrackedDeviceConnected(System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CVRSystem_IsTrackedDeviceConnected_mDF530BB19900A56E3300F04761FF38B649A0D1AD (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, uint32_t ___unDeviceIndex0, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	{
+		// bool result = FnTable.IsTrackedDeviceConnected(unDeviceIndex);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_IsTrackedDeviceConnected_tEF53EC2DE9F52B433A8A1ED0EDC01D7EEEB532F4 * L_1 = L_0->get_IsTrackedDeviceConnected_20();
+		uint32_t L_2 = ___unDeviceIndex0;
+		NullCheck(L_1);
+		bool L_3 = _IsTrackedDeviceConnected_Invoke_m708D9AAC977DEB3CF8BE423F0FD9A638B682D9A9(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		// return result;
+		bool L_4 = V_0;
+		V_1 = L_4;
+		goto IL_0017;
+	}
+
+IL_0017:
+	{
+		// }
+		bool L_5 = V_1;
+		return L_5;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::GetBoolTrackedDeviceProperty(System.UInt32,Valve.VR.ETrackedDeviceProperty,Valve.VR.ETrackedPropertyError&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CVRSystem_GetBoolTrackedDeviceProperty_m4AA9DE8F1E46A4069CE80E3B3B4C83620C0FFAF9 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, int32_t* ___pError2, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	{
+		// bool result = FnTable.GetBoolTrackedDeviceProperty(unDeviceIndex,prop,ref pError);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetBoolTrackedDeviceProperty_tC55A46EA23EB82A5454F486EA911184FACC0FDD5 * L_1 = L_0->get_GetBoolTrackedDeviceProperty_21();
+		uint32_t L_2 = ___unDeviceIndex0;
+		int32_t L_3 = ___prop1;
+		int32_t* L_4 = ___pError2;
+		NullCheck(L_1);
+		bool L_5 = _GetBoolTrackedDeviceProperty_Invoke_mA4BF9BA324D3C98629975ECD2EC5EA4D2E2273BC(L_1, L_2, L_3, (int32_t*)L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		// return result;
+		bool L_6 = V_0;
+		V_1 = L_6;
+		goto IL_0019;
+	}
+
+IL_0019:
+	{
+		// }
+		bool L_7 = V_1;
+		return L_7;
+	}
+}
+// System.Single Valve.VR.CVRSystem::GetFloatTrackedDeviceProperty(System.UInt32,Valve.VR.ETrackedDeviceProperty,Valve.VR.ETrackedPropertyError&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float CVRSystem_GetFloatTrackedDeviceProperty_m7F06A356D7BF2550EE036B0BE556E40C5DC3C3A8 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, int32_t* ___pError2, const RuntimeMethod* method)
+{
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	{
+		// float result = FnTable.GetFloatTrackedDeviceProperty(unDeviceIndex,prop,ref pError);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetFloatTrackedDeviceProperty_t48FEAB5031B7BC323FE10D82D91C8A329B9FE7E4 * L_1 = L_0->get_GetFloatTrackedDeviceProperty_22();
+		uint32_t L_2 = ___unDeviceIndex0;
+		int32_t L_3 = ___prop1;
+		int32_t* L_4 = ___pError2;
+		NullCheck(L_1);
+		float L_5 = _GetFloatTrackedDeviceProperty_Invoke_m9BF957F2A09035F60F312A7EBC4D615631D5C3C7(L_1, L_2, L_3, (int32_t*)L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		// return result;
+		float L_6 = V_0;
+		V_1 = L_6;
+		goto IL_0019;
+	}
+
+IL_0019:
+	{
+		// }
+		float L_7 = V_1;
+		return L_7;
+	}
+}
+// System.Int32 Valve.VR.CVRSystem::GetInt32TrackedDeviceProperty(System.UInt32,Valve.VR.ETrackedDeviceProperty,Valve.VR.ETrackedPropertyError&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRSystem_GetInt32TrackedDeviceProperty_mCDE2B84A1DAC4DC18D896002A56BE69AAEE1DAF5 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, int32_t* ___pError2, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	{
+		// int result = FnTable.GetInt32TrackedDeviceProperty(unDeviceIndex,prop,ref pError);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetInt32TrackedDeviceProperty_t7C4B75D1EE69B5522B8906131367CFBB3C1FFD47 * L_1 = L_0->get_GetInt32TrackedDeviceProperty_23();
+		uint32_t L_2 = ___unDeviceIndex0;
+		int32_t L_3 = ___prop1;
+		int32_t* L_4 = ___pError2;
+		NullCheck(L_1);
+		int32_t L_5 = _GetInt32TrackedDeviceProperty_Invoke_m2AA407CEBAE294A9885014C56F9D6E0470288AEB(L_1, L_2, L_3, (int32_t*)L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		// return result;
+		int32_t L_6 = V_0;
+		V_1 = L_6;
+		goto IL_0019;
+	}
+
+IL_0019:
+	{
+		// }
+		int32_t L_7 = V_1;
+		return L_7;
+	}
+}
+// System.UInt64 Valve.VR.CVRSystem::GetUint64TrackedDeviceProperty(System.UInt32,Valve.VR.ETrackedDeviceProperty,Valve.VR.ETrackedPropertyError&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CVRSystem_GetUint64TrackedDeviceProperty_mFF3BED4F7529B96323BF6ECF2A49F453C4E3B2E8 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, int32_t* ___pError2, const RuntimeMethod* method)
+{
+	uint64_t V_0 = 0;
+	uint64_t V_1 = 0;
+	{
+		// ulong result = FnTable.GetUint64TrackedDeviceProperty(unDeviceIndex,prop,ref pError);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetUint64TrackedDeviceProperty_tB3590D7FDFA05A6ABEB31DC8672F5BCFDD416AEC * L_1 = L_0->get_GetUint64TrackedDeviceProperty_24();
+		uint32_t L_2 = ___unDeviceIndex0;
+		int32_t L_3 = ___prop1;
+		int32_t* L_4 = ___pError2;
+		NullCheck(L_1);
+		uint64_t L_5 = _GetUint64TrackedDeviceProperty_Invoke_mED91034AFC7E86C3B3FC5DE8C256F5686F040CBE(L_1, L_2, L_3, (int32_t*)L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		// return result;
+		uint64_t L_6 = V_0;
+		V_1 = L_6;
+		goto IL_0019;
+	}
+
+IL_0019:
+	{
+		// }
+		uint64_t L_7 = V_1;
+		return L_7;
+	}
+}
+// Valve.VR.HmdMatrix34_t Valve.VR.CVRSystem::GetMatrix34TrackedDeviceProperty(System.UInt32,Valve.VR.ETrackedDeviceProperty,Valve.VR.ETrackedPropertyError&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  CVRSystem_GetMatrix34TrackedDeviceProperty_m9CBE4815080F285A46358174FE8FB6DC5FD59844 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, int32_t* ___pError2, const RuntimeMethod* method)
+{
+	HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		// HmdMatrix34_t result = FnTable.GetMatrix34TrackedDeviceProperty(unDeviceIndex,prop,ref pError);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetMatrix34TrackedDeviceProperty_t1A97BE783D0E0DB9825D7573B8FC8CDCD0DB3F0C * L_1 = L_0->get_GetMatrix34TrackedDeviceProperty_25();
+		uint32_t L_2 = ___unDeviceIndex0;
+		int32_t L_3 = ___prop1;
+		int32_t* L_4 = ___pError2;
+		NullCheck(L_1);
+		HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  L_5 = _GetMatrix34TrackedDeviceProperty_Invoke_mF587D6584894339B54B06A971312D292A0F332C5(L_1, L_2, L_3, (int32_t*)L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		// return result;
+		HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  L_6 = V_0;
+		V_1 = L_6;
+		goto IL_0019;
+	}
+
+IL_0019:
+	{
+		// }
+		HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669  L_7 = V_1;
+		return L_7;
+	}
+}
+// System.UInt32 Valve.VR.CVRSystem::GetArrayTrackedDeviceProperty(System.UInt32,Valve.VR.ETrackedDeviceProperty,System.UInt32,System.IntPtr,System.UInt32,Valve.VR.ETrackedPropertyError&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t CVRSystem_GetArrayTrackedDeviceProperty_m3C23101D870775594B8618AD8AB2F8E6E9C40BC0 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, uint32_t ___propType2, intptr_t ___pBuffer3, uint32_t ___unBufferSize4, int32_t* ___pError5, const RuntimeMethod* method)
+{
+	uint32_t V_0 = 0;
+	uint32_t V_1 = 0;
+	{
+		// uint result = FnTable.GetArrayTrackedDeviceProperty(unDeviceIndex,prop,propType,pBuffer,unBufferSize,ref pError);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetArrayTrackedDeviceProperty_tADF405FD8E332618692476BDD849D03061C3E325 * L_1 = L_0->get_GetArrayTrackedDeviceProperty_26();
+		uint32_t L_2 = ___unDeviceIndex0;
+		int32_t L_3 = ___prop1;
+		uint32_t L_4 = ___propType2;
+		intptr_t L_5 = ___pBuffer3;
+		uint32_t L_6 = ___unBufferSize4;
+		int32_t* L_7 = ___pError5;
+		NullCheck(L_1);
+		uint32_t L_8 = _GetArrayTrackedDeviceProperty_Invoke_m0F372BA0E4BA4061A432482A1DD412347217FA87(L_1, L_2, L_3, L_4, (intptr_t)L_5, L_6, (int32_t*)L_7, /*hidden argument*/NULL);
+		V_0 = L_8;
+		// return result;
+		uint32_t L_9 = V_0;
+		V_1 = L_9;
+		goto IL_001f;
+	}
+
+IL_001f:
+	{
+		// }
+		uint32_t L_10 = V_1;
+		return L_10;
+	}
+}
+// System.UInt32 Valve.VR.CVRSystem::GetStringTrackedDeviceProperty(System.UInt32,Valve.VR.ETrackedDeviceProperty,System.Text.StringBuilder,System.UInt32,Valve.VR.ETrackedPropertyError&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t CVRSystem_GetStringTrackedDeviceProperty_m2761838936BCF81919EF0FD625DE42B598463AC4 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, uint32_t ___unDeviceIndex0, int32_t ___prop1, StringBuilder_t * ___pchValue2, uint32_t ___unBufferSize3, int32_t* ___pError4, const RuntimeMethod* method)
+{
+	uint32_t V_0 = 0;
+	uint32_t V_1 = 0;
+	{
+		// uint result = FnTable.GetStringTrackedDeviceProperty(unDeviceIndex,prop,pchValue,unBufferSize,ref pError);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetStringTrackedDeviceProperty_tA012B3D010E504C65179E3BDADFF1D6C459FBF0B * L_1 = L_0->get_GetStringTrackedDeviceProperty_27();
+		uint32_t L_2 = ___unDeviceIndex0;
+		int32_t L_3 = ___prop1;
+		StringBuilder_t * L_4 = ___pchValue2;
+		uint32_t L_5 = ___unBufferSize3;
+		int32_t* L_6 = ___pError4;
+		NullCheck(L_1);
+		uint32_t L_7 = _GetStringTrackedDeviceProperty_Invoke_mB9161F20DE0DB2318247B0F3657079FE685FE88A(L_1, L_2, L_3, L_4, L_5, (int32_t*)L_6, /*hidden argument*/NULL);
+		V_0 = L_7;
+		// return result;
+		uint32_t L_8 = V_0;
+		V_1 = L_8;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		// }
+		uint32_t L_9 = V_1;
+		return L_9;
+	}
+}
+// System.String Valve.VR.CVRSystem::GetPropErrorNameFromEnum(Valve.VR.ETrackedPropertyError)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CVRSystem_GetPropErrorNameFromEnum_m6EA52518A3451FD436DC4A34FFFCEBDE400ECD65 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, int32_t ___error0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRSystem_GetPropErrorNameFromEnum_m6EA52518A3451FD436DC4A34FFFCEBDE400ECD65_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	intptr_t V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	String_t* V_1 = NULL;
+	{
+		// IntPtr result = FnTable.GetPropErrorNameFromEnum(error);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetPropErrorNameFromEnum_t842E8D3448564F3E5B410FF8C05CAEBE8DECF4EB * L_1 = L_0->get_GetPropErrorNameFromEnum_28();
+		int32_t L_2 = ___error0;
+		NullCheck(L_1);
+		intptr_t L_3 = _GetPropErrorNameFromEnum_Invoke_m9E594D0378B53BE5D98E6C7500AB7CD772BFB760(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = (intptr_t)L_3;
+		// return Marshal.PtrToStringAnsi(result);
+		intptr_t L_4 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_tC795CE9CC2FFBA41EDB1AC1C0FEC04607DFA8A40_il2cpp_TypeInfo_var);
+		String_t* L_5 = Marshal_PtrToStringAnsi_mA5D5D1AA7C0EB6A96F92454A8AF9C266E2DF5DA5((intptr_t)L_4, /*hidden argument*/NULL);
+		V_1 = L_5;
+		goto IL_001c;
+	}
+
+IL_001c:
+	{
+		// }
+		String_t* L_6 = V_1;
+		return L_6;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::PollNextEvent(Valve.VR.VREvent_t&,System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CVRSystem_PollNextEvent_m59B3B6957C486CAC116E40C86B444D6006E39DEB (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, VREvent_t_t4F330058D4B87093309E1043D17F8A3DB1BA925C * ___pEvent0, uint32_t ___uncbVREvent1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRSystem_PollNextEvent_m59B3B6957C486CAC116E40C86B444D6006E39DEB_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	bool V_1 = false;
+	PollNextEventUnion_t3A00805F6763060016D5B96B4603D50F17D0C19F  V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	VREvent_t_Packed_tA4998F133F28A9AFF4CDA75D8B5E2ACE02E1383F  V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	bool V_4 = false;
+	bool V_5 = false;
+	int32_t G_B3_0 = 0;
+	{
+		// if ((System.Environment.OSVersion.Platform == System.PlatformID.MacOSX) ||
+		//         (System.Environment.OSVersion.Platform == System.PlatformID.Unix))
+		OperatingSystem_tBB05846D5AA6960FFEB42C59E5FE359255C2BE83 * L_0 = Environment_get_OSVersion_mD6E99E279170E00D17F7D29F242EF65434812233(/*hidden argument*/NULL);
+		NullCheck(L_0);
+		int32_t L_1 = OperatingSystem_get_Platform_m36635DD0A3D5442E515AB8D2EA3C7092348A5181_inline(L_0, /*hidden argument*/NULL);
+		if ((((int32_t)L_1) == ((int32_t)6)))
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		OperatingSystem_tBB05846D5AA6960FFEB42C59E5FE359255C2BE83 * L_2 = Environment_get_OSVersion_mD6E99E279170E00D17F7D29F242EF65434812233(/*hidden argument*/NULL);
+		NullCheck(L_2);
+		int32_t L_3 = OperatingSystem_get_Platform_m36635DD0A3D5442E515AB8D2EA3C7092348A5181_inline(L_2, /*hidden argument*/NULL);
+		G_B3_0 = ((((int32_t)L_3) == ((int32_t)4))? 1 : 0);
+		goto IL_001e;
+	}
+
+IL_001d:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_001e:
+	{
+		V_1 = (bool)G_B3_0;
+		bool L_4 = V_1;
+		if (!L_4)
+		{
+			goto IL_0072;
+		}
+	}
+	{
+		// VREvent_t_Packed event_packed = new VREvent_t_Packed();
+		il2cpp_codegen_initobj((&V_3), sizeof(VREvent_t_Packed_tA4998F133F28A9AFF4CDA75D8B5E2ACE02E1383F ));
+		// u.pPollNextEventPacked = null;
+		(&V_2)->set_pPollNextEventPacked_1((_PollNextEventPacked_tDD83858026A3290DCD98B309C2785D88381438C7 *)NULL);
+		// u.pPollNextEvent = FnTable.PollNextEvent;
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_5 = __this->get_address_of_FnTable_0();
+		_PollNextEvent_tB2378588E343F870ED18B667ACA1FFE83F933F14 * L_6 = L_5->get_PollNextEvent_29();
+		(&V_2)->set_pPollNextEvent_0(L_6);
+		// bool packed_result = u.pPollNextEventPacked(ref event_packed,(uint)System.Runtime.InteropServices.Marshal.SizeOf(typeof(VREvent_t_Packed)));
+		PollNextEventUnion_t3A00805F6763060016D5B96B4603D50F17D0C19F  L_7 = V_2;
+		_PollNextEventPacked_tDD83858026A3290DCD98B309C2785D88381438C7 * L_8 = L_7.get_pPollNextEventPacked_1();
+		RuntimeTypeHandle_t7B542280A22F0EC4EAC2061C29178845847A8B2D  L_9 = { reinterpret_cast<intptr_t> (VREvent_t_Packed_tA4998F133F28A9AFF4CDA75D8B5E2ACE02E1383F_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_10 = Type_GetTypeFromHandle_m9DC58ADF0512987012A8A016FB64B068F3B1AFF6(L_9, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_tC795CE9CC2FFBA41EDB1AC1C0FEC04607DFA8A40_il2cpp_TypeInfo_var);
+		int32_t L_11 = Marshal_SizeOf_m4F7DA827FA7A720395E6FDD2ABE78D4B00D43130(L_10, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		bool L_12 = _PollNextEventPacked_Invoke_m8BCFE66DC47669214EC7159261D859AA03C20BCE(L_8, (VREvent_t_Packed_tA4998F133F28A9AFF4CDA75D8B5E2ACE02E1383F *)(&V_3), L_11, /*hidden argument*/NULL);
+		V_4 = L_12;
+		// event_packed.Unpack(ref pEvent);
+		VREvent_t_t4F330058D4B87093309E1043D17F8A3DB1BA925C * L_13 = ___pEvent0;
+		VREvent_t_Packed_Unpack_mD972E9D744950AB766CD5BA184A9FA2F68F182AA((VREvent_t_Packed_tA4998F133F28A9AFF4CDA75D8B5E2ACE02E1383F *)(&V_3), (VREvent_t_t4F330058D4B87093309E1043D17F8A3DB1BA925C *)L_13, /*hidden argument*/NULL);
+		// return packed_result;
+		bool L_14 = V_4;
+		V_5 = L_14;
+		goto IL_008a;
+	}
+
+IL_0072:
+	{
+		// bool result = FnTable.PollNextEvent(ref pEvent,uncbVREvent);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_15 = __this->get_address_of_FnTable_0();
+		_PollNextEvent_tB2378588E343F870ED18B667ACA1FFE83F933F14 * L_16 = L_15->get_PollNextEvent_29();
+		VREvent_t_t4F330058D4B87093309E1043D17F8A3DB1BA925C * L_17 = ___pEvent0;
+		uint32_t L_18 = ___uncbVREvent1;
+		NullCheck(L_16);
+		bool L_19 = _PollNextEvent_Invoke_mC16698CC5E32B7D3A5CC77ADA96D1D2E2C7B7C4C(L_16, (VREvent_t_t4F330058D4B87093309E1043D17F8A3DB1BA925C *)L_17, L_18, /*hidden argument*/NULL);
+		V_0 = L_19;
+		// return result;
+		bool L_20 = V_0;
+		V_5 = L_20;
+		goto IL_008a;
+	}
+
+IL_008a:
+	{
+		// }
+		bool L_21 = V_5;
+		return L_21;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::PollNextEventWithPose(Valve.VR.ETrackingUniverseOrigin,Valve.VR.VREvent_t&,System.UInt32,Valve.VR.TrackedDevicePose_t&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CVRSystem_PollNextEventWithPose_m6A664B2B94658C84181DAEDB2FE18305C6F3D79F (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, int32_t ___eOrigin0, VREvent_t_t4F330058D4B87093309E1043D17F8A3DB1BA925C * ___pEvent1, uint32_t ___uncbVREvent2, TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 * ___pTrackedDevicePose3, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	{
+		// bool result = FnTable.PollNextEventWithPose(eOrigin,ref pEvent,uncbVREvent,ref pTrackedDevicePose);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_PollNextEventWithPose_t4A2212063C519B0F5E90C7E0BE77480B12431F23 * L_1 = L_0->get_PollNextEventWithPose_30();
+		int32_t L_2 = ___eOrigin0;
+		VREvent_t_t4F330058D4B87093309E1043D17F8A3DB1BA925C * L_3 = ___pEvent1;
+		uint32_t L_4 = ___uncbVREvent2;
+		TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 * L_5 = ___pTrackedDevicePose3;
+		NullCheck(L_1);
+		bool L_6 = _PollNextEventWithPose_Invoke_m32CB2E871D60B4F1104A4972099647B1387E6C3F(L_1, L_2, (VREvent_t_t4F330058D4B87093309E1043D17F8A3DB1BA925C *)L_3, L_4, (TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 *)L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		// return result;
+		bool L_7 = V_0;
+		V_1 = L_7;
+		goto IL_001b;
+	}
+
+IL_001b:
+	{
+		// }
+		bool L_8 = V_1;
+		return L_8;
+	}
+}
+// System.String Valve.VR.CVRSystem::GetEventTypeNameFromEnum(Valve.VR.EVREventType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CVRSystem_GetEventTypeNameFromEnum_mC11987D24B4B08614A6E56F0A4A7DAB5C9EC20D9 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, int32_t ___eType0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRSystem_GetEventTypeNameFromEnum_mC11987D24B4B08614A6E56F0A4A7DAB5C9EC20D9_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	intptr_t V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	String_t* V_1 = NULL;
+	{
+		// IntPtr result = FnTable.GetEventTypeNameFromEnum(eType);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetEventTypeNameFromEnum_t3BE9E81AEEBCED93E758200D4111889CF3B2DC7E * L_1 = L_0->get_GetEventTypeNameFromEnum_31();
+		int32_t L_2 = ___eType0;
+		NullCheck(L_1);
+		intptr_t L_3 = _GetEventTypeNameFromEnum_Invoke_mB57A6C8394DF03E6AAB75783BE53760B91CC3AA4(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = (intptr_t)L_3;
+		// return Marshal.PtrToStringAnsi(result);
+		intptr_t L_4 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_tC795CE9CC2FFBA41EDB1AC1C0FEC04607DFA8A40_il2cpp_TypeInfo_var);
+		String_t* L_5 = Marshal_PtrToStringAnsi_mA5D5D1AA7C0EB6A96F92454A8AF9C266E2DF5DA5((intptr_t)L_4, /*hidden argument*/NULL);
+		V_1 = L_5;
+		goto IL_001c;
+	}
+
+IL_001c:
+	{
+		// }
+		String_t* L_6 = V_1;
+		return L_6;
+	}
+}
+// Valve.VR.HiddenAreaMesh_t Valve.VR.CVRSystem::GetHiddenAreaMesh(Valve.VR.EVREye,Valve.VR.EHiddenAreaMeshType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HiddenAreaMesh_t_t64868D19F4AD9AB30F0073BD61A2034E2BD7E631  CVRSystem_GetHiddenAreaMesh_mF95ABA6DC0F636664E13CD2825B6A92C39D7550D (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, int32_t ___eEye0, int32_t ___type1, const RuntimeMethod* method)
+{
+	HiddenAreaMesh_t_t64868D19F4AD9AB30F0073BD61A2034E2BD7E631  V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	HiddenAreaMesh_t_t64868D19F4AD9AB30F0073BD61A2034E2BD7E631  V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		// HiddenAreaMesh_t result = FnTable.GetHiddenAreaMesh(eEye,type);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetHiddenAreaMesh_t5B6377A7F1241F1DD338C70678B037A30DFAD861 * L_1 = L_0->get_GetHiddenAreaMesh_32();
+		int32_t L_2 = ___eEye0;
+		int32_t L_3 = ___type1;
+		NullCheck(L_1);
+		HiddenAreaMesh_t_t64868D19F4AD9AB30F0073BD61A2034E2BD7E631  L_4 = _GetHiddenAreaMesh_Invoke_m80090C2EEF385389E4BD78AE8696CF542B525102(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		// return result;
+		HiddenAreaMesh_t_t64868D19F4AD9AB30F0073BD61A2034E2BD7E631  L_5 = V_0;
+		V_1 = L_5;
+		goto IL_0018;
+	}
+
+IL_0018:
+	{
+		// }
+		HiddenAreaMesh_t_t64868D19F4AD9AB30F0073BD61A2034E2BD7E631  L_6 = V_1;
+		return L_6;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::GetControllerState(System.UInt32,Valve.VR.VRControllerState_t&,System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CVRSystem_GetControllerState_m4505BA2E62588A69647E5CBC9C03EBC0794A914A (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, uint32_t ___unControllerDeviceIndex0, VRControllerState_t_t7DA56F805D6286AD969A09E744E8C241976038F1 * ___pControllerState1, uint32_t ___unControllerStateSize2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRSystem_GetControllerState_m4505BA2E62588A69647E5CBC9C03EBC0794A914A_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	bool V_1 = false;
+	GetControllerStateUnion_t95BB3B19AF93CD8480D27677C6C499B87E4A33B9  V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	VRControllerState_t_Packed_tEFACCF0282B2419CDAA858BC7D3DC83A8059CD9A  V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	bool V_4 = false;
+	bool V_5 = false;
+	int32_t G_B3_0 = 0;
+	{
+		// if ((System.Environment.OSVersion.Platform == System.PlatformID.MacOSX) ||
+		//         (System.Environment.OSVersion.Platform == System.PlatformID.Unix))
+		OperatingSystem_tBB05846D5AA6960FFEB42C59E5FE359255C2BE83 * L_0 = Environment_get_OSVersion_mD6E99E279170E00D17F7D29F242EF65434812233(/*hidden argument*/NULL);
+		NullCheck(L_0);
+		int32_t L_1 = OperatingSystem_get_Platform_m36635DD0A3D5442E515AB8D2EA3C7092348A5181_inline(L_0, /*hidden argument*/NULL);
+		if ((((int32_t)L_1) == ((int32_t)6)))
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		OperatingSystem_tBB05846D5AA6960FFEB42C59E5FE359255C2BE83 * L_2 = Environment_get_OSVersion_mD6E99E279170E00D17F7D29F242EF65434812233(/*hidden argument*/NULL);
+		NullCheck(L_2);
+		int32_t L_3 = OperatingSystem_get_Platform_m36635DD0A3D5442E515AB8D2EA3C7092348A5181_inline(L_2, /*hidden argument*/NULL);
+		G_B3_0 = ((((int32_t)L_3) == ((int32_t)4))? 1 : 0);
+		goto IL_001e;
+	}
+
+IL_001d:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_001e:
+	{
+		V_1 = (bool)G_B3_0;
+		bool L_4 = V_1;
+		if (!L_4)
+		{
+			goto IL_0078;
+		}
+	}
+	{
+		// VRControllerState_t_Packed state_packed = new VRControllerState_t_Packed(pControllerState);
+		VRControllerState_t_t7DA56F805D6286AD969A09E744E8C241976038F1 * L_5 = ___pControllerState1;
+		VRControllerState_t_t7DA56F805D6286AD969A09E744E8C241976038F1  L_6 = (*(VRControllerState_t_t7DA56F805D6286AD969A09E744E8C241976038F1 *)L_5);
+		VRControllerState_t_Packed__ctor_m2B36C9FB66FAECC29A48561CE282665ECEE54F75((VRControllerState_t_Packed_tEFACCF0282B2419CDAA858BC7D3DC83A8059CD9A *)(&V_3), L_6, /*hidden argument*/NULL);
+		// u.pGetControllerStatePacked = null;
+		(&V_2)->set_pGetControllerStatePacked_1((_GetControllerStatePacked_t5FDBEB6C6A0F63097F3F8615DC5B16F41B175D55 *)NULL);
+		// u.pGetControllerState = FnTable.GetControllerState;
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_7 = __this->get_address_of_FnTable_0();
+		_GetControllerState_t5374B3F47A1F23E6C363CC6BE74EEA8EE1AA77C0 * L_8 = L_7->get_GetControllerState_33();
+		(&V_2)->set_pGetControllerState_0(L_8);
+		// bool packed_result = u.pGetControllerStatePacked(unControllerDeviceIndex,ref state_packed,(uint)System.Runtime.InteropServices.Marshal.SizeOf(typeof(VRControllerState_t_Packed)));
+		GetControllerStateUnion_t95BB3B19AF93CD8480D27677C6C499B87E4A33B9  L_9 = V_2;
+		_GetControllerStatePacked_t5FDBEB6C6A0F63097F3F8615DC5B16F41B175D55 * L_10 = L_9.get_pGetControllerStatePacked_1();
+		uint32_t L_11 = ___unControllerDeviceIndex0;
+		RuntimeTypeHandle_t7B542280A22F0EC4EAC2061C29178845847A8B2D  L_12 = { reinterpret_cast<intptr_t> (VRControllerState_t_Packed_tEFACCF0282B2419CDAA858BC7D3DC83A8059CD9A_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_13 = Type_GetTypeFromHandle_m9DC58ADF0512987012A8A016FB64B068F3B1AFF6(L_12, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_tC795CE9CC2FFBA41EDB1AC1C0FEC04607DFA8A40_il2cpp_TypeInfo_var);
+		int32_t L_14 = Marshal_SizeOf_m4F7DA827FA7A720395E6FDD2ABE78D4B00D43130(L_13, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		bool L_15 = _GetControllerStatePacked_Invoke_m62A45BC544E2FAD1A09AEAB85AA04E398379AE7A(L_10, L_11, (VRControllerState_t_Packed_tEFACCF0282B2419CDAA858BC7D3DC83A8059CD9A *)(&V_3), L_14, /*hidden argument*/NULL);
+		V_4 = L_15;
+		// state_packed.Unpack(ref pControllerState);
+		VRControllerState_t_t7DA56F805D6286AD969A09E744E8C241976038F1 * L_16 = ___pControllerState1;
+		VRControllerState_t_Packed_Unpack_m0E8B932F021503C13DB31A81E40D40A221D34422((VRControllerState_t_Packed_tEFACCF0282B2419CDAA858BC7D3DC83A8059CD9A *)(&V_3), (VRControllerState_t_t7DA56F805D6286AD969A09E744E8C241976038F1 *)L_16, /*hidden argument*/NULL);
+		// return packed_result;
+		bool L_17 = V_4;
+		V_5 = L_17;
+		goto IL_0091;
+	}
+
+IL_0078:
+	{
+		// bool result = FnTable.GetControllerState(unControllerDeviceIndex,ref pControllerState,unControllerStateSize);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_18 = __this->get_address_of_FnTable_0();
+		_GetControllerState_t5374B3F47A1F23E6C363CC6BE74EEA8EE1AA77C0 * L_19 = L_18->get_GetControllerState_33();
+		uint32_t L_20 = ___unControllerDeviceIndex0;
+		VRControllerState_t_t7DA56F805D6286AD969A09E744E8C241976038F1 * L_21 = ___pControllerState1;
+		uint32_t L_22 = ___unControllerStateSize2;
+		NullCheck(L_19);
+		bool L_23 = _GetControllerState_Invoke_m4A6CADA6433C38E5868301DD694E989E0E4E5C69(L_19, L_20, (VRControllerState_t_t7DA56F805D6286AD969A09E744E8C241976038F1 *)L_21, L_22, /*hidden argument*/NULL);
+		V_0 = L_23;
+		// return result;
+		bool L_24 = V_0;
+		V_5 = L_24;
+		goto IL_0091;
+	}
+
+IL_0091:
+	{
+		// }
+		bool L_25 = V_5;
+		return L_25;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::GetControllerStateWithPose(Valve.VR.ETrackingUniverseOrigin,System.UInt32,Valve.VR.VRControllerState_t&,System.UInt32,Valve.VR.TrackedDevicePose_t&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CVRSystem_GetControllerStateWithPose_m263076795EA23A846BE713CCFA78E2D53B76FC72 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, int32_t ___eOrigin0, uint32_t ___unControllerDeviceIndex1, VRControllerState_t_t7DA56F805D6286AD969A09E744E8C241976038F1 * ___pControllerState2, uint32_t ___unControllerStateSize3, TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 * ___pTrackedDevicePose4, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRSystem_GetControllerStateWithPose_m263076795EA23A846BE713CCFA78E2D53B76FC72_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	bool V_1 = false;
+	GetControllerStateWithPoseUnion_tEC92F561A1DD7CB43A6ECA3E4EE893B3EDAEBF27  V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	VRControllerState_t_Packed_tEFACCF0282B2419CDAA858BC7D3DC83A8059CD9A  V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	bool V_4 = false;
+	bool V_5 = false;
+	int32_t G_B3_0 = 0;
+	{
+		// if ((System.Environment.OSVersion.Platform == System.PlatformID.MacOSX) ||
+		//         (System.Environment.OSVersion.Platform == System.PlatformID.Unix))
+		OperatingSystem_tBB05846D5AA6960FFEB42C59E5FE359255C2BE83 * L_0 = Environment_get_OSVersion_mD6E99E279170E00D17F7D29F242EF65434812233(/*hidden argument*/NULL);
+		NullCheck(L_0);
+		int32_t L_1 = OperatingSystem_get_Platform_m36635DD0A3D5442E515AB8D2EA3C7092348A5181_inline(L_0, /*hidden argument*/NULL);
+		if ((((int32_t)L_1) == ((int32_t)6)))
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		OperatingSystem_tBB05846D5AA6960FFEB42C59E5FE359255C2BE83 * L_2 = Environment_get_OSVersion_mD6E99E279170E00D17F7D29F242EF65434812233(/*hidden argument*/NULL);
+		NullCheck(L_2);
+		int32_t L_3 = OperatingSystem_get_Platform_m36635DD0A3D5442E515AB8D2EA3C7092348A5181_inline(L_2, /*hidden argument*/NULL);
+		G_B3_0 = ((((int32_t)L_3) == ((int32_t)4))? 1 : 0);
+		goto IL_001e;
+	}
+
+IL_001d:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_001e:
+	{
+		V_1 = (bool)G_B3_0;
+		bool L_4 = V_1;
+		if (!L_4)
+		{
+			goto IL_007b;
+		}
+	}
+	{
+		// VRControllerState_t_Packed state_packed = new VRControllerState_t_Packed(pControllerState);
+		VRControllerState_t_t7DA56F805D6286AD969A09E744E8C241976038F1 * L_5 = ___pControllerState2;
+		VRControllerState_t_t7DA56F805D6286AD969A09E744E8C241976038F1  L_6 = (*(VRControllerState_t_t7DA56F805D6286AD969A09E744E8C241976038F1 *)L_5);
+		VRControllerState_t_Packed__ctor_m2B36C9FB66FAECC29A48561CE282665ECEE54F75((VRControllerState_t_Packed_tEFACCF0282B2419CDAA858BC7D3DC83A8059CD9A *)(&V_3), L_6, /*hidden argument*/NULL);
+		// u.pGetControllerStateWithPosePacked = null;
+		(&V_2)->set_pGetControllerStateWithPosePacked_1((_GetControllerStateWithPosePacked_t5FB5A16125655CEFF37BC308DA5952CA99373CE9 *)NULL);
+		// u.pGetControllerStateWithPose = FnTable.GetControllerStateWithPose;
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_7 = __this->get_address_of_FnTable_0();
+		_GetControllerStateWithPose_t098A600FCC0FA005ADC4CE8A90BD37D386F8F3B6 * L_8 = L_7->get_GetControllerStateWithPose_34();
+		(&V_2)->set_pGetControllerStateWithPose_0(L_8);
+		// bool packed_result = u.pGetControllerStateWithPosePacked(eOrigin,unControllerDeviceIndex,ref state_packed,(uint)System.Runtime.InteropServices.Marshal.SizeOf(typeof(VRControllerState_t_Packed)),ref pTrackedDevicePose);
+		GetControllerStateWithPoseUnion_tEC92F561A1DD7CB43A6ECA3E4EE893B3EDAEBF27  L_9 = V_2;
+		_GetControllerStateWithPosePacked_t5FB5A16125655CEFF37BC308DA5952CA99373CE9 * L_10 = L_9.get_pGetControllerStateWithPosePacked_1();
+		int32_t L_11 = ___eOrigin0;
+		uint32_t L_12 = ___unControllerDeviceIndex1;
+		RuntimeTypeHandle_t7B542280A22F0EC4EAC2061C29178845847A8B2D  L_13 = { reinterpret_cast<intptr_t> (VRControllerState_t_Packed_tEFACCF0282B2419CDAA858BC7D3DC83A8059CD9A_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_14 = Type_GetTypeFromHandle_m9DC58ADF0512987012A8A016FB64B068F3B1AFF6(L_13, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_tC795CE9CC2FFBA41EDB1AC1C0FEC04607DFA8A40_il2cpp_TypeInfo_var);
+		int32_t L_15 = Marshal_SizeOf_m4F7DA827FA7A720395E6FDD2ABE78D4B00D43130(L_14, /*hidden argument*/NULL);
+		TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 * L_16 = ___pTrackedDevicePose4;
+		NullCheck(L_10);
+		bool L_17 = _GetControllerStateWithPosePacked_Invoke_mF65F119F9F4679E2C93D4EBB81B18D7E9A931C53(L_10, L_11, L_12, (VRControllerState_t_Packed_tEFACCF0282B2419CDAA858BC7D3DC83A8059CD9A *)(&V_3), L_15, (TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 *)L_16, /*hidden argument*/NULL);
+		V_4 = L_17;
+		// state_packed.Unpack(ref pControllerState);
+		VRControllerState_t_t7DA56F805D6286AD969A09E744E8C241976038F1 * L_18 = ___pControllerState2;
+		VRControllerState_t_Packed_Unpack_m0E8B932F021503C13DB31A81E40D40A221D34422((VRControllerState_t_Packed_tEFACCF0282B2419CDAA858BC7D3DC83A8059CD9A *)(&V_3), (VRControllerState_t_t7DA56F805D6286AD969A09E744E8C241976038F1 *)L_18, /*hidden argument*/NULL);
+		// return packed_result;
+		bool L_19 = V_4;
+		V_5 = L_19;
+		goto IL_0098;
+	}
+
+IL_007b:
+	{
+		// bool result = FnTable.GetControllerStateWithPose(eOrigin,unControllerDeviceIndex,ref pControllerState,unControllerStateSize,ref pTrackedDevicePose);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_20 = __this->get_address_of_FnTable_0();
+		_GetControllerStateWithPose_t098A600FCC0FA005ADC4CE8A90BD37D386F8F3B6 * L_21 = L_20->get_GetControllerStateWithPose_34();
+		int32_t L_22 = ___eOrigin0;
+		uint32_t L_23 = ___unControllerDeviceIndex1;
+		VRControllerState_t_t7DA56F805D6286AD969A09E744E8C241976038F1 * L_24 = ___pControllerState2;
+		uint32_t L_25 = ___unControllerStateSize3;
+		TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 * L_26 = ___pTrackedDevicePose4;
+		NullCheck(L_21);
+		bool L_27 = _GetControllerStateWithPose_Invoke_m282F2B81611FFF9725E4C326B3260203E614D172(L_21, L_22, L_23, (VRControllerState_t_t7DA56F805D6286AD969A09E744E8C241976038F1 *)L_24, L_25, (TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 *)L_26, /*hidden argument*/NULL);
+		V_0 = L_27;
+		// return result;
+		bool L_28 = V_0;
+		V_5 = L_28;
+		goto IL_0098;
+	}
+
+IL_0098:
+	{
+		// }
+		bool L_29 = V_5;
+		return L_29;
+	}
+}
+// System.Void Valve.VR.CVRSystem::TriggerHapticPulse(System.UInt32,System.UInt32,System.UInt16)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CVRSystem_TriggerHapticPulse_m7DC70B0B6AB91E4D7A4EB3F1338818C28DFF0A39 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, uint32_t ___unControllerDeviceIndex0, uint32_t ___unAxisId1, uint16_t ___usDurationMicroSec2, const RuntimeMethod* method)
+{
+	{
+		// FnTable.TriggerHapticPulse(unControllerDeviceIndex,unAxisId,usDurationMicroSec);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_TriggerHapticPulse_tB89A00BCA1E57CD019E0A8868C32EF7E5C271B52 * L_1 = L_0->get_TriggerHapticPulse_35();
+		uint32_t L_2 = ___unControllerDeviceIndex0;
+		uint32_t L_3 = ___unAxisId1;
+		uint16_t L_4 = ___usDurationMicroSec2;
+		NullCheck(L_1);
+		_TriggerHapticPulse_Invoke_m9FA622500BF9792CE22B8F1C05EC7017D3821E07(L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.String Valve.VR.CVRSystem::GetButtonIdNameFromEnum(Valve.VR.EVRButtonId)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CVRSystem_GetButtonIdNameFromEnum_mFB39E28826940CDC7770FE22D68599D6BD0CEBD9 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, int32_t ___eButtonId0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRSystem_GetButtonIdNameFromEnum_mFB39E28826940CDC7770FE22D68599D6BD0CEBD9_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	intptr_t V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	String_t* V_1 = NULL;
+	{
+		// IntPtr result = FnTable.GetButtonIdNameFromEnum(eButtonId);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetButtonIdNameFromEnum_t5C01154979EC6989BC57A2FEB4C7E8C60EEA098F * L_1 = L_0->get_GetButtonIdNameFromEnum_36();
+		int32_t L_2 = ___eButtonId0;
+		NullCheck(L_1);
+		intptr_t L_3 = _GetButtonIdNameFromEnum_Invoke_mAC79CDA07FB4C6BFCDF6028F82D457C9A20A2992(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = (intptr_t)L_3;
+		// return Marshal.PtrToStringAnsi(result);
+		intptr_t L_4 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_tC795CE9CC2FFBA41EDB1AC1C0FEC04607DFA8A40_il2cpp_TypeInfo_var);
+		String_t* L_5 = Marshal_PtrToStringAnsi_mA5D5D1AA7C0EB6A96F92454A8AF9C266E2DF5DA5((intptr_t)L_4, /*hidden argument*/NULL);
+		V_1 = L_5;
+		goto IL_001c;
+	}
+
+IL_001c:
+	{
+		// }
+		String_t* L_6 = V_1;
+		return L_6;
+	}
+}
+// System.String Valve.VR.CVRSystem::GetControllerAxisTypeNameFromEnum(Valve.VR.EVRControllerAxisType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CVRSystem_GetControllerAxisTypeNameFromEnum_mA99753C502BDD22F711C0A68985F3D34A8711116 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, int32_t ___eAxisType0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRSystem_GetControllerAxisTypeNameFromEnum_mA99753C502BDD22F711C0A68985F3D34A8711116_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	intptr_t V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	String_t* V_1 = NULL;
+	{
+		// IntPtr result = FnTable.GetControllerAxisTypeNameFromEnum(eAxisType);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetControllerAxisTypeNameFromEnum_t859320E3852DA4C7ED3DE13035EEF7BF0C06F56C * L_1 = L_0->get_GetControllerAxisTypeNameFromEnum_37();
+		int32_t L_2 = ___eAxisType0;
+		NullCheck(L_1);
+		intptr_t L_3 = _GetControllerAxisTypeNameFromEnum_Invoke_mF4AEBC10DD220939522D7380A3460FA2C9E4DF8C(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = (intptr_t)L_3;
+		// return Marshal.PtrToStringAnsi(result);
+		intptr_t L_4 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_tC795CE9CC2FFBA41EDB1AC1C0FEC04607DFA8A40_il2cpp_TypeInfo_var);
+		String_t* L_5 = Marshal_PtrToStringAnsi_mA5D5D1AA7C0EB6A96F92454A8AF9C266E2DF5DA5((intptr_t)L_4, /*hidden argument*/NULL);
+		V_1 = L_5;
+		goto IL_001c;
+	}
+
+IL_001c:
+	{
+		// }
+		String_t* L_6 = V_1;
+		return L_6;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::IsInputAvailable()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CVRSystem_IsInputAvailable_mFDF845D38C362C94F58BF730659EB9EE3144AF3C (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	{
+		// bool result = FnTable.IsInputAvailable();
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_IsInputAvailable_t83CB75E728F5CB080F637304688AA8E57222CCCD * L_1 = L_0->get_IsInputAvailable_38();
+		NullCheck(L_1);
+		bool L_2 = _IsInputAvailable_Invoke_mEEA14350544EC2FC90B2AFC2D842F71969A593E1(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		// return result;
+		bool L_3 = V_0;
+		V_1 = L_3;
+		goto IL_0016;
+	}
+
+IL_0016:
+	{
+		// }
+		bool L_4 = V_1;
+		return L_4;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::IsSteamVRDrawingControllers()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CVRSystem_IsSteamVRDrawingControllers_m10436E013FF3BD242306688382E4899DA315500B (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	{
+		// bool result = FnTable.IsSteamVRDrawingControllers();
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_IsSteamVRDrawingControllers_t3321FAD389E87E62F6C706EF0B3DA51863552453 * L_1 = L_0->get_IsSteamVRDrawingControllers_39();
+		NullCheck(L_1);
+		bool L_2 = _IsSteamVRDrawingControllers_Invoke_m4691E1EAAB5E39443F80B0B68A30E75CD8C41B44(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		// return result;
+		bool L_3 = V_0;
+		V_1 = L_3;
+		goto IL_0016;
+	}
+
+IL_0016:
+	{
+		// }
+		bool L_4 = V_1;
+		return L_4;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::ShouldApplicationPause()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CVRSystem_ShouldApplicationPause_mFB995134A64CA62991309C97228ED2BBC09EAB99 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	{
+		// bool result = FnTable.ShouldApplicationPause();
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_ShouldApplicationPause_t81B174FD0D6E94F0A59237ACB1EB279ED38E65C0 * L_1 = L_0->get_ShouldApplicationPause_40();
+		NullCheck(L_1);
+		bool L_2 = _ShouldApplicationPause_Invoke_mE6A8C55D05969986F440B8AE47BFB851C21088EC(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		// return result;
+		bool L_3 = V_0;
+		V_1 = L_3;
+		goto IL_0016;
+	}
+
+IL_0016:
+	{
+		// }
+		bool L_4 = V_1;
+		return L_4;
+	}
+}
+// System.Boolean Valve.VR.CVRSystem::ShouldApplicationReduceRenderingWork()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CVRSystem_ShouldApplicationReduceRenderingWork_mB1FA90B22119254496E6B87290E4261DE20EEC95 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	{
+		// bool result = FnTable.ShouldApplicationReduceRenderingWork();
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_ShouldApplicationReduceRenderingWork_tE999E2AE619B6EA5C5D3D1F27D066E667338B029 * L_1 = L_0->get_ShouldApplicationReduceRenderingWork_41();
+		NullCheck(L_1);
+		bool L_2 = _ShouldApplicationReduceRenderingWork_Invoke_m799F3FA98E3DCCBADFD91526B15FFE115521F318(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		// return result;
+		bool L_3 = V_0;
+		V_1 = L_3;
+		goto IL_0016;
+	}
+
+IL_0016:
+	{
+		// }
+		bool L_4 = V_1;
+		return L_4;
+	}
+}
+// Valve.VR.EVRFirmwareError Valve.VR.CVRSystem::PerformFirmwareUpdate(System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRSystem_PerformFirmwareUpdate_m02E31690DF617E3BCEEF287D3A4004DF4897D0EE (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, uint32_t ___unDeviceIndex0, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	{
+		// EVRFirmwareError result = FnTable.PerformFirmwareUpdate(unDeviceIndex);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_PerformFirmwareUpdate_tE48B2BC4E4C414312E1450B625C5342A993FE358 * L_1 = L_0->get_PerformFirmwareUpdate_42();
+		uint32_t L_2 = ___unDeviceIndex0;
+		NullCheck(L_1);
+		int32_t L_3 = _PerformFirmwareUpdate_Invoke_m023D879600F817ABD0BB4248763E6609DCD77B6D(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		// return result;
+		int32_t L_4 = V_0;
+		V_1 = L_4;
+		goto IL_0017;
+	}
+
+IL_0017:
+	{
+		// }
+		int32_t L_5 = V_1;
+		return L_5;
+	}
+}
+// System.Void Valve.VR.CVRSystem::AcknowledgeQuit_Exiting()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CVRSystem_AcknowledgeQuit_Exiting_m3D73F19FB23F644995339B5D4F38CBD1D592094D (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, const RuntimeMethod* method)
+{
+	{
+		// FnTable.AcknowledgeQuit_Exiting();
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_AcknowledgeQuit_Exiting_t7CA8BE614EBD0F2BCA93CD0C5408A2CCA2E4CBF7 * L_1 = L_0->get_AcknowledgeQuit_Exiting_43();
+		NullCheck(L_1);
+		_AcknowledgeQuit_Exiting_Invoke_m7682834AEA3A33A0381E6FD370633C8D5C1233F0(L_1, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.UInt32 Valve.VR.CVRSystem::GetAppContainerFilePaths(System.Text.StringBuilder,System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t CVRSystem_GetAppContainerFilePaths_mFCC0825AEDE9A0C7EB66D65A2CE7CC250F57E632 (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, StringBuilder_t * ___pchBuffer0, uint32_t ___unBufferSize1, const RuntimeMethod* method)
+{
+	uint32_t V_0 = 0;
+	uint32_t V_1 = 0;
+	{
+		// uint result = FnTable.GetAppContainerFilePaths(pchBuffer,unBufferSize);
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetAppContainerFilePaths_tB65F788ECB67D004E546E0591490B05FD19CBAB9 * L_1 = L_0->get_GetAppContainerFilePaths_44();
+		StringBuilder_t * L_2 = ___pchBuffer0;
+		uint32_t L_3 = ___unBufferSize1;
+		NullCheck(L_1);
+		uint32_t L_4 = _GetAppContainerFilePaths_Invoke_mA0CA3A8AFDCA5BF1BBD9FCFA8CAD26FAA6A0C7F3(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		// return result;
+		uint32_t L_5 = V_0;
+		V_1 = L_5;
+		goto IL_0018;
+	}
+
+IL_0018:
+	{
+		// }
+		uint32_t L_6 = V_1;
+		return L_6;
+	}
+}
+// System.String Valve.VR.CVRSystem::GetRuntimeVersion()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CVRSystem_GetRuntimeVersion_m23FCDBEAD7D51173B9FE114B34B709E15CBFB74D (CVRSystem_t5B252CC3E969ED765C4C346EC5CF6A79657D5380 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CVRSystem_GetRuntimeVersion_m23FCDBEAD7D51173B9FE114B34B709E15CBFB74D_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	intptr_t V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	String_t* V_1 = NULL;
+	{
+		// IntPtr result = FnTable.GetRuntimeVersion();
+		IVRSystem_t052279246F0FA8F6491FEB89BA356522AB4FF794 * L_0 = __this->get_address_of_FnTable_0();
+		_GetRuntimeVersion_tB06601CFD929892DD241CD7F5B84501B34B235FE * L_1 = L_0->get_GetRuntimeVersion_45();
+		NullCheck(L_1);
+		intptr_t L_2 = _GetRuntimeVersion_Invoke_m580523DF7A2B25696E952F7E2CD9FA627739FFFD(L_1, /*hidden argument*/NULL);
+		V_0 = (intptr_t)L_2;
+		// return Marshal.PtrToStringAnsi(result);
+		intptr_t L_3 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_tC795CE9CC2FFBA41EDB1AC1C0FEC04607DFA8A40_il2cpp_TypeInfo_var);
+		String_t* L_4 = Marshal_PtrToStringAnsi_mA5D5D1AA7C0EB6A96F92454A8AF9C266E2DF5DA5((intptr_t)L_3, /*hidden argument*/NULL);
+		V_1 = L_4;
+		goto IL_001b;
+	}
+
+IL_001b:
+	{
+		// }
+		String_t* L_5 = V_1;
+		return L_5;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -13769,6 +17113,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CVRTrackedCamera_GetCameraErrorName
 		il2cpp_codegen_initialize_method (CVRTrackedCamera_GetCameraErrorNameFromEnum_m411FC376D89E2D42B6C7A7176432AFBE2310E823_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
+	intptr_t V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	String_t* V_1 = NULL;
 	{
 		// IntPtr result = FnTable.GetCameraErrorNameFromEnum(eCameraError);
 		IVRTrackedCamera_tBFBE421D7D2BDDC5E3F819B8FD22E8D6CF3255C1 * L_0 = __this->get_address_of_FnTable_0();
@@ -13776,15 +17123,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CVRTrackedCamera_GetCameraErrorName
 		int32_t L_2 = ___eCameraError0;
 		NullCheck(L_1);
 		intptr_t L_3 = _GetCameraErrorNameFromEnum_Invoke_mA4C36B061E5CDDCCF3083943178096FEFA91B554(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = (intptr_t)L_3;
 		// return Marshal.PtrToStringAnsi(result);
+		intptr_t L_4 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(Marshal_tC795CE9CC2FFBA41EDB1AC1C0FEC04607DFA8A40_il2cpp_TypeInfo_var);
-		String_t* L_4 = Marshal_PtrToStringAnsi_mA5D5D1AA7C0EB6A96F92454A8AF9C266E2DF5DA5((intptr_t)L_3, /*hidden argument*/NULL);
-		return L_4;
+		String_t* L_5 = Marshal_PtrToStringAnsi_mA5D5D1AA7C0EB6A96F92454A8AF9C266E2DF5DA5((intptr_t)L_4, /*hidden argument*/NULL);
+		V_1 = L_5;
+		goto IL_001c;
+	}
+
+IL_001c:
+	{
+		// }
+		String_t* L_6 = V_1;
+		return L_6;
 	}
 }
 // Valve.VR.EVRTrackedCameraError Valve.VR.CVRTrackedCamera::HasCamera(System.UInt32,System.Boolean&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_HasCamera_m7728AD98F42BF8B4A87768FC8FBF34C17C1F6A01 (CVRTrackedCamera_tC78542F3F7EF2DE28BE9F0D8869A9FF3B5D22977 * __this, uint32_t ___nDeviceIndex0, bool* ___pHasCamera1, const RuntimeMethod* method)
 {
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
 	{
 		// pHasCamera = false;
 		bool* L_0 = ___pHasCamera1;
@@ -13796,13 +17155,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_HasCamera_m7728AD98F
 		bool* L_4 = ___pHasCamera1;
 		NullCheck(L_2);
 		int32_t L_5 = _HasCamera_Invoke_m441B39370EB46FF448EFC3B2FE679EB2F108B7E9(L_2, L_3, (bool*)L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
 		// return result;
-		return L_5;
+		int32_t L_6 = V_0;
+		V_1 = L_6;
+		goto IL_001b;
+	}
+
+IL_001b:
+	{
+		// }
+		int32_t L_7 = V_1;
+		return L_7;
 	}
 }
 // Valve.VR.EVRTrackedCameraError Valve.VR.CVRTrackedCamera::GetCameraFrameSize(System.UInt32,Valve.VR.EVRTrackedCameraFrameType,System.UInt32&,System.UInt32&,System.UInt32&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_GetCameraFrameSize_m41DDA570120E720B60F13AE5432A7F1D08E10FD3 (CVRTrackedCamera_tC78542F3F7EF2DE28BE9F0D8869A9FF3B5D22977 * __this, uint32_t ___nDeviceIndex0, int32_t ___eFrameType1, uint32_t* ___pnWidth2, uint32_t* ___pnHeight3, uint32_t* ___pnFrameBufferSize4, const RuntimeMethod* method)
 {
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
 	{
 		// pnWidth = 0;
 		uint32_t* L_0 = ___pnWidth2;
@@ -13823,13 +17194,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_GetCameraFrameSize_m
 		uint32_t* L_9 = ___pnFrameBufferSize4;
 		NullCheck(L_4);
 		int32_t L_10 = _GetCameraFrameSize_Invoke_m665A31879918E139D1602FD72295ACE4F6620418(L_4, L_5, L_6, (uint32_t*)L_7, (uint32_t*)L_8, (uint32_t*)L_9, /*hidden argument*/NULL);
+		V_0 = L_10;
 		// return result;
-		return L_10;
+		int32_t L_11 = V_0;
+		V_1 = L_11;
+		goto IL_0028;
+	}
+
+IL_0028:
+	{
+		// }
+		int32_t L_12 = V_1;
+		return L_12;
 	}
 }
 // Valve.VR.EVRTrackedCameraError Valve.VR.CVRTrackedCamera::GetCameraIntrinsics(System.UInt32,System.UInt32,Valve.VR.EVRTrackedCameraFrameType,Valve.VR.HmdVector2_t&,Valve.VR.HmdVector2_t&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_GetCameraIntrinsics_mB9CD396731D24A61B3B2CD9976BC731C80A96C4A (CVRTrackedCamera_tC78542F3F7EF2DE28BE9F0D8869A9FF3B5D22977 * __this, uint32_t ___nDeviceIndex0, uint32_t ___nCameraIndex1, int32_t ___eFrameType2, HmdVector2_t_t31420BF8B0ACBF9B44B789BA341CCF9F4A909FF9 * ___pFocalLength3, HmdVector2_t_t31420BF8B0ACBF9B44B789BA341CCF9F4A909FF9 * ___pCenter4, const RuntimeMethod* method)
 {
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
 	{
 		// EVRTrackedCameraError result = FnTable.GetCameraIntrinsics(nDeviceIndex,nCameraIndex,eFrameType,ref pFocalLength,ref pCenter);
 		IVRTrackedCamera_tBFBE421D7D2BDDC5E3F819B8FD22E8D6CF3255C1 * L_0 = __this->get_address_of_FnTable_0();
@@ -13841,13 +17224,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_GetCameraIntrinsics_
 		HmdVector2_t_t31420BF8B0ACBF9B44B789BA341CCF9F4A909FF9 * L_6 = ___pCenter4;
 		NullCheck(L_1);
 		int32_t L_7 = _GetCameraIntrinsics_Invoke_m471BE2F7F71A46B8AF1D69B7C238F5BCA098A922(L_1, L_2, L_3, L_4, (HmdVector2_t_t31420BF8B0ACBF9B44B789BA341CCF9F4A909FF9 *)L_5, (HmdVector2_t_t31420BF8B0ACBF9B44B789BA341CCF9F4A909FF9 *)L_6, /*hidden argument*/NULL);
+		V_0 = L_7;
 		// return result;
-		return L_7;
+		int32_t L_8 = V_0;
+		V_1 = L_8;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		// }
+		int32_t L_9 = V_1;
+		return L_9;
 	}
 }
 // Valve.VR.EVRTrackedCameraError Valve.VR.CVRTrackedCamera::GetCameraProjection(System.UInt32,System.UInt32,Valve.VR.EVRTrackedCameraFrameType,System.Single,System.Single,Valve.VR.HmdMatrix44_t&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_GetCameraProjection_m13D9A64D60998672ACA2CAFBD8D933DB622E2238 (CVRTrackedCamera_tC78542F3F7EF2DE28BE9F0D8869A9FF3B5D22977 * __this, uint32_t ___nDeviceIndex0, uint32_t ___nCameraIndex1, int32_t ___eFrameType2, float ___flZNear3, float ___flZFar4, HmdMatrix44_t_t95875BB353C776A6F1DC2AEDFDEA9EA55F75B206 * ___pProjection5, const RuntimeMethod* method)
 {
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
 	{
 		// EVRTrackedCameraError result = FnTable.GetCameraProjection(nDeviceIndex,nCameraIndex,eFrameType,flZNear,flZFar,ref pProjection);
 		IVRTrackedCamera_tBFBE421D7D2BDDC5E3F819B8FD22E8D6CF3255C1 * L_0 = __this->get_address_of_FnTable_0();
@@ -13860,13 +17255,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_GetCameraProjection_
 		HmdMatrix44_t_t95875BB353C776A6F1DC2AEDFDEA9EA55F75B206 * L_7 = ___pProjection5;
 		NullCheck(L_1);
 		int32_t L_8 = _GetCameraProjection_Invoke_m8EEF8B071C3934C7C9AB738AB2D66485FC8C52B9(L_1, L_2, L_3, L_4, L_5, L_6, (HmdMatrix44_t_t95875BB353C776A6F1DC2AEDFDEA9EA55F75B206 *)L_7, /*hidden argument*/NULL);
+		V_0 = L_8;
 		// return result;
-		return L_8;
+		int32_t L_9 = V_0;
+		V_1 = L_9;
+		goto IL_001f;
+	}
+
+IL_001f:
+	{
+		// }
+		int32_t L_10 = V_1;
+		return L_10;
 	}
 }
 // Valve.VR.EVRTrackedCameraError Valve.VR.CVRTrackedCamera::AcquireVideoStreamingService(System.UInt32,System.UInt64&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_AcquireVideoStreamingService_m3CD944B8140E5EA0341D415859293A82CCA3EC7E (CVRTrackedCamera_tC78542F3F7EF2DE28BE9F0D8869A9FF3B5D22977 * __this, uint32_t ___nDeviceIndex0, uint64_t* ___pHandle1, const RuntimeMethod* method)
 {
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
 	{
 		// pHandle = 0;
 		uint64_t* L_0 = ___pHandle1;
@@ -13878,13 +17285,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_AcquireVideoStreamin
 		uint64_t* L_4 = ___pHandle1;
 		NullCheck(L_2);
 		int32_t L_5 = _AcquireVideoStreamingService_Invoke_m9F17C9FC05BF457FEC5266C179DF84144FA940EF(L_2, L_3, (uint64_t*)L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
 		// return result;
-		return L_5;
+		int32_t L_6 = V_0;
+		V_1 = L_6;
+		goto IL_001c;
+	}
+
+IL_001c:
+	{
+		// }
+		int32_t L_7 = V_1;
+		return L_7;
 	}
 }
 // Valve.VR.EVRTrackedCameraError Valve.VR.CVRTrackedCamera::ReleaseVideoStreamingService(System.UInt64)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_ReleaseVideoStreamingService_mAF836BD8BE6114BA15935C284E43767826E5A3CE (CVRTrackedCamera_tC78542F3F7EF2DE28BE9F0D8869A9FF3B5D22977 * __this, uint64_t ___hTrackedCamera0, const RuntimeMethod* method)
 {
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
 	{
 		// EVRTrackedCameraError result = FnTable.ReleaseVideoStreamingService(hTrackedCamera);
 		IVRTrackedCamera_tBFBE421D7D2BDDC5E3F819B8FD22E8D6CF3255C1 * L_0 = __this->get_address_of_FnTable_0();
@@ -13892,13 +17311,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_ReleaseVideoStreamin
 		uint64_t L_2 = ___hTrackedCamera0;
 		NullCheck(L_1);
 		int32_t L_3 = _ReleaseVideoStreamingService_Invoke_m82EC97931F08DF3016BB115EF58F110DF6EFDE73(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
 		// return result;
-		return L_3;
+		int32_t L_4 = V_0;
+		V_1 = L_4;
+		goto IL_0017;
+	}
+
+IL_0017:
+	{
+		// }
+		int32_t L_5 = V_1;
+		return L_5;
 	}
 }
 // Valve.VR.EVRTrackedCameraError Valve.VR.CVRTrackedCamera::GetVideoStreamFrameBuffer(System.UInt64,Valve.VR.EVRTrackedCameraFrameType,System.IntPtr,System.UInt32,Valve.VR.CameraVideoStreamFrameHeader_t&,System.UInt32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_GetVideoStreamFrameBuffer_m7DC3FF9A2799CFE664C33227553EA5C3EB305272 (CVRTrackedCamera_tC78542F3F7EF2DE28BE9F0D8869A9FF3B5D22977 * __this, uint64_t ___hTrackedCamera0, int32_t ___eFrameType1, intptr_t ___pFrameBuffer2, uint32_t ___nFrameBufferSize3, CameraVideoStreamFrameHeader_t_t2C4B2EFAE4C871FF70F1BFFA376131F89C775F1F * ___pFrameHeader4, uint32_t ___nFrameHeaderSize5, const RuntimeMethod* method)
 {
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
 	{
 		// EVRTrackedCameraError result = FnTable.GetVideoStreamFrameBuffer(hTrackedCamera,eFrameType,pFrameBuffer,nFrameBufferSize,ref pFrameHeader,nFrameHeaderSize);
 		IVRTrackedCamera_tBFBE421D7D2BDDC5E3F819B8FD22E8D6CF3255C1 * L_0 = __this->get_address_of_FnTable_0();
@@ -13911,13 +17342,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_GetVideoStreamFrameB
 		uint32_t L_7 = ___nFrameHeaderSize5;
 		NullCheck(L_1);
 		int32_t L_8 = _GetVideoStreamFrameBuffer_Invoke_m7E4D54BDEFDFFC9CA098941F9CA33A15E422BB50(L_1, L_2, L_3, (intptr_t)L_4, L_5, (CameraVideoStreamFrameHeader_t_t2C4B2EFAE4C871FF70F1BFFA376131F89C775F1F *)L_6, L_7, /*hidden argument*/NULL);
+		V_0 = L_8;
 		// return result;
-		return L_8;
+		int32_t L_9 = V_0;
+		V_1 = L_9;
+		goto IL_001f;
+	}
+
+IL_001f:
+	{
+		// }
+		int32_t L_10 = V_1;
+		return L_10;
 	}
 }
 // Valve.VR.EVRTrackedCameraError Valve.VR.CVRTrackedCamera::GetVideoStreamTextureSize(System.UInt32,Valve.VR.EVRTrackedCameraFrameType,Valve.VR.VRTextureBounds_t&,System.UInt32&,System.UInt32&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_GetVideoStreamTextureSize_m345E270C8A4212BEA8BDEE4BBC9C5E9319A78338 (CVRTrackedCamera_tC78542F3F7EF2DE28BE9F0D8869A9FF3B5D22977 * __this, uint32_t ___nDeviceIndex0, int32_t ___eFrameType1, VRTextureBounds_t_tCA2820CB638F8B6C480011D70D708F75632E1779 * ___pTextureBounds2, uint32_t* ___pnWidth3, uint32_t* ___pnHeight4, const RuntimeMethod* method)
 {
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
 	{
 		// pnWidth = 0;
 		uint32_t* L_0 = ___pnWidth3;
@@ -13935,13 +17378,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_GetVideoStreamTextur
 		uint32_t* L_8 = ___pnHeight4;
 		NullCheck(L_3);
 		int32_t L_9 = _GetVideoStreamTextureSize_Invoke_m875B73E36F443A97842E400C62893EDBE147B864(L_3, L_4, L_5, (VRTextureBounds_t_tCA2820CB638F8B6C480011D70D708F75632E1779 *)L_6, (uint32_t*)L_7, (uint32_t*)L_8, /*hidden argument*/NULL);
+		V_0 = L_9;
 		// return result;
-		return L_9;
+		int32_t L_10 = V_0;
+		V_1 = L_10;
+		goto IL_0025;
+	}
+
+IL_0025:
+	{
+		// }
+		int32_t L_11 = V_1;
+		return L_11;
 	}
 }
 // Valve.VR.EVRTrackedCameraError Valve.VR.CVRTrackedCamera::GetVideoStreamTextureD3D11(System.UInt64,Valve.VR.EVRTrackedCameraFrameType,System.IntPtr,System.IntPtr&,Valve.VR.CameraVideoStreamFrameHeader_t&,System.UInt32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_GetVideoStreamTextureD3D11_mCAC462829C037EDC529BE1AC3A1ADAB99BEE2EC6 (CVRTrackedCamera_tC78542F3F7EF2DE28BE9F0D8869A9FF3B5D22977 * __this, uint64_t ___hTrackedCamera0, int32_t ___eFrameType1, intptr_t ___pD3D11DeviceOrResource2, intptr_t* ___ppD3D11ShaderResourceView3, CameraVideoStreamFrameHeader_t_t2C4B2EFAE4C871FF70F1BFFA376131F89C775F1F * ___pFrameHeader4, uint32_t ___nFrameHeaderSize5, const RuntimeMethod* method)
 {
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
 	{
 		// EVRTrackedCameraError result = FnTable.GetVideoStreamTextureD3D11(hTrackedCamera,eFrameType,pD3D11DeviceOrResource,ref ppD3D11ShaderResourceView,ref pFrameHeader,nFrameHeaderSize);
 		IVRTrackedCamera_tBFBE421D7D2BDDC5E3F819B8FD22E8D6CF3255C1 * L_0 = __this->get_address_of_FnTable_0();
@@ -13954,13 +17409,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_GetVideoStreamTextur
 		uint32_t L_7 = ___nFrameHeaderSize5;
 		NullCheck(L_1);
 		int32_t L_8 = _GetVideoStreamTextureD3D11_Invoke_m5F60A96B634A1C1C9239D9537075DD60F8CE38AC(L_1, L_2, L_3, (intptr_t)L_4, (intptr_t*)L_5, (CameraVideoStreamFrameHeader_t_t2C4B2EFAE4C871FF70F1BFFA376131F89C775F1F *)L_6, L_7, /*hidden argument*/NULL);
+		V_0 = L_8;
 		// return result;
-		return L_8;
+		int32_t L_9 = V_0;
+		V_1 = L_9;
+		goto IL_001f;
+	}
+
+IL_001f:
+	{
+		// }
+		int32_t L_10 = V_1;
+		return L_10;
 	}
 }
 // Valve.VR.EVRTrackedCameraError Valve.VR.CVRTrackedCamera::GetVideoStreamTextureGL(System.UInt64,Valve.VR.EVRTrackedCameraFrameType,System.UInt32&,Valve.VR.CameraVideoStreamFrameHeader_t&,System.UInt32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_GetVideoStreamTextureGL_m7B82BB6B73522FAEA343D7122D437DC194FA0BF5 (CVRTrackedCamera_tC78542F3F7EF2DE28BE9F0D8869A9FF3B5D22977 * __this, uint64_t ___hTrackedCamera0, int32_t ___eFrameType1, uint32_t* ___pglTextureId2, CameraVideoStreamFrameHeader_t_t2C4B2EFAE4C871FF70F1BFFA376131F89C775F1F * ___pFrameHeader3, uint32_t ___nFrameHeaderSize4, const RuntimeMethod* method)
 {
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
 	{
 		// pglTextureId = 0;
 		uint32_t* L_0 = ___pglTextureId2;
@@ -13975,13 +17442,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_GetVideoStreamTextur
 		uint32_t L_7 = ___nFrameHeaderSize4;
 		NullCheck(L_2);
 		int32_t L_8 = _GetVideoStreamTextureGL_Invoke_m0A3B8F39DF59469E38DA8F2D0227521548588F9E(L_2, L_3, L_4, (uint32_t*)L_5, (CameraVideoStreamFrameHeader_t_t2C4B2EFAE4C871FF70F1BFFA376131F89C775F1F *)L_6, L_7, /*hidden argument*/NULL);
+		V_0 = L_8;
 		// return result;
-		return L_8;
+		int32_t L_9 = V_0;
+		V_1 = L_9;
+		goto IL_0020;
+	}
+
+IL_0020:
+	{
+		// }
+		int32_t L_10 = V_1;
+		return L_10;
 	}
 }
 // Valve.VR.EVRTrackedCameraError Valve.VR.CVRTrackedCamera::ReleaseVideoStreamTextureGL(System.UInt64,System.UInt32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_ReleaseVideoStreamTextureGL_m987F0DF730D8CAA0DFFAA929B8879001B7D312F0 (CVRTrackedCamera_tC78542F3F7EF2DE28BE9F0D8869A9FF3B5D22977 * __this, uint64_t ___hTrackedCamera0, uint32_t ___glTextureId1, const RuntimeMethod* method)
 {
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
 	{
 		// EVRTrackedCameraError result = FnTable.ReleaseVideoStreamTextureGL(hTrackedCamera,glTextureId);
 		IVRTrackedCamera_tBFBE421D7D2BDDC5E3F819B8FD22E8D6CF3255C1 * L_0 = __this->get_address_of_FnTable_0();
@@ -13990,8 +17469,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_ReleaseVideoStreamTe
 		uint32_t L_3 = ___glTextureId1;
 		NullCheck(L_1);
 		int32_t L_4 = _ReleaseVideoStreamTextureGL_Invoke_m0897489941829B0863550D08263C083D005EF668(L_1, L_2, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
 		// return result;
-		return L_4;
+		int32_t L_5 = V_0;
+		V_1 = L_5;
+		goto IL_0018;
+	}
+
+IL_0018:
+	{
+		// }
+		int32_t L_6 = V_1;
+		return L_6;
 	}
 }
 // System.Void Valve.VR.CVRTrackedCamera::SetCameraTrackingSpace(Valve.VR.ETrackingUniverseOrigin)
@@ -14011,14 +17500,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CVRTrackedCamera_SetCameraTrackingSpace_
 // Valve.VR.ETrackingUniverseOrigin Valve.VR.CVRTrackedCamera::GetCameraTrackingSpace()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CVRTrackedCamera_GetCameraTrackingSpace_mAC60DAC69C0F3A5FD7EC1F968ADAAA520A839168 (CVRTrackedCamera_tC78542F3F7EF2DE28BE9F0D8869A9FF3B5D22977 * __this, const RuntimeMethod* method)
 {
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
 	{
 		// ETrackingUniverseOrigin result = FnTable.GetCameraTrackingSpace();
 		IVRTrackedCamera_tBFBE421D7D2BDDC5E3F819B8FD22E8D6CF3255C1 * L_0 = __this->get_address_of_FnTable_0();
 		_GetCameraTrackingSpace_tF1864F77280232B332D5441D270CA1436FF471F3 * L_1 = L_0->get_GetCameraTrackingSpace_13();
 		NullCheck(L_1);
 		int32_t L_2 = _GetCameraTrackingSpace_Invoke_m25E915E37F507F25ACFDBA45B8DAE3BFA8D6C3F4(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
 		// return result;
-		return L_2;
+		int32_t L_3 = V_0;
+		V_1 = L_3;
+		goto IL_0016;
+	}
+
+IL_0016:
+	{
+		// }
+		int32_t L_4 = V_1;
+		return L_4;
 	}
 }
 #ifdef __clang__
@@ -15084,56 +18585,75 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CStartU3Ed__2_MoveNext_m43B80AAAEBCFE4
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
-	SteamVR_ForceSteamVRMode_t36385ACFF1FC934ACDD76A65DDD6D24D39FBF9FF * V_1 = NULL;
-	int32_t V_2 = 0;
-	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * V_3 = NULL;
+	bool V_1 = false;
+	bool V_2 = false;
+	int32_t V_3 = 0;
+	bool V_4 = false;
 	{
 		int32_t L_0 = __this->get_U3CU3E1__state_0();
 		V_0 = L_0;
-		SteamVR_ForceSteamVRMode_t36385ACFF1FC934ACDD76A65DDD6D24D39FBF9FF * L_1 = __this->get_U3CU3E4__this_2();
-		V_1 = L_1;
-		int32_t L_2 = V_0;
-		switch (L_2)
+		int32_t L_1 = V_0;
+		switch (L_1)
 		{
 			case 0:
 			{
-				goto IL_0022;
+				goto IL_001b;
 			}
 			case 1:
 			{
-				goto IL_0042;
+				goto IL_001d;
 			}
 			case 2:
 			{
-				goto IL_0061;
+				goto IL_001f;
 			}
 		}
 	}
 	{
+		goto IL_0021;
+	}
+
+IL_001b:
+	{
+		goto IL_0023;
+	}
+
+IL_001d:
+	{
+		goto IL_0044;
+	}
+
+IL_001f:
+	{
+		goto IL_0064;
+	}
+
+IL_0021:
+	{
 		return (bool)0;
 	}
 
-IL_0022:
+IL_0023:
 	{
 		__this->set_U3CU3E1__state_0((-1));
 		// yield return new WaitForSeconds(1f); // just here to show that you can wait a while.
-		WaitForSeconds_t3E9E78D3BB53F03F96C7F28BA9B9086CD1A5F4E8 * L_3 = (WaitForSeconds_t3E9E78D3BB53F03F96C7F28BA9B9086CD1A5F4E8 *)il2cpp_codegen_object_new(WaitForSeconds_t3E9E78D3BB53F03F96C7F28BA9B9086CD1A5F4E8_il2cpp_TypeInfo_var);
-		WaitForSeconds__ctor_m8E4BA3E27AEFFE5B74A815F26FF8AAB99743F559(L_3, (1.0f), /*hidden argument*/NULL);
-		__this->set_U3CU3E2__current_1(L_3);
+		WaitForSeconds_t3E9E78D3BB53F03F96C7F28BA9B9086CD1A5F4E8 * L_2 = (WaitForSeconds_t3E9E78D3BB53F03F96C7F28BA9B9086CD1A5F4E8 *)il2cpp_codegen_object_new(WaitForSeconds_t3E9E78D3BB53F03F96C7F28BA9B9086CD1A5F4E8_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m8E4BA3E27AEFFE5B74A815F26FF8AAB99743F559(L_2, (1.0f), /*hidden argument*/NULL);
+		__this->set_U3CU3E2__current_1(L_2);
 		__this->set_U3CU3E1__state_0(1);
 		return (bool)1;
 	}
 
-IL_0042:
+IL_0044:
 	{
 		__this->set_U3CU3E1__state_0((-1));
 		// SteamVR.Initialize(true);
 		IL2CPP_RUNTIME_CLASS_INIT(SteamVR_tE14648C0E73A16927B96F72915B425561B0D057F_il2cpp_TypeInfo_var);
 		SteamVR_Initialize_m4290EF084BDC61199798490C498AA0DF8791260C((bool)1, /*hidden argument*/NULL);
-		goto IL_0068;
+		goto IL_006b;
 	}
 
-IL_0051:
+IL_0054:
 	{
 		// yield return null;
 		__this->set_U3CU3E2__current_1(NULL);
@@ -15141,81 +18661,90 @@ IL_0051:
 		return (bool)1;
 	}
 
-IL_0061:
+IL_0064:
 	{
 		__this->set_U3CU3E1__state_0((-1));
 	}
 
-IL_0068:
+IL_006b:
 	{
 		// while (SteamVR.initializedState != SteamVR.InitializedStates.InitializeSuccess)
 		IL2CPP_RUNTIME_CLASS_INIT(SteamVR_tE14648C0E73A16927B96F72915B425561B0D057F_il2cpp_TypeInfo_var);
-		int32_t L_4 = ((SteamVR_tE14648C0E73A16927B96F72915B425561B0D057F_StaticFields*)il2cpp_codegen_static_fields_for(SteamVR_tE14648C0E73A16927B96F72915B425561B0D057F_il2cpp_TypeInfo_var))->get_initializedState_2();
-		if ((!(((uint32_t)L_4) == ((uint32_t)2))))
+		int32_t L_3 = ((SteamVR_tE14648C0E73A16927B96F72915B425561B0D057F_StaticFields*)il2cpp_codegen_static_fields_for(SteamVR_tE14648C0E73A16927B96F72915B425561B0D057F_il2cpp_TypeInfo_var))->get_initializedState_2();
+		V_1 = (bool)((((int32_t)((((int32_t)L_3) == ((int32_t)2))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_4 = V_1;
+		if (L_4)
 		{
-			goto IL_0051;
+			goto IL_0054;
 		}
 	}
 	{
 		// for (int disableIndex = 0; disableIndex < disableObjectsOnLoad.Length; disableIndex++)
-		V_2 = 0;
-		goto IL_0091;
+		__this->set_U3CdisableIndexU3E5__1_3(0);
+		goto IL_00d1;
 	}
 
-IL_0074:
+IL_0083:
 	{
 		// GameObject toDisable = disableObjectsOnLoad[disableIndex];
-		SteamVR_ForceSteamVRMode_t36385ACFF1FC934ACDD76A65DDD6D24D39FBF9FF * L_5 = V_1;
+		SteamVR_ForceSteamVRMode_t36385ACFF1FC934ACDD76A65DDD6D24D39FBF9FF * L_5 = __this->get_U3CU3E4__this_2();
 		NullCheck(L_5);
 		GameObjectU5BU5D_tBF9D474747511CF34A040A1697E34C74C19BB520* L_6 = L_5->get_disableObjectsOnLoad_5();
-		int32_t L_7 = V_2;
+		int32_t L_7 = __this->get_U3CdisableIndexU3E5__1_3();
 		NullCheck(L_6);
 		int32_t L_8 = L_7;
 		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
-		V_3 = L_9;
+		__this->set_U3CtoDisableU3E5__2_4(L_9);
 		// if (toDisable != null)
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_10 = V_3;
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_10 = __this->get_U3CtoDisableU3E5__2_4();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
 		bool L_11 = Object_op_Inequality_m31EF58E217E8F4BDD3E409DEF79E1AEE95874FC1(L_10, (Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 *)NULL, /*hidden argument*/NULL);
-		if (!L_11)
+		V_2 = L_11;
+		bool L_12 = V_2;
+		if (!L_12)
 		{
-			goto IL_008d;
+			goto IL_00b9;
 		}
 	}
 	{
 		// toDisable.SetActive(false);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_12 = V_3;
-		NullCheck(L_12);
-		GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_12, (bool)0, /*hidden argument*/NULL);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_13 = __this->get_U3CtoDisableU3E5__2_4();
+		NullCheck(L_13);
+		GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_13, (bool)0, /*hidden argument*/NULL);
 	}
 
-IL_008d:
+IL_00b9:
 	{
+		__this->set_U3CtoDisableU3E5__2_4((GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *)NULL);
 		// for (int disableIndex = 0; disableIndex < disableObjectsOnLoad.Length; disableIndex++)
-		int32_t L_13 = V_2;
-		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_13, (int32_t)1));
+		int32_t L_14 = __this->get_U3CdisableIndexU3E5__1_3();
+		V_3 = L_14;
+		int32_t L_15 = V_3;
+		__this->set_U3CdisableIndexU3E5__1_3(((int32_t)il2cpp_codegen_add((int32_t)L_15, (int32_t)1)));
 	}
 
-IL_0091:
+IL_00d1:
 	{
 		// for (int disableIndex = 0; disableIndex < disableObjectsOnLoad.Length; disableIndex++)
-		int32_t L_14 = V_2;
-		SteamVR_ForceSteamVRMode_t36385ACFF1FC934ACDD76A65DDD6D24D39FBF9FF * L_15 = V_1;
-		NullCheck(L_15);
-		GameObjectU5BU5D_tBF9D474747511CF34A040A1697E34C74C19BB520* L_16 = L_15->get_disableObjectsOnLoad_5();
-		NullCheck(L_16);
-		if ((((int32_t)L_14) < ((int32_t)(((int32_t)((int32_t)(((RuntimeArray*)L_16)->max_length)))))))
+		int32_t L_16 = __this->get_U3CdisableIndexU3E5__1_3();
+		SteamVR_ForceSteamVRMode_t36385ACFF1FC934ACDD76A65DDD6D24D39FBF9FF * L_17 = __this->get_U3CU3E4__this_2();
+		NullCheck(L_17);
+		GameObjectU5BU5D_tBF9D474747511CF34A040A1697E34C74C19BB520* L_18 = L_17->get_disableObjectsOnLoad_5();
+		NullCheck(L_18);
+		V_4 = (bool)((((int32_t)L_16) < ((int32_t)(((int32_t)((int32_t)(((RuntimeArray*)L_18)->max_length))))))? 1 : 0);
+		bool L_19 = V_4;
+		if (L_19)
 		{
-			goto IL_0074;
+			goto IL_0083;
 		}
 	}
 	{
 		// GameObject.Instantiate(vrCameraPrefab);
-		SteamVR_ForceSteamVRMode_t36385ACFF1FC934ACDD76A65DDD6D24D39FBF9FF * L_17 = V_1;
-		NullCheck(L_17);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_18 = L_17->get_vrCameraPrefab_4();
+		SteamVR_ForceSteamVRMode_t36385ACFF1FC934ACDD76A65DDD6D24D39FBF9FF * L_20 = __this->get_U3CU3E4__this_2();
+		NullCheck(L_20);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_21 = L_20->get_vrCameraPrefab_4();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
-		Object_Instantiate_TisGameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_mC4AB712D7F18E0991E1542CE53F11385E21E7B90(L_18, /*hidden argument*/Object_Instantiate_TisGameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_mC4AB712D7F18E0991E1542CE53F11385E21E7B90_RuntimeMethod_var);
+		Object_Instantiate_TisGameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_mC4AB712D7F18E0991E1542CE53F11385E21E7B90(L_21, /*hidden argument*/Object_Instantiate_TisGameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_mC4AB712D7F18E0991E1542CE53F11385E21E7B90_RuntimeMethod_var);
 		// }
 		return (bool)0;
 	}
@@ -15426,23 +18955,26 @@ IL_0007:
 // System.Void Valve.VR.Extras.SteamVR_GazeTracker::OnGazeOn(Valve.VR.Extras.GazeEventArgs)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteamVR_GazeTracker_OnGazeOn_m754F707ECE16CD1BE8A5333584CB550561088CFF (SteamVR_GazeTracker_tA8B3FE002868C89A263D3CE307A2833CBC23D82B * __this, GazeEventArgs_t47F03981FE19884897B110C49EFBE6A9642D69C8  ___gazeEventArgs0, const RuntimeMethod* method)
 {
+	bool V_0 = false;
 	{
 		// if (GazeOn != null)
 		GazeEventHandler_t6DF6725FDC6551AD542EF58F87CF70914A1DBA98 * L_0 = __this->get_GazeOn_5();
-		if (!L_0)
+		V_0 = (bool)((!(((RuntimeObject*)(GazeEventHandler_t6DF6725FDC6551AD542EF58F87CF70914A1DBA98 *)L_0) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_0015;
+			goto IL_001c;
 		}
 	}
 	{
 		// GazeOn(this, gazeEventArgs);
-		GazeEventHandler_t6DF6725FDC6551AD542EF58F87CF70914A1DBA98 * L_1 = __this->get_GazeOn_5();
-		GazeEventArgs_t47F03981FE19884897B110C49EFBE6A9642D69C8  L_2 = ___gazeEventArgs0;
-		NullCheck(L_1);
-		GazeEventHandler_Invoke_m3AFCE64230B30FA17468ECFCE44001FA766FCF0D(L_1, __this, L_2, /*hidden argument*/NULL);
+		GazeEventHandler_t6DF6725FDC6551AD542EF58F87CF70914A1DBA98 * L_2 = __this->get_GazeOn_5();
+		GazeEventArgs_t47F03981FE19884897B110C49EFBE6A9642D69C8  L_3 = ___gazeEventArgs0;
+		NullCheck(L_2);
+		GazeEventHandler_Invoke_m3AFCE64230B30FA17468ECFCE44001FA766FCF0D(L_2, __this, L_3, /*hidden argument*/NULL);
 	}
 
-IL_0015:
+IL_001c:
 	{
 		// }
 		return;
@@ -15451,23 +18983,26 @@ IL_0015:
 // System.Void Valve.VR.Extras.SteamVR_GazeTracker::OnGazeOff(Valve.VR.Extras.GazeEventArgs)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteamVR_GazeTracker_OnGazeOff_m629F9A63B627DC23F20854BE4E120F35FA866E5E (SteamVR_GazeTracker_tA8B3FE002868C89A263D3CE307A2833CBC23D82B * __this, GazeEventArgs_t47F03981FE19884897B110C49EFBE6A9642D69C8  ___gazeEventArgs0, const RuntimeMethod* method)
 {
+	bool V_0 = false;
 	{
 		// if (GazeOff != null)
 		GazeEventHandler_t6DF6725FDC6551AD542EF58F87CF70914A1DBA98 * L_0 = __this->get_GazeOff_6();
-		if (!L_0)
+		V_0 = (bool)((!(((RuntimeObject*)(GazeEventHandler_t6DF6725FDC6551AD542EF58F87CF70914A1DBA98 *)L_0) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_0015;
+			goto IL_001c;
 		}
 	}
 	{
 		// GazeOff(this, gazeEventArgs);
-		GazeEventHandler_t6DF6725FDC6551AD542EF58F87CF70914A1DBA98 * L_1 = __this->get_GazeOff_6();
-		GazeEventArgs_t47F03981FE19884897B110C49EFBE6A9642D69C8  L_2 = ___gazeEventArgs0;
-		NullCheck(L_1);
-		GazeEventHandler_Invoke_m3AFCE64230B30FA17468ECFCE44001FA766FCF0D(L_1, __this, L_2, /*hidden argument*/NULL);
+		GazeEventHandler_t6DF6725FDC6551AD542EF58F87CF70914A1DBA98 * L_2 = __this->get_GazeOff_6();
+		GazeEventArgs_t47F03981FE19884897B110C49EFBE6A9642D69C8  L_3 = ___gazeEventArgs0;
+		NullCheck(L_2);
+		GazeEventHandler_Invoke_m3AFCE64230B30FA17468ECFCE44001FA766FCF0D(L_2, __this, L_3, /*hidden argument*/NULL);
 	}
 
-IL_0015:
+IL_001c:
 	{
 		// }
 		return;
@@ -15482,198 +19017,258 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteamVR_GazeTracker_Update_m5E3A2E205B07
 		il2cpp_codegen_initialize_method (SteamVR_GazeTracker_Update_m5E3A2E205B074DF3C09778B121E85A08361919BF_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	SteamVR_TrackedObjectU5BU5D_t29FB3580A8EF51AE90FE2231250C79DB172C4CB9* V_0 = NULL;
-	int32_t V_1 = 0;
-	SteamVR_TrackedObject_t2511CEC5F7D9ABC427844D8E192FDDB48A156BD2 * V_2 = NULL;
-	Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  V_3;
-	memset((&V_3), 0, sizeof(V_3));
-	Plane_t0903921088DEEDE1BCDEA5BF279EDBCFC9679AED  V_4;
-	memset((&V_4), 0, sizeof(V_4));
-	float V_5 = 0.0f;
-	float V_6 = 0.0f;
-	GazeEventArgs_t47F03981FE19884897B110C49EFBE6A9642D69C8  V_7;
+	bool V_0 = false;
+	SteamVR_TrackedObjectU5BU5D_t29FB3580A8EF51AE90FE2231250C79DB172C4CB9* V_1 = NULL;
+	SteamVR_TrackedObjectU5BU5D_t29FB3580A8EF51AE90FE2231250C79DB172C4CB9* V_2 = NULL;
+	int32_t V_3 = 0;
+	SteamVR_TrackedObject_t2511CEC5F7D9ABC427844D8E192FDDB48A156BD2 * V_4 = NULL;
+	bool V_5 = false;
+	bool V_6 = false;
+	Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  V_7;
 	memset((&V_7), 0, sizeof(V_7));
-	GazeEventArgs_t47F03981FE19884897B110C49EFBE6A9642D69C8  V_8;
+	Plane_t0903921088DEEDE1BCDEA5BF279EDBCFC9679AED  V_8;
 	memset((&V_8), 0, sizeof(V_8));
+	float V_9 = 0.0f;
+	bool V_10 = false;
+	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  V_11;
+	memset((&V_11), 0, sizeof(V_11));
+	float V_12 = 0.0f;
+	bool V_13 = false;
+	GazeEventArgs_t47F03981FE19884897B110C49EFBE6A9642D69C8  V_14;
+	memset((&V_14), 0, sizeof(V_14));
+	bool V_15 = false;
+	GazeEventArgs_t47F03981FE19884897B110C49EFBE6A9642D69C8  V_16;
+	memset((&V_16), 0, sizeof(V_16));
+	int32_t G_B12_0 = 0;
+	int32_t G_B17_0 = 0;
 	{
 		// if (hmdTrackedObject == null)
 		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_0 = __this->get_hmdTrackedObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
 		bool L_1 = Object_op_Equality_mBC2401774F3BE33E8CF6F0A8148E66C95D6CFF1C(L_0, (Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 *)NULL, /*hidden argument*/NULL);
-		if (!L_1)
+		V_0 = L_1;
+		bool L_2 = V_0;
+		if (!L_2)
 		{
-			goto IL_003c;
+			goto IL_0051;
 		}
 	}
 	{
 		// SteamVR_TrackedObject[] trackedObjects = FindObjectsOfType<SteamVR_TrackedObject>();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
-		SteamVR_TrackedObjectU5BU5D_t29FB3580A8EF51AE90FE2231250C79DB172C4CB9* L_2 = Object_FindObjectsOfType_TisSteamVR_TrackedObject_t2511CEC5F7D9ABC427844D8E192FDDB48A156BD2_m5B7D404F99FC681776A6A0EDA436184F0E871F31(/*hidden argument*/Object_FindObjectsOfType_TisSteamVR_TrackedObject_t2511CEC5F7D9ABC427844D8E192FDDB48A156BD2_m5B7D404F99FC681776A6A0EDA436184F0E871F31_RuntimeMethod_var);
+		SteamVR_TrackedObjectU5BU5D_t29FB3580A8EF51AE90FE2231250C79DB172C4CB9* L_3 = Object_FindObjectsOfType_TisSteamVR_TrackedObject_t2511CEC5F7D9ABC427844D8E192FDDB48A156BD2_m5B7D404F99FC681776A6A0EDA436184F0E871F31(/*hidden argument*/Object_FindObjectsOfType_TisSteamVR_TrackedObject_t2511CEC5F7D9ABC427844D8E192FDDB48A156BD2_m5B7D404F99FC681776A6A0EDA436184F0E871F31_RuntimeMethod_var);
+		V_1 = L_3;
 		// foreach (SteamVR_TrackedObject tracked in trackedObjects)
-		V_0 = L_2;
-		V_1 = 0;
-		goto IL_0036;
+		SteamVR_TrackedObjectU5BU5D_t29FB3580A8EF51AE90FE2231250C79DB172C4CB9* L_4 = V_1;
+		V_2 = L_4;
+		V_3 = 0;
+		goto IL_004a;
 	}
 
-IL_0018:
+IL_001f:
 	{
 		// foreach (SteamVR_TrackedObject tracked in trackedObjects)
-		SteamVR_TrackedObjectU5BU5D_t29FB3580A8EF51AE90FE2231250C79DB172C4CB9* L_3 = V_0;
-		int32_t L_4 = V_1;
-		NullCheck(L_3);
-		int32_t L_5 = L_4;
-		SteamVR_TrackedObject_t2511CEC5F7D9ABC427844D8E192FDDB48A156BD2 * L_6 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_5));
-		V_2 = L_6;
+		SteamVR_TrackedObjectU5BU5D_t29FB3580A8EF51AE90FE2231250C79DB172C4CB9* L_5 = V_2;
+		int32_t L_6 = V_3;
+		NullCheck(L_5);
+		int32_t L_7 = L_6;
+		SteamVR_TrackedObject_t2511CEC5F7D9ABC427844D8E192FDDB48A156BD2 * L_8 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_7));
+		V_4 = L_8;
 		// if (tracked.index == SteamVR_TrackedObject.EIndex.Hmd)
-		SteamVR_TrackedObject_t2511CEC5F7D9ABC427844D8E192FDDB48A156BD2 * L_7 = V_2;
-		NullCheck(L_7);
-		int32_t L_8 = L_7->get_index_4();
-		if (L_8)
+		SteamVR_TrackedObject_t2511CEC5F7D9ABC427844D8E192FDDB48A156BD2 * L_9 = V_4;
+		NullCheck(L_9);
+		int32_t L_10 = L_9->get_index_4();
+		V_5 = (bool)((((int32_t)L_10) == ((int32_t)0))? 1 : 0);
+		bool L_11 = V_5;
+		if (!L_11)
 		{
-			goto IL_0032;
+			goto IL_0045;
 		}
 	}
 	{
 		// hmdTrackedObject = tracked.transform;
-		SteamVR_TrackedObject_t2511CEC5F7D9ABC427844D8E192FDDB48A156BD2 * L_9 = V_2;
-		NullCheck(L_9);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_10 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(L_9, /*hidden argument*/NULL);
-		__this->set_hmdTrackedObject_9(L_10);
+		SteamVR_TrackedObject_t2511CEC5F7D9ABC427844D8E192FDDB48A156BD2 * L_12 = V_4;
+		NullCheck(L_12);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_13 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(L_12, /*hidden argument*/NULL);
+		__this->set_hmdTrackedObject_9(L_13);
 		// break;
-		goto IL_003c;
+		goto IL_0050;
 	}
 
-IL_0032:
+IL_0045:
 	{
-		int32_t L_11 = V_1;
-		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_11, (int32_t)1));
+		int32_t L_14 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_14, (int32_t)1));
 	}
 
-IL_0036:
+IL_004a:
 	{
 		// foreach (SteamVR_TrackedObject tracked in trackedObjects)
-		int32_t L_12 = V_1;
-		SteamVR_TrackedObjectU5BU5D_t29FB3580A8EF51AE90FE2231250C79DB172C4CB9* L_13 = V_0;
-		NullCheck(L_13);
-		if ((((int32_t)L_12) < ((int32_t)(((int32_t)((int32_t)(((RuntimeArray*)L_13)->max_length)))))))
+		int32_t L_15 = V_3;
+		SteamVR_TrackedObjectU5BU5D_t29FB3580A8EF51AE90FE2231250C79DB172C4CB9* L_16 = V_2;
+		NullCheck(L_16);
+		if ((((int32_t)L_15) < ((int32_t)(((int32_t)((int32_t)(((RuntimeArray*)L_16)->max_length)))))))
 		{
-			goto IL_0018;
+			goto IL_001f;
 		}
 	}
 
-IL_003c:
+IL_0050:
+	{
+	}
+
+IL_0051:
 	{
 		// if (hmdTrackedObject)
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_14 = __this->get_hmdTrackedObject_9();
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_17 = __this->get_hmdTrackedObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
-		bool L_15 = Object_op_Implicit_m8B2A44B4B1406ED346D1AE6D962294FD58D0D534(L_14, /*hidden argument*/NULL);
-		if (!L_15)
+		bool L_18 = Object_op_Implicit_m8B2A44B4B1406ED346D1AE6D962294FD58D0D534(L_17, /*hidden argument*/NULL);
+		V_6 = L_18;
+		bool L_19 = V_6;
+		if (!L_19)
 		{
-			goto IL_0125;
+			goto IL_0163;
 		}
 	}
 	{
 		// Ray ray = new Ray(hmdTrackedObject.position, hmdTrackedObject.forward);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_16 = __this->get_hmdTrackedObject_9();
-		NullCheck(L_16);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_17 = Transform_get_position_mF54C3A064F7C8E24F1C56EE128728B2E4485E294(L_16, /*hidden argument*/NULL);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_18 = __this->get_hmdTrackedObject_9();
-		NullCheck(L_18);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_19 = Transform_get_forward_m0BE1E88B86049ADA39391C3ACED2314A624BC67F(L_18, /*hidden argument*/NULL);
-		Ray__ctor_m695D219349B8AA4C82F96C55A27D384C07736F6B((Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 *)(&V_3), L_17, L_19, /*hidden argument*/NULL);
-		// Plane plane = new Plane(hmdTrackedObject.forward, transform.position);
 		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_20 = __this->get_hmdTrackedObject_9();
 		NullCheck(L_20);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_21 = Transform_get_forward_m0BE1E88B86049ADA39391C3ACED2314A624BC67F(L_20, /*hidden argument*/NULL);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_22 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(__this, /*hidden argument*/NULL);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_21 = Transform_get_position_mF54C3A064F7C8E24F1C56EE128728B2E4485E294(L_20, /*hidden argument*/NULL);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_22 = __this->get_hmdTrackedObject_9();
 		NullCheck(L_22);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_23 = Transform_get_position_mF54C3A064F7C8E24F1C56EE128728B2E4485E294(L_22, /*hidden argument*/NULL);
-		Plane__ctor_m6535EAD5E675627C2533962F1F7890CBFA2BA44A((Plane_t0903921088DEEDE1BCDEA5BF279EDBCFC9679AED *)(&V_4), L_21, L_23, /*hidden argument*/NULL);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_23 = Transform_get_forward_m0BE1E88B86049ADA39391C3ACED2314A624BC67F(L_22, /*hidden argument*/NULL);
+		Ray__ctor_m695D219349B8AA4C82F96C55A27D384C07736F6B((Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 *)(&V_7), L_21, L_23, /*hidden argument*/NULL);
+		// Plane plane = new Plane(hmdTrackedObject.forward, transform.position);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_24 = __this->get_hmdTrackedObject_9();
+		NullCheck(L_24);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_25 = Transform_get_forward_m0BE1E88B86049ADA39391C3ACED2314A624BC67F(L_24, /*hidden argument*/NULL);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_26 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(__this, /*hidden argument*/NULL);
+		NullCheck(L_26);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_27 = Transform_get_position_mF54C3A064F7C8E24F1C56EE128728B2E4485E294(L_26, /*hidden argument*/NULL);
+		Plane__ctor_m6535EAD5E675627C2533962F1F7890CBFA2BA44A((Plane_t0903921088DEEDE1BCDEA5BF279EDBCFC9679AED *)(&V_8), L_25, L_27, /*hidden argument*/NULL);
 		// float enter = 0.0f;
-		V_5 = (0.0f);
+		V_9 = (0.0f);
 		// if (plane.Raycast(ray, out enter))
-		Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  L_24 = V_3;
-		bool L_25 = Plane_Raycast_m04E61D7C78A5DA70F4F73F9805ABB54177B799A9((Plane_t0903921088DEEDE1BCDEA5BF279EDBCFC9679AED *)(&V_4), L_24, (float*)(&V_5), /*hidden argument*/NULL);
-		if (!L_25)
+		Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  L_28 = V_7;
+		bool L_29 = Plane_Raycast_m04E61D7C78A5DA70F4F73F9805ABB54177B799A9((Plane_t0903921088DEEDE1BCDEA5BF279EDBCFC9679AED *)(&V_8), L_28, (float*)(&V_9), /*hidden argument*/NULL);
+		V_10 = L_29;
+		bool L_30 = V_10;
+		if (!L_30)
 		{
-			goto IL_0125;
+			goto IL_0162;
 		}
 	}
 	{
 		// Vector3 intersect = hmdTrackedObject.position + hmdTrackedObject.forward * enter;
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_26 = __this->get_hmdTrackedObject_9();
-		NullCheck(L_26);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_27 = Transform_get_position_mF54C3A064F7C8E24F1C56EE128728B2E4485E294(L_26, /*hidden argument*/NULL);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_28 = __this->get_hmdTrackedObject_9();
-		NullCheck(L_28);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_29 = Transform_get_forward_m0BE1E88B86049ADA39391C3ACED2314A624BC67F(L_28, /*hidden argument*/NULL);
-		float L_30 = V_5;
-		IL2CPP_RUNTIME_CLASS_INIT(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_il2cpp_TypeInfo_var);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_31 = Vector3_op_Multiply_m1C5F07723615156ACF035D88A1280A9E8F35A04E(L_29, L_30, /*hidden argument*/NULL);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_32 = Vector3_op_Addition_m929F9C17E5D11B94D50B4AFF1D730B70CB59B50E(L_27, L_31, /*hidden argument*/NULL);
-		// float dist = Vector3.Distance(intersect, transform.position);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_33 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(__this, /*hidden argument*/NULL);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_31 = __this->get_hmdTrackedObject_9();
+		NullCheck(L_31);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_32 = Transform_get_position_mF54C3A064F7C8E24F1C56EE128728B2E4485E294(L_31, /*hidden argument*/NULL);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_33 = __this->get_hmdTrackedObject_9();
 		NullCheck(L_33);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_34 = Transform_get_position_mF54C3A064F7C8E24F1C56EE128728B2E4485E294(L_33, /*hidden argument*/NULL);
-		float L_35 = Vector3_Distance_mE316E10B9B319A5C2A29F86E028740FD528149E7(L_32, L_34, /*hidden argument*/NULL);
-		V_6 = L_35;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_34 = Transform_get_forward_m0BE1E88B86049ADA39391C3ACED2314A624BC67F(L_33, /*hidden argument*/NULL);
+		float L_35 = V_9;
+		IL2CPP_RUNTIME_CLASS_INIT(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_il2cpp_TypeInfo_var);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_36 = Vector3_op_Multiply_m1C5F07723615156ACF035D88A1280A9E8F35A04E(L_34, L_35, /*hidden argument*/NULL);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_37 = Vector3_op_Addition_m929F9C17E5D11B94D50B4AFF1D730B70CB59B50E(L_32, L_36, /*hidden argument*/NULL);
+		V_11 = L_37;
+		// float dist = Vector3.Distance(intersect, transform.position);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_38 = V_11;
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_39 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(__this, /*hidden argument*/NULL);
+		NullCheck(L_39);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_40 = Transform_get_position_mF54C3A064F7C8E24F1C56EE128728B2E4485E294(L_39, /*hidden argument*/NULL);
+		float L_41 = Vector3_Distance_mE316E10B9B319A5C2A29F86E028740FD528149E7(L_38, L_40, /*hidden argument*/NULL);
+		V_12 = L_41;
 		// if (dist < gazeInCutoff && !isInGaze)
-		float L_36 = V_6;
-		float L_37 = __this->get_gazeInCutoff_7();
-		if ((!(((float)L_36) < ((float)L_37))))
+		float L_42 = V_12;
+		float L_43 = __this->get_gazeInCutoff_7();
+		if ((!(((float)L_42) < ((float)L_43))))
 		{
-			goto IL_00fb;
+			goto IL_0109;
 		}
 	}
 	{
-		bool L_38 = __this->get_isInGaze_4();
-		if (L_38)
+		bool L_44 = __this->get_isInGaze_4();
+		G_B12_0 = ((((int32_t)L_44) == ((int32_t)0))? 1 : 0);
+		goto IL_010a;
+	}
+
+IL_0109:
+	{
+		G_B12_0 = 0;
+	}
+
+IL_010a:
+	{
+		V_13 = (bool)G_B12_0;
+		bool L_45 = V_13;
+		if (!L_45)
 		{
-			goto IL_00fb;
+			goto IL_012d;
 		}
 	}
 	{
 		// isInGaze = true;
 		__this->set_isInGaze_4((bool)1);
 		// gazeEventArgs.distance = dist;
-		float L_39 = V_6;
-		(&V_7)->set_distance_0(L_39);
+		float L_46 = V_12;
+		(&V_14)->set_distance_0(L_46);
 		// OnGazeOn(gazeEventArgs);
-		GazeEventArgs_t47F03981FE19884897B110C49EFBE6A9642D69C8  L_40 = V_7;
-		VirtActionInvoker1< GazeEventArgs_t47F03981FE19884897B110C49EFBE6A9642D69C8  >::Invoke(4 /* System.Void Valve.VR.Extras.SteamVR_GazeTracker::OnGazeOn(Valve.VR.Extras.GazeEventArgs) */, __this, L_40);
-		// }
-		return;
+		GazeEventArgs_t47F03981FE19884897B110C49EFBE6A9642D69C8  L_47 = V_14;
+		VirtActionInvoker1< GazeEventArgs_t47F03981FE19884897B110C49EFBE6A9642D69C8  >::Invoke(4 /* System.Void Valve.VR.Extras.SteamVR_GazeTracker::OnGazeOn(Valve.VR.Extras.GazeEventArgs) */, __this, L_47);
+		goto IL_0161;
 	}
 
-IL_00fb:
+IL_012d:
 	{
 		// else if (dist >= gazeOutCutoff && isInGaze)
-		float L_41 = V_6;
-		float L_42 = __this->get_gazeOutCutoff_8();
-		if ((!(((float)L_41) >= ((float)L_42))))
+		float L_48 = V_12;
+		float L_49 = __this->get_gazeOutCutoff_8();
+		if ((!(((float)L_48) >= ((float)L_49))))
 		{
-			goto IL_0125;
+			goto IL_013f;
 		}
 	}
 	{
-		bool L_43 = __this->get_isInGaze_4();
-		if (!L_43)
+		bool L_50 = __this->get_isInGaze_4();
+		G_B17_0 = ((int32_t)(L_50));
+		goto IL_0140;
+	}
+
+IL_013f:
+	{
+		G_B17_0 = 0;
+	}
+
+IL_0140:
+	{
+		V_15 = (bool)G_B17_0;
+		bool L_51 = V_15;
+		if (!L_51)
 		{
-			goto IL_0125;
+			goto IL_0161;
 		}
 	}
 	{
 		// isInGaze = false;
 		__this->set_isInGaze_4((bool)0);
 		// gazeEventArgs.distance = dist;
-		float L_44 = V_6;
-		(&V_8)->set_distance_0(L_44);
+		float L_52 = V_12;
+		(&V_16)->set_distance_0(L_52);
 		// OnGazeOff(gazeEventArgs);
-		GazeEventArgs_t47F03981FE19884897B110C49EFBE6A9642D69C8  L_45 = V_8;
-		VirtActionInvoker1< GazeEventArgs_t47F03981FE19884897B110C49EFBE6A9642D69C8  >::Invoke(5 /* System.Void Valve.VR.Extras.SteamVR_GazeTracker::OnGazeOff(Valve.VR.Extras.GazeEventArgs) */, __this, L_45);
+		GazeEventArgs_t47F03981FE19884897B110C49EFBE6A9642D69C8  L_53 = V_16;
+		VirtActionInvoker1< GazeEventArgs_t47F03981FE19884897B110C49EFBE6A9642D69C8  >::Invoke(5 /* System.Void Valve.VR.Extras.SteamVR_GazeTracker::OnGazeOff(Valve.VR.Extras.GazeEventArgs) */, __this, L_53);
 	}
 
-IL_0125:
+IL_0161:
+	{
+	}
+
+IL_0162:
+	{
+	}
+
+IL_0163:
 	{
 		// }
 		return;
@@ -15683,10 +19278,14 @@ IL_0125:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteamVR_GazeTracker__ctor_m75C7BF37D3B64031FF853E14171C5810D54873E4 (SteamVR_GazeTracker_tA8B3FE002868C89A263D3CE307A2833CBC23D82B * __this, const RuntimeMethod* method)
 {
 	{
+		// public bool isInGaze = false;
+		__this->set_isInGaze_4((bool)0);
 		// public float gazeInCutoff = 0.15f;
 		__this->set_gazeInCutoff_7((0.15f));
 		// public float gazeOutCutoff = 0.4f;
 		__this->set_gazeOutCutoff_8((0.4f));
+		// protected Transform hmdTrackedObject = null;
+		__this->set_hmdTrackedObject_9((Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA *)NULL);
 		MonoBehaviour__ctor_mEAEC84B222C60319D593E456D769B3311DFCEF97(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -15956,31 +19555,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteamVR_LaserPointer_Start_m6D0ACA3D575F
 	}
 	BoxCollider_t2DF257BBBFCABE0B9D78B21D238298D1942BFBAA * V_0 = NULL;
 	Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * V_1 = NULL;
+	bool V_2 = false;
+	bool V_3 = false;
+	bool V_4 = false;
+	bool V_5 = false;
+	Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * V_6 = NULL;
+	bool V_7 = false;
+	bool V_8 = false;
 	{
 		// if (pose == null)
 		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_0 = __this->get_pose_4();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
 		bool L_1 = Object_op_Equality_mBC2401774F3BE33E8CF6F0A8148E66C95D6CFF1C(L_0, (Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 *)NULL, /*hidden argument*/NULL);
-		if (!L_1)
+		V_2 = L_1;
+		bool L_2 = V_2;
+		if (!L_2)
 		{
-			goto IL_001a;
+			goto IL_001d;
 		}
 	}
 	{
 		// pose = this.GetComponent<SteamVR_Behaviour_Pose>();
-		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_2 = Component_GetComponent_TisSteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787_m72709506E6C4D3963A95B1E4E528EE0181F8075A(__this, /*hidden argument*/Component_GetComponent_TisSteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787_m72709506E6C4D3963A95B1E4E528EE0181F8075A_RuntimeMethod_var);
-		__this->set_pose_4(L_2);
+		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_3 = Component_GetComponent_TisSteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787_m72709506E6C4D3963A95B1E4E528EE0181F8075A(__this, /*hidden argument*/Component_GetComponent_TisSteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787_m72709506E6C4D3963A95B1E4E528EE0181F8075A_RuntimeMethod_var);
+		__this->set_pose_4(L_3);
 	}
 
-IL_001a:
+IL_001d:
 	{
 		// if (pose == null)
-		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_3 = __this->get_pose_4();
+		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_4 = __this->get_pose_4();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
-		bool L_4 = Object_op_Equality_mBC2401774F3BE33E8CF6F0A8148E66C95D6CFF1C(L_3, (Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 *)NULL, /*hidden argument*/NULL);
-		if (!L_4)
+		bool L_5 = Object_op_Equality_mBC2401774F3BE33E8CF6F0A8148E66C95D6CFF1C(L_4, (Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 *)NULL, /*hidden argument*/NULL);
+		V_3 = L_5;
+		bool L_6 = V_3;
+		if (!L_6)
 		{
-			goto IL_0033;
+			goto IL_0039;
 		}
 	}
 	{
@@ -15989,15 +19599,17 @@ IL_001a:
 		Debug_LogError_m97139CB2EE76D5CD8308C1AD0499A5F163FC7F51(_stringLiteralAF9BB85A55D99713FB8B77842084A9ED1DED04D9, __this, /*hidden argument*/NULL);
 	}
 
-IL_0033:
+IL_0039:
 	{
 		// if (interactWithUI == null)
-		SteamVR_Action_Boolean_tE41AFE2395D4C8B9ED8BE1298F3545B4832E8C20 * L_5 = __this->get_interactWithUI_5();
+		SteamVR_Action_Boolean_tE41AFE2395D4C8B9ED8BE1298F3545B4832E8C20 * L_7 = __this->get_interactWithUI_5();
 		IL2CPP_RUNTIME_CLASS_INIT(SteamVR_Action_t272895E0F3F361D1CB8C4560B42CC28B7861C734_il2cpp_TypeInfo_var);
-		bool L_6 = SteamVR_Action_op_Equality_m16F1109154021CF7DC424B937A8AA5FC34463EE2(L_5, (SteamVR_Action_t272895E0F3F361D1CB8C4560B42CC28B7861C734 *)NULL, /*hidden argument*/NULL);
-		if (!L_6)
+		bool L_8 = SteamVR_Action_op_Equality_m16F1109154021CF7DC424B937A8AA5FC34463EE2(L_7, (SteamVR_Action_t272895E0F3F361D1CB8C4560B42CC28B7861C734 *)NULL, /*hidden argument*/NULL);
+		V_4 = L_8;
+		bool L_9 = V_4;
+		if (!L_9)
 		{
-			goto IL_004c;
+			goto IL_0057;
 		}
 	}
 	{
@@ -16006,153 +19618,164 @@ IL_0033:
 		Debug_LogError_m97139CB2EE76D5CD8308C1AD0499A5F163FC7F51(_stringLiteralF20D7B58C2E3F8E16DC1B6DEB7285703F50418B9, __this, /*hidden argument*/NULL);
 	}
 
-IL_004c:
+IL_0057:
 	{
 		// holder = new GameObject();
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_7 = (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *)il2cpp_codegen_object_new(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_il2cpp_TypeInfo_var);
-		GameObject__ctor_mA4DFA8F4471418C248E95B55070665EF344B4B2D(L_7, /*hidden argument*/NULL);
-		__this->set_holder_10(L_7);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_10 = (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *)il2cpp_codegen_object_new(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_il2cpp_TypeInfo_var);
+		GameObject__ctor_mA4DFA8F4471418C248E95B55070665EF344B4B2D(L_10, /*hidden argument*/NULL);
+		__this->set_holder_10(L_10);
 		// holder.transform.parent = this.transform;
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_8 = __this->get_holder_10();
-		NullCheck(L_8);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_9 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_8, /*hidden argument*/NULL);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_10 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(__this, /*hidden argument*/NULL);
-		NullCheck(L_9);
-		Transform_set_parent_m65B8E4660B2C554069C57A957D9E55FECA7AA73E(L_9, L_10, /*hidden argument*/NULL);
-		// holder.transform.localPosition = Vector3.zero;
 		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_11 = __this->get_holder_10();
 		NullCheck(L_11);
 		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_12 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_11, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_il2cpp_TypeInfo_var);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_13 = Vector3_get_zero_m3CDDCAE94581DF3BB16C4B40A100E28E9C6649C2(/*hidden argument*/NULL);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_13 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(__this, /*hidden argument*/NULL);
 		NullCheck(L_12);
-		Transform_set_localPosition_m275F5550DD939F83AFEB5E8D681131172E2E1728(L_12, L_13, /*hidden argument*/NULL);
-		// holder.transform.localRotation = Quaternion.identity;
+		Transform_set_parent_m65B8E4660B2C554069C57A957D9E55FECA7AA73E(L_12, L_13, /*hidden argument*/NULL);
+		// holder.transform.localPosition = Vector3.zero;
 		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_14 = __this->get_holder_10();
 		NullCheck(L_14);
 		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_15 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_14, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357_il2cpp_TypeInfo_var);
-		Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  L_16 = Quaternion_get_identity_m548B37D80F2DEE60E41D1F09BF6889B557BE1A64(/*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_il2cpp_TypeInfo_var);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_16 = Vector3_get_zero_m3CDDCAE94581DF3BB16C4B40A100E28E9C6649C2(/*hidden argument*/NULL);
 		NullCheck(L_15);
-		Transform_set_localRotation_mE2BECB0954FFC1D93FB631600D9A9BEFF41D9C8A(L_15, L_16, /*hidden argument*/NULL);
-		// pointer = GameObject.CreatePrimitive(PrimitiveType.Cube);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_17 = GameObject_CreatePrimitive_mA4D35085D817369E4A513FF31D745CEB27B07F6A(3, /*hidden argument*/NULL);
-		__this->set_pointer_11(L_17);
-		// pointer.transform.parent = holder.transform;
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_18 = __this->get_pointer_11();
+		Transform_set_localPosition_m275F5550DD939F83AFEB5E8D681131172E2E1728(L_15, L_16, /*hidden argument*/NULL);
+		// holder.transform.localRotation = Quaternion.identity;
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_17 = __this->get_holder_10();
+		NullCheck(L_17);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_18 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_17, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357_il2cpp_TypeInfo_var);
+		Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  L_19 = Quaternion_get_identity_m548B37D80F2DEE60E41D1F09BF6889B557BE1A64(/*hidden argument*/NULL);
 		NullCheck(L_18);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_19 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_18, /*hidden argument*/NULL);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_20 = __this->get_holder_10();
-		NullCheck(L_20);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_21 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_20, /*hidden argument*/NULL);
-		NullCheck(L_19);
-		Transform_set_parent_m65B8E4660B2C554069C57A957D9E55FECA7AA73E(L_19, L_21, /*hidden argument*/NULL);
-		// pointer.transform.localScale = new Vector3(thickness, thickness, 100f);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_22 = __this->get_pointer_11();
-		NullCheck(L_22);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_23 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_22, /*hidden argument*/NULL);
-		float L_24 = __this->get_thickness_8();
-		float L_25 = __this->get_thickness_8();
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_26;
-		memset((&L_26), 0, sizeof(L_26));
-		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_26), L_24, L_25, (100.0f), /*hidden argument*/NULL);
+		Transform_set_localRotation_mE2BECB0954FFC1D93FB631600D9A9BEFF41D9C8A(L_18, L_19, /*hidden argument*/NULL);
+		// pointer = GameObject.CreatePrimitive(PrimitiveType.Cube);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_20 = GameObject_CreatePrimitive_mA4D35085D817369E4A513FF31D745CEB27B07F6A(3, /*hidden argument*/NULL);
+		__this->set_pointer_11(L_20);
+		// pointer.transform.parent = holder.transform;
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_21 = __this->get_pointer_11();
+		NullCheck(L_21);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_22 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_21, /*hidden argument*/NULL);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_23 = __this->get_holder_10();
 		NullCheck(L_23);
-		Transform_set_localScale_m7ED1A6E5A87CD1D483515B99D6D3121FB92B0556(L_23, L_26, /*hidden argument*/NULL);
-		// pointer.transform.localPosition = new Vector3(0f, 0f, 50f);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_27 = __this->get_pointer_11();
-		NullCheck(L_27);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_28 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_27, /*hidden argument*/NULL);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_24 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_23, /*hidden argument*/NULL);
+		NullCheck(L_22);
+		Transform_set_parent_m65B8E4660B2C554069C57A957D9E55FECA7AA73E(L_22, L_24, /*hidden argument*/NULL);
+		// pointer.transform.localScale = new Vector3(thickness, thickness, 100f);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_25 = __this->get_pointer_11();
+		NullCheck(L_25);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_26 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_25, /*hidden argument*/NULL);
+		float L_27 = __this->get_thickness_8();
+		float L_28 = __this->get_thickness_8();
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_29;
 		memset((&L_29), 0, sizeof(L_29));
-		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_29), (0.0f), (0.0f), (50.0f), /*hidden argument*/NULL);
-		NullCheck(L_28);
-		Transform_set_localPosition_m275F5550DD939F83AFEB5E8D681131172E2E1728(L_28, L_29, /*hidden argument*/NULL);
-		// pointer.transform.localRotation = Quaternion.identity;
+		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_29), L_27, L_28, (100.0f), /*hidden argument*/NULL);
+		NullCheck(L_26);
+		Transform_set_localScale_m7ED1A6E5A87CD1D483515B99D6D3121FB92B0556(L_26, L_29, /*hidden argument*/NULL);
+		// pointer.transform.localPosition = new Vector3(0f, 0f, 50f);
 		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_30 = __this->get_pointer_11();
 		NullCheck(L_30);
 		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_31 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_30, /*hidden argument*/NULL);
-		Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  L_32 = Quaternion_get_identity_m548B37D80F2DEE60E41D1F09BF6889B557BE1A64(/*hidden argument*/NULL);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_32;
+		memset((&L_32), 0, sizeof(L_32));
+		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_32), (0.0f), (0.0f), (50.0f), /*hidden argument*/NULL);
 		NullCheck(L_31);
-		Transform_set_localRotation_mE2BECB0954FFC1D93FB631600D9A9BEFF41D9C8A(L_31, L_32, /*hidden argument*/NULL);
-		// BoxCollider collider = pointer.GetComponent<BoxCollider>();
+		Transform_set_localPosition_m275F5550DD939F83AFEB5E8D681131172E2E1728(L_31, L_32, /*hidden argument*/NULL);
+		// pointer.transform.localRotation = Quaternion.identity;
 		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_33 = __this->get_pointer_11();
 		NullCheck(L_33);
-		BoxCollider_t2DF257BBBFCABE0B9D78B21D238298D1942BFBAA * L_34 = GameObject_GetComponent_TisBoxCollider_t2DF257BBBFCABE0B9D78B21D238298D1942BFBAA_mC89D6D0649D82CB969262590D25615C13052FF55(L_33, /*hidden argument*/GameObject_GetComponent_TisBoxCollider_t2DF257BBBFCABE0B9D78B21D238298D1942BFBAA_mC89D6D0649D82CB969262590D25615C13052FF55_RuntimeMethod_var);
-		V_0 = L_34;
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_34 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_33, /*hidden argument*/NULL);
+		Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  L_35 = Quaternion_get_identity_m548B37D80F2DEE60E41D1F09BF6889B557BE1A64(/*hidden argument*/NULL);
+		NullCheck(L_34);
+		Transform_set_localRotation_mE2BECB0954FFC1D93FB631600D9A9BEFF41D9C8A(L_34, L_35, /*hidden argument*/NULL);
+		// BoxCollider collider = pointer.GetComponent<BoxCollider>();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_36 = __this->get_pointer_11();
+		NullCheck(L_36);
+		BoxCollider_t2DF257BBBFCABE0B9D78B21D238298D1942BFBAA * L_37 = GameObject_GetComponent_TisBoxCollider_t2DF257BBBFCABE0B9D78B21D238298D1942BFBAA_mC89D6D0649D82CB969262590D25615C13052FF55(L_36, /*hidden argument*/GameObject_GetComponent_TisBoxCollider_t2DF257BBBFCABE0B9D78B21D238298D1942BFBAA_mC89D6D0649D82CB969262590D25615C13052FF55_RuntimeMethod_var);
+		V_0 = L_37;
 		// if (addRigidBody)
-		bool L_35 = __this->get_addRigidBody_13();
-		if (!L_35)
+		bool L_38 = __this->get_addRigidBody_13();
+		V_5 = L_38;
+		bool L_39 = V_5;
+		if (!L_39)
 		{
-			goto IL_0153;
+			goto IL_0177;
 		}
 	}
 	{
 		// if (collider)
-		BoxCollider_t2DF257BBBFCABE0B9D78B21D238298D1942BFBAA * L_36 = V_0;
+		BoxCollider_t2DF257BBBFCABE0B9D78B21D238298D1942BFBAA * L_40 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
-		bool L_37 = Object_op_Implicit_m8B2A44B4B1406ED346D1AE6D962294FD58D0D534(L_36, /*hidden argument*/NULL);
-		if (!L_37)
+		bool L_41 = Object_op_Implicit_m8B2A44B4B1406ED346D1AE6D962294FD58D0D534(L_40, /*hidden argument*/NULL);
+		V_7 = L_41;
+		bool L_42 = V_7;
+		if (!L_42)
 		{
-			goto IL_0140;
+			goto IL_015e;
 		}
 	}
 	{
 		// collider.isTrigger = true;
-		BoxCollider_t2DF257BBBFCABE0B9D78B21D238298D1942BFBAA * L_38 = V_0;
-		NullCheck(L_38);
-		Collider_set_isTrigger_mD9EB1E99EA96B08398D68188F2DEB2434C1890C5(L_38, (bool)1, /*hidden argument*/NULL);
+		BoxCollider_t2DF257BBBFCABE0B9D78B21D238298D1942BFBAA * L_43 = V_0;
+		NullCheck(L_43);
+		Collider_set_isTrigger_mD9EB1E99EA96B08398D68188F2DEB2434C1890C5(L_43, (bool)1, /*hidden argument*/NULL);
 	}
 
-IL_0140:
+IL_015e:
 	{
 		// Rigidbody rigidBody = pointer.AddComponent<Rigidbody>();
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_39 = __this->get_pointer_11();
-		NullCheck(L_39);
-		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_40 = GameObject_AddComponent_TisRigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5_m2D2EAD0328967BB4D0F2F873B71A15722B7F035B(L_39, /*hidden argument*/GameObject_AddComponent_TisRigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5_m2D2EAD0328967BB4D0F2F873B71A15722B7F035B_RuntimeMethod_var);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_44 = __this->get_pointer_11();
+		NullCheck(L_44);
+		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_45 = GameObject_AddComponent_TisRigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5_m2D2EAD0328967BB4D0F2F873B71A15722B7F035B(L_44, /*hidden argument*/GameObject_AddComponent_TisRigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5_m2D2EAD0328967BB4D0F2F873B71A15722B7F035B_RuntimeMethod_var);
+		V_6 = L_45;
 		// rigidBody.isKinematic = true;
-		NullCheck(L_40);
-		Rigidbody_set_isKinematic_m856AB59E5A6207892C439AFC8DDF5620B941E71B(L_40, (bool)1, /*hidden argument*/NULL);
-		// }
-		goto IL_0161;
+		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_46 = V_6;
+		NullCheck(L_46);
+		Rigidbody_set_isKinematic_m856AB59E5A6207892C439AFC8DDF5620B941E71B(L_46, (bool)1, /*hidden argument*/NULL);
+		goto IL_018e;
 	}
 
-IL_0153:
+IL_0177:
 	{
 		// if (collider)
-		BoxCollider_t2DF257BBBFCABE0B9D78B21D238298D1942BFBAA * L_41 = V_0;
+		BoxCollider_t2DF257BBBFCABE0B9D78B21D238298D1942BFBAA * L_47 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
-		bool L_42 = Object_op_Implicit_m8B2A44B4B1406ED346D1AE6D962294FD58D0D534(L_41, /*hidden argument*/NULL);
-		if (!L_42)
+		bool L_48 = Object_op_Implicit_m8B2A44B4B1406ED346D1AE6D962294FD58D0D534(L_47, /*hidden argument*/NULL);
+		V_8 = L_48;
+		bool L_49 = V_8;
+		if (!L_49)
 		{
-			goto IL_0161;
+			goto IL_018d;
 		}
 	}
 	{
 		// Object.Destroy(collider);
-		BoxCollider_t2DF257BBBFCABE0B9D78B21D238298D1942BFBAA * L_43 = V_0;
+		BoxCollider_t2DF257BBBFCABE0B9D78B21D238298D1942BFBAA * L_50 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
-		Object_Destroy_m23B4562495BA35A74266D4372D45368F8C05109A(L_43, /*hidden argument*/NULL);
+		Object_Destroy_m23B4562495BA35A74266D4372D45368F8C05109A(L_50, /*hidden argument*/NULL);
 	}
 
-IL_0161:
+IL_018d:
+	{
+	}
+
+IL_018e:
 	{
 		// Material newMaterial = new Material(Shader.Find("Unlit/Color"));
-		Shader_tE2731FF351B74AB4186897484FB01E000C1160CA * L_44 = Shader_Find_m755654AA68D1C663A3E20A10E00CDC10F96C962B(_stringLiteralAB33AAB451E28E00488145629068CF4A0D11060A, /*hidden argument*/NULL);
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_45 = (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 *)il2cpp_codegen_object_new(Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598_il2cpp_TypeInfo_var);
-		Material__ctor_m81E76B5C1316004F25D4FE9CEC0E78A7428DABA8(L_45, L_44, /*hidden argument*/NULL);
-		V_1 = L_45;
+		Shader_tE2731FF351B74AB4186897484FB01E000C1160CA * L_51 = Shader_Find_m755654AA68D1C663A3E20A10E00CDC10F96C962B(_stringLiteralAB33AAB451E28E00488145629068CF4A0D11060A, /*hidden argument*/NULL);
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_52 = (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 *)il2cpp_codegen_object_new(Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598_il2cpp_TypeInfo_var);
+		Material__ctor_m81E76B5C1316004F25D4FE9CEC0E78A7428DABA8(L_52, L_51, /*hidden argument*/NULL);
+		V_1 = L_52;
 		// newMaterial.SetColor("_Color", color);
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_46 = V_1;
-		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_47 = __this->get_color_7();
-		NullCheck(L_46);
-		Material_SetColor_mB91EF8CAC3AB3B39D2535BF9F7FECECF3EC2161C(L_46, _stringLiteral36BDCAB142B91EE6C030073C24B3B2A5605ED74A, L_47, /*hidden argument*/NULL);
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_53 = V_1;
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_54 = __this->get_color_7();
+		NullCheck(L_53);
+		Material_SetColor_mB91EF8CAC3AB3B39D2535BF9F7FECECF3EC2161C(L_53, _stringLiteral36BDCAB142B91EE6C030073C24B3B2A5605ED74A, L_54, /*hidden argument*/NULL);
 		// pointer.GetComponent<MeshRenderer>().material = newMaterial;
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_48 = __this->get_pointer_11();
-		NullCheck(L_48);
-		MeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED * L_49 = GameObject_GetComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m91C1D9637A332988C72E62D52DFCFE89A6DDAB72(L_48, /*hidden argument*/GameObject_GetComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m91C1D9637A332988C72E62D52DFCFE89A6DDAB72_RuntimeMethod_var);
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_50 = V_1;
-		NullCheck(L_49);
-		Renderer_set_material_mB4988AD6A93C7FDACC4C07A99D1DAC23D10C0344(L_49, L_50, /*hidden argument*/NULL);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_55 = __this->get_pointer_11();
+		NullCheck(L_55);
+		MeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED * L_56 = GameObject_GetComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m91C1D9637A332988C72E62D52DFCFE89A6DDAB72(L_55, /*hidden argument*/GameObject_GetComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m91C1D9637A332988C72E62D52DFCFE89A6DDAB72_RuntimeMethod_var);
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_57 = V_1;
+		NullCheck(L_56);
+		Renderer_set_material_mB4988AD6A93C7FDACC4C07A99D1DAC23D10C0344(L_56, L_57, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -16160,23 +19783,26 @@ IL_0161:
 // System.Void Valve.VR.Extras.SteamVR_LaserPointer::OnPointerIn(Valve.VR.Extras.PointerEventArgs)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteamVR_LaserPointer_OnPointerIn_m974CEC95EEC174FB077DBAAC04D18FF41DFC315E (SteamVR_LaserPointer_t1FFCC7325C22A580138819B23E2093B04F41F076 * __this, PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  ___e0, const RuntimeMethod* method)
 {
+	bool V_0 = false;
 	{
 		// if (PointerIn != null)
 		PointerEventHandler_t29DBF2C1A22EEB8A55D08A41BA402B4DF7D63290 * L_0 = __this->get_PointerIn_15();
-		if (!L_0)
+		V_0 = (bool)((!(((RuntimeObject*)(PointerEventHandler_t29DBF2C1A22EEB8A55D08A41BA402B4DF7D63290 *)L_0) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_0015;
+			goto IL_001c;
 		}
 	}
 	{
 		// PointerIn(this, e);
-		PointerEventHandler_t29DBF2C1A22EEB8A55D08A41BA402B4DF7D63290 * L_1 = __this->get_PointerIn_15();
-		PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  L_2 = ___e0;
-		NullCheck(L_1);
-		PointerEventHandler_Invoke_mABF64711AB314D2F2548BB1ACA16A8C2AF70184F(L_1, __this, L_2, /*hidden argument*/NULL);
+		PointerEventHandler_t29DBF2C1A22EEB8A55D08A41BA402B4DF7D63290 * L_2 = __this->get_PointerIn_15();
+		PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  L_3 = ___e0;
+		NullCheck(L_2);
+		PointerEventHandler_Invoke_mABF64711AB314D2F2548BB1ACA16A8C2AF70184F(L_2, __this, L_3, /*hidden argument*/NULL);
 	}
 
-IL_0015:
+IL_001c:
 	{
 		// }
 		return;
@@ -16185,23 +19811,26 @@ IL_0015:
 // System.Void Valve.VR.Extras.SteamVR_LaserPointer::OnPointerClick(Valve.VR.Extras.PointerEventArgs)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteamVR_LaserPointer_OnPointerClick_m003C738E2B0EE2DD6786BD157748048AB34A17DD (SteamVR_LaserPointer_t1FFCC7325C22A580138819B23E2093B04F41F076 * __this, PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  ___e0, const RuntimeMethod* method)
 {
+	bool V_0 = false;
 	{
 		// if (PointerClick != null)
 		PointerEventHandler_t29DBF2C1A22EEB8A55D08A41BA402B4DF7D63290 * L_0 = __this->get_PointerClick_17();
-		if (!L_0)
+		V_0 = (bool)((!(((RuntimeObject*)(PointerEventHandler_t29DBF2C1A22EEB8A55D08A41BA402B4DF7D63290 *)L_0) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_0015;
+			goto IL_001c;
 		}
 	}
 	{
 		// PointerClick(this, e);
-		PointerEventHandler_t29DBF2C1A22EEB8A55D08A41BA402B4DF7D63290 * L_1 = __this->get_PointerClick_17();
-		PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  L_2 = ___e0;
-		NullCheck(L_1);
-		PointerEventHandler_Invoke_mABF64711AB314D2F2548BB1ACA16A8C2AF70184F(L_1, __this, L_2, /*hidden argument*/NULL);
+		PointerEventHandler_t29DBF2C1A22EEB8A55D08A41BA402B4DF7D63290 * L_2 = __this->get_PointerClick_17();
+		PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  L_3 = ___e0;
+		NullCheck(L_2);
+		PointerEventHandler_Invoke_mABF64711AB314D2F2548BB1ACA16A8C2AF70184F(L_2, __this, L_3, /*hidden argument*/NULL);
 	}
 
-IL_0015:
+IL_001c:
 	{
 		// }
 		return;
@@ -16210,23 +19839,26 @@ IL_0015:
 // System.Void Valve.VR.Extras.SteamVR_LaserPointer::OnPointerOut(Valve.VR.Extras.PointerEventArgs)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteamVR_LaserPointer_OnPointerOut_m6A70D8CC02199E9FF60A8BFC18B50BF141DE0616 (SteamVR_LaserPointer_t1FFCC7325C22A580138819B23E2093B04F41F076 * __this, PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  ___e0, const RuntimeMethod* method)
 {
+	bool V_0 = false;
 	{
 		// if (PointerOut != null)
 		PointerEventHandler_t29DBF2C1A22EEB8A55D08A41BA402B4DF7D63290 * L_0 = __this->get_PointerOut_16();
-		if (!L_0)
+		V_0 = (bool)((!(((RuntimeObject*)(PointerEventHandler_t29DBF2C1A22EEB8A55D08A41BA402B4DF7D63290 *)L_0) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_0015;
+			goto IL_001c;
 		}
 	}
 	{
 		// PointerOut(this, e);
-		PointerEventHandler_t29DBF2C1A22EEB8A55D08A41BA402B4DF7D63290 * L_1 = __this->get_PointerOut_16();
-		PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  L_2 = ___e0;
-		NullCheck(L_1);
-		PointerEventHandler_Invoke_mABF64711AB314D2F2548BB1ACA16A8C2AF70184F(L_1, __this, L_2, /*hidden argument*/NULL);
+		PointerEventHandler_t29DBF2C1A22EEB8A55D08A41BA402B4DF7D63290 * L_2 = __this->get_PointerOut_16();
+		PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  L_3 = ___e0;
+		NullCheck(L_2);
+		PointerEventHandler_Invoke_mABF64711AB314D2F2548BB1ACA16A8C2AF70184F(L_2, __this, L_3, /*hidden argument*/NULL);
 	}
 
-IL_0015:
+IL_001c:
 	{
 		// }
 		return;
@@ -16242,327 +19874,382 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteamVR_LaserPointer_Update_m35F83F7D39C
 		s_Il2CppMethodInitialized = true;
 	}
 	float V_0 = 0.0f;
-	RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3  V_1;
+	Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  V_1;
 	memset((&V_1), 0, sizeof(V_1));
-	PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  V_2;
+	RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3  V_2;
 	memset((&V_2), 0, sizeof(V_2));
-	PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  V_3;
-	memset((&V_3), 0, sizeof(V_3));
-	PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  V_4;
-	memset((&V_4), 0, sizeof(V_4));
-	bool G_B5_0 = false;
-	bool G_B3_0 = false;
-	bool G_B4_0 = false;
-	bool G_B8_0 = false;
-	bool G_B6_0 = false;
-	bool G_B7_0 = false;
-	bool G_B10_0 = false;
-	bool G_B9_0 = false;
-	bool G_B13_0 = false;
-	bool G_B11_0 = false;
-	bool G_B12_0 = false;
+	bool V_3 = false;
+	bool V_4 = false;
+	bool V_5 = false;
+	PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  V_6;
+	memset((&V_6), 0, sizeof(V_6));
+	bool V_7 = false;
+	PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  V_8;
+	memset((&V_8), 0, sizeof(V_8));
+	bool V_9 = false;
+	bool V_10 = false;
+	bool V_11 = false;
+	PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  V_12;
+	memset((&V_12), 0, sizeof(V_12));
+	bool V_13 = false;
+	int32_t G_B5_0 = 0;
+	int32_t G_B10_0 = 0;
+	int32_t G_B17_0 = 0;
+	int32_t G_B22_0 = 0;
+	int32_t G_B27_0 = 0;
 	{
 		// if (!isActive)
 		bool L_0 = __this->get_isActive_12();
-		if (L_0)
+		V_4 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+		bool L_1 = V_4;
+		if (!L_1)
 		{
-			goto IL_0026;
+			goto IL_0031;
 		}
 	}
 	{
 		// isActive = true;
 		__this->set_isActive_12((bool)1);
 		// this.transform.GetChild(0).gameObject.SetActive(true);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_1 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(__this, /*hidden argument*/NULL);
-		NullCheck(L_1);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_2 = Transform_GetChild_mC86B9B61E4EC086A571B09EA7A33FFBF50DF52D3(L_1, 0, /*hidden argument*/NULL);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_2 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(__this, /*hidden argument*/NULL);
 		NullCheck(L_2);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_3 = Component_get_gameObject_m0B0570BA8DDD3CD78A9DB568EA18D7317686603C(L_2, /*hidden argument*/NULL);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_3 = Transform_GetChild_mC86B9B61E4EC086A571B09EA7A33FFBF50DF52D3(L_2, 0, /*hidden argument*/NULL);
 		NullCheck(L_3);
-		GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_3, (bool)1, /*hidden argument*/NULL);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_4 = Component_get_gameObject_m0B0570BA8DDD3CD78A9DB568EA18D7317686603C(L_3, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_4, (bool)1, /*hidden argument*/NULL);
 	}
 
-IL_0026:
+IL_0031:
 	{
 		// float dist = 100f;
 		V_0 = (100.0f);
 		// Ray raycast = new Ray(transform.position, transform.forward);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_4 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(__this, /*hidden argument*/NULL);
-		NullCheck(L_4);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_5 = Transform_get_position_mF54C3A064F7C8E24F1C56EE128728B2E4485E294(L_4, /*hidden argument*/NULL);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_6 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(__this, /*hidden argument*/NULL);
-		NullCheck(L_6);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_7 = Transform_get_forward_m0BE1E88B86049ADA39391C3ACED2314A624BC67F(L_6, /*hidden argument*/NULL);
-		Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  L_8;
-		memset((&L_8), 0, sizeof(L_8));
-		Ray__ctor_m695D219349B8AA4C82F96C55A27D384C07736F6B((&L_8), L_5, L_7, /*hidden argument*/NULL);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_5 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(__this, /*hidden argument*/NULL);
+		NullCheck(L_5);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_6 = Transform_get_position_mF54C3A064F7C8E24F1C56EE128728B2E4485E294(L_5, /*hidden argument*/NULL);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_7 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(__this, /*hidden argument*/NULL);
+		NullCheck(L_7);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_8 = Transform_get_forward_m0BE1E88B86049ADA39391C3ACED2314A624BC67F(L_7, /*hidden argument*/NULL);
+		Ray__ctor_m695D219349B8AA4C82F96C55A27D384C07736F6B((Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 *)(&V_1), L_6, L_8, /*hidden argument*/NULL);
 		// bool bHit = Physics.Raycast(raycast, out hit);
-		bool L_9 = Physics_Raycast_mCE618579F667A62D15CB74CEF76147136EB2D495(L_8, (RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *)(&V_1), /*hidden argument*/NULL);
+		Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  L_9 = V_1;
+		bool L_10 = Physics_Raycast_mCE618579F667A62D15CB74CEF76147136EB2D495(L_9, (RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *)(&V_2), /*hidden argument*/NULL);
+		V_3 = L_10;
 		// if (previousContact && previousContact != hit.transform)
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_10 = __this->get_previousContact_18();
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_11 = __this->get_previousContact_18();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
-		bool L_11 = Object_op_Implicit_m8B2A44B4B1406ED346D1AE6D962294FD58D0D534(L_10, /*hidden argument*/NULL);
-		G_B3_0 = L_9;
-		if (!L_11)
+		bool L_12 = Object_op_Implicit_m8B2A44B4B1406ED346D1AE6D962294FD58D0D534(L_11, /*hidden argument*/NULL);
+		if (!L_12)
 		{
-			G_B5_0 = L_9;
-			goto IL_00b8;
+			goto IL_007e;
 		}
 	}
 	{
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_12 = __this->get_previousContact_18();
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_13 = RaycastHit_get_transform_m3C0BEE7439CA37F82FD5216143B92BF32F995279((RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *)(&V_1), /*hidden argument*/NULL);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_13 = __this->get_previousContact_18();
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_14 = RaycastHit_get_transform_m3C0BEE7439CA37F82FD5216143B92BF32F995279((RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *)(&V_2), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
-		bool L_14 = Object_op_Inequality_m31EF58E217E8F4BDD3E409DEF79E1AEE95874FC1(L_12, L_13, /*hidden argument*/NULL);
-		G_B4_0 = G_B3_0;
-		if (!L_14)
+		bool L_15 = Object_op_Inequality_m31EF58E217E8F4BDD3E409DEF79E1AEE95874FC1(L_13, L_14, /*hidden argument*/NULL);
+		G_B5_0 = ((int32_t)(L_15));
+		goto IL_007f;
+	}
+
+IL_007e:
+	{
+		G_B5_0 = 0;
+	}
+
+IL_007f:
+	{
+		V_5 = (bool)G_B5_0;
+		bool L_16 = V_5;
+		if (!L_16)
 		{
-			G_B5_0 = G_B3_0;
-			goto IL_00b8;
+			goto IL_00d2;
 		}
 	}
 	{
 		// PointerEventArgs args = new PointerEventArgs();
-		il2cpp_codegen_initobj((&V_2), sizeof(PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD ));
+		il2cpp_codegen_initobj((&V_6), sizeof(PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD ));
 		// args.fromInputSource = pose.inputSource;
-		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_15 = __this->get_pose_4();
-		NullCheck(L_15);
-		int32_t L_16 = L_15->get_inputSource_5();
-		(&V_2)->set_fromInputSource_0(L_16);
+		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_17 = __this->get_pose_4();
+		NullCheck(L_17);
+		int32_t L_18 = L_17->get_inputSource_5();
+		(&V_6)->set_fromInputSource_0(L_18);
 		// args.distance = 0f;
-		(&V_2)->set_distance_2((0.0f));
+		(&V_6)->set_distance_2((0.0f));
 		// args.flags = 0;
-		(&V_2)->set_flags_1(0);
+		(&V_6)->set_flags_1(0);
 		// args.target = previousContact;
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_17 = __this->get_previousContact_18();
-		(&V_2)->set_target_3(L_17);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_19 = __this->get_previousContact_18();
+		(&V_6)->set_target_3(L_19);
 		// OnPointerOut(args);
-		PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  L_18 = V_2;
-		VirtActionInvoker1< PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  >::Invoke(6 /* System.Void Valve.VR.Extras.SteamVR_LaserPointer::OnPointerOut(Valve.VR.Extras.PointerEventArgs) */, __this, L_18);
+		PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  L_20 = V_6;
+		VirtActionInvoker1< PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  >::Invoke(6 /* System.Void Valve.VR.Extras.SteamVR_LaserPointer::OnPointerOut(Valve.VR.Extras.PointerEventArgs) */, __this, L_20);
 		// previousContact = null;
 		__this->set_previousContact_18((Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA *)NULL);
-		G_B5_0 = G_B4_0;
 	}
 
-IL_00b8:
+IL_00d2:
 	{
 		// if (bHit && previousContact != hit.transform)
-		bool L_19 = G_B5_0;
-		G_B6_0 = L_19;
-		if (!L_19)
+		bool L_21 = V_3;
+		if (!L_21)
 		{
-			G_B8_0 = L_19;
-			goto IL_0121;
+			goto IL_00e9;
 		}
 	}
 	{
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_20 = __this->get_previousContact_18();
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_21 = RaycastHit_get_transform_m3C0BEE7439CA37F82FD5216143B92BF32F995279((RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *)(&V_1), /*hidden argument*/NULL);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_22 = __this->get_previousContact_18();
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_23 = RaycastHit_get_transform_m3C0BEE7439CA37F82FD5216143B92BF32F995279((RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *)(&V_2), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
-		bool L_22 = Object_op_Inequality_m31EF58E217E8F4BDD3E409DEF79E1AEE95874FC1(L_20, L_21, /*hidden argument*/NULL);
-		G_B7_0 = G_B6_0;
-		if (!L_22)
+		bool L_24 = Object_op_Inequality_m31EF58E217E8F4BDD3E409DEF79E1AEE95874FC1(L_22, L_23, /*hidden argument*/NULL);
+		G_B10_0 = ((int32_t)(L_24));
+		goto IL_00ea;
+	}
+
+IL_00e9:
+	{
+		G_B10_0 = 0;
+	}
+
+IL_00ea:
+	{
+		V_7 = (bool)G_B10_0;
+		bool L_25 = V_7;
+		if (!L_25)
 		{
-			G_B8_0 = G_B6_0;
-			goto IL_0121;
+			goto IL_0146;
 		}
 	}
 	{
 		// PointerEventArgs argsIn = new PointerEventArgs();
-		il2cpp_codegen_initobj((&V_3), sizeof(PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD ));
+		il2cpp_codegen_initobj((&V_8), sizeof(PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD ));
 		// argsIn.fromInputSource = pose.inputSource;
-		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_23 = __this->get_pose_4();
-		NullCheck(L_23);
-		int32_t L_24 = L_23->get_inputSource_5();
-		(&V_3)->set_fromInputSource_0(L_24);
+		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_26 = __this->get_pose_4();
+		NullCheck(L_26);
+		int32_t L_27 = L_26->get_inputSource_5();
+		(&V_8)->set_fromInputSource_0(L_27);
 		// argsIn.distance = hit.distance;
-		float L_25 = RaycastHit_get_distance_m1CBA60855C35F29BBC348D374BBC76386A243543((RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *)(&V_1), /*hidden argument*/NULL);
-		(&V_3)->set_distance_2(L_25);
+		float L_28 = RaycastHit_get_distance_m1CBA60855C35F29BBC348D374BBC76386A243543((RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *)(&V_2), /*hidden argument*/NULL);
+		(&V_8)->set_distance_2(L_28);
 		// argsIn.flags = 0;
-		(&V_3)->set_flags_1(0);
+		(&V_8)->set_flags_1(0);
 		// argsIn.target = hit.transform;
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_26 = RaycastHit_get_transform_m3C0BEE7439CA37F82FD5216143B92BF32F995279((RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *)(&V_1), /*hidden argument*/NULL);
-		(&V_3)->set_target_3(L_26);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_29 = RaycastHit_get_transform_m3C0BEE7439CA37F82FD5216143B92BF32F995279((RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *)(&V_2), /*hidden argument*/NULL);
+		(&V_8)->set_target_3(L_29);
 		// OnPointerIn(argsIn);
-		PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  L_27 = V_3;
-		VirtActionInvoker1< PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  >::Invoke(4 /* System.Void Valve.VR.Extras.SteamVR_LaserPointer::OnPointerIn(Valve.VR.Extras.PointerEventArgs) */, __this, L_27);
+		PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  L_30 = V_8;
+		VirtActionInvoker1< PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  >::Invoke(4 /* System.Void Valve.VR.Extras.SteamVR_LaserPointer::OnPointerIn(Valve.VR.Extras.PointerEventArgs) */, __this, L_30);
 		// previousContact = hit.transform;
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_28 = RaycastHit_get_transform_m3C0BEE7439CA37F82FD5216143B92BF32F995279((RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *)(&V_1), /*hidden argument*/NULL);
-		__this->set_previousContact_18(L_28);
-		G_B8_0 = G_B7_0;
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_31 = RaycastHit_get_transform_m3C0BEE7439CA37F82FD5216143B92BF32F995279((RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *)(&V_2), /*hidden argument*/NULL);
+		__this->set_previousContact_18(L_31);
 	}
 
-IL_0121:
+IL_0146:
 	{
 		// if (!bHit)
-		bool L_29 = G_B8_0;
-		G_B9_0 = L_29;
-		if (L_29)
+		bool L_32 = V_3;
+		V_9 = (bool)((((int32_t)L_32) == ((int32_t)0))? 1 : 0);
+		bool L_33 = V_9;
+		if (!L_33)
 		{
-			G_B10_0 = L_29;
-			goto IL_012b;
+			goto IL_0159;
 		}
 	}
 	{
 		// previousContact = null;
 		__this->set_previousContact_18((Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA *)NULL);
-		G_B10_0 = G_B9_0;
 	}
 
-IL_012b:
+IL_0159:
 	{
 		// if (bHit && hit.distance < 100f)
-		bool L_30 = G_B10_0;
-		G_B11_0 = L_30;
-		if (!L_30)
+		bool L_34 = V_3;
+		if (!L_34)
 		{
-			G_B13_0 = L_30;
-			goto IL_0144;
+			goto IL_016c;
 		}
 	}
 	{
-		float L_31 = RaycastHit_get_distance_m1CBA60855C35F29BBC348D374BBC76386A243543((RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *)(&V_1), /*hidden argument*/NULL);
-		G_B12_0 = G_B11_0;
-		if ((!(((float)L_31) < ((float)(100.0f)))))
+		float L_35 = RaycastHit_get_distance_m1CBA60855C35F29BBC348D374BBC76386A243543((RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *)(&V_2), /*hidden argument*/NULL);
+		G_B17_0 = ((((float)L_35) < ((float)(100.0f)))? 1 : 0);
+		goto IL_016d;
+	}
+
+IL_016c:
+	{
+		G_B17_0 = 0;
+	}
+
+IL_016d:
+	{
+		V_10 = (bool)G_B17_0;
+		bool L_36 = V_10;
+		if (!L_36)
 		{
-			G_B13_0 = G_B11_0;
-			goto IL_0144;
+			goto IL_017d;
 		}
 	}
 	{
 		// dist = hit.distance;
-		float L_32 = RaycastHit_get_distance_m1CBA60855C35F29BBC348D374BBC76386A243543((RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *)(&V_1), /*hidden argument*/NULL);
-		V_0 = L_32;
-		G_B13_0 = G_B12_0;
+		float L_37 = RaycastHit_get_distance_m1CBA60855C35F29BBC348D374BBC76386A243543((RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *)(&V_2), /*hidden argument*/NULL);
+		V_0 = L_37;
 	}
 
-IL_0144:
+IL_017d:
 	{
 		// if (bHit && interactWithUI.GetStateUp(pose.inputSource))
-		if (!G_B13_0)
+		bool L_38 = V_3;
+		if (!L_38)
 		{
-			goto IL_01a4;
+			goto IL_0198;
 		}
 	}
 	{
-		SteamVR_Action_Boolean_tE41AFE2395D4C8B9ED8BE1298F3545B4832E8C20 * L_33 = __this->get_interactWithUI_5();
-		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_34 = __this->get_pose_4();
-		NullCheck(L_34);
-		int32_t L_35 = L_34->get_inputSource_5();
-		NullCheck(L_33);
-		bool L_36 = SteamVR_Action_Boolean_GetStateUp_m83F063805256AEBD01AFF9368025D9D5DDAE9457(L_33, L_35, /*hidden argument*/NULL);
-		if (!L_36)
+		SteamVR_Action_Boolean_tE41AFE2395D4C8B9ED8BE1298F3545B4832E8C20 * L_39 = __this->get_interactWithUI_5();
+		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_40 = __this->get_pose_4();
+		NullCheck(L_40);
+		int32_t L_41 = L_40->get_inputSource_5();
+		NullCheck(L_39);
+		bool L_42 = SteamVR_Action_Boolean_GetStateUp_m83F063805256AEBD01AFF9368025D9D5DDAE9457(L_39, L_41, /*hidden argument*/NULL);
+		G_B22_0 = ((int32_t)(L_42));
+		goto IL_0199;
+	}
+
+IL_0198:
+	{
+		G_B22_0 = 0;
+	}
+
+IL_0199:
+	{
+		V_11 = (bool)G_B22_0;
+		bool L_43 = V_11;
+		if (!L_43)
 		{
-			goto IL_01a4;
+			goto IL_01e8;
 		}
 	}
 	{
 		// PointerEventArgs argsClick = new PointerEventArgs();
-		il2cpp_codegen_initobj((&V_4), sizeof(PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD ));
+		il2cpp_codegen_initobj((&V_12), sizeof(PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD ));
 		// argsClick.fromInputSource = pose.inputSource;
-		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_37 = __this->get_pose_4();
-		NullCheck(L_37);
-		int32_t L_38 = L_37->get_inputSource_5();
-		(&V_4)->set_fromInputSource_0(L_38);
+		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_44 = __this->get_pose_4();
+		NullCheck(L_44);
+		int32_t L_45 = L_44->get_inputSource_5();
+		(&V_12)->set_fromInputSource_0(L_45);
 		// argsClick.distance = hit.distance;
-		float L_39 = RaycastHit_get_distance_m1CBA60855C35F29BBC348D374BBC76386A243543((RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *)(&V_1), /*hidden argument*/NULL);
-		(&V_4)->set_distance_2(L_39);
+		float L_46 = RaycastHit_get_distance_m1CBA60855C35F29BBC348D374BBC76386A243543((RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *)(&V_2), /*hidden argument*/NULL);
+		(&V_12)->set_distance_2(L_46);
 		// argsClick.flags = 0;
-		(&V_4)->set_flags_1(0);
+		(&V_12)->set_flags_1(0);
 		// argsClick.target = hit.transform;
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_40 = RaycastHit_get_transform_m3C0BEE7439CA37F82FD5216143B92BF32F995279((RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *)(&V_1), /*hidden argument*/NULL);
-		(&V_4)->set_target_3(L_40);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_47 = RaycastHit_get_transform_m3C0BEE7439CA37F82FD5216143B92BF32F995279((RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *)(&V_2), /*hidden argument*/NULL);
+		(&V_12)->set_target_3(L_47);
 		// OnPointerClick(argsClick);
-		PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  L_41 = V_4;
-		VirtActionInvoker1< PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  >::Invoke(5 /* System.Void Valve.VR.Extras.SteamVR_LaserPointer::OnPointerClick(Valve.VR.Extras.PointerEventArgs) */, __this, L_41);
+		PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  L_48 = V_12;
+		VirtActionInvoker1< PointerEventArgs_t3DCA7CD6915CA527A6E2B820B6B9156AF69DF8AD  >::Invoke(5 /* System.Void Valve.VR.Extras.SteamVR_LaserPointer::OnPointerClick(Valve.VR.Extras.PointerEventArgs) */, __this, L_48);
 	}
 
-IL_01a4:
+IL_01e8:
 	{
 		// if (interactWithUI != null && interactWithUI.GetState(pose.inputSource))
-		SteamVR_Action_Boolean_tE41AFE2395D4C8B9ED8BE1298F3545B4832E8C20 * L_42 = __this->get_interactWithUI_5();
+		SteamVR_Action_Boolean_tE41AFE2395D4C8B9ED8BE1298F3545B4832E8C20 * L_49 = __this->get_interactWithUI_5();
 		IL2CPP_RUNTIME_CLASS_INIT(SteamVR_Action_t272895E0F3F361D1CB8C4560B42CC28B7861C734_il2cpp_TypeInfo_var);
-		bool L_43 = SteamVR_Action_op_Inequality_m7114B6E3669F8C55CD3B5E4EC3A897648CBD0F8A(L_42, (SteamVR_Action_t272895E0F3F361D1CB8C4560B42CC28B7861C734 *)NULL, /*hidden argument*/NULL);
-		if (!L_43)
+		bool L_50 = SteamVR_Action_op_Inequality_m7114B6E3669F8C55CD3B5E4EC3A897648CBD0F8A(L_49, (SteamVR_Action_t272895E0F3F361D1CB8C4560B42CC28B7861C734 *)NULL, /*hidden argument*/NULL);
+		if (!L_50)
 		{
-			goto IL_0215;
+			goto IL_020e;
 		}
 	}
 	{
-		SteamVR_Action_Boolean_tE41AFE2395D4C8B9ED8BE1298F3545B4832E8C20 * L_44 = __this->get_interactWithUI_5();
-		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_45 = __this->get_pose_4();
-		NullCheck(L_45);
-		int32_t L_46 = L_45->get_inputSource_5();
-		NullCheck(L_44);
-		bool L_47 = SteamVR_Action_Boolean_GetState_m2D6400A61EA7E39E3ECE024B7542FFCEF1242908(L_44, L_46, /*hidden argument*/NULL);
-		if (!L_47)
+		SteamVR_Action_Boolean_tE41AFE2395D4C8B9ED8BE1298F3545B4832E8C20 * L_51 = __this->get_interactWithUI_5();
+		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_52 = __this->get_pose_4();
+		NullCheck(L_52);
+		int32_t L_53 = L_52->get_inputSource_5();
+		NullCheck(L_51);
+		bool L_54 = SteamVR_Action_Boolean_GetState_m2D6400A61EA7E39E3ECE024B7542FFCEF1242908(L_51, L_53, /*hidden argument*/NULL);
+		G_B27_0 = ((int32_t)(L_54));
+		goto IL_020f;
+	}
+
+IL_020e:
+	{
+		G_B27_0 = 0;
+	}
+
+IL_020f:
+	{
+		V_13 = (bool)G_B27_0;
+		bool L_55 = V_13;
+		if (!L_55)
 		{
-			goto IL_0215;
+			goto IL_0264;
 		}
 	}
 	{
 		// pointer.transform.localScale = new Vector3(thickness * 5f, thickness * 5f, dist);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_48 = __this->get_pointer_11();
-		NullCheck(L_48);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_49 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_48, /*hidden argument*/NULL);
-		float L_50 = __this->get_thickness_8();
-		float L_51 = __this->get_thickness_8();
-		float L_52 = V_0;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_53;
-		memset((&L_53), 0, sizeof(L_53));
-		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_53), ((float)il2cpp_codegen_multiply((float)L_50, (float)(5.0f))), ((float)il2cpp_codegen_multiply((float)L_51, (float)(5.0f))), L_52, /*hidden argument*/NULL);
-		NullCheck(L_49);
-		Transform_set_localScale_m7ED1A6E5A87CD1D483515B99D6D3121FB92B0556(L_49, L_53, /*hidden argument*/NULL);
-		// pointer.GetComponent<MeshRenderer>().material.color = clickColor;
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_54 = __this->get_pointer_11();
-		NullCheck(L_54);
-		MeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED * L_55 = GameObject_GetComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m91C1D9637A332988C72E62D52DFCFE89A6DDAB72(L_54, /*hidden argument*/GameObject_GetComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m91C1D9637A332988C72E62D52DFCFE89A6DDAB72_RuntimeMethod_var);
-		NullCheck(L_55);
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_56 = Renderer_get_material_m4434513446B652652CE9FD766B0E3D1D34C4A617(L_55, /*hidden argument*/NULL);
-		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_57 = __this->get_clickColor_9();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_56 = __this->get_pointer_11();
 		NullCheck(L_56);
-		Material_set_color_m127EAC5D3CC68359E72D12A2B3CE7428EFBB81C3(L_56, L_57, /*hidden argument*/NULL);
-		// }
-		goto IL_0252;
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_57 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_56, /*hidden argument*/NULL);
+		float L_58 = __this->get_thickness_8();
+		float L_59 = __this->get_thickness_8();
+		float L_60 = V_0;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_61;
+		memset((&L_61), 0, sizeof(L_61));
+		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_61), ((float)il2cpp_codegen_multiply((float)L_58, (float)(5.0f))), ((float)il2cpp_codegen_multiply((float)L_59, (float)(5.0f))), L_60, /*hidden argument*/NULL);
+		NullCheck(L_57);
+		Transform_set_localScale_m7ED1A6E5A87CD1D483515B99D6D3121FB92B0556(L_57, L_61, /*hidden argument*/NULL);
+		// pointer.GetComponent<MeshRenderer>().material.color = clickColor;
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_62 = __this->get_pointer_11();
+		NullCheck(L_62);
+		MeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED * L_63 = GameObject_GetComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m91C1D9637A332988C72E62D52DFCFE89A6DDAB72(L_62, /*hidden argument*/GameObject_GetComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m91C1D9637A332988C72E62D52DFCFE89A6DDAB72_RuntimeMethod_var);
+		NullCheck(L_63);
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_64 = Renderer_get_material_m4434513446B652652CE9FD766B0E3D1D34C4A617(L_63, /*hidden argument*/NULL);
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_65 = __this->get_clickColor_9();
+		NullCheck(L_64);
+		Material_set_color_m127EAC5D3CC68359E72D12A2B3CE7428EFBB81C3(L_64, L_65, /*hidden argument*/NULL);
+		goto IL_02a5;
 	}
 
-IL_0215:
+IL_0264:
 	{
 		// pointer.transform.localScale = new Vector3(thickness, thickness, dist);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_58 = __this->get_pointer_11();
-		NullCheck(L_58);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_59 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_58, /*hidden argument*/NULL);
-		float L_60 = __this->get_thickness_8();
-		float L_61 = __this->get_thickness_8();
-		float L_62 = V_0;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_63;
-		memset((&L_63), 0, sizeof(L_63));
-		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_63), L_60, L_61, L_62, /*hidden argument*/NULL);
-		NullCheck(L_59);
-		Transform_set_localScale_m7ED1A6E5A87CD1D483515B99D6D3121FB92B0556(L_59, L_63, /*hidden argument*/NULL);
-		// pointer.GetComponent<MeshRenderer>().material.color = color;
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_64 = __this->get_pointer_11();
-		NullCheck(L_64);
-		MeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED * L_65 = GameObject_GetComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m91C1D9637A332988C72E62D52DFCFE89A6DDAB72(L_64, /*hidden argument*/GameObject_GetComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m91C1D9637A332988C72E62D52DFCFE89A6DDAB72_RuntimeMethod_var);
-		NullCheck(L_65);
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_66 = Renderer_get_material_m4434513446B652652CE9FD766B0E3D1D34C4A617(L_65, /*hidden argument*/NULL);
-		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_67 = __this->get_color_7();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_66 = __this->get_pointer_11();
 		NullCheck(L_66);
-		Material_set_color_m127EAC5D3CC68359E72D12A2B3CE7428EFBB81C3(L_66, L_67, /*hidden argument*/NULL);
-	}
-
-IL_0252:
-	{
-		// pointer.transform.localPosition = new Vector3(0f, 0f, dist / 2f);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_68 = __this->get_pointer_11();
-		NullCheck(L_68);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_69 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_68, /*hidden argument*/NULL);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_67 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_66, /*hidden argument*/NULL);
+		float L_68 = __this->get_thickness_8();
+		float L_69 = __this->get_thickness_8();
 		float L_70 = V_0;
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_71;
 		memset((&L_71), 0, sizeof(L_71));
-		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_71), (0.0f), (0.0f), ((float)((float)L_70/(float)(2.0f))), /*hidden argument*/NULL);
-		NullCheck(L_69);
-		Transform_set_localPosition_m275F5550DD939F83AFEB5E8D681131172E2E1728(L_69, L_71, /*hidden argument*/NULL);
+		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_71), L_68, L_69, L_70, /*hidden argument*/NULL);
+		NullCheck(L_67);
+		Transform_set_localScale_m7ED1A6E5A87CD1D483515B99D6D3121FB92B0556(L_67, L_71, /*hidden argument*/NULL);
+		// pointer.GetComponent<MeshRenderer>().material.color = color;
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_72 = __this->get_pointer_11();
+		NullCheck(L_72);
+		MeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED * L_73 = GameObject_GetComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m91C1D9637A332988C72E62D52DFCFE89A6DDAB72(L_72, /*hidden argument*/GameObject_GetComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m91C1D9637A332988C72E62D52DFCFE89A6DDAB72_RuntimeMethod_var);
+		NullCheck(L_73);
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_74 = Renderer_get_material_m4434513446B652652CE9FD766B0E3D1D34C4A617(L_73, /*hidden argument*/NULL);
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_75 = __this->get_color_7();
+		NullCheck(L_74);
+		Material_set_color_m127EAC5D3CC68359E72D12A2B3CE7428EFBB81C3(L_74, L_75, /*hidden argument*/NULL);
+	}
+
+IL_02a5:
+	{
+		// pointer.transform.localPosition = new Vector3(0f, 0f, dist / 2f);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_76 = __this->get_pointer_11();
+		NullCheck(L_76);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_77 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_76, /*hidden argument*/NULL);
+		float L_78 = V_0;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_79;
+		memset((&L_79), 0, sizeof(L_79));
+		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_79), (0.0f), (0.0f), ((float)((float)L_78/(float)(2.0f))), /*hidden argument*/NULL);
+		NullCheck(L_77);
+		Transform_set_localPosition_m275F5550DD939F83AFEB5E8D681131172E2E1728(L_77, L_79, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -16588,6 +20275,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteamVR_LaserPointer__ctor_mB32BA6AA4D99
 		// public Color clickColor = Color.green;
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_1 = Color_get_green_mD53D8F980E92A0755759FBB2981E3DDEFCD084C0(/*hidden argument*/NULL);
 		__this->set_clickColor_9(L_1);
+		// bool isActive = false;
+		__this->set_isActive_12((bool)0);
+		// public bool addRigidBody = false;
+		__this->set_addRigidBody_13((bool)0);
+		// Transform previousContact = null;
+		__this->set_previousContact_18((Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA *)NULL);
 		MonoBehaviour__ctor_mEAEC84B222C60319D593E456D769B3311DFCEF97(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -16626,12 +20319,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteamVR_TestThrow_FixedUpdate_mD8D65F848
 		il2cpp_codegen_initialize_method (SteamVR_TestThrow_FixedUpdate_mD8D65F8482DB8E80557A277623B90E4EB54AF20A_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * V_0 = NULL;
-	Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * V_1 = NULL;
-	Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * V_2 = NULL;
-	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  V_3;
-	memset((&V_3), 0, sizeof(V_3));
-	Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * G_B8_0 = NULL;
+	bool V_0 = false;
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * V_1 = NULL;
+	bool V_2 = false;
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * V_3 = NULL;
+	Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * V_4 = NULL;
+	Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * V_5 = NULL;
+	bool V_6 = false;
+	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  V_7;
+	memset((&V_7), 0, sizeof(V_7));
+	int32_t G_B3_0 = 0;
+	int32_t G_B8_0 = 0;
+	Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * G_B12_0 = NULL;
 	{
 		// if (joint == null && spawn.GetStateDown(trackedObj.inputSource))
 		FixedJoint_tE700873B552522792ED1B9A42DA62E511DC4A266 * L_0 = __this->get_joint_8();
@@ -16639,7 +20338,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteamVR_TestThrow_FixedUpdate_mD8D65F848
 		bool L_1 = Object_op_Equality_mBC2401774F3BE33E8CF6F0A8148E66C95D6CFF1C(L_0, (Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 *)NULL, /*hidden argument*/NULL);
 		if (!L_1)
 		{
-			goto IL_006b;
+			goto IL_0027;
 		}
 	}
 	{
@@ -16649,180 +20348,208 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteamVR_TestThrow_FixedUpdate_mD8D65F848
 		int32_t L_4 = L_3->get_inputSource_5();
 		NullCheck(L_2);
 		bool L_5 = SteamVR_Action_Boolean_GetStateDown_m86915AC100687E07E0796D52FAB721DD30D5CDC6(L_2, L_4, /*hidden argument*/NULL);
-		if (!L_5)
+		G_B3_0 = ((int32_t)(L_5));
+		goto IL_0028;
+	}
+
+IL_0027:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_0028:
+	{
+		V_0 = (bool)G_B3_0;
+		bool L_6 = V_0;
+		if (!L_6)
 		{
-			goto IL_006b;
+			goto IL_0079;
 		}
 	}
 	{
 		// GameObject go = GameObject.Instantiate(prefab);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_6 = __this->get_prefab_4();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_7 = __this->get_prefab_4();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_7 = Object_Instantiate_TisGameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_mC4AB712D7F18E0991E1542CE53F11385E21E7B90(L_6, /*hidden argument*/Object_Instantiate_TisGameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_mC4AB712D7F18E0991E1542CE53F11385E21E7B90_RuntimeMethod_var);
-		V_0 = L_7;
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_8 = Object_Instantiate_TisGameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_mC4AB712D7F18E0991E1542CE53F11385E21E7B90(L_7, /*hidden argument*/Object_Instantiate_TisGameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_mC4AB712D7F18E0991E1542CE53F11385E21E7B90_RuntimeMethod_var);
+		V_1 = L_8;
 		// go.transform.position = attachPoint.transform.position;
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_8 = V_0;
-		NullCheck(L_8);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_9 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_8, /*hidden argument*/NULL);
-		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_10 = __this->get_attachPoint_5();
-		NullCheck(L_10);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_11 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(L_10, /*hidden argument*/NULL);
-		NullCheck(L_11);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_12 = Transform_get_position_mF54C3A064F7C8E24F1C56EE128728B2E4485E294(L_11, /*hidden argument*/NULL);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_9 = V_1;
 		NullCheck(L_9);
-		Transform_set_position_mDA89E4893F14ECA5CBEEE7FB80A5BF7C1B8EA6DC(L_9, L_12, /*hidden argument*/NULL);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_10 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_9, /*hidden argument*/NULL);
+		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_11 = __this->get_attachPoint_5();
+		NullCheck(L_11);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_12 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(L_11, /*hidden argument*/NULL);
+		NullCheck(L_12);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_13 = Transform_get_position_mF54C3A064F7C8E24F1C56EE128728B2E4485E294(L_12, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		Transform_set_position_mDA89E4893F14ECA5CBEEE7FB80A5BF7C1B8EA6DC(L_10, L_13, /*hidden argument*/NULL);
 		// joint = go.AddComponent<FixedJoint>();
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_13 = V_0;
-		NullCheck(L_13);
-		FixedJoint_tE700873B552522792ED1B9A42DA62E511DC4A266 * L_14 = GameObject_AddComponent_TisFixedJoint_tE700873B552522792ED1B9A42DA62E511DC4A266_m7986081DD008C63220B3CAE0A8535302083FA9CC(L_13, /*hidden argument*/GameObject_AddComponent_TisFixedJoint_tE700873B552522792ED1B9A42DA62E511DC4A266_m7986081DD008C63220B3CAE0A8535302083FA9CC_RuntimeMethod_var);
-		__this->set_joint_8(L_14);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_14 = V_1;
+		NullCheck(L_14);
+		FixedJoint_tE700873B552522792ED1B9A42DA62E511DC4A266 * L_15 = GameObject_AddComponent_TisFixedJoint_tE700873B552522792ED1B9A42DA62E511DC4A266_m7986081DD008C63220B3CAE0A8535302083FA9CC(L_14, /*hidden argument*/GameObject_AddComponent_TisFixedJoint_tE700873B552522792ED1B9A42DA62E511DC4A266_m7986081DD008C63220B3CAE0A8535302083FA9CC_RuntimeMethod_var);
+		__this->set_joint_8(L_15);
 		// joint.connectedBody = attachPoint;
-		FixedJoint_tE700873B552522792ED1B9A42DA62E511DC4A266 * L_15 = __this->get_joint_8();
-		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_16 = __this->get_attachPoint_5();
-		NullCheck(L_15);
-		Joint_set_connectedBody_mB5843F21494B4468A218DA96238467710126F762(L_15, L_16, /*hidden argument*/NULL);
-		// }
-		return;
+		FixedJoint_tE700873B552522792ED1B9A42DA62E511DC4A266 * L_16 = __this->get_joint_8();
+		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_17 = __this->get_attachPoint_5();
+		NullCheck(L_16);
+		Joint_set_connectedBody_mB5843F21494B4468A218DA96238467710126F762(L_16, L_17, /*hidden argument*/NULL);
+		goto IL_0193;
 	}
 
-IL_006b:
+IL_0079:
 	{
 		// else if (joint != null && spawn.GetStateUp(trackedObj.inputSource))
-		FixedJoint_tE700873B552522792ED1B9A42DA62E511DC4A266 * L_17 = __this->get_joint_8();
+		FixedJoint_tE700873B552522792ED1B9A42DA62E511DC4A266 * L_18 = __this->get_joint_8();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
-		bool L_18 = Object_op_Inequality_m31EF58E217E8F4BDD3E409DEF79E1AEE95874FC1(L_17, (Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 *)NULL, /*hidden argument*/NULL);
-		if (!L_18)
+		bool L_19 = Object_op_Inequality_m31EF58E217E8F4BDD3E409DEF79E1AEE95874FC1(L_18, (Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 *)NULL, /*hidden argument*/NULL);
+		if (!L_19)
 		{
-			goto IL_0164;
+			goto IL_009f;
 		}
 	}
 	{
-		SteamVR_Action_Boolean_tE41AFE2395D4C8B9ED8BE1298F3545B4832E8C20 * L_19 = __this->get_spawn_6();
-		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_20 = __this->get_trackedObj_7();
+		SteamVR_Action_Boolean_tE41AFE2395D4C8B9ED8BE1298F3545B4832E8C20 * L_20 = __this->get_spawn_6();
+		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_21 = __this->get_trackedObj_7();
+		NullCheck(L_21);
+		int32_t L_22 = L_21->get_inputSource_5();
 		NullCheck(L_20);
-		int32_t L_21 = L_20->get_inputSource_5();
-		NullCheck(L_19);
-		bool L_22 = SteamVR_Action_Boolean_GetStateUp_m83F063805256AEBD01AFF9368025D9D5DDAE9457(L_19, L_21, /*hidden argument*/NULL);
-		if (!L_22)
+		bool L_23 = SteamVR_Action_Boolean_GetStateUp_m83F063805256AEBD01AFF9368025D9D5DDAE9457(L_20, L_22, /*hidden argument*/NULL);
+		G_B8_0 = ((int32_t)(L_23));
+		goto IL_00a0;
+	}
+
+IL_009f:
+	{
+		G_B8_0 = 0;
+	}
+
+IL_00a0:
+	{
+		V_2 = (bool)G_B8_0;
+		bool L_24 = V_2;
+		if (!L_24)
 		{
-			goto IL_0164;
+			goto IL_0193;
 		}
 	}
 	{
 		// GameObject go = joint.gameObject;
-		FixedJoint_tE700873B552522792ED1B9A42DA62E511DC4A266 * L_23 = __this->get_joint_8();
-		NullCheck(L_23);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_24 = Component_get_gameObject_m0B0570BA8DDD3CD78A9DB568EA18D7317686603C(L_23, /*hidden argument*/NULL);
-		// Rigidbody rigidbody = go.GetComponent<Rigidbody>();
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_25 = L_24;
+		FixedJoint_tE700873B552522792ED1B9A42DA62E511DC4A266 * L_25 = __this->get_joint_8();
 		NullCheck(L_25);
-		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_26 = GameObject_GetComponent_TisRigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5_m31F97A6E057858450728C32EE09647374FA10903(L_25, /*hidden argument*/GameObject_GetComponent_TisRigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5_m31F97A6E057858450728C32EE09647374FA10903_RuntimeMethod_var);
-		V_1 = L_26;
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_26 = Component_get_gameObject_m0B0570BA8DDD3CD78A9DB568EA18D7317686603C(L_25, /*hidden argument*/NULL);
+		V_3 = L_26;
+		// Rigidbody rigidbody = go.GetComponent<Rigidbody>();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_27 = V_3;
+		NullCheck(L_27);
+		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_28 = GameObject_GetComponent_TisRigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5_m31F97A6E057858450728C32EE09647374FA10903(L_27, /*hidden argument*/GameObject_GetComponent_TisRigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5_m31F97A6E057858450728C32EE09647374FA10903_RuntimeMethod_var);
+		V_4 = L_28;
 		// Object.DestroyImmediate(joint);
-		FixedJoint_tE700873B552522792ED1B9A42DA62E511DC4A266 * L_27 = __this->get_joint_8();
+		FixedJoint_tE700873B552522792ED1B9A42DA62E511DC4A266 * L_29 = __this->get_joint_8();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
-		Object_DestroyImmediate_mF6F4415EF22249D6E650FAA40E403283F19B7446(L_27, /*hidden argument*/NULL);
+		Object_DestroyImmediate_mF6F4415EF22249D6E650FAA40E403283F19B7446(L_29, /*hidden argument*/NULL);
 		// joint = null;
 		__this->set_joint_8((FixedJoint_tE700873B552522792ED1B9A42DA62E511DC4A266 *)NULL);
 		// Object.Destroy(go, 15.0f);
-		Object_Destroy_m09F51D8BDECFD2E8C618498EF7377029B669030D(L_25, (15.0f), /*hidden argument*/NULL);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_30 = V_3;
+		Object_Destroy_m09F51D8BDECFD2E8C618498EF7377029B669030D(L_30, (15.0f), /*hidden argument*/NULL);
 		// Transform origin = trackedObj.origin ? trackedObj.origin : trackedObj.transform.parent;
-		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_28 = __this->get_trackedObj_7();
-		NullCheck(L_28);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_29 = L_28->get_origin_6();
-		bool L_30 = Object_op_Implicit_m8B2A44B4B1406ED346D1AE6D962294FD58D0D534(L_29, /*hidden argument*/NULL);
-		if (L_30)
+		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_31 = __this->get_trackedObj_7();
+		NullCheck(L_31);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_32 = L_31->get_origin_6();
+		bool L_33 = Object_op_Implicit_m8B2A44B4B1406ED346D1AE6D962294FD58D0D534(L_32, /*hidden argument*/NULL);
+		if (L_33)
 		{
-			goto IL_00e9;
+			goto IL_00ff;
 		}
 	}
 	{
-		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_31 = __this->get_trackedObj_7();
-		NullCheck(L_31);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_32 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(L_31, /*hidden argument*/NULL);
-		NullCheck(L_32);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_33 = Transform_get_parent_m8FA24E38A1FA29D90CBF3CDC9F9F017C65BB3403(L_32, /*hidden argument*/NULL);
-		G_B8_0 = L_33;
-		goto IL_00f4;
-	}
-
-IL_00e9:
-	{
 		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_34 = __this->get_trackedObj_7();
 		NullCheck(L_34);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_35 = L_34->get_origin_6();
-		G_B8_0 = L_35;
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_35 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(L_34, /*hidden argument*/NULL);
+		NullCheck(L_35);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_36 = Transform_get_parent_m8FA24E38A1FA29D90CBF3CDC9F9F017C65BB3403(L_35, /*hidden argument*/NULL);
+		G_B12_0 = L_36;
+		goto IL_010a;
 	}
 
-IL_00f4:
+IL_00ff:
 	{
-		V_2 = G_B8_0;
+		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_37 = __this->get_trackedObj_7();
+		NullCheck(L_37);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_38 = L_37->get_origin_6();
+		G_B12_0 = L_38;
+	}
+
+IL_010a:
+	{
+		V_5 = G_B12_0;
 		// if (origin != null)
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_36 = V_2;
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_39 = V_5;
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
-		bool L_37 = Object_op_Inequality_m31EF58E217E8F4BDD3E409DEF79E1AEE95874FC1(L_36, (Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 *)NULL, /*hidden argument*/NULL);
-		if (!L_37)
+		bool L_40 = Object_op_Inequality_m31EF58E217E8F4BDD3E409DEF79E1AEE95874FC1(L_39, (Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 *)NULL, /*hidden argument*/NULL);
+		V_6 = L_40;
+		bool L_41 = V_6;
+		if (!L_41)
 		{
-			goto IL_012e;
+			goto IL_0152;
 		}
 	}
 	{
 		// rigidbody.velocity = origin.TransformVector(trackedObj.GetVelocity());
-		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_38 = V_1;
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_39 = V_2;
-		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_40 = __this->get_trackedObj_7();
-		NullCheck(L_40);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_41 = SteamVR_Behaviour_Pose_GetVelocity_mBB18AD40A0D65C96D224253A7B275B512348ADEF(L_40, /*hidden argument*/NULL);
-		NullCheck(L_39);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_42 = Transform_TransformVector_m75D0F9F62127C642869F5F0C865540FEE5BB3168(L_39, L_41, /*hidden argument*/NULL);
-		NullCheck(L_38);
-		Rigidbody_set_velocity_m8D129E88E62AD02AB81CFC8BE694C4A5A2B2B380(L_38, L_42, /*hidden argument*/NULL);
-		// rigidbody.angularVelocity = origin.TransformVector(trackedObj.GetAngularVelocity());
-		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_43 = V_1;
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_44 = V_2;
-		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_45 = __this->get_trackedObj_7();
-		NullCheck(L_45);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_46 = SteamVR_Behaviour_Pose_GetAngularVelocity_mDD92D9D3AB3DEFF686F851056814F2D2C39FE19D(L_45, /*hidden argument*/NULL);
+		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_42 = V_4;
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_43 = V_5;
+		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_44 = __this->get_trackedObj_7();
 		NullCheck(L_44);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_47 = Transform_TransformVector_m75D0F9F62127C642869F5F0C865540FEE5BB3168(L_44, L_46, /*hidden argument*/NULL);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_45 = SteamVR_Behaviour_Pose_GetVelocity_mBB18AD40A0D65C96D224253A7B275B512348ADEF(L_44, /*hidden argument*/NULL);
 		NullCheck(L_43);
-		Rigidbody_set_angularVelocity_m1839DCBC87B01EFD0B4936E84E503E38774B962C(L_43, L_47, /*hidden argument*/NULL);
-		// }
-		goto IL_0150;
-	}
-
-IL_012e:
-	{
-		// rigidbody.velocity = trackedObj.GetVelocity();
-		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_48 = V_1;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_46 = Transform_TransformVector_m75D0F9F62127C642869F5F0C865540FEE5BB3168(L_43, L_45, /*hidden argument*/NULL);
+		NullCheck(L_42);
+		Rigidbody_set_velocity_m8D129E88E62AD02AB81CFC8BE694C4A5A2B2B380(L_42, L_46, /*hidden argument*/NULL);
+		// rigidbody.angularVelocity = origin.TransformVector(trackedObj.GetAngularVelocity());
+		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_47 = V_4;
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_48 = V_5;
 		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_49 = __this->get_trackedObj_7();
 		NullCheck(L_49);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_50 = SteamVR_Behaviour_Pose_GetVelocity_mBB18AD40A0D65C96D224253A7B275B512348ADEF(L_49, /*hidden argument*/NULL);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_50 = SteamVR_Behaviour_Pose_GetAngularVelocity_mDD92D9D3AB3DEFF686F851056814F2D2C39FE19D(L_49, /*hidden argument*/NULL);
 		NullCheck(L_48);
-		Rigidbody_set_velocity_m8D129E88E62AD02AB81CFC8BE694C4A5A2B2B380(L_48, L_50, /*hidden argument*/NULL);
-		// rigidbody.angularVelocity = trackedObj.GetAngularVelocity();
-		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_51 = V_1;
-		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_52 = __this->get_trackedObj_7();
-		NullCheck(L_52);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_53 = SteamVR_Behaviour_Pose_GetAngularVelocity_mDD92D9D3AB3DEFF686F851056814F2D2C39FE19D(L_52, /*hidden argument*/NULL);
-		NullCheck(L_51);
-		Rigidbody_set_angularVelocity_m1839DCBC87B01EFD0B4936E84E503E38774B962C(L_51, L_53, /*hidden argument*/NULL);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_51 = Transform_TransformVector_m75D0F9F62127C642869F5F0C865540FEE5BB3168(L_48, L_50, /*hidden argument*/NULL);
+		NullCheck(L_47);
+		Rigidbody_set_angularVelocity_m1839DCBC87B01EFD0B4936E84E503E38774B962C(L_47, L_51, /*hidden argument*/NULL);
+		goto IL_017a;
 	}
 
-IL_0150:
+IL_0152:
+	{
+		// rigidbody.velocity = trackedObj.GetVelocity();
+		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_52 = V_4;
+		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_53 = __this->get_trackedObj_7();
+		NullCheck(L_53);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_54 = SteamVR_Behaviour_Pose_GetVelocity_mBB18AD40A0D65C96D224253A7B275B512348ADEF(L_53, /*hidden argument*/NULL);
+		NullCheck(L_52);
+		Rigidbody_set_velocity_m8D129E88E62AD02AB81CFC8BE694C4A5A2B2B380(L_52, L_54, /*hidden argument*/NULL);
+		// rigidbody.angularVelocity = trackedObj.GetAngularVelocity();
+		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_55 = V_4;
+		SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * L_56 = __this->get_trackedObj_7();
+		NullCheck(L_56);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_57 = SteamVR_Behaviour_Pose_GetAngularVelocity_mDD92D9D3AB3DEFF686F851056814F2D2C39FE19D(L_56, /*hidden argument*/NULL);
+		NullCheck(L_55);
+		Rigidbody_set_angularVelocity_m1839DCBC87B01EFD0B4936E84E503E38774B962C(L_55, L_57, /*hidden argument*/NULL);
+	}
+
+IL_017a:
 	{
 		// rigidbody.maxAngularVelocity = rigidbody.angularVelocity.magnitude;
-		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_54 = V_1;
-		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_55 = V_1;
-		NullCheck(L_55);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_56 = Rigidbody_get_angularVelocity_mA5D414D6E27755C944485A750F974BEA24CF27F0(L_55, /*hidden argument*/NULL);
-		V_3 = L_56;
-		float L_57 = Vector3_get_magnitude_m9A750659B60C5FE0C30438A7F9681775D5DB1274((Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)(&V_3), /*hidden argument*/NULL);
-		NullCheck(L_54);
-		Rigidbody_set_maxAngularVelocity_m0EF6E6142D8F4484B436019609F21637BB2E1142(L_54, L_57, /*hidden argument*/NULL);
+		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_58 = V_4;
+		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_59 = V_4;
+		NullCheck(L_59);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_60 = Rigidbody_get_angularVelocity_mA5D414D6E27755C944485A750F974BEA24CF27F0(L_59, /*hidden argument*/NULL);
+		V_7 = L_60;
+		float L_61 = Vector3_get_magnitude_m9A750659B60C5FE0C30438A7F9681775D5DB1274((Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)(&V_7), /*hidden argument*/NULL);
+		NullCheck(L_58);
+		Rigidbody_set_maxAngularVelocity_m0EF6E6142D8F4484B436019609F21637BB2E1142(L_58, L_61, /*hidden argument*/NULL);
 	}
 
-IL_0164:
+IL_0193:
 	{
 		// }
 		return;
@@ -16857,20 +20584,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteamVR_TestThrow__ctor_m08862B82D997EA5
 // System.Void Valve.VR.Extras.SteamVR_TestTrackedCamera::OnEnable()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteamVR_TestTrackedCamera_OnEnable_mC10A23AE25BE939A4BC7FA03CD0E645191B71BC6 (SteamVR_TestTrackedCamera_t615779935A873CC659A235D7259BBDD45D4BDD34 * __this, const RuntimeMethod* method)
 {
+	VideoStreamTexture_t84215B173C02C664A00020F77A1E867169ED8DAF * V_0 = NULL;
+	bool V_1 = false;
 	{
 		// SteamVR_TrackedCamera.VideoStreamTexture source = SteamVR_TrackedCamera.Source(undistorted);
 		bool L_0 = __this->get_undistorted_6();
 		VideoStreamTexture_t84215B173C02C664A00020F77A1E867169ED8DAF * L_1 = SteamVR_TrackedCamera_Source_m7051CCD700ED759F69161CE2C34B59F856FB3689(L_0, 0, /*hidden argument*/NULL);
+		V_0 = L_1;
 		// source.Acquire();
-		VideoStreamTexture_t84215B173C02C664A00020F77A1E867169ED8DAF * L_2 = L_1;
+		VideoStreamTexture_t84215B173C02C664A00020F77A1E867169ED8DAF * L_2 = V_0;
 		NullCheck(L_2);
 		VideoStreamTexture_Acquire_mE3BD910AB201C76D212E08F900DABFACAB754BEF(L_2, /*hidden argument*/NULL);
 		// if (!source.hasCamera)
-		NullCheck(L_2);
-		bool L_3 = VideoStreamTexture_get_hasCamera_m40C171804ABD802442118D99ED79C779204A61FA(L_2, /*hidden argument*/NULL);
-		if (L_3)
+		VideoStreamTexture_t84215B173C02C664A00020F77A1E867169ED8DAF * L_3 = V_0;
+		NullCheck(L_3);
+		bool L_4 = VideoStreamTexture_get_hasCamera_m40C171804ABD802442118D99ED79C779204A61FA(L_3, /*hidden argument*/NULL);
+		V_1 = (bool)((((int32_t)L_4) == ((int32_t)0))? 1 : 0);
+		bool L_5 = V_1;
+		if (!L_5)
 		{
-			goto IL_0021;
+			goto IL_002a;
 		}
 	}
 	{
@@ -16878,7 +20611,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteamVR_TestTrackedCamera_OnEnable_mC10A
 		Behaviour_set_enabled_m9755D3B17D7022D23D1E4C618BD9A6B66A5ADC6B(__this, (bool)0, /*hidden argument*/NULL);
 	}
 
-IL_0021:
+IL_002a:
 	{
 		// }
 		return;
@@ -16887,6 +20620,7 @@ IL_0021:
 // System.Void Valve.VR.Extras.SteamVR_TestTrackedCamera::OnDisable()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteamVR_TestTrackedCamera_OnDisable_mF1F90336CC02D4E87BE2F395BF9D2DE9AF1A5C1A (SteamVR_TestTrackedCamera_t615779935A873CC659A235D7259BBDD45D4BDD34 * __this, const RuntimeMethod* method)
 {
+	VideoStreamTexture_t84215B173C02C664A00020F77A1E867169ED8DAF * V_0 = NULL;
 	{
 		// material.mainTexture = null;
 		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_0 = __this->get_material_4();
@@ -16895,9 +20629,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteamVR_TestTrackedCamera_OnDisable_mF1F
 		// SteamVR_TrackedCamera.VideoStreamTexture source = SteamVR_TrackedCamera.Source(undistorted);
 		bool L_1 = __this->get_undistorted_6();
 		VideoStreamTexture_t84215B173C02C664A00020F77A1E867169ED8DAF * L_2 = SteamVR_TrackedCamera_Source_m7051CCD700ED759F69161CE2C34B59F856FB3689(L_1, 0, /*hidden argument*/NULL);
+		V_0 = L_2;
 		// source.Release();
-		NullCheck(L_2);
-		VideoStreamTexture_Release_mF0F5798A47E769EAD3C5D2199157A0448961CCD4(L_2, /*hidden argument*/NULL);
+		VideoStreamTexture_t84215B173C02C664A00020F77A1E867169ED8DAF * L_3 = V_0;
+		NullCheck(L_3);
+		VideoStreamTexture_Release_mF0F5798A47E769EAD3C5D2199157A0448961CCD4(L_3, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -16914,12 +20650,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteamVR_TestTrackedCamera_Update_m335A29
 	VideoStreamTexture_t84215B173C02C664A00020F77A1E867169ED8DAF * V_0 = NULL;
 	Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * V_1 = NULL;
 	float V_2 = 0.0f;
-	VRTextureBounds_t_tCA2820CB638F8B6C480011D70D708F75632E1779  V_3;
-	memset((&V_3), 0, sizeof(V_3));
-	float V_4 = 0.0f;
-	float V_5 = 0.0f;
-	RigidTransform_t0E8A00F7013270B6B2254F29B4FFEAA6783CD905  V_6;
-	memset((&V_6), 0, sizeof(V_6));
+	bool V_3 = false;
+	bool V_4 = false;
+	VRTextureBounds_t_tCA2820CB638F8B6C480011D70D708F75632E1779  V_5;
+	memset((&V_5), 0, sizeof(V_5));
+	float V_6 = 0.0f;
+	float V_7 = 0.0f;
+	bool V_8 = false;
+	RigidTransform_t0E8A00F7013270B6B2254F29B4FFEAA6783CD905  V_9;
+	memset((&V_9), 0, sizeof(V_9));
 	{
 		// SteamVR_TrackedCamera.VideoStreamTexture source = SteamVR_TrackedCamera.Source(undistorted);
 		bool L_0 = __this->get_undistorted_6();
@@ -16934,144 +20673,149 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteamVR_TestTrackedCamera_Update_m335A29
 		Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * L_4 = V_1;
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
 		bool L_5 = Object_op_Equality_mBC2401774F3BE33E8CF6F0A8148E66C95D6CFF1C(L_4, (Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 *)NULL, /*hidden argument*/NULL);
-		if (!L_5)
+		V_3 = L_5;
+		bool L_6 = V_3;
+		if (!L_6)
 		{
-			goto IL_001e;
+			goto IL_0026;
 		}
 	}
 	{
 		// return;
-		return;
+		goto IL_014a;
 	}
 
-IL_001e:
+IL_0026:
 	{
 		// material.mainTexture = texture;
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_6 = __this->get_material_4();
-		Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * L_7 = V_1;
-		NullCheck(L_6);
-		Material_set_mainTexture_m0742CFF768E9701618DA07C71F009239AB31EB41(L_6, L_7, /*hidden argument*/NULL);
-		// float aspect = (float)texture.width / texture.height;
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_7 = __this->get_material_4();
 		Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * L_8 = V_1;
-		NullCheck(L_8);
-		int32_t L_9 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_8);
-		Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * L_10 = V_1;
-		NullCheck(L_10);
-		int32_t L_11 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_10);
-		V_2 = ((float)((float)(((float)((float)L_9)))/(float)(((float)((float)L_11)))));
+		NullCheck(L_7);
+		Material_set_mainTexture_m0742CFF768E9701618DA07C71F009239AB31EB41(L_7, L_8, /*hidden argument*/NULL);
+		// float aspect = (float)texture.width / texture.height;
+		Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * L_9 = V_1;
+		NullCheck(L_9);
+		int32_t L_10 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_9);
+		Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * L_11 = V_1;
+		NullCheck(L_11);
+		int32_t L_12 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_11);
+		V_2 = ((float)((float)(((float)((float)L_10)))/(float)(((float)((float)L_12)))));
 		// if (cropped)
-		bool L_12 = __this->get_cropped_7();
-		if (!L_12)
+		bool L_13 = __this->get_cropped_7();
+		V_4 = L_13;
+		bool L_14 = V_4;
+		if (!L_14)
 		{
-			goto IL_00a6;
+			goto IL_00be;
 		}
 	}
 	{
 		// VRTextureBounds_t bounds = source.frameBounds;
-		VideoStreamTexture_t84215B173C02C664A00020F77A1E867169ED8DAF * L_13 = V_0;
-		NullCheck(L_13);
-		VRTextureBounds_t_tCA2820CB638F8B6C480011D70D708F75632E1779  L_14 = VideoStreamTexture_get_frameBounds_mAC9E8CE7B1A8BD091DE22A6B274BC1E22E6CA302_inline(L_13, /*hidden argument*/NULL);
-		V_3 = L_14;
-		// material.mainTextureOffset = new Vector2(bounds.uMin, bounds.vMin);
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_15 = __this->get_material_4();
-		VRTextureBounds_t_tCA2820CB638F8B6C480011D70D708F75632E1779  L_16 = V_3;
-		float L_17 = L_16.get_uMin_0();
-		VRTextureBounds_t_tCA2820CB638F8B6C480011D70D708F75632E1779  L_18 = V_3;
-		float L_19 = L_18.get_vMin_1();
-		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_20;
-		memset((&L_20), 0, sizeof(L_20));
-		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_20), L_17, L_19, /*hidden argument*/NULL);
+		VideoStreamTexture_t84215B173C02C664A00020F77A1E867169ED8DAF * L_15 = V_0;
 		NullCheck(L_15);
-		Material_set_mainTextureOffset_m8602C6F3E7FC358C5F8B9C3709325F676B1ACF5E(L_15, L_20, /*hidden argument*/NULL);
+		VRTextureBounds_t_tCA2820CB638F8B6C480011D70D708F75632E1779  L_16 = VideoStreamTexture_get_frameBounds_mAC9E8CE7B1A8BD091DE22A6B274BC1E22E6CA302_inline(L_15, /*hidden argument*/NULL);
+		V_5 = L_16;
+		// material.mainTextureOffset = new Vector2(bounds.uMin, bounds.vMin);
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_17 = __this->get_material_4();
+		VRTextureBounds_t_tCA2820CB638F8B6C480011D70D708F75632E1779  L_18 = V_5;
+		float L_19 = L_18.get_uMin_0();
+		VRTextureBounds_t_tCA2820CB638F8B6C480011D70D708F75632E1779  L_20 = V_5;
+		float L_21 = L_20.get_vMin_1();
+		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_22;
+		memset((&L_22), 0, sizeof(L_22));
+		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_22), L_19, L_21, /*hidden argument*/NULL);
+		NullCheck(L_17);
+		Material_set_mainTextureOffset_m8602C6F3E7FC358C5F8B9C3709325F676B1ACF5E(L_17, L_22, /*hidden argument*/NULL);
 		// float du = bounds.uMax - bounds.uMin;
-		VRTextureBounds_t_tCA2820CB638F8B6C480011D70D708F75632E1779  L_21 = V_3;
-		float L_22 = L_21.get_uMax_2();
-		VRTextureBounds_t_tCA2820CB638F8B6C480011D70D708F75632E1779  L_23 = V_3;
-		float L_24 = L_23.get_uMin_0();
-		V_4 = ((float)il2cpp_codegen_subtract((float)L_22, (float)L_24));
+		VRTextureBounds_t_tCA2820CB638F8B6C480011D70D708F75632E1779  L_23 = V_5;
+		float L_24 = L_23.get_uMax_2();
+		VRTextureBounds_t_tCA2820CB638F8B6C480011D70D708F75632E1779  L_25 = V_5;
+		float L_26 = L_25.get_uMin_0();
+		V_6 = ((float)il2cpp_codegen_subtract((float)L_24, (float)L_26));
 		// float dv = bounds.vMax - bounds.vMin;
-		VRTextureBounds_t_tCA2820CB638F8B6C480011D70D708F75632E1779  L_25 = V_3;
-		float L_26 = L_25.get_vMax_3();
-		VRTextureBounds_t_tCA2820CB638F8B6C480011D70D708F75632E1779  L_27 = V_3;
-		float L_28 = L_27.get_vMin_1();
-		V_5 = ((float)il2cpp_codegen_subtract((float)L_26, (float)L_28));
+		VRTextureBounds_t_tCA2820CB638F8B6C480011D70D708F75632E1779  L_27 = V_5;
+		float L_28 = L_27.get_vMax_3();
+		VRTextureBounds_t_tCA2820CB638F8B6C480011D70D708F75632E1779  L_29 = V_5;
+		float L_30 = L_29.get_vMin_1();
+		V_7 = ((float)il2cpp_codegen_subtract((float)L_28, (float)L_30));
 		// material.mainTextureScale = new Vector2(du, dv);
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_29 = __this->get_material_4();
-		float L_30 = V_4;
-		float L_31 = V_5;
-		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_32;
-		memset((&L_32), 0, sizeof(L_32));
-		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_32), L_30, L_31, /*hidden argument*/NULL);
-		NullCheck(L_29);
-		Material_set_mainTextureScale_m4E1ED22B62AD02B61921AD392A6D2E5B727383BA(L_29, L_32, /*hidden argument*/NULL);
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_31 = __this->get_material_4();
+		float L_32 = V_6;
+		float L_33 = V_7;
+		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_34;
+		memset((&L_34), 0, sizeof(L_34));
+		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_34), L_32, L_33, /*hidden argument*/NULL);
+		NullCheck(L_31);
+		Material_set_mainTextureScale_m4E1ED22B62AD02B61921AD392A6D2E5B727383BA(L_31, L_34, /*hidden argument*/NULL);
 		// aspect *= Mathf.Abs(du / dv);
-		float L_33 = V_2;
-		float L_34 = V_4;
-		float L_35 = V_5;
+		float L_35 = V_2;
+		float L_36 = V_6;
+		float L_37 = V_7;
 		IL2CPP_RUNTIME_CLASS_INIT(Mathf_tFBDE6467D269BFE410605C7D806FD9991D4A89CB_il2cpp_TypeInfo_var);
-		float L_36 = fabsf(((float)((float)L_34/(float)L_35)));
-		V_2 = ((float)il2cpp_codegen_multiply((float)L_33, (float)L_36));
-		// }
-		goto IL_00d0;
+		float L_38 = fabsf(((float)((float)L_36/(float)L_37)));
+		V_2 = ((float)il2cpp_codegen_multiply((float)L_35, (float)L_38));
+		goto IL_00ec;
 	}
 
-IL_00a6:
+IL_00be:
 	{
 		// material.mainTextureOffset = Vector2.zero;
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_37 = __this->get_material_4();
-		IL2CPP_RUNTIME_CLASS_INIT(Vector2_tA85D2DD88578276CA8A8796756458277E72D073D_il2cpp_TypeInfo_var);
-		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_38 = Vector2_get_zero_mFE0C3213BB698130D6C5247AB4B887A59074D0A8(/*hidden argument*/NULL);
-		NullCheck(L_37);
-		Material_set_mainTextureOffset_m8602C6F3E7FC358C5F8B9C3709325F676B1ACF5E(L_37, L_38, /*hidden argument*/NULL);
-		// material.mainTextureScale = new Vector2(1, -1);
 		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_39 = __this->get_material_4();
-		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_40;
-		memset((&L_40), 0, sizeof(L_40));
-		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_40), (1.0f), (-1.0f), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Vector2_tA85D2DD88578276CA8A8796756458277E72D073D_il2cpp_TypeInfo_var);
+		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_40 = Vector2_get_zero_mFE0C3213BB698130D6C5247AB4B887A59074D0A8(/*hidden argument*/NULL);
 		NullCheck(L_39);
-		Material_set_mainTextureScale_m4E1ED22B62AD02B61921AD392A6D2E5B727383BA(L_39, L_40, /*hidden argument*/NULL);
+		Material_set_mainTextureOffset_m8602C6F3E7FC358C5F8B9C3709325F676B1ACF5E(L_39, L_40, /*hidden argument*/NULL);
+		// material.mainTextureScale = new Vector2(1, -1);
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_41 = __this->get_material_4();
+		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_42;
+		memset((&L_42), 0, sizeof(L_42));
+		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_42), (1.0f), (-1.0f), /*hidden argument*/NULL);
+		NullCheck(L_41);
+		Material_set_mainTextureScale_m4E1ED22B62AD02B61921AD392A6D2E5B727383BA(L_41, L_42, /*hidden argument*/NULL);
 	}
 
-IL_00d0:
+IL_00ec:
 	{
 		// target.localScale = new Vector3(1, 1.0f / aspect, 1);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_41 = __this->get_target_5();
-		float L_42 = V_2;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_43;
-		memset((&L_43), 0, sizeof(L_43));
-		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_43), (1.0f), ((float)((float)(1.0f)/(float)L_42)), (1.0f), /*hidden argument*/NULL);
-		NullCheck(L_41);
-		Transform_set_localScale_m7ED1A6E5A87CD1D483515B99D6D3121FB92B0556(L_41, L_43, /*hidden argument*/NULL);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_43 = __this->get_target_5();
+		float L_44 = V_2;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_45;
+		memset((&L_45), 0, sizeof(L_45));
+		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_45), (1.0f), ((float)((float)(1.0f)/(float)L_44)), (1.0f), /*hidden argument*/NULL);
+		NullCheck(L_43);
+		Transform_set_localScale_m7ED1A6E5A87CD1D483515B99D6D3121FB92B0556(L_43, L_45, /*hidden argument*/NULL);
 		// if (source.hasTracking)
-		VideoStreamTexture_t84215B173C02C664A00020F77A1E867169ED8DAF * L_44 = V_0;
-		NullCheck(L_44);
-		bool L_45 = VideoStreamTexture_get_hasTracking_mF4EBC28726A65407CDBBA70118474F15A965F0C7(L_44, /*hidden argument*/NULL);
-		if (!L_45)
+		VideoStreamTexture_t84215B173C02C664A00020F77A1E867169ED8DAF * L_46 = V_0;
+		NullCheck(L_46);
+		bool L_47 = VideoStreamTexture_get_hasTracking_mF4EBC28726A65407CDBBA70118474F15A965F0C7(L_46, /*hidden argument*/NULL);
+		V_8 = L_47;
+		bool L_48 = V_8;
+		if (!L_48)
 		{
-			goto IL_0125;
+			goto IL_014a;
 		}
 	}
 	{
 		// SteamVR_Utils.RigidTransform rigidTransform = source.transform;
-		VideoStreamTexture_t84215B173C02C664A00020F77A1E867169ED8DAF * L_46 = V_0;
-		NullCheck(L_46);
-		RigidTransform_t0E8A00F7013270B6B2254F29B4FFEAA6783CD905  L_47 = VideoStreamTexture_get_transform_m8CF88DB87A68344EBA23F175852FACE9D755EA5D(L_46, /*hidden argument*/NULL);
-		V_6 = L_47;
+		VideoStreamTexture_t84215B173C02C664A00020F77A1E867169ED8DAF * L_49 = V_0;
+		NullCheck(L_49);
+		RigidTransform_t0E8A00F7013270B6B2254F29B4FFEAA6783CD905  L_50 = VideoStreamTexture_get_transform_m8CF88DB87A68344EBA23F175852FACE9D755EA5D(L_49, /*hidden argument*/NULL);
+		V_9 = L_50;
 		// target.localPosition = rigidTransform.pos;
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_48 = __this->get_target_5();
-		RigidTransform_t0E8A00F7013270B6B2254F29B4FFEAA6783CD905  L_49 = V_6;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_50 = L_49.get_pos_0();
-		NullCheck(L_48);
-		Transform_set_localPosition_m275F5550DD939F83AFEB5E8D681131172E2E1728(L_48, L_50, /*hidden argument*/NULL);
-		// target.localRotation = rigidTransform.rot;
 		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_51 = __this->get_target_5();
-		RigidTransform_t0E8A00F7013270B6B2254F29B4FFEAA6783CD905  L_52 = V_6;
-		Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  L_53 = L_52.get_rot_1();
+		RigidTransform_t0E8A00F7013270B6B2254F29B4FFEAA6783CD905  L_52 = V_9;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_53 = L_52.get_pos_0();
 		NullCheck(L_51);
-		Transform_set_localRotation_mE2BECB0954FFC1D93FB631600D9A9BEFF41D9C8A(L_51, L_53, /*hidden argument*/NULL);
+		Transform_set_localPosition_m275F5550DD939F83AFEB5E8D681131172E2E1728(L_51, L_53, /*hidden argument*/NULL);
+		// target.localRotation = rigidTransform.rot;
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_54 = __this->get_target_5();
+		RigidTransform_t0E8A00F7013270B6B2254F29B4FFEAA6783CD905  L_55 = V_9;
+		Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  L_56 = L_55.get_rot_1();
+		NullCheck(L_54);
+		Transform_set_localRotation_mE2BECB0954FFC1D93FB631600D9A9BEFF41D9C8A(L_54, L_56, /*hidden argument*/NULL);
 	}
 
-IL_0125:
+IL_014a:
 	{
 		// }
 		return;
@@ -17132,6 +20876,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteamVR_TestTrackedCamera__ctor_mE20E014
 // UnityEngine.Vector3 Valve.VR.HmdMatrix34_t::GetPosition()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  HmdMatrix34_t_GetPosition_m19C067FAAAF182DE25CF89BB718F69EE6A3B38D2 (HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669 * __this, const RuntimeMethod* method)
 {
+	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  V_0;
+	memset((&V_0), 0, sizeof(V_0));
 	{
 		// return new Vector3(m3, m7, -m11);
 		float L_0 = __this->get_m3_3();
@@ -17140,7 +20886,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_3;
 		memset((&L_3), 0, sizeof(L_3));
 		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_3), L_0, L_1, ((-L_2)), /*hidden argument*/NULL);
-		return L_3;
+		V_0 = L_3;
+		goto IL_001c;
+	}
+
+IL_001c:
+	{
+		// }
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_4 = V_0;
+		return L_4;
 	}
 }
 IL2CPP_EXTERN_C  Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  HmdMatrix34_t_GetPosition_m19C067FAAAF182DE25CF89BB718F69EE6A3B38D2_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
@@ -17152,57 +20906,80 @@ IL2CPP_EXTERN_C  Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  HmdMatrix34_
 // System.Boolean Valve.VR.HmdMatrix34_t::IsRotationValid()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HmdMatrix34_t_IsRotationValid_mC86EF7A712E672755210F0EEB239D752C9B46449 (HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669 * __this, const RuntimeMethod* method)
 {
+	bool V_0 = false;
+	int32_t G_B7_0 = 0;
+	int32_t G_B9_0 = 0;
 	{
 		// return ((m2 != 0 || m6 != 0 || m10 != 0) && (m1 != 0 || m5 != 0 || m9 != 0));
 		float L_0 = __this->get_m2_2();
 		if ((!(((float)L_0) == ((float)(0.0f)))))
 		{
-			goto IL_0027;
+			goto IL_0028;
 		}
 	}
 	{
 		float L_1 = __this->get_m6_6();
 		if ((!(((float)L_1) == ((float)(0.0f)))))
 		{
-			goto IL_0027;
+			goto IL_0028;
 		}
 	}
 	{
 		float L_2 = __this->get_m10_10();
 		if ((((float)L_2) == ((float)(0.0f))))
 		{
-			goto IL_0054;
+			goto IL_0057;
 		}
 	}
 
-IL_0027:
+IL_0028:
 	{
 		float L_3 = __this->get_m1_1();
 		if ((!(((float)L_3) == ((float)(0.0f)))))
 		{
-			goto IL_0052;
+			goto IL_0054;
 		}
 	}
 	{
 		float L_4 = __this->get_m5_5();
 		if ((!(((float)L_4) == ((float)(0.0f)))))
 		{
-			goto IL_0052;
+			goto IL_0054;
 		}
 	}
 	{
 		float L_5 = __this->get_m9_9();
-		return (bool)((((int32_t)((((float)L_5) == ((float)(0.0f)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-	}
-
-IL_0052:
-	{
-		return (bool)1;
+		G_B7_0 = ((((int32_t)((((float)L_5) == ((float)(0.0f)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		goto IL_0055;
 	}
 
 IL_0054:
 	{
-		return (bool)0;
+		G_B7_0 = 1;
+	}
+
+IL_0055:
+	{
+		G_B9_0 = G_B7_0;
+		goto IL_0058;
+	}
+
+IL_0057:
+	{
+		G_B9_0 = 0;
+	}
+
+IL_0058:
+	{
+		V_0 = (bool)G_B9_0;
+		goto IL_005b;
+	}
+
+IL_005b:
+	{
+		// }
+		bool L_6 = V_0;
+		return L_6;
 	}
 }
 IL2CPP_EXTERN_C  bool HmdMatrix34_t_IsRotationValid_mC86EF7A712E672755210F0EEB239D752C9B46449_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
@@ -17220,77 +20997,91 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F
 		il2cpp_codegen_initialize_method (HmdMatrix34_t_GetRotation_m577C2567481CCDC641DD1861EC627F2663CFB381_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	float V_0 = 0.0f;
+	bool V_0 = false;
 	float V_1 = 0.0f;
 	float V_2 = 0.0f;
 	float V_3 = 0.0f;
+	float V_4 = 0.0f;
+	Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  V_5;
+	memset((&V_5), 0, sizeof(V_5));
 	{
 		// if (IsRotationValid())
 		bool L_0 = HmdMatrix34_t_IsRotationValid_mC86EF7A712E672755210F0EEB239D752C9B46449((HmdMatrix34_t_t69CC0A858D1EBF95773929B6228EE953DE612669 *)__this, /*hidden argument*/NULL);
-		if (!L_0)
+		V_0 = L_0;
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_0115;
+			goto IL_0121;
 		}
 	}
 	{
 		// float w = Mathf.Sqrt(Mathf.Max(0, 1 + m0 + m5 + m10)) / 2;
-		float L_1 = __this->get_m0_0();
-		float L_2 = __this->get_m5_5();
-		float L_3 = __this->get_m10_10();
+		float L_2 = __this->get_m0_0();
+		float L_3 = __this->get_m5_5();
+		float L_4 = __this->get_m10_10();
 		IL2CPP_RUNTIME_CLASS_INIT(Mathf_tFBDE6467D269BFE410605C7D806FD9991D4A89CB_il2cpp_TypeInfo_var);
-		float L_4 = Mathf_Max_m670AE0EC1B09ED1A56FF9606B0F954670319CB65((0.0f), ((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_add((float)(1.0f), (float)L_1)), (float)L_2)), (float)L_3)), /*hidden argument*/NULL);
-		float L_5 = sqrtf(L_4);
-		V_0 = ((float)((float)L_5/(float)(2.0f)));
+		float L_5 = Mathf_Max_m670AE0EC1B09ED1A56FF9606B0F954670319CB65((0.0f), ((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_add((float)(1.0f), (float)L_2)), (float)L_3)), (float)L_4)), /*hidden argument*/NULL);
+		float L_6 = sqrtf(L_5);
+		V_1 = ((float)((float)L_6/(float)(2.0f)));
 		// float x = Mathf.Sqrt(Mathf.Max(0, 1 + m0 - m5 - m10)) / 2;
-		float L_6 = __this->get_m0_0();
-		float L_7 = __this->get_m5_5();
-		float L_8 = __this->get_m10_10();
-		float L_9 = Mathf_Max_m670AE0EC1B09ED1A56FF9606B0F954670319CB65((0.0f), ((float)il2cpp_codegen_subtract((float)((float)il2cpp_codegen_subtract((float)((float)il2cpp_codegen_add((float)(1.0f), (float)L_6)), (float)L_7)), (float)L_8)), /*hidden argument*/NULL);
-		float L_10 = sqrtf(L_9);
-		V_1 = ((float)((float)L_10/(float)(2.0f)));
+		float L_7 = __this->get_m0_0();
+		float L_8 = __this->get_m5_5();
+		float L_9 = __this->get_m10_10();
+		float L_10 = Mathf_Max_m670AE0EC1B09ED1A56FF9606B0F954670319CB65((0.0f), ((float)il2cpp_codegen_subtract((float)((float)il2cpp_codegen_subtract((float)((float)il2cpp_codegen_add((float)(1.0f), (float)L_7)), (float)L_8)), (float)L_9)), /*hidden argument*/NULL);
+		float L_11 = sqrtf(L_10);
+		V_2 = ((float)((float)L_11/(float)(2.0f)));
 		// float y = Mathf.Sqrt(Mathf.Max(0, 1 - m0 + m5 - m10)) / 2;
-		float L_11 = __this->get_m0_0();
-		float L_12 = __this->get_m5_5();
-		float L_13 = __this->get_m10_10();
-		float L_14 = Mathf_Max_m670AE0EC1B09ED1A56FF9606B0F954670319CB65((0.0f), ((float)il2cpp_codegen_subtract((float)((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_subtract((float)(1.0f), (float)L_11)), (float)L_12)), (float)L_13)), /*hidden argument*/NULL);
-		float L_15 = sqrtf(L_14);
-		V_2 = ((float)((float)L_15/(float)(2.0f)));
+		float L_12 = __this->get_m0_0();
+		float L_13 = __this->get_m5_5();
+		float L_14 = __this->get_m10_10();
+		float L_15 = Mathf_Max_m670AE0EC1B09ED1A56FF9606B0F954670319CB65((0.0f), ((float)il2cpp_codegen_subtract((float)((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_subtract((float)(1.0f), (float)L_12)), (float)L_13)), (float)L_14)), /*hidden argument*/NULL);
+		float L_16 = sqrtf(L_15);
+		V_3 = ((float)((float)L_16/(float)(2.0f)));
 		// float z = Mathf.Sqrt(Mathf.Max(0, 1 - m0 - m5 + m10)) / 2;
-		float L_16 = __this->get_m0_0();
-		float L_17 = __this->get_m5_5();
-		float L_18 = __this->get_m10_10();
-		float L_19 = Mathf_Max_m670AE0EC1B09ED1A56FF9606B0F954670319CB65((0.0f), ((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_subtract((float)((float)il2cpp_codegen_subtract((float)(1.0f), (float)L_16)), (float)L_17)), (float)L_18)), /*hidden argument*/NULL);
-		float L_20 = sqrtf(L_19);
-		V_3 = ((float)((float)L_20/(float)(2.0f)));
+		float L_17 = __this->get_m0_0();
+		float L_18 = __this->get_m5_5();
+		float L_19 = __this->get_m10_10();
+		float L_20 = Mathf_Max_m670AE0EC1B09ED1A56FF9606B0F954670319CB65((0.0f), ((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_subtract((float)((float)il2cpp_codegen_subtract((float)(1.0f), (float)L_17)), (float)L_18)), (float)L_19)), /*hidden argument*/NULL);
+		float L_21 = sqrtf(L_20);
+		V_4 = ((float)((float)L_21/(float)(2.0f)));
 		// _copysign(ref x, -m9 - -m6);
-		float L_21 = __this->get_m9_9();
-		float L_22 = __this->get_m6_6();
-		HmdMatrix34_t__copysign_m2493E19142C60ED5E7B15CB4F386F45B927F4727((float*)(&V_1), ((float)il2cpp_codegen_subtract((float)((-L_21)), (float)((-L_22)))), /*hidden argument*/NULL);
+		float L_22 = __this->get_m9_9();
+		float L_23 = __this->get_m6_6();
+		HmdMatrix34_t__copysign_m2493E19142C60ED5E7B15CB4F386F45B927F4727((float*)(&V_2), ((float)il2cpp_codegen_subtract((float)((-L_22)), (float)((-L_23)))), /*hidden argument*/NULL);
 		// _copysign(ref y, -m2 - -m8);
-		float L_23 = __this->get_m2_2();
-		float L_24 = __this->get_m8_8();
-		HmdMatrix34_t__copysign_m2493E19142C60ED5E7B15CB4F386F45B927F4727((float*)(&V_2), ((float)il2cpp_codegen_subtract((float)((-L_23)), (float)((-L_24)))), /*hidden argument*/NULL);
+		float L_24 = __this->get_m2_2();
+		float L_25 = __this->get_m8_8();
+		HmdMatrix34_t__copysign_m2493E19142C60ED5E7B15CB4F386F45B927F4727((float*)(&V_3), ((float)il2cpp_codegen_subtract((float)((-L_24)), (float)((-L_25)))), /*hidden argument*/NULL);
 		// _copysign(ref z, m4 - m1);
-		float L_25 = __this->get_m4_4();
-		float L_26 = __this->get_m1_1();
-		HmdMatrix34_t__copysign_m2493E19142C60ED5E7B15CB4F386F45B927F4727((float*)(&V_3), ((float)il2cpp_codegen_subtract((float)L_25, (float)L_26)), /*hidden argument*/NULL);
+		float L_26 = __this->get_m4_4();
+		float L_27 = __this->get_m1_1();
+		HmdMatrix34_t__copysign_m2493E19142C60ED5E7B15CB4F386F45B927F4727((float*)(&V_4), ((float)il2cpp_codegen_subtract((float)L_26, (float)L_27)), /*hidden argument*/NULL);
 		// return new Quaternion(x, y, z, w);
-		float L_27 = V_1;
 		float L_28 = V_2;
 		float L_29 = V_3;
-		float L_30 = V_0;
-		Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  L_31;
-		memset((&L_31), 0, sizeof(L_31));
-		Quaternion__ctor_m7502F0C38E04C6DE24C965D1CAF278DDD02B9D61((&L_31), L_27, L_28, L_29, L_30, /*hidden argument*/NULL);
-		return L_31;
+		float L_30 = V_4;
+		float L_31 = V_1;
+		Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  L_32;
+		memset((&L_32), 0, sizeof(L_32));
+		Quaternion__ctor_m7502F0C38E04C6DE24C965D1CAF278DDD02B9D61((&L_32), L_28, L_29, L_30, L_31, /*hidden argument*/NULL);
+		V_5 = L_32;
+		goto IL_012a;
 	}
 
-IL_0115:
+IL_0121:
 	{
 		// return Quaternion.identity;
 		IL2CPP_RUNTIME_CLASS_INIT(Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357_il2cpp_TypeInfo_var);
-		Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  L_32 = Quaternion_get_identity_m548B37D80F2DEE60E41D1F09BF6889B557BE1A64(/*hidden argument*/NULL);
-		return L_32;
+		Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  L_33 = Quaternion_get_identity_m548B37D80F2DEE60E41D1F09BF6889B557BE1A64(/*hidden argument*/NULL);
+		V_5 = L_33;
+		goto IL_012a;
+	}
+
+IL_012a:
+	{
+		// }
+		Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  L_34 = V_5;
+		return L_34;
 	}
 }
 IL2CPP_EXTERN_C  Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  HmdMatrix34_t_GetRotation_m577C2567481CCDC641DD1861EC627F2663CFB381_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
@@ -17302,25 +21093,28 @@ IL2CPP_EXTERN_C  Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  HmdMatrix
 // System.Void Valve.VR.HmdMatrix34_t::_copysign(System.Single&,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HmdMatrix34_t__copysign_m2493E19142C60ED5E7B15CB4F386F45B927F4727 (float* ___sizeval0, float ___signval1, const RuntimeMethod* method)
 {
+	bool V_0 = false;
 	{
 		// if (signval > 0 != sizeval > 0)
 		float L_0 = ___signval1;
 		float* L_1 = ___sizeval0;
 		float L_2 = *((float*)L_1);
-		if ((((int32_t)((((float)L_0) > ((float)(0.0f)))? 1 : 0)) == ((int32_t)((((float)L_2) > ((float)(0.0f)))? 1 : 0))))
+		V_0 = (bool)((((int32_t)((((int32_t)((((float)L_0) > ((float)(0.0f)))? 1 : 0)) == ((int32_t)((((float)L_2) > ((float)(0.0f)))? 1 : 0)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_3 = V_0;
+		if (!L_3)
 		{
-			goto IL_0018;
+			goto IL_0020;
 		}
 	}
 	{
 		// sizeval = -sizeval;
-		float* L_3 = ___sizeval0;
 		float* L_4 = ___sizeval0;
-		float L_5 = *((float*)L_4);
-		*((float*)L_3) = (float)((-L_5));
+		float* L_5 = ___sizeval0;
+		float L_6 = *((float*)L_5);
+		*((float*)L_4) = (float)((-L_6));
 	}
 
-IL_0018:
+IL_0020:
 	{
 		// }
 		return;
@@ -29615,1612 +33409,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t _GetLastPoses_EndInvoke_m5F5200DA7242
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C  int32_t DelegatePInvokeWrapper__GetMirrorTextureD3D11_t3821C937B45635C32287945301C38059DB069FB8 (_GetMirrorTextureD3D11_t3821C937B45635C32287945301C38059DB069FB8 * __this, int32_t ___eEye0, intptr_t ___pD3D11DeviceOrResource1, intptr_t* ___ppD3D11ShaderResourceView2, const RuntimeMethod* method)
+IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR int32_t OperatingSystem_get_Platform_m36635DD0A3D5442E515AB8D2EA3C7092348A5181_inline (OperatingSystem_tBB05846D5AA6960FFEB42C59E5FE359255C2BE83 * __this, const RuntimeMethod* method)
 {
-	typedef int32_t (STDCALL *PInvokeFunc)(int32_t, intptr_t, intptr_t*);
-	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_method_pointer(((RuntimeDelegate*)__this)->method));
-
-	// Native function invocation
-	int32_t returnValue = il2cppPInvokeFunc(___eEye0, ___pD3D11DeviceOrResource1, ___ppD3D11ShaderResourceView2);
-
-	return returnValue;
-}
-// System.Void Valve.VR.IVRCompositor__GetMirrorTextureD3D11::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _GetMirrorTextureD3D11__ctor_m6EE9034D904849BB40B816960D0F4FDEFD406795 (_GetMirrorTextureD3D11_t3821C937B45635C32287945301C38059DB069FB8 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
-{
-	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor__GetMirrorTextureD3D11::Invoke(Valve.VR.EVREye,System.IntPtr,System.IntPtr&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t _GetMirrorTextureD3D11_Invoke_m2376C09A4A3685A8909083437384CA2D41B9E14E (_GetMirrorTextureD3D11_t3821C937B45635C32287945301C38059DB069FB8 * __this, int32_t ___eEye0, intptr_t ___pD3D11DeviceOrResource1, intptr_t* ___ppD3D11ShaderResourceView2, const RuntimeMethod* method)
-{
-	int32_t result = 0;
-	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
-	Delegate_t** delegatesToInvoke;
-	il2cpp_array_size_t length;
-	if (delegateArrayToInvoke != NULL)
 	{
-		length = delegateArrayToInvoke->max_length;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
-	}
-	else
-	{
-		length = 1;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
-	}
-
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Delegate_t* currentDelegate = delegatesToInvoke[i];
-		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
-		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
-		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
-		if (!il2cpp_codegen_method_is_virtual(targetMethod))
-		{
-			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
-		}
-		bool ___methodIsStatic = MethodIsStatic(targetMethod);
-		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
-		if (___methodIsStatic)
-		{
-			if (___parameterCount == 3)
-			{
-				// open
-				typedef int32_t (*FunctionPointerType) (int32_t, intptr_t, intptr_t*, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(___eEye0, ___pD3D11DeviceOrResource1, ___ppD3D11ShaderResourceView2, targetMethod);
-			}
-			else
-			{
-				// closed
-				typedef int32_t (*FunctionPointerType) (void*, int32_t, intptr_t, intptr_t*, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___eEye0, ___pD3D11DeviceOrResource1, ___ppD3D11ShaderResourceView2, targetMethod);
-			}
-		}
-		else
-		{
-			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker3< int32_t, int32_t, intptr_t, intptr_t* >::Invoke(targetMethod, targetThis, ___eEye0, ___pD3D11DeviceOrResource1, ___ppD3D11ShaderResourceView2);
-					else
-						result = GenericVirtFuncInvoker3< int32_t, int32_t, intptr_t, intptr_t* >::Invoke(targetMethod, targetThis, ___eEye0, ___pD3D11DeviceOrResource1, ___ppD3D11ShaderResourceView2);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker3< int32_t, int32_t, intptr_t, intptr_t* >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___eEye0, ___pD3D11DeviceOrResource1, ___ppD3D11ShaderResourceView2);
-					else
-						result = VirtFuncInvoker3< int32_t, int32_t, intptr_t, intptr_t* >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___eEye0, ___pD3D11DeviceOrResource1, ___ppD3D11ShaderResourceView2);
-				}
-			}
-			else
-			{
-				if (targetThis == NULL && il2cpp_codegen_class_is_value_type(il2cpp_codegen_method_get_declaring_type(targetMethod)))
-				{
-					typedef int32_t (*FunctionPointerType) (RuntimeObject*, intptr_t, intptr_t*, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(&___eEye0) - 1), ___pD3D11DeviceOrResource1, ___ppD3D11ShaderResourceView2, targetMethod);
-				}
-				if (targetThis == NULL)
-				{
-					typedef int32_t (*FunctionPointerType) (RuntimeObject*, intptr_t, intptr_t*, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)((RuntimeObject*)(reinterpret_cast<RuntimeObject*>(&___eEye0) - 1), ___pD3D11DeviceOrResource1, ___ppD3D11ShaderResourceView2, targetMethod);
-				}
-				else
-				{
-					typedef int32_t (*FunctionPointerType) (void*, int32_t, intptr_t, intptr_t*, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___eEye0, ___pD3D11DeviceOrResource1, ___ppD3D11ShaderResourceView2, targetMethod);
-				}
-			}
-		}
-	}
-	return result;
-}
-// System.IAsyncResult Valve.VR.IVRCompositor__GetMirrorTextureD3D11::BeginInvoke(Valve.VR.EVREye,System.IntPtr,System.IntPtr&,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* _GetMirrorTextureD3D11_BeginInvoke_mFAEA3344CA3BD18E0877F75CE4B4D44817953DB9 (_GetMirrorTextureD3D11_t3821C937B45635C32287945301C38059DB069FB8 * __this, int32_t ___eEye0, intptr_t ___pD3D11DeviceOrResource1, intptr_t* ___ppD3D11ShaderResourceView2, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback3, RuntimeObject * ___object4, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (_GetMirrorTextureD3D11_BeginInvoke_mFAEA3344CA3BD18E0877F75CE4B4D44817953DB9_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	void *__d_args[4] = {0};
-	__d_args[0] = Box(EVREye_t7C413729402C81A69293253E13D4496F15B2F68A_il2cpp_TypeInfo_var, &___eEye0);
-	__d_args[1] = Box(IntPtr_t_il2cpp_TypeInfo_var, &___pD3D11DeviceOrResource1);
-	__d_args[2] = Box(IntPtr_t_il2cpp_TypeInfo_var, &*___ppD3D11ShaderResourceView2);
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback3, (RuntimeObject*)___object4);
-}
-// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor__GetMirrorTextureD3D11::EndInvoke(System.IntPtr&,System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t _GetMirrorTextureD3D11_EndInvoke_m17B69BB4F236EB2C6429463CC46C4B9B0D99ABAC (_GetMirrorTextureD3D11_t3821C937B45635C32287945301C38059DB069FB8 * __this, intptr_t* ___ppD3D11ShaderResourceView0, RuntimeObject* ___result1, const RuntimeMethod* method)
-{
-	void* ___out_args[] = {
-	___ppD3D11ShaderResourceView0,
-	};
-	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
-	return *(int32_t*)UnBox ((RuntimeObject*)__result);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C  int32_t DelegatePInvokeWrapper__GetMirrorTextureGL_t50B5BE7FFEE8616FF874BAF2C2AF05898F0C9328 (_GetMirrorTextureGL_t50B5BE7FFEE8616FF874BAF2C2AF05898F0C9328 * __this, int32_t ___eEye0, uint32_t* ___pglTextureId1, intptr_t ___pglSharedTextureHandle2, const RuntimeMethod* method)
-{
-	typedef int32_t (STDCALL *PInvokeFunc)(int32_t, uint32_t*, intptr_t);
-	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_method_pointer(((RuntimeDelegate*)__this)->method));
-
-	// Native function invocation
-	int32_t returnValue = il2cppPInvokeFunc(___eEye0, ___pglTextureId1, ___pglSharedTextureHandle2);
-
-	return returnValue;
-}
-// System.Void Valve.VR.IVRCompositor__GetMirrorTextureGL::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _GetMirrorTextureGL__ctor_m740B63E0C21198C75EB50D8D131C7A4F2F4C60B4 (_GetMirrorTextureGL_t50B5BE7FFEE8616FF874BAF2C2AF05898F0C9328 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
-{
-	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor__GetMirrorTextureGL::Invoke(Valve.VR.EVREye,System.UInt32&,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t _GetMirrorTextureGL_Invoke_mE744BA3BC0968B61273416A7B8E208F1C9269767 (_GetMirrorTextureGL_t50B5BE7FFEE8616FF874BAF2C2AF05898F0C9328 * __this, int32_t ___eEye0, uint32_t* ___pglTextureId1, intptr_t ___pglSharedTextureHandle2, const RuntimeMethod* method)
-{
-	int32_t result = 0;
-	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
-	Delegate_t** delegatesToInvoke;
-	il2cpp_array_size_t length;
-	if (delegateArrayToInvoke != NULL)
-	{
-		length = delegateArrayToInvoke->max_length;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
-	}
-	else
-	{
-		length = 1;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
-	}
-
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Delegate_t* currentDelegate = delegatesToInvoke[i];
-		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
-		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
-		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
-		if (!il2cpp_codegen_method_is_virtual(targetMethod))
-		{
-			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
-		}
-		bool ___methodIsStatic = MethodIsStatic(targetMethod);
-		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
-		if (___methodIsStatic)
-		{
-			if (___parameterCount == 3)
-			{
-				// open
-				typedef int32_t (*FunctionPointerType) (int32_t, uint32_t*, intptr_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(___eEye0, ___pglTextureId1, ___pglSharedTextureHandle2, targetMethod);
-			}
-			else
-			{
-				// closed
-				typedef int32_t (*FunctionPointerType) (void*, int32_t, uint32_t*, intptr_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___eEye0, ___pglTextureId1, ___pglSharedTextureHandle2, targetMethod);
-			}
-		}
-		else
-		{
-			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker3< int32_t, int32_t, uint32_t*, intptr_t >::Invoke(targetMethod, targetThis, ___eEye0, ___pglTextureId1, ___pglSharedTextureHandle2);
-					else
-						result = GenericVirtFuncInvoker3< int32_t, int32_t, uint32_t*, intptr_t >::Invoke(targetMethod, targetThis, ___eEye0, ___pglTextureId1, ___pglSharedTextureHandle2);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker3< int32_t, int32_t, uint32_t*, intptr_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___eEye0, ___pglTextureId1, ___pglSharedTextureHandle2);
-					else
-						result = VirtFuncInvoker3< int32_t, int32_t, uint32_t*, intptr_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___eEye0, ___pglTextureId1, ___pglSharedTextureHandle2);
-				}
-			}
-			else
-			{
-				if (targetThis == NULL && il2cpp_codegen_class_is_value_type(il2cpp_codegen_method_get_declaring_type(targetMethod)))
-				{
-					typedef int32_t (*FunctionPointerType) (RuntimeObject*, uint32_t*, intptr_t, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(&___eEye0) - 1), ___pglTextureId1, ___pglSharedTextureHandle2, targetMethod);
-				}
-				if (targetThis == NULL)
-				{
-					typedef int32_t (*FunctionPointerType) (RuntimeObject*, uint32_t*, intptr_t, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)((RuntimeObject*)(reinterpret_cast<RuntimeObject*>(&___eEye0) - 1), ___pglTextureId1, ___pglSharedTextureHandle2, targetMethod);
-				}
-				else
-				{
-					typedef int32_t (*FunctionPointerType) (void*, int32_t, uint32_t*, intptr_t, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___eEye0, ___pglTextureId1, ___pglSharedTextureHandle2, targetMethod);
-				}
-			}
-		}
-	}
-	return result;
-}
-// System.IAsyncResult Valve.VR.IVRCompositor__GetMirrorTextureGL::BeginInvoke(Valve.VR.EVREye,System.UInt32&,System.IntPtr,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* _GetMirrorTextureGL_BeginInvoke_m614A5D1564FBDD2B3725D9E613DF66430C81D217 (_GetMirrorTextureGL_t50B5BE7FFEE8616FF874BAF2C2AF05898F0C9328 * __this, int32_t ___eEye0, uint32_t* ___pglTextureId1, intptr_t ___pglSharedTextureHandle2, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback3, RuntimeObject * ___object4, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (_GetMirrorTextureGL_BeginInvoke_m614A5D1564FBDD2B3725D9E613DF66430C81D217_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	void *__d_args[4] = {0};
-	__d_args[0] = Box(EVREye_t7C413729402C81A69293253E13D4496F15B2F68A_il2cpp_TypeInfo_var, &___eEye0);
-	__d_args[1] = Box(UInt32_t4980FA09003AFAAB5A6E361BA2748EA9A005709B_il2cpp_TypeInfo_var, &*___pglTextureId1);
-	__d_args[2] = Box(IntPtr_t_il2cpp_TypeInfo_var, &___pglSharedTextureHandle2);
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback3, (RuntimeObject*)___object4);
-}
-// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor__GetMirrorTextureGL::EndInvoke(System.UInt32&,System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t _GetMirrorTextureGL_EndInvoke_m8F2367A8492A0E7809F7426FC23B82CAABA63EE2 (_GetMirrorTextureGL_t50B5BE7FFEE8616FF874BAF2C2AF05898F0C9328 * __this, uint32_t* ___pglTextureId0, RuntimeObject* ___result1, const RuntimeMethod* method)
-{
-	void* ___out_args[] = {
-	___pglTextureId0,
-	};
-	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
-	return *(int32_t*)UnBox ((RuntimeObject*)__result);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C  int32_t DelegatePInvokeWrapper__GetPosesForFrame_t2E59880E3A298AE799E6E71D68BED9A95ABE1F06 (_GetPosesForFrame_t2E59880E3A298AE799E6E71D68BED9A95ABE1F06 * __this, uint32_t ___unPosePredictionID0, TrackedDevicePose_tU5BU5D_tF02F8D07A99963B656F6262B11E24ECF9747D196* ___pPoseArray1, uint32_t ___unPoseArrayCount2, const RuntimeMethod* method)
-{
-	typedef int32_t (STDCALL *PInvokeFunc)(uint32_t, TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 *, uint32_t);
-	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_method_pointer(((RuntimeDelegate*)__this)->method));
-
-	// Marshaling of parameter '___pPoseArray1' to native representation
-	TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 * ____pPoseArray1_marshaled = NULL;
-	if (___pPoseArray1 != NULL)
-	{
-		____pPoseArray1_marshaled = reinterpret_cast<TrackedDevicePose_t_t0028622C5DF863D4DC12877439D4A679A0D46365 *>((___pPoseArray1)->GetAddressAtUnchecked(0));
-	}
-
-	// Native function invocation
-	int32_t returnValue = il2cppPInvokeFunc(___unPosePredictionID0, ____pPoseArray1_marshaled, ___unPoseArrayCount2);
-
-	return returnValue;
-}
-// System.Void Valve.VR.IVRCompositor__GetPosesForFrame::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _GetPosesForFrame__ctor_mF5103D85D11E4944FC6F10D4F9582A4BF707A9CD (_GetPosesForFrame_t2E59880E3A298AE799E6E71D68BED9A95ABE1F06 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
-{
-	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor__GetPosesForFrame::Invoke(System.UInt32,Valve.VR.TrackedDevicePose_t[],System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t _GetPosesForFrame_Invoke_m121E28B44F47357CEED8A8D0B91465DBD6DD48D6 (_GetPosesForFrame_t2E59880E3A298AE799E6E71D68BED9A95ABE1F06 * __this, uint32_t ___unPosePredictionID0, TrackedDevicePose_tU5BU5D_tF02F8D07A99963B656F6262B11E24ECF9747D196* ___pPoseArray1, uint32_t ___unPoseArrayCount2, const RuntimeMethod* method)
-{
-	int32_t result = 0;
-	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
-	Delegate_t** delegatesToInvoke;
-	il2cpp_array_size_t length;
-	if (delegateArrayToInvoke != NULL)
-	{
-		length = delegateArrayToInvoke->max_length;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
-	}
-	else
-	{
-		length = 1;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
-	}
-
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Delegate_t* currentDelegate = delegatesToInvoke[i];
-		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
-		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
-		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
-		if (!il2cpp_codegen_method_is_virtual(targetMethod))
-		{
-			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
-		}
-		bool ___methodIsStatic = MethodIsStatic(targetMethod);
-		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
-		if (___methodIsStatic)
-		{
-			if (___parameterCount == 3)
-			{
-				// open
-				typedef int32_t (*FunctionPointerType) (uint32_t, TrackedDevicePose_tU5BU5D_tF02F8D07A99963B656F6262B11E24ECF9747D196*, uint32_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(___unPosePredictionID0, ___pPoseArray1, ___unPoseArrayCount2, targetMethod);
-			}
-			else
-			{
-				// closed
-				typedef int32_t (*FunctionPointerType) (void*, uint32_t, TrackedDevicePose_tU5BU5D_tF02F8D07A99963B656F6262B11E24ECF9747D196*, uint32_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___unPosePredictionID0, ___pPoseArray1, ___unPoseArrayCount2, targetMethod);
-			}
-		}
-		else
-		{
-			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker3< int32_t, uint32_t, TrackedDevicePose_tU5BU5D_tF02F8D07A99963B656F6262B11E24ECF9747D196*, uint32_t >::Invoke(targetMethod, targetThis, ___unPosePredictionID0, ___pPoseArray1, ___unPoseArrayCount2);
-					else
-						result = GenericVirtFuncInvoker3< int32_t, uint32_t, TrackedDevicePose_tU5BU5D_tF02F8D07A99963B656F6262B11E24ECF9747D196*, uint32_t >::Invoke(targetMethod, targetThis, ___unPosePredictionID0, ___pPoseArray1, ___unPoseArrayCount2);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker3< int32_t, uint32_t, TrackedDevicePose_tU5BU5D_tF02F8D07A99963B656F6262B11E24ECF9747D196*, uint32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___unPosePredictionID0, ___pPoseArray1, ___unPoseArrayCount2);
-					else
-						result = VirtFuncInvoker3< int32_t, uint32_t, TrackedDevicePose_tU5BU5D_tF02F8D07A99963B656F6262B11E24ECF9747D196*, uint32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___unPosePredictionID0, ___pPoseArray1, ___unPoseArrayCount2);
-				}
-			}
-			else
-			{
-				if (targetThis == NULL && il2cpp_codegen_class_is_value_type(il2cpp_codegen_method_get_declaring_type(targetMethod)))
-				{
-					typedef int32_t (*FunctionPointerType) (RuntimeObject*, TrackedDevicePose_tU5BU5D_tF02F8D07A99963B656F6262B11E24ECF9747D196*, uint32_t, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(&___unPosePredictionID0) - 1), ___pPoseArray1, ___unPoseArrayCount2, targetMethod);
-				}
-				typedef int32_t (*FunctionPointerType) (void*, uint32_t, TrackedDevicePose_tU5BU5D_tF02F8D07A99963B656F6262B11E24ECF9747D196*, uint32_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___unPosePredictionID0, ___pPoseArray1, ___unPoseArrayCount2, targetMethod);
-			}
-		}
-	}
-	return result;
-}
-// System.IAsyncResult Valve.VR.IVRCompositor__GetPosesForFrame::BeginInvoke(System.UInt32,Valve.VR.TrackedDevicePose_t[],System.UInt32,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* _GetPosesForFrame_BeginInvoke_m255B5D07904916E0DDC578EBA1401ADC44220C31 (_GetPosesForFrame_t2E59880E3A298AE799E6E71D68BED9A95ABE1F06 * __this, uint32_t ___unPosePredictionID0, TrackedDevicePose_tU5BU5D_tF02F8D07A99963B656F6262B11E24ECF9747D196* ___pPoseArray1, uint32_t ___unPoseArrayCount2, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback3, RuntimeObject * ___object4, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (_GetPosesForFrame_BeginInvoke_m255B5D07904916E0DDC578EBA1401ADC44220C31_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	void *__d_args[4] = {0};
-	__d_args[0] = Box(UInt32_t4980FA09003AFAAB5A6E361BA2748EA9A005709B_il2cpp_TypeInfo_var, &___unPosePredictionID0);
-	__d_args[1] = ___pPoseArray1;
-	__d_args[2] = Box(UInt32_t4980FA09003AFAAB5A6E361BA2748EA9A005709B_il2cpp_TypeInfo_var, &___unPoseArrayCount2);
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback3, (RuntimeObject*)___object4);
-}
-// Valve.VR.EVRCompositorError Valve.VR.IVRCompositor__GetPosesForFrame::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t _GetPosesForFrame_EndInvoke_m734CD40C41927886522DFAD874F621A6F9BCC167 (_GetPosesForFrame_t2E59880E3A298AE799E6E71D68BED9A95ABE1F06 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
-{
-	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
-	return *(int32_t*)UnBox ((RuntimeObject*)__result);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C  int32_t DelegatePInvokeWrapper__GetTrackingSpace_tF0B604887238FB14F8B2DAD3C935CBD74444EC34 (_GetTrackingSpace_tF0B604887238FB14F8B2DAD3C935CBD74444EC34 * __this, const RuntimeMethod* method)
-{
-	typedef int32_t (STDCALL *PInvokeFunc)();
-	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_method_pointer(((RuntimeDelegate*)__this)->method));
-
-	// Native function invocation
-	int32_t returnValue = il2cppPInvokeFunc();
-
-	return returnValue;
-}
-// System.Void Valve.VR.IVRCompositor__GetTrackingSpace::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _GetTrackingSpace__ctor_m01E6949108FDE0A0CBD29D99B1958DB941FFFFFB (_GetTrackingSpace_tF0B604887238FB14F8B2DAD3C935CBD74444EC34 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
-{
-	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// Valve.VR.ETrackingUniverseOrigin Valve.VR.IVRCompositor__GetTrackingSpace::Invoke()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t _GetTrackingSpace_Invoke_m5485BD5BC8B23BF9CBD478ED33F208CAEA4A323F (_GetTrackingSpace_tF0B604887238FB14F8B2DAD3C935CBD74444EC34 * __this, const RuntimeMethod* method)
-{
-	int32_t result = 0;
-	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
-	Delegate_t** delegatesToInvoke;
-	il2cpp_array_size_t length;
-	if (delegateArrayToInvoke != NULL)
-	{
-		length = delegateArrayToInvoke->max_length;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
-	}
-	else
-	{
-		length = 1;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
-	}
-
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Delegate_t* currentDelegate = delegatesToInvoke[i];
-		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
-		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
-		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
-		if (!il2cpp_codegen_method_is_virtual(targetMethod))
-		{
-			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
-		}
-		bool ___methodIsStatic = MethodIsStatic(targetMethod);
-		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
-		if (___methodIsStatic)
-		{
-			if (___parameterCount == 0)
-			{
-				// open
-				typedef int32_t (*FunctionPointerType) (const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetMethod);
-			}
-			else
-			{
-				// closed
-				typedef int32_t (*FunctionPointerType) (void*, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, targetMethod);
-			}
-		}
-		else
-		{
-			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker0< int32_t >::Invoke(targetMethod, targetThis);
-					else
-						result = GenericVirtFuncInvoker0< int32_t >::Invoke(targetMethod, targetThis);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker0< int32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis);
-					else
-						result = VirtFuncInvoker0< int32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis);
-				}
-			}
-			else
-			{
-				typedef int32_t (*FunctionPointerType) (void*, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, targetMethod);
-			}
-		}
-	}
-	return result;
-}
-// System.IAsyncResult Valve.VR.IVRCompositor__GetTrackingSpace::BeginInvoke(System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* _GetTrackingSpace_BeginInvoke_mD0EEFC153E15D2361920D7D12504F0DFBF4CD16F (_GetTrackingSpace_tF0B604887238FB14F8B2DAD3C935CBD74444EC34 * __this, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback0, RuntimeObject * ___object1, const RuntimeMethod* method)
-{
-	void *__d_args[1] = {0};
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback0, (RuntimeObject*)___object1);
-}
-// Valve.VR.ETrackingUniverseOrigin Valve.VR.IVRCompositor__GetTrackingSpace::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t _GetTrackingSpace_EndInvoke_m950464AFB28426404DB75345055FD6BA6484FA76 (_GetTrackingSpace_tF0B604887238FB14F8B2DAD3C935CBD74444EC34 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
-{
-	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
-	return *(int32_t*)UnBox ((RuntimeObject*)__result);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C  uint32_t DelegatePInvokeWrapper__GetVulkanDeviceExtensionsRequired_tCC05B455C0965E80ADBBD3B7BCF1F27FED8C0D7A (_GetVulkanDeviceExtensionsRequired_tCC05B455C0965E80ADBBD3B7BCF1F27FED8C0D7A * __this, intptr_t ___pPhysicalDevice0, StringBuilder_t * ___pchValue1, uint32_t ___unBufferSize2, const RuntimeMethod* method)
-{
-	typedef uint32_t (STDCALL *PInvokeFunc)(intptr_t, char*, uint32_t);
-	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_method_pointer(((RuntimeDelegate*)__this)->method));
-
-	// Marshaling of parameter '___pchValue1' to native representation
-	char* ____pchValue1_marshaled = NULL;
-	____pchValue1_marshaled = il2cpp_codegen_marshal_string_builder(___pchValue1);
-
-	// Native function invocation
-	uint32_t returnValue = il2cppPInvokeFunc(___pPhysicalDevice0, ____pchValue1_marshaled, ___unBufferSize2);
-
-	// Marshaling of parameter '___pchValue1' back from native representation
-	il2cpp_codegen_marshal_string_builder_result(___pchValue1, ____pchValue1_marshaled);
-
-	// Marshaling cleanup of parameter '___pchValue1' native representation
-	il2cpp_codegen_marshal_free(____pchValue1_marshaled);
-	____pchValue1_marshaled = NULL;
-
-	return returnValue;
-}
-// System.Void Valve.VR.IVRCompositor__GetVulkanDeviceExtensionsRequired::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _GetVulkanDeviceExtensionsRequired__ctor_m1D1375A463C46C08E100539DF11918C3EAC80219 (_GetVulkanDeviceExtensionsRequired_tCC05B455C0965E80ADBBD3B7BCF1F27FED8C0D7A * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
-{
-	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// System.UInt32 Valve.VR.IVRCompositor__GetVulkanDeviceExtensionsRequired::Invoke(System.IntPtr,System.Text.StringBuilder,System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t _GetVulkanDeviceExtensionsRequired_Invoke_m283438B9E6F04F08D08EF6B2B8EE88998939A0A5 (_GetVulkanDeviceExtensionsRequired_tCC05B455C0965E80ADBBD3B7BCF1F27FED8C0D7A * __this, intptr_t ___pPhysicalDevice0, StringBuilder_t * ___pchValue1, uint32_t ___unBufferSize2, const RuntimeMethod* method)
-{
-	uint32_t result = 0;
-	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
-	Delegate_t** delegatesToInvoke;
-	il2cpp_array_size_t length;
-	if (delegateArrayToInvoke != NULL)
-	{
-		length = delegateArrayToInvoke->max_length;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
-	}
-	else
-	{
-		length = 1;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
-	}
-
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Delegate_t* currentDelegate = delegatesToInvoke[i];
-		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
-		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
-		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
-		if (!il2cpp_codegen_method_is_virtual(targetMethod))
-		{
-			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
-		}
-		bool ___methodIsStatic = MethodIsStatic(targetMethod);
-		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
-		if (___methodIsStatic)
-		{
-			if (___parameterCount == 3)
-			{
-				// open
-				typedef uint32_t (*FunctionPointerType) (intptr_t, StringBuilder_t *, uint32_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(___pPhysicalDevice0, ___pchValue1, ___unBufferSize2, targetMethod);
-			}
-			else
-			{
-				// closed
-				typedef uint32_t (*FunctionPointerType) (void*, intptr_t, StringBuilder_t *, uint32_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___pPhysicalDevice0, ___pchValue1, ___unBufferSize2, targetMethod);
-			}
-		}
-		else
-		{
-			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker3< uint32_t, intptr_t, StringBuilder_t *, uint32_t >::Invoke(targetMethod, targetThis, ___pPhysicalDevice0, ___pchValue1, ___unBufferSize2);
-					else
-						result = GenericVirtFuncInvoker3< uint32_t, intptr_t, StringBuilder_t *, uint32_t >::Invoke(targetMethod, targetThis, ___pPhysicalDevice0, ___pchValue1, ___unBufferSize2);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker3< uint32_t, intptr_t, StringBuilder_t *, uint32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___pPhysicalDevice0, ___pchValue1, ___unBufferSize2);
-					else
-						result = VirtFuncInvoker3< uint32_t, intptr_t, StringBuilder_t *, uint32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___pPhysicalDevice0, ___pchValue1, ___unBufferSize2);
-				}
-			}
-			else
-			{
-				if (targetThis == NULL && il2cpp_codegen_class_is_value_type(il2cpp_codegen_method_get_declaring_type(targetMethod)))
-				{
-					typedef uint32_t (*FunctionPointerType) (RuntimeObject*, StringBuilder_t *, uint32_t, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(&___pPhysicalDevice0) - 1), ___pchValue1, ___unBufferSize2, targetMethod);
-				}
-				typedef uint32_t (*FunctionPointerType) (void*, intptr_t, StringBuilder_t *, uint32_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___pPhysicalDevice0, ___pchValue1, ___unBufferSize2, targetMethod);
-			}
-		}
-	}
-	return result;
-}
-// System.IAsyncResult Valve.VR.IVRCompositor__GetVulkanDeviceExtensionsRequired::BeginInvoke(System.IntPtr,System.Text.StringBuilder,System.UInt32,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* _GetVulkanDeviceExtensionsRequired_BeginInvoke_mC366F300E2649D0CA7C84A43206A47C2B12AA502 (_GetVulkanDeviceExtensionsRequired_tCC05B455C0965E80ADBBD3B7BCF1F27FED8C0D7A * __this, intptr_t ___pPhysicalDevice0, StringBuilder_t * ___pchValue1, uint32_t ___unBufferSize2, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback3, RuntimeObject * ___object4, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (_GetVulkanDeviceExtensionsRequired_BeginInvoke_mC366F300E2649D0CA7C84A43206A47C2B12AA502_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	void *__d_args[4] = {0};
-	__d_args[0] = Box(IntPtr_t_il2cpp_TypeInfo_var, &___pPhysicalDevice0);
-	__d_args[1] = ___pchValue1;
-	__d_args[2] = Box(UInt32_t4980FA09003AFAAB5A6E361BA2748EA9A005709B_il2cpp_TypeInfo_var, &___unBufferSize2);
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback3, (RuntimeObject*)___object4);
-}
-// System.UInt32 Valve.VR.IVRCompositor__GetVulkanDeviceExtensionsRequired::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t _GetVulkanDeviceExtensionsRequired_EndInvoke_m04A4ADEA3E32EE9AE6C9014922DC1F821CFFFAF4 (_GetVulkanDeviceExtensionsRequired_tCC05B455C0965E80ADBBD3B7BCF1F27FED8C0D7A * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
-{
-	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
-	return *(uint32_t*)UnBox ((RuntimeObject*)__result);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C  uint32_t DelegatePInvokeWrapper__GetVulkanInstanceExtensionsRequired_t9751CFE333A87BB7FBCD392C4BC9F0DC2D1C5153 (_GetVulkanInstanceExtensionsRequired_t9751CFE333A87BB7FBCD392C4BC9F0DC2D1C5153 * __this, StringBuilder_t * ___pchValue0, uint32_t ___unBufferSize1, const RuntimeMethod* method)
-{
-	typedef uint32_t (STDCALL *PInvokeFunc)(char*, uint32_t);
-	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_method_pointer(((RuntimeDelegate*)__this)->method));
-
-	// Marshaling of parameter '___pchValue0' to native representation
-	char* ____pchValue0_marshaled = NULL;
-	____pchValue0_marshaled = il2cpp_codegen_marshal_string_builder(___pchValue0);
-
-	// Native function invocation
-	uint32_t returnValue = il2cppPInvokeFunc(____pchValue0_marshaled, ___unBufferSize1);
-
-	// Marshaling of parameter '___pchValue0' back from native representation
-	il2cpp_codegen_marshal_string_builder_result(___pchValue0, ____pchValue0_marshaled);
-
-	// Marshaling cleanup of parameter '___pchValue0' native representation
-	il2cpp_codegen_marshal_free(____pchValue0_marshaled);
-	____pchValue0_marshaled = NULL;
-
-	return returnValue;
-}
-// System.Void Valve.VR.IVRCompositor__GetVulkanInstanceExtensionsRequired::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _GetVulkanInstanceExtensionsRequired__ctor_m30705B6653C4FBE5A74A09EBF43AED4E652C8AC4 (_GetVulkanInstanceExtensionsRequired_t9751CFE333A87BB7FBCD392C4BC9F0DC2D1C5153 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
-{
-	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// System.UInt32 Valve.VR.IVRCompositor__GetVulkanInstanceExtensionsRequired::Invoke(System.Text.StringBuilder,System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t _GetVulkanInstanceExtensionsRequired_Invoke_m930F96C6ED3427ECB4CC8A586AAE540AA342D516 (_GetVulkanInstanceExtensionsRequired_t9751CFE333A87BB7FBCD392C4BC9F0DC2D1C5153 * __this, StringBuilder_t * ___pchValue0, uint32_t ___unBufferSize1, const RuntimeMethod* method)
-{
-	uint32_t result = 0;
-	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
-	Delegate_t** delegatesToInvoke;
-	il2cpp_array_size_t length;
-	if (delegateArrayToInvoke != NULL)
-	{
-		length = delegateArrayToInvoke->max_length;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
-	}
-	else
-	{
-		length = 1;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
-	}
-
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Delegate_t* currentDelegate = delegatesToInvoke[i];
-		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
-		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
-		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
-		if (!il2cpp_codegen_method_is_virtual(targetMethod))
-		{
-			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
-		}
-		bool ___methodIsStatic = MethodIsStatic(targetMethod);
-		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
-		if (___methodIsStatic)
-		{
-			if (___parameterCount == 2)
-			{
-				// open
-				typedef uint32_t (*FunctionPointerType) (StringBuilder_t *, uint32_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(___pchValue0, ___unBufferSize1, targetMethod);
-			}
-			else
-			{
-				// closed
-				typedef uint32_t (*FunctionPointerType) (void*, StringBuilder_t *, uint32_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___pchValue0, ___unBufferSize1, targetMethod);
-			}
-		}
-		else if (___parameterCount != 2)
-		{
-			// open
-			if (il2cpp_codegen_method_is_virtual(targetMethod) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker1< uint32_t, uint32_t >::Invoke(targetMethod, ___pchValue0, ___unBufferSize1);
-					else
-						result = GenericVirtFuncInvoker1< uint32_t, uint32_t >::Invoke(targetMethod, ___pchValue0, ___unBufferSize1);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker1< uint32_t, uint32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), ___pchValue0, ___unBufferSize1);
-					else
-						result = VirtFuncInvoker1< uint32_t, uint32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), ___pchValue0, ___unBufferSize1);
-				}
-			}
-			else
-			{
-				if (targetThis == NULL && il2cpp_codegen_class_is_value_type(il2cpp_codegen_method_get_declaring_type(targetMethod)))
-				{
-					typedef uint32_t (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(&___unBufferSize1) - 1), targetMethod);
-				}
-				typedef uint32_t (*FunctionPointerType) (StringBuilder_t *, uint32_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(___pchValue0, ___unBufferSize1, targetMethod);
-			}
-		}
-		else
-		{
-			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker2< uint32_t, StringBuilder_t *, uint32_t >::Invoke(targetMethod, targetThis, ___pchValue0, ___unBufferSize1);
-					else
-						result = GenericVirtFuncInvoker2< uint32_t, StringBuilder_t *, uint32_t >::Invoke(targetMethod, targetThis, ___pchValue0, ___unBufferSize1);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker2< uint32_t, StringBuilder_t *, uint32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___pchValue0, ___unBufferSize1);
-					else
-						result = VirtFuncInvoker2< uint32_t, StringBuilder_t *, uint32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___pchValue0, ___unBufferSize1);
-				}
-			}
-			else
-			{
-				if (targetThis == NULL && il2cpp_codegen_class_is_value_type(il2cpp_codegen_method_get_declaring_type(targetMethod)))
-				{
-					typedef uint32_t (*FunctionPointerType) (RuntimeObject*, uint32_t, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___pchValue0) - 1), ___unBufferSize1, targetMethod);
-				}
-				if (targetThis == NULL)
-				{
-					typedef uint32_t (*FunctionPointerType) (StringBuilder_t *, uint32_t, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)(___pchValue0, ___unBufferSize1, targetMethod);
-				}
-				else
-				{
-					typedef uint32_t (*FunctionPointerType) (void*, StringBuilder_t *, uint32_t, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___pchValue0, ___unBufferSize1, targetMethod);
-				}
-			}
-		}
-	}
-	return result;
-}
-// System.IAsyncResult Valve.VR.IVRCompositor__GetVulkanInstanceExtensionsRequired::BeginInvoke(System.Text.StringBuilder,System.UInt32,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* _GetVulkanInstanceExtensionsRequired_BeginInvoke_mF1B7A68DE137E02BD091E6F9F8E49AB90C54690E (_GetVulkanInstanceExtensionsRequired_t9751CFE333A87BB7FBCD392C4BC9F0DC2D1C5153 * __this, StringBuilder_t * ___pchValue0, uint32_t ___unBufferSize1, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback2, RuntimeObject * ___object3, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (_GetVulkanInstanceExtensionsRequired_BeginInvoke_mF1B7A68DE137E02BD091E6F9F8E49AB90C54690E_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	void *__d_args[3] = {0};
-	__d_args[0] = ___pchValue0;
-	__d_args[1] = Box(UInt32_t4980FA09003AFAAB5A6E361BA2748EA9A005709B_il2cpp_TypeInfo_var, &___unBufferSize1);
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback2, (RuntimeObject*)___object3);
-}
-// System.UInt32 Valve.VR.IVRCompositor__GetVulkanInstanceExtensionsRequired::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t _GetVulkanInstanceExtensionsRequired_EndInvoke_mA887342F177AA858ED6EBCFC36CE31E1244AED0F (_GetVulkanInstanceExtensionsRequired_t9751CFE333A87BB7FBCD392C4BC9F0DC2D1C5153 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
-{
-	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
-	return *(uint32_t*)UnBox ((RuntimeObject*)__result);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C  void DelegatePInvokeWrapper__HideMirrorWindow_t4A3D32F44081DF29C9A6104F0FC6C556399D706E (_HideMirrorWindow_t4A3D32F44081DF29C9A6104F0FC6C556399D706E * __this, const RuntimeMethod* method)
-{
-	typedef void (STDCALL *PInvokeFunc)();
-	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_method_pointer(((RuntimeDelegate*)__this)->method));
-
-	// Native function invocation
-	il2cppPInvokeFunc();
-
-}
-// System.Void Valve.VR.IVRCompositor__HideMirrorWindow::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _HideMirrorWindow__ctor_mE21F276E7A580CC9724656C2DD980DC6F4E9FFAB (_HideMirrorWindow_t4A3D32F44081DF29C9A6104F0FC6C556399D706E * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
-{
-	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// System.Void Valve.VR.IVRCompositor__HideMirrorWindow::Invoke()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _HideMirrorWindow_Invoke_mC729400931633B125875E0A3D166AA5B12CC0EAD (_HideMirrorWindow_t4A3D32F44081DF29C9A6104F0FC6C556399D706E * __this, const RuntimeMethod* method)
-{
-	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
-	Delegate_t** delegatesToInvoke;
-	il2cpp_array_size_t length;
-	if (delegateArrayToInvoke != NULL)
-	{
-		length = delegateArrayToInvoke->max_length;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
-	}
-	else
-	{
-		length = 1;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
-	}
-
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Delegate_t* currentDelegate = delegatesToInvoke[i];
-		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
-		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
-		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
-		if (!il2cpp_codegen_method_is_virtual(targetMethod))
-		{
-			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
-		}
-		bool ___methodIsStatic = MethodIsStatic(targetMethod);
-		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
-		if (___methodIsStatic)
-		{
-			if (___parameterCount == 0)
-			{
-				// open
-				typedef void (*FunctionPointerType) (const RuntimeMethod*);
-				((FunctionPointerType)targetMethodPointer)(targetMethod);
-			}
-			else
-			{
-				// closed
-				typedef void (*FunctionPointerType) (void*, const RuntimeMethod*);
-				((FunctionPointerType)targetMethodPointer)(targetThis, targetMethod);
-			}
-		}
-		else
-		{
-			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						GenericInterfaceActionInvoker0::Invoke(targetMethod, targetThis);
-					else
-						GenericVirtActionInvoker0::Invoke(targetMethod, targetThis);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						InterfaceActionInvoker0::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis);
-					else
-						VirtActionInvoker0::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis);
-				}
-			}
-			else
-			{
-				typedef void (*FunctionPointerType) (void*, const RuntimeMethod*);
-				((FunctionPointerType)targetMethodPointer)(targetThis, targetMethod);
-			}
-		}
+		int32_t L_0 = __this->get__platform_0();
+		return L_0;
 	}
 }
-// System.IAsyncResult Valve.VR.IVRCompositor__HideMirrorWindow::BeginInvoke(System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* _HideMirrorWindow_BeginInvoke_m4CF56853F1BAF57602C6480867BD2E4A6E99A86F (_HideMirrorWindow_t4A3D32F44081DF29C9A6104F0FC6C556399D706E * __this, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback0, RuntimeObject * ___object1, const RuntimeMethod* method)
-{
-	void *__d_args[1] = {0};
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback0, (RuntimeObject*)___object1);
-}
-// System.Void Valve.VR.IVRCompositor__HideMirrorWindow::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _HideMirrorWindow_EndInvoke_m82E3FE287ECB58C530B0CB327F7DD6CA41E039A8 (_HideMirrorWindow_t4A3D32F44081DF29C9A6104F0FC6C556399D706E * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
-{
-	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C  bool DelegatePInvokeWrapper__IsCurrentSceneFocusAppLoading_t392DA4A7C28A1CDA9865CF18B8C2FD519EC71E70 (_IsCurrentSceneFocusAppLoading_t392DA4A7C28A1CDA9865CF18B8C2FD519EC71E70 * __this, const RuntimeMethod* method)
-{
-	typedef int32_t (STDCALL *PInvokeFunc)();
-	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_method_pointer(((RuntimeDelegate*)__this)->method));
-
-	// Native function invocation
-	int32_t returnValue = il2cppPInvokeFunc();
-
-	return static_cast<bool>(returnValue);
-}
-// System.Void Valve.VR.IVRCompositor__IsCurrentSceneFocusAppLoading::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _IsCurrentSceneFocusAppLoading__ctor_mB6E09D46EFB047A6364C07AAA4FDFF10204748D7 (_IsCurrentSceneFocusAppLoading_t392DA4A7C28A1CDA9865CF18B8C2FD519EC71E70 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
-{
-	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// System.Boolean Valve.VR.IVRCompositor__IsCurrentSceneFocusAppLoading::Invoke()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _IsCurrentSceneFocusAppLoading_Invoke_mC232BFE03C1EAF910DFCC9A6A2AB9BF319853B5D (_IsCurrentSceneFocusAppLoading_t392DA4A7C28A1CDA9865CF18B8C2FD519EC71E70 * __this, const RuntimeMethod* method)
-{
-	bool result = false;
-	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
-	Delegate_t** delegatesToInvoke;
-	il2cpp_array_size_t length;
-	if (delegateArrayToInvoke != NULL)
-	{
-		length = delegateArrayToInvoke->max_length;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
-	}
-	else
-	{
-		length = 1;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
-	}
-
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Delegate_t* currentDelegate = delegatesToInvoke[i];
-		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
-		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
-		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
-		if (!il2cpp_codegen_method_is_virtual(targetMethod))
-		{
-			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
-		}
-		bool ___methodIsStatic = MethodIsStatic(targetMethod);
-		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
-		if (___methodIsStatic)
-		{
-			if (___parameterCount == 0)
-			{
-				// open
-				typedef bool (*FunctionPointerType) (const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetMethod);
-			}
-			else
-			{
-				// closed
-				typedef bool (*FunctionPointerType) (void*, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, targetMethod);
-			}
-		}
-		else
-		{
-			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker0< bool >::Invoke(targetMethod, targetThis);
-					else
-						result = GenericVirtFuncInvoker0< bool >::Invoke(targetMethod, targetThis);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker0< bool >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis);
-					else
-						result = VirtFuncInvoker0< bool >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis);
-				}
-			}
-			else
-			{
-				typedef bool (*FunctionPointerType) (void*, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, targetMethod);
-			}
-		}
-	}
-	return result;
-}
-// System.IAsyncResult Valve.VR.IVRCompositor__IsCurrentSceneFocusAppLoading::BeginInvoke(System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* _IsCurrentSceneFocusAppLoading_BeginInvoke_m60B588892034ABE81192F3B61C4B204FDABF8785 (_IsCurrentSceneFocusAppLoading_t392DA4A7C28A1CDA9865CF18B8C2FD519EC71E70 * __this, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback0, RuntimeObject * ___object1, const RuntimeMethod* method)
-{
-	void *__d_args[1] = {0};
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback0, (RuntimeObject*)___object1);
-}
-// System.Boolean Valve.VR.IVRCompositor__IsCurrentSceneFocusAppLoading::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _IsCurrentSceneFocusAppLoading_EndInvoke_mBCFE48EC838F65988292CE31DB77DFAAD6325C80 (_IsCurrentSceneFocusAppLoading_t392DA4A7C28A1CDA9865CF18B8C2FD519EC71E70 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
-{
-	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
-	return *(bool*)UnBox ((RuntimeObject*)__result);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C  bool DelegatePInvokeWrapper__IsFullscreen_t7D2C12F6A41A525E0D22CD1FCEAA101AD6D194D0 (_IsFullscreen_t7D2C12F6A41A525E0D22CD1FCEAA101AD6D194D0 * __this, const RuntimeMethod* method)
-{
-	typedef int32_t (STDCALL *PInvokeFunc)();
-	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_method_pointer(((RuntimeDelegate*)__this)->method));
-
-	// Native function invocation
-	int32_t returnValue = il2cppPInvokeFunc();
-
-	return static_cast<bool>(returnValue);
-}
-// System.Void Valve.VR.IVRCompositor__IsFullscreen::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _IsFullscreen__ctor_mD906E69A8CAD7BC32644180756C0721F72853399 (_IsFullscreen_t7D2C12F6A41A525E0D22CD1FCEAA101AD6D194D0 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
-{
-	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// System.Boolean Valve.VR.IVRCompositor__IsFullscreen::Invoke()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _IsFullscreen_Invoke_mECD10FCB3DADBEC3F41768F5DE0C022CC4C41235 (_IsFullscreen_t7D2C12F6A41A525E0D22CD1FCEAA101AD6D194D0 * __this, const RuntimeMethod* method)
-{
-	bool result = false;
-	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
-	Delegate_t** delegatesToInvoke;
-	il2cpp_array_size_t length;
-	if (delegateArrayToInvoke != NULL)
-	{
-		length = delegateArrayToInvoke->max_length;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
-	}
-	else
-	{
-		length = 1;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
-	}
-
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Delegate_t* currentDelegate = delegatesToInvoke[i];
-		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
-		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
-		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
-		if (!il2cpp_codegen_method_is_virtual(targetMethod))
-		{
-			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
-		}
-		bool ___methodIsStatic = MethodIsStatic(targetMethod);
-		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
-		if (___methodIsStatic)
-		{
-			if (___parameterCount == 0)
-			{
-				// open
-				typedef bool (*FunctionPointerType) (const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetMethod);
-			}
-			else
-			{
-				// closed
-				typedef bool (*FunctionPointerType) (void*, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, targetMethod);
-			}
-		}
-		else
-		{
-			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker0< bool >::Invoke(targetMethod, targetThis);
-					else
-						result = GenericVirtFuncInvoker0< bool >::Invoke(targetMethod, targetThis);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker0< bool >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis);
-					else
-						result = VirtFuncInvoker0< bool >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis);
-				}
-			}
-			else
-			{
-				typedef bool (*FunctionPointerType) (void*, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, targetMethod);
-			}
-		}
-	}
-	return result;
-}
-// System.IAsyncResult Valve.VR.IVRCompositor__IsFullscreen::BeginInvoke(System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* _IsFullscreen_BeginInvoke_mF04FEAB33C48DAF725E7CA1BA68D2286C91E77FA (_IsFullscreen_t7D2C12F6A41A525E0D22CD1FCEAA101AD6D194D0 * __this, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback0, RuntimeObject * ___object1, const RuntimeMethod* method)
-{
-	void *__d_args[1] = {0};
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback0, (RuntimeObject*)___object1);
-}
-// System.Boolean Valve.VR.IVRCompositor__IsFullscreen::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _IsFullscreen_EndInvoke_m51082B6C4C8CD4C975AF78BA63653CFBF47C220C (_IsFullscreen_t7D2C12F6A41A525E0D22CD1FCEAA101AD6D194D0 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
-{
-	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
-	return *(bool*)UnBox ((RuntimeObject*)__result);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C  bool DelegatePInvokeWrapper__IsMirrorWindowVisible_t7B3DE5AD3A0163C9BDD47BD1FBC05D9125221BFC (_IsMirrorWindowVisible_t7B3DE5AD3A0163C9BDD47BD1FBC05D9125221BFC * __this, const RuntimeMethod* method)
-{
-	typedef int32_t (STDCALL *PInvokeFunc)();
-	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_method_pointer(((RuntimeDelegate*)__this)->method));
-
-	// Native function invocation
-	int32_t returnValue = il2cppPInvokeFunc();
-
-	return static_cast<bool>(returnValue);
-}
-// System.Void Valve.VR.IVRCompositor__IsMirrorWindowVisible::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _IsMirrorWindowVisible__ctor_mFE363C3B74E3733136EDC32D3C6C414B9E809974 (_IsMirrorWindowVisible_t7B3DE5AD3A0163C9BDD47BD1FBC05D9125221BFC * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
-{
-	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// System.Boolean Valve.VR.IVRCompositor__IsMirrorWindowVisible::Invoke()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _IsMirrorWindowVisible_Invoke_mDBDE38965A4A57AFA0D244E499BAC4FC0E389C9E (_IsMirrorWindowVisible_t7B3DE5AD3A0163C9BDD47BD1FBC05D9125221BFC * __this, const RuntimeMethod* method)
-{
-	bool result = false;
-	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
-	Delegate_t** delegatesToInvoke;
-	il2cpp_array_size_t length;
-	if (delegateArrayToInvoke != NULL)
-	{
-		length = delegateArrayToInvoke->max_length;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
-	}
-	else
-	{
-		length = 1;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
-	}
-
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Delegate_t* currentDelegate = delegatesToInvoke[i];
-		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
-		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
-		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
-		if (!il2cpp_codegen_method_is_virtual(targetMethod))
-		{
-			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
-		}
-		bool ___methodIsStatic = MethodIsStatic(targetMethod);
-		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
-		if (___methodIsStatic)
-		{
-			if (___parameterCount == 0)
-			{
-				// open
-				typedef bool (*FunctionPointerType) (const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetMethod);
-			}
-			else
-			{
-				// closed
-				typedef bool (*FunctionPointerType) (void*, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, targetMethod);
-			}
-		}
-		else
-		{
-			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker0< bool >::Invoke(targetMethod, targetThis);
-					else
-						result = GenericVirtFuncInvoker0< bool >::Invoke(targetMethod, targetThis);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker0< bool >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis);
-					else
-						result = VirtFuncInvoker0< bool >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis);
-				}
-			}
-			else
-			{
-				typedef bool (*FunctionPointerType) (void*, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, targetMethod);
-			}
-		}
-	}
-	return result;
-}
-// System.IAsyncResult Valve.VR.IVRCompositor__IsMirrorWindowVisible::BeginInvoke(System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* _IsMirrorWindowVisible_BeginInvoke_mB3F10A5843661D6A9A188184E841E82336647DA6 (_IsMirrorWindowVisible_t7B3DE5AD3A0163C9BDD47BD1FBC05D9125221BFC * __this, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback0, RuntimeObject * ___object1, const RuntimeMethod* method)
-{
-	void *__d_args[1] = {0};
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback0, (RuntimeObject*)___object1);
-}
-// System.Boolean Valve.VR.IVRCompositor__IsMirrorWindowVisible::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _IsMirrorWindowVisible_EndInvoke_m166835131C104885438CA1251C5A5C49E615CCA9 (_IsMirrorWindowVisible_t7B3DE5AD3A0163C9BDD47BD1FBC05D9125221BFC * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
-{
-	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
-	return *(bool*)UnBox ((RuntimeObject*)__result);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C  bool DelegatePInvokeWrapper__IsMotionSmoothingEnabled_t7FEC42C083D4FE3D908A21DFC5F4F77C67739920 (_IsMotionSmoothingEnabled_t7FEC42C083D4FE3D908A21DFC5F4F77C67739920 * __this, const RuntimeMethod* method)
-{
-	typedef int32_t (STDCALL *PInvokeFunc)();
-	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_method_pointer(((RuntimeDelegate*)__this)->method));
-
-	// Native function invocation
-	int32_t returnValue = il2cppPInvokeFunc();
-
-	return static_cast<bool>(returnValue);
-}
-// System.Void Valve.VR.IVRCompositor__IsMotionSmoothingEnabled::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _IsMotionSmoothingEnabled__ctor_m1B4D9ECDF1D409AAA975407BBF6F560EDE4DC43B (_IsMotionSmoothingEnabled_t7FEC42C083D4FE3D908A21DFC5F4F77C67739920 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
-{
-	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// System.Boolean Valve.VR.IVRCompositor__IsMotionSmoothingEnabled::Invoke()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _IsMotionSmoothingEnabled_Invoke_m10E7D2B0C5794801C6A7D07A7874E208A5616201 (_IsMotionSmoothingEnabled_t7FEC42C083D4FE3D908A21DFC5F4F77C67739920 * __this, const RuntimeMethod* method)
-{
-	bool result = false;
-	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
-	Delegate_t** delegatesToInvoke;
-	il2cpp_array_size_t length;
-	if (delegateArrayToInvoke != NULL)
-	{
-		length = delegateArrayToInvoke->max_length;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
-	}
-	else
-	{
-		length = 1;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
-	}
-
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Delegate_t* currentDelegate = delegatesToInvoke[i];
-		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
-		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
-		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
-		if (!il2cpp_codegen_method_is_virtual(targetMethod))
-		{
-			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
-		}
-		bool ___methodIsStatic = MethodIsStatic(targetMethod);
-		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
-		if (___methodIsStatic)
-		{
-			if (___parameterCount == 0)
-			{
-				// open
-				typedef bool (*FunctionPointerType) (const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetMethod);
-			}
-			else
-			{
-				// closed
-				typedef bool (*FunctionPointerType) (void*, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, targetMethod);
-			}
-		}
-		else
-		{
-			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker0< bool >::Invoke(targetMethod, targetThis);
-					else
-						result = GenericVirtFuncInvoker0< bool >::Invoke(targetMethod, targetThis);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker0< bool >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis);
-					else
-						result = VirtFuncInvoker0< bool >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis);
-				}
-			}
-			else
-			{
-				typedef bool (*FunctionPointerType) (void*, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, targetMethod);
-			}
-		}
-	}
-	return result;
-}
-// System.IAsyncResult Valve.VR.IVRCompositor__IsMotionSmoothingEnabled::BeginInvoke(System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* _IsMotionSmoothingEnabled_BeginInvoke_mECCB83E0C7202C278D858E9450CC61895A2991B6 (_IsMotionSmoothingEnabled_t7FEC42C083D4FE3D908A21DFC5F4F77C67739920 * __this, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback0, RuntimeObject * ___object1, const RuntimeMethod* method)
-{
-	void *__d_args[1] = {0};
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback0, (RuntimeObject*)___object1);
-}
-// System.Boolean Valve.VR.IVRCompositor__IsMotionSmoothingEnabled::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _IsMotionSmoothingEnabled_EndInvoke_m93F0397FCC05471F0451BBBF3E175C5C3E845645 (_IsMotionSmoothingEnabled_t7FEC42C083D4FE3D908A21DFC5F4F77C67739920 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
-{
-	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
-	return *(bool*)UnBox ((RuntimeObject*)__result);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C  bool DelegatePInvokeWrapper__IsMotionSmoothingSupported_t5F76D030811D39ABABFFBCF99AA6F0C5786C3BD8 (_IsMotionSmoothingSupported_t5F76D030811D39ABABFFBCF99AA6F0C5786C3BD8 * __this, const RuntimeMethod* method)
-{
-	typedef int32_t (STDCALL *PInvokeFunc)();
-	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_method_pointer(((RuntimeDelegate*)__this)->method));
-
-	// Native function invocation
-	int32_t returnValue = il2cppPInvokeFunc();
-
-	return static_cast<bool>(returnValue);
-}
-// System.Void Valve.VR.IVRCompositor__IsMotionSmoothingSupported::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _IsMotionSmoothingSupported__ctor_mCA1D32DB7E7F793E59F40116D176DF535DFB74DC (_IsMotionSmoothingSupported_t5F76D030811D39ABABFFBCF99AA6F0C5786C3BD8 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
-{
-	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// System.Boolean Valve.VR.IVRCompositor__IsMotionSmoothingSupported::Invoke()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _IsMotionSmoothingSupported_Invoke_m8728FCE461DB88EC9DB4811FB9CC24AA19B9BABD (_IsMotionSmoothingSupported_t5F76D030811D39ABABFFBCF99AA6F0C5786C3BD8 * __this, const RuntimeMethod* method)
-{
-	bool result = false;
-	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
-	Delegate_t** delegatesToInvoke;
-	il2cpp_array_size_t length;
-	if (delegateArrayToInvoke != NULL)
-	{
-		length = delegateArrayToInvoke->max_length;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
-	}
-	else
-	{
-		length = 1;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
-	}
-
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Delegate_t* currentDelegate = delegatesToInvoke[i];
-		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
-		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
-		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
-		if (!il2cpp_codegen_method_is_virtual(targetMethod))
-		{
-			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
-		}
-		bool ___methodIsStatic = MethodIsStatic(targetMethod);
-		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
-		if (___methodIsStatic)
-		{
-			if (___parameterCount == 0)
-			{
-				// open
-				typedef bool (*FunctionPointerType) (const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetMethod);
-			}
-			else
-			{
-				// closed
-				typedef bool (*FunctionPointerType) (void*, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, targetMethod);
-			}
-		}
-		else
-		{
-			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker0< bool >::Invoke(targetMethod, targetThis);
-					else
-						result = GenericVirtFuncInvoker0< bool >::Invoke(targetMethod, targetThis);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker0< bool >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis);
-					else
-						result = VirtFuncInvoker0< bool >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis);
-				}
-			}
-			else
-			{
-				typedef bool (*FunctionPointerType) (void*, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, targetMethod);
-			}
-		}
-	}
-	return result;
-}
-// System.IAsyncResult Valve.VR.IVRCompositor__IsMotionSmoothingSupported::BeginInvoke(System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* _IsMotionSmoothingSupported_BeginInvoke_m9D5BB794B5B212395D9D05DA50A0347B2F9528DC (_IsMotionSmoothingSupported_t5F76D030811D39ABABFFBCF99AA6F0C5786C3BD8 * __this, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback0, RuntimeObject * ___object1, const RuntimeMethod* method)
-{
-	void *__d_args[1] = {0};
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback0, (RuntimeObject*)___object1);
-}
-// System.Boolean Valve.VR.IVRCompositor__IsMotionSmoothingSupported::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool _IsMotionSmoothingSupported_EndInvoke_m1E045F82B68BB7DF1F099D8838BAED451DFC3CFF (_IsMotionSmoothingSupported_t5F76D030811D39ABABFFBCF99AA6F0C5786C3BD8 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
-{
-	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
-	return *(bool*)UnBox ((RuntimeObject*)__result);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C  void DelegatePInvokeWrapper__LockGLSharedTextureForAccess_t4455F055E92E573DC7A8FD6C490A9AA90A888011 (_LockGLSharedTextureForAccess_t4455F055E92E573DC7A8FD6C490A9AA90A888011 * __this, intptr_t ___glSharedTextureHandle0, const RuntimeMethod* method)
-{
-	typedef void (STDCALL *PInvokeFunc)(intptr_t);
-	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_method_pointer(((RuntimeDelegate*)__this)->method));
-
-	// Native function invocation
-	il2cppPInvokeFunc(___glSharedTextureHandle0);
-
-}
-// System.Void Valve.VR.IVRCompositor__LockGLSharedTextureForAccess::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _LockGLSharedTextureForAccess__ctor_mF563855FF4196ECBD7A9D08777AC69C28311CF22 (_LockGLSharedTextureForAccess_t4455F055E92E573DC7A8FD6C490A9AA90A888011 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
-{
-	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// System.Void Valve.VR.IVRCompositor__LockGLSharedTextureForAccess::Invoke(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _LockGLSharedTextureForAccess_Invoke_m78C8B09E517562076C432186D107D1FC8840DBF9 (_LockGLSharedTextureForAccess_t4455F055E92E573DC7A8FD6C490A9AA90A888011 * __this, intptr_t ___glSharedTextureHandle0, const RuntimeMethod* method)
-{
-	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
-	Delegate_t** delegatesToInvoke;
-	il2cpp_array_size_t length;
-	if (delegateArrayToInvoke != NULL)
-	{
-		length = delegateArrayToInvoke->max_length;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
-	}
-	else
-	{
-		length = 1;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
-	}
-
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Delegate_t* currentDelegate = delegatesToInvoke[i];
-		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
-		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
-		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
-		if (!il2cpp_codegen_method_is_virtual(targetMethod))
-		{
-			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
-		}
-		bool ___methodIsStatic = MethodIsStatic(targetMethod);
-		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
-		if (___methodIsStatic)
-		{
-			if (___parameterCount == 1)
-			{
-				// open
-				typedef void (*FunctionPointerType) (intptr_t, const RuntimeMethod*);
-				((FunctionPointerType)targetMethodPointer)(___glSharedTextureHandle0, targetMethod);
-			}
-			else
-			{
-				// closed
-				typedef void (*FunctionPointerType) (void*, intptr_t, const RuntimeMethod*);
-				((FunctionPointerType)targetMethodPointer)(targetThis, ___glSharedTextureHandle0, targetMethod);
-			}
-		}
-		else
-		{
-			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						GenericInterfaceActionInvoker1< intptr_t >::Invoke(targetMethod, targetThis, ___glSharedTextureHandle0);
-					else
-						GenericVirtActionInvoker1< intptr_t >::Invoke(targetMethod, targetThis, ___glSharedTextureHandle0);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						InterfaceActionInvoker1< intptr_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___glSharedTextureHandle0);
-					else
-						VirtActionInvoker1< intptr_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___glSharedTextureHandle0);
-				}
-			}
-			else
-			{
-				if (targetThis == NULL && il2cpp_codegen_class_is_value_type(il2cpp_codegen_method_get_declaring_type(targetMethod)))
-				{
-					typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
-					((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(&___glSharedTextureHandle0) - 1), targetMethod);
-				}
-				typedef void (*FunctionPointerType) (void*, intptr_t, const RuntimeMethod*);
-				((FunctionPointerType)targetMethodPointer)(targetThis, ___glSharedTextureHandle0, targetMethod);
-			}
-		}
-	}
-}
-// System.IAsyncResult Valve.VR.IVRCompositor__LockGLSharedTextureForAccess::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* _LockGLSharedTextureForAccess_BeginInvoke_m64B4F9E987E8F249A0D78A3790954EE9630072C6 (_LockGLSharedTextureForAccess_t4455F055E92E573DC7A8FD6C490A9AA90A888011 * __this, intptr_t ___glSharedTextureHandle0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (_LockGLSharedTextureForAccess_BeginInvoke_m64B4F9E987E8F249A0D78A3790954EE9630072C6_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	void *__d_args[2] = {0};
-	__d_args[0] = Box(IntPtr_t_il2cpp_TypeInfo_var, &___glSharedTextureHandle0);
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
-}
-// System.Void Valve.VR.IVRCompositor__LockGLSharedTextureForAccess::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void _LockGLSharedTextureForAccess_EndInvoke_mE09B4C39620A56E862ED10496AE7EB6E9A9E779B (_LockGLSharedTextureForAccess_t4455F055E92E573DC7A8FD6C490A9AA90A888011 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
-{
-	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
 IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR VRTextureBounds_t_tCA2820CB638F8B6C480011D70D708F75632E1779  VideoStreamTexture_get_frameBounds_mAC9E8CE7B1A8BD091DE22A6B274BC1E22E6CA302_inline (VideoStreamTexture_t84215B173C02C664A00020F77A1E867169ED8DAF * __this, const RuntimeMethod* method)
 {
 	{
