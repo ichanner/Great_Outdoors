@@ -37752,8 +37752,10 @@ public:
 	SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * ___rightHand_6;
 	// Valve.VR.SteamVR_Behaviour_Pose PlayerNetworking::leftHand
 	SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * ___leftHand_7;
+	// UnityEngine.Rigidbody PlayerNetworking::rigidBody
+	Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * ___rigidBody_8;
 	// Photon.Pun.PhotonView PlayerNetworking::photonView
-	PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B * ___photonView_8;
+	PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B * ___photonView_9;
 
 public:
 	inline static int32_t get_offset_of_player_4() { return static_cast<int32_t>(offsetof(PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1, ___player_4)); }
@@ -37792,13 +37794,22 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___leftHand_7), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_photonView_8() { return static_cast<int32_t>(offsetof(PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1, ___photonView_8)); }
-	inline PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B * get_photonView_8() const { return ___photonView_8; }
-	inline PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B ** get_address_of_photonView_8() { return &___photonView_8; }
-	inline void set_photonView_8(PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B * value)
+	inline static int32_t get_offset_of_rigidBody_8() { return static_cast<int32_t>(offsetof(PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1, ___rigidBody_8)); }
+	inline Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * get_rigidBody_8() const { return ___rigidBody_8; }
+	inline Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 ** get_address_of_rigidBody_8() { return &___rigidBody_8; }
+	inline void set_rigidBody_8(Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * value)
 	{
-		___photonView_8 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___photonView_8), (void*)value);
+		___rigidBody_8 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___rigidBody_8), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_photonView_9() { return static_cast<int32_t>(offsetof(PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1, ___photonView_9)); }
+	inline PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B * get_photonView_9() const { return ___photonView_9; }
+	inline PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B ** get_address_of_photonView_9() { return &___photonView_9; }
+	inline void set_photonView_9(PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B * value)
+	{
+		___photonView_9 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___photonView_9), (void*)value);
 	}
 };
 
@@ -68619,13 +68630,14 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6767[3] =
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6768;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize6768 = { sizeof (PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1), -1, 0, 0 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6768[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6768[6] = 
 {
 	PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1::get_offset_of_player_4(),
 	PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1::get_offset_of_playerCamera_5(),
 	PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1::get_offset_of_rightHand_6(),
 	PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1::get_offset_of_leftHand_7(),
-	PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1::get_offset_of_photonView_8(),
+	PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1::get_offset_of_rigidBody_8(),
+	PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1::get_offset_of_photonView_9(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6769;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize6769 = { sizeof (PlayerBody_tBD8069578F0F6749C10CB485E98A4C4601ED1B4D), -1, 0, 0 };

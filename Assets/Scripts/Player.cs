@@ -30,6 +30,7 @@ namespace TGOV
 			private GameObject playerHandRight;
 			private GameObject playerHandLeft;
 
+		
 			private void initValues()
 			{
 				rigidBody = GetComponent<Rigidbody>();
@@ -54,13 +55,11 @@ namespace TGOV
 
 			private void subscribeToInputs()
 			{
-				if (isLocal())
-				{
-					Managers.InputManager.instance.playerJumpEvent += handleJump;
-					Managers.InputManager.instance.playerLocomotionEvent += handleLocomotion;
-					Managers.InputManager.instance.playerTurnLeftEvent += handleTurnLeft;
-					Managers.InputManager.instance.playerTurnRightEvent += handleTurnRight;
-				}
+				Managers.InputManager.instance.playerJumpEvent += handleJump;
+				Managers.InputManager.instance.playerLocomotionEvent += handleLocomotion;
+				Managers.InputManager.instance.playerTurnLeftEvent += handleTurnLeft;
+				Managers.InputManager.instance.playerTurnRightEvent += handleTurnRight;
+			
 			}
 
 
@@ -71,25 +70,15 @@ namespace TGOV
 				initComponents();
 				subscribeToInputs();
 				initControllers();
+
 			}
 
 			void FixedUpdate()
 			{
-				this.disableNetworkedScripts();
 				this.playerController.updateController();
 			}
 
-			private void disableNetworkedScripts()
-			{
-				if (!isLocal())
-				{
-					playerHead.GetComponent<AudioListener>().enabled = false;
-					playerHead.GetComponent<Camera>().enabled = false;
-					playerHandLeft.GetComponent<SteamVR_Behaviour_Pose>().enabled = false;
-					playerHandRight.GetComponent<SteamVR_Behaviour_Pose>().enabled = false;
-				}
-			}
-
+		
 
 			/*
 			private void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
