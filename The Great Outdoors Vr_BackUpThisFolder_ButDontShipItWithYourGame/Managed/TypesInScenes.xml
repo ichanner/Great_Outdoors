@@ -61,10 +61,9 @@
 		<type fullname="UnityEngine.Terrain" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
-		<type fullname="LeftHand" preserve="nothing"/>
 		<type fullname="PlayerBody" preserve="nothing"/>
 		<type fullname="PlayerHead" preserve="nothing"/>
-		<type fullname="RightHand" preserve="nothing"/>
+		<type fullname="PlayerNetworking" preserve="nothing"/>
 		<type fullname="TGOV.Entities.Player" preserve="nothing"/>
 		<type fullname="TGOV.Managers.InputManager" preserve="nothing"/>
 		<type fullname="TGOV.Managers.PlayerManager" preserve="nothing"/>

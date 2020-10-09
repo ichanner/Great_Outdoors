@@ -376,6 +376,8 @@ struct Void_t22962CB4C05B1D89B55A6E1139F0E87A90987017;
 struct Movement_t474FE27F5DD04AB6AA2C2AD8FF08CEA00A032DE8;
 // TGOV.Controllers.PlayerController
 struct PlayerController_tB38E9D6DC4E671C2EBAAD979E8261E8DAA842BBC;
+// TGOV.Entities.Entity
+struct Entity_t69514872EB8A181E9F8154DB7BA09F66E42C0B34;
 // TGOV.Managers.InputManager
 struct InputManager_tF488F116047C5C018827C21F1CEFC35C4962560B;
 // TGOV.Managers.InputManager/playeLocomotionDelegate
@@ -34663,17 +34665,38 @@ public:
 };
 
 
-// IgnoreUiRaycastWhenInactive
-struct  IgnoreUiRaycastWhenInactive_tA341D2C70F8A63B7CFBC412B2B41A1A04060A8E6  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
+// Hand
+struct  Hand_t385249FA69EF68BDAF920B5B3682439442CB5B9C  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
 {
 public:
+	// Photon.Pun.PhotonView Hand::view
+	PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B * ___view_4;
+	// Valve.VR.SteamVR_Behaviour_Pose Hand::hand
+	SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * ___hand_5;
 
 public:
+	inline static int32_t get_offset_of_view_4() { return static_cast<int32_t>(offsetof(Hand_t385249FA69EF68BDAF920B5B3682439442CB5B9C, ___view_4)); }
+	inline PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B * get_view_4() const { return ___view_4; }
+	inline PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B ** get_address_of_view_4() { return &___view_4; }
+	inline void set_view_4(PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B * value)
+	{
+		___view_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___view_4), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_hand_5() { return static_cast<int32_t>(offsetof(Hand_t385249FA69EF68BDAF920B5B3682439442CB5B9C, ___hand_5)); }
+	inline SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * get_hand_5() const { return ___hand_5; }
+	inline SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 ** get_address_of_hand_5() { return &___hand_5; }
+	inline void set_hand_5(SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * value)
+	{
+		___hand_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___hand_5), (void*)value);
+	}
 };
 
 
-// LeftHand
-struct  LeftHand_tD9F7D6846078B42C9099167956A275AC5881B50B  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
+// IgnoreUiRaycastWhenInactive
+struct  IgnoreUiRaycastWhenInactive_tA341D2C70F8A63B7CFBC412B2B41A1A04060A8E6  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
 {
 public:
 
@@ -37717,12 +37740,66 @@ public:
 };
 
 
-// RightHand
-struct  RightHand_t5629D238F309902F92F41867B800D86764AE6DF5  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
+// PlayerNetworking
+struct  PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
 {
 public:
+	// TGOV.Entities.Entity PlayerNetworking::player
+	Entity_t69514872EB8A181E9F8154DB7BA09F66E42C0B34 * ___player_4;
+	// UnityEngine.Camera PlayerNetworking::playerCamera
+	Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34 * ___playerCamera_5;
+	// Valve.VR.SteamVR_Behaviour_Pose PlayerNetworking::rightHand
+	SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * ___rightHand_6;
+	// Valve.VR.SteamVR_Behaviour_Pose PlayerNetworking::leftHand
+	SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * ___leftHand_7;
+	// Photon.Pun.PhotonView PlayerNetworking::photonView
+	PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B * ___photonView_8;
 
 public:
+	inline static int32_t get_offset_of_player_4() { return static_cast<int32_t>(offsetof(PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1, ___player_4)); }
+	inline Entity_t69514872EB8A181E9F8154DB7BA09F66E42C0B34 * get_player_4() const { return ___player_4; }
+	inline Entity_t69514872EB8A181E9F8154DB7BA09F66E42C0B34 ** get_address_of_player_4() { return &___player_4; }
+	inline void set_player_4(Entity_t69514872EB8A181E9F8154DB7BA09F66E42C0B34 * value)
+	{
+		___player_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___player_4), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_playerCamera_5() { return static_cast<int32_t>(offsetof(PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1, ___playerCamera_5)); }
+	inline Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34 * get_playerCamera_5() const { return ___playerCamera_5; }
+	inline Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34 ** get_address_of_playerCamera_5() { return &___playerCamera_5; }
+	inline void set_playerCamera_5(Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34 * value)
+	{
+		___playerCamera_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___playerCamera_5), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_rightHand_6() { return static_cast<int32_t>(offsetof(PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1, ___rightHand_6)); }
+	inline SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * get_rightHand_6() const { return ___rightHand_6; }
+	inline SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 ** get_address_of_rightHand_6() { return &___rightHand_6; }
+	inline void set_rightHand_6(SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * value)
+	{
+		___rightHand_6 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___rightHand_6), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_leftHand_7() { return static_cast<int32_t>(offsetof(PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1, ___leftHand_7)); }
+	inline SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * get_leftHand_7() const { return ___leftHand_7; }
+	inline SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 ** get_address_of_leftHand_7() { return &___leftHand_7; }
+	inline void set_leftHand_7(SteamVR_Behaviour_Pose_t289DF67C070889001DACCC75FC574521F280F787 * value)
+	{
+		___leftHand_7 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___leftHand_7), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_photonView_8() { return static_cast<int32_t>(offsetof(PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1, ___photonView_8)); }
+	inline PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B * get_photonView_8() const { return ___photonView_8; }
+	inline PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B ** get_address_of_photonView_8() { return &___photonView_8; }
+	inline void set_photonView_8(PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B * value)
+	{
+		___photonView_8 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___photonView_8), (void*)value);
+	}
 };
 
 
@@ -68541,7 +68618,15 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6767[3] =
 	NamePickGui_tC365A70D500B67AF8B9DD2520A525CA1AA135AAD::get_offset_of_idInput_6(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6768;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize6768 = { sizeof (LeftHand_tD9F7D6846078B42C9099167956A275AC5881B50B), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize6768 = { sizeof (PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1), -1, 0, 0 };
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6768[5] = 
+{
+	PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1::get_offset_of_player_4(),
+	PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1::get_offset_of_playerCamera_5(),
+	PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1::get_offset_of_rightHand_6(),
+	PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1::get_offset_of_leftHand_7(),
+	PlayerNetworking_t5C5019D72EB60790FA84388555C31FC3E69B23E1::get_offset_of_photonView_8(),
+};
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6769;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize6769 = { sizeof (PlayerBody_tBD8069578F0F6749C10CB485E98A4C4601ED1B4D), -1, 0, 0 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6769[2] = 
@@ -68550,9 +68635,14 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6769[2] =
 	PlayerBody_tBD8069578F0F6749C10CB485E98A4C4601ED1B4D::get_offset_of_capsuleCollider_5(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6770;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize6770 = { sizeof (PlayerHead_t38CC6CA09365AE5670224744608C5A4A1D9B319A), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize6770 = { sizeof (Hand_t385249FA69EF68BDAF920B5B3682439442CB5B9C), -1, 0, 0 };
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6770[2] = 
+{
+	Hand_t385249FA69EF68BDAF920B5B3682439442CB5B9C::get_offset_of_view_4(),
+	Hand_t385249FA69EF68BDAF920B5B3682439442CB5B9C::get_offset_of_hand_5(),
+};
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6771;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize6771 = { sizeof (RightHand_t5629D238F309902F92F41867B800D86764AE6DF5), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize6771 = { sizeof (PlayerHead_t38CC6CA09365AE5670224744608C5A4A1D9B319A), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6772;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize6772 = { 0, 0, 0, 0 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6772[1] = 

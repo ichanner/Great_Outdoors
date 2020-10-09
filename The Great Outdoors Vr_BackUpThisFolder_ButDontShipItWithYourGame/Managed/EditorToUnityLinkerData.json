@@ -611,13 +611,6 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "LeftHand",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Assembly-CSharp.dll",
-            "nativeClass": "",
             "fullManagedTypeName": "PlayerBody",
             "moduleName": "",
             "usedInScenes": []
@@ -632,7 +625,7 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "RightHand",
+            "fullManagedTypeName": "PlayerNetworking",
             "moduleName": "",
             "usedInScenes": []
         },
