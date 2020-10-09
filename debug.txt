@@ -1,0 +1,2 @@
+cd Builds
+"The Great Outdoors.exe" -vrmode None
