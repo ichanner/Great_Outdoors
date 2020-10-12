@@ -25,11 +25,13 @@
 		<type fullname="UnityEngine.Transform" preserve="nothing"/>
 		<type fullname="UnityEngine.AnimationClip" preserve="nothing"/>
 		<type fullname="UnityEngine.Camera" preserve="nothing"/>
+		<type fullname="UnityEngine.FlareLayer" preserve="nothing"/>
 		<type fullname="UnityEngine.Renderer" preserve="nothing"/>
 		<type fullname="UnityEngine.Light" preserve="nothing"/>
 		<type fullname="UnityEngine.MeshFilter" preserve="nothing"/>
 		<type fullname="UnityEngine.SkinnedMeshRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.MeshRenderer" preserve="nothing"/>
+		<type fullname="UnityEngine.AudioSource" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioListener" preserve="nothing"/>
 		<type fullname="UnityEngine.ParticleSystem" preserve="nothing"/>
@@ -45,6 +47,7 @@
 		<type fullname="UnityEngine.RectTransform" preserve="nothing"/>
 		<type fullname="UnityEngine.Motion" preserve="nothing"/>
 		<type fullname="UnityEngine.RuntimeAnimatorController" preserve="nothing"/>
+		<type fullname="UnityEngine.AnimatorOverrideController" preserve="nothing"/>
 		<type fullname="UnityEngine.Animator" preserve="nothing"/>
 		<type fullname="UnityEditor.Animations.AnimatorController" preserve="nothing"/>
 		<type fullname="UnityEngine.Avatar" preserve="nothing"/>
@@ -61,7 +64,14 @@
 		<type fullname="UnityEngine.Terrain" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
-		<type fullname="Readme" preserve="nothing"/>
+		<type fullname="ChangeColor" preserve="nothing"/>
+		<type fullname="ChangeName" preserve="nothing"/>
+		<type fullname="ExitGames.Demos.DemoPunVoice.FirstPersonController" preserve="nothing"/>
+		<type fullname="ExitGames.Demos.DemoPunVoice.Highlighter" preserve="nothing"/>
+		<type fullname="ExitGames.Demos.DemoPunVoice.OrthographicController" preserve="nothing"/>
+		<type fullname="ExitGames.Demos.DemoPunVoice.ThirdPersonController" preserve="nothing"/>
+		<type fullname="PointersController" preserve="nothing"/>
+		<type fullname="ProximityVoiceTrigger" preserve="nothing"/>
 		<type fullname="TGOV.DisableNetworkedScripts" preserve="nothing"/>
 		<type fullname="TGOV.Entities.Player" preserve="nothing"/>
 		<type fullname="TGOV.Managers.InputManager" preserve="nothing"/>
@@ -82,12 +92,23 @@
 		<type fullname="Photon.Pun.Demo.SlotRacer.PlayerControl" preserve="nothing"/>
 		<type fullname="Photon.Pun.Demo.SlotRacer.Utils.SplineWalker" preserve="nothing"/>
 	</assembly>
+	<assembly fullname="PhotonUnityNetworking.Utilities">
+		<type fullname="Photon.Pun.UtilityScripts.MoveByKeys" preserve="nothing"/>
+	</assembly>
 	<assembly fullname="PhotonUnityNetworking">
 		<type fullname="Photon.Pun.PhotonAnimatorView" preserve="nothing"/>
 		<type fullname="Photon.Pun.PhotonRigidbodyView" preserve="nothing"/>
 		<type fullname="Photon.Pun.PhotonTransformView" preserve="nothing"/>
 		<type fullname="Photon.Pun.PhotonView" preserve="nothing"/>
 		<type fullname="Photon.Pun.ServerSettings" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="PhotonVoice.PUN">
+		<type fullname="Photon.Voice.PUN.PhotonVoiceNetwork" preserve="nothing"/>
+		<type fullname="Photon.Voice.PUN.PhotonVoiceView" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="PhotonVoice">
+		<type fullname="Photon.Voice.Unity.Recorder" preserve="nothing"/>
+		<type fullname="Photon.Voice.Unity.Speaker" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="SteamVR">
 		<type fullname="Valve.VR.InteractionSystem.Player" preserve="nothing"/>

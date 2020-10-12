@@ -73,13 +73,16 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_VideoModuleCodeGenModule
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngineCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Photon3Unity3DCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_PhotonRealtimeCodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_PhotonVoice_APICodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Runtime_SerializationCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UICodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_PhotonUnityNetworkingCodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_PhotonVoiceCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_RenderPipelines_Core_RuntimeCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Valve_Newtonsoft_JsonCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_PhotonChatCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_PhotonUnityNetworking_UtilitiesCodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_PhotonVoice_PUNCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_SteamVRCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_RenderPipeline_Universal_ShaderLibraryCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_TextMeshProCodeGenModule;
@@ -89,7 +92,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_SteamVR_ActionsCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_RenderPipelines_Universal_RuntimeCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule;
 extern const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[54] = 
+const Il2CppCodeGenModule* g_CodeGenModules[57] = 
 {
 	(&g_mscorlibCodeGenModule),
 	(&g_System_ConfigurationCodeGenModule),
@@ -130,13 +133,16 @@ const Il2CppCodeGenModule* g_CodeGenModules[54] =
 	(&g_UnityEngineCodeGenModule),
 	(&g_Photon3Unity3DCodeGenModule),
 	(&g_PhotonRealtimeCodeGenModule),
+	(&g_PhotonVoice_APICodeGenModule),
 	(&g_System_Runtime_SerializationCodeGenModule),
 	(&g_UnityEngine_UICodeGenModule),
 	(&g_PhotonUnityNetworkingCodeGenModule),
+	(&g_PhotonVoiceCodeGenModule),
 	(&g_Unity_RenderPipelines_Core_RuntimeCodeGenModule),
 	(&g_Valve_Newtonsoft_JsonCodeGenModule),
 	(&g_PhotonChatCodeGenModule),
 	(&g_PhotonUnityNetworking_UtilitiesCodeGenModule),
+	(&g_PhotonVoice_PUNCodeGenModule),
 	(&g_SteamVRCodeGenModule),
 	(&g_Unity_RenderPipeline_Universal_ShaderLibraryCodeGenModule),
 	(&g_Unity_TextMeshProCodeGenModule),
@@ -149,21 +155,21 @@ const Il2CppCodeGenModule* g_CodeGenModules[54] =
 extern const Il2CppCodeRegistration g_CodeRegistration;
 const Il2CppCodeRegistration g_CodeRegistration = 
 {
-	10,
+	11,
 	g_ReversePInvokeWrapperPointers,
-	22480,
+	23769,
 	g_Il2CppGenericMethodPointers,
-	5363,
+	5499,
 	g_Il2CppInvokerPointers,
-	9706,
+	10391,
 	g_AttributeGenerators,
-	1041,
+	1066,
 	g_UnresolvedVirtualMethodPointers,
-	781,
+	790,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	54,
+	57,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;

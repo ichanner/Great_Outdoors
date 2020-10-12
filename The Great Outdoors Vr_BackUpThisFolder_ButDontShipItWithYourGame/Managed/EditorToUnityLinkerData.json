@@ -286,6 +286,15 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "FlareLayer",
+            "fullManagedTypeName": "UnityEngine.FlareLayer",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/SampleScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "Renderer",
             "fullManagedTypeName": "UnityEngine.Renderer",
             "moduleName": "Core",
@@ -325,6 +334,15 @@
             "nativeClass": "MeshRenderer",
             "fullManagedTypeName": "UnityEngine.MeshRenderer",
             "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/SampleScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AudioSource",
+            "fullManagedTypeName": "UnityEngine.AudioSource",
+            "moduleName": "Audio",
             "usedInScenes": [
                 "Assets/Scenes/SampleScene.unity"
             ]
@@ -459,6 +477,15 @@
             "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "RuntimeAnimatorController",
             "fullManagedTypeName": "UnityEngine.RuntimeAnimatorController",
+            "moduleName": "Animation",
+            "usedInScenes": [
+                "Assets/Scenes/SampleScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AnimatorOverrideController",
+            "fullManagedTypeName": "UnityEngine.AnimatorOverrideController",
             "moduleName": "Animation",
             "usedInScenes": [
                 "Assets/Scenes/SampleScene.unity"
@@ -611,7 +638,56 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "Readme",
+            "fullManagedTypeName": "ChangeColor",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ChangeName",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ExitGames.Demos.DemoPunVoice.FirstPersonController",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ExitGames.Demos.DemoPunVoice.Highlighter",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ExitGames.Demos.DemoPunVoice.OrthographicController",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ExitGames.Demos.DemoPunVoice.ThirdPersonController",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "PointersController",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ProximityVoiceTrigger",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -735,6 +811,13 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "PhotonUnityNetworking.Utilities.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Pun.UtilityScripts.MoveByKeys",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "PhotonUnityNetworking.dll",
             "nativeClass": "",
             "fullManagedTypeName": "Photon.Pun.PhotonAnimatorView",
@@ -766,6 +849,34 @@
             "managedAssemblyName": "PhotonUnityNetworking.dll",
             "nativeClass": "",
             "fullManagedTypeName": "Photon.Pun.ServerSettings",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonVoice.PUN.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Voice.PUN.PhotonVoiceNetwork",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonVoice.PUN.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Voice.PUN.PhotonVoiceView",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonVoice.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Voice.Unity.Recorder",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonVoice.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Voice.Unity.Speaker",
             "moduleName": "",
             "usedInScenes": []
         },

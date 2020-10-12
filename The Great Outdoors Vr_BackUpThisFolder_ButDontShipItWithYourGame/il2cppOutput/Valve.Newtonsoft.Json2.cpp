@@ -446,7 +446,7 @@ struct Func_1_t59BE545225A69AFD7B2056D169D0083051F6D386;
 // System.Func`2<System.Object,System.Boolean>
 struct Func_2_t7EE965B791A606D187CCB69569A433D4CBB36879;
 // System.Func`2<System.Object,System.Int32Enum>
-struct Func_2_t5008E158BC1F799F25E33C0EDFA8B961D527293A;
+struct Func_2_tE104F0F5CFAC5E1792CE1C7573907AFA5692A51F;
 // System.Func`2<System.Object,System.Object>
 struct Func_2_tE9A60F007AC624EA27BF19DEF4242B7DA2F1C2A4;
 // System.Func`2<System.Object,System.String>
@@ -11604,9 +11604,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m38B1099DDAD7EEDE2F4
 // System.Void System.Collections.Generic.List`1/Enumerator<System.Object>::Dispose()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_m94D0DAE031619503CDA6E53C5C3CC78AF3139472_gshared (Enumerator_tE0C99528D3DCE5863566CE37BD94162A4C0431CD * __this, const RuntimeMethod* method);
 // System.Void System.Func`2<System.Object,System.Int32Enum>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_m7E8A54C1ABF5BB6265190DBF02A2BF9000CE2FB0_gshared (Func_2_t5008E158BC1F799F25E33C0EDFA8B961D527293A * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_m09D29582CB5D7A33B4C32EA44DB52D95FD769640_gshared (Func_2_tE104F0F5CFAC5E1792CE1C7573907AFA5692A51F * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method);
 // System.Collections.Generic.Dictionary`2<!!1,!!2> System.Linq.Enumerable::ToDictionary<System.Object,System.Object,System.Int32Enum>(System.Collections.Generic.IEnumerable`1<!!0>,System.Func`2<!!0,!!1>,System.Func`2<!!0,!!2>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_t15935BA59D5EDF22B5075E957C7C05DEE12E3B57 * Enumerable_ToDictionary_TisRuntimeObject_TisRuntimeObject_TisInt32Enum_t6312CE4586C17FE2E2E513D2E7655B574F10FDCD_mBD4F9C1435B0D826D9E8CB6DAB42A0CC2D0174AA_gshared (RuntimeObject* ___source0, Func_2_tE9A60F007AC624EA27BF19DEF4242B7DA2F1C2A4 * ___keySelector1, Func_2_t5008E158BC1F799F25E33C0EDFA8B961D527293A * ___elementSelector2, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_t15935BA59D5EDF22B5075E957C7C05DEE12E3B57 * Enumerable_ToDictionary_TisRuntimeObject_TisRuntimeObject_TisInt32Enum_t6312CE4586C17FE2E2E513D2E7655B574F10FDCD_mBD4F9C1435B0D826D9E8CB6DAB42A0CC2D0174AA_gshared (RuntimeObject* ___source0, Func_2_tE9A60F007AC624EA27BF19DEF4242B7DA2F1C2A4 * ___keySelector1, Func_2_tE104F0F5CFAC5E1792CE1C7573907AFA5692A51F * ___elementSelector2, const RuntimeMethod* method);
 // System.Collections.Generic.Dictionary`2/Enumerator<!0,!1> System.Collections.Generic.Dictionary`2<System.Object,System.Int32Enum>::GetEnumerator()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_t703CE82E2E7C2543EFCBFA02457EB68422BDAAD8  Dictionary_2_GetEnumerator_m36FAC381F6F4D46F157AC1E5AB6B42D4B5641F4F_gshared (Dictionary_2_t15935BA59D5EDF22B5075E957C7C05DEE12E3B57 * __this, const RuntimeMethod* method);
 // System.Collections.Generic.KeyValuePair`2<!0,!1> System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Int32Enum>::get_Current()
@@ -12413,7 +12413,7 @@ inline void Func_2__ctor_m5131A880DC974490CE07A71EA1C2754B7CE4B6CA (Func_2_tD9E4
 // System.Void System.Func`2<Valve.Newtonsoft.Json.Serialization.JsonProperty,Valve.Newtonsoft.Json.Serialization.JsonSerializerInternalReader/PropertyPresence>::.ctor(System.Object,System.IntPtr)
 inline void Func_2__ctor_m2EC3704CCFE421F232812A0D30B6075188C28681 (Func_2_tB000D160FA55D2DCA5A9163D0D25CC86A334B636 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
-	((  void (*) (Func_2_tB000D160FA55D2DCA5A9163D0D25CC86A334B636 *, RuntimeObject *, intptr_t, const RuntimeMethod*))Func_2__ctor_m7E8A54C1ABF5BB6265190DBF02A2BF9000CE2FB0_gshared)(__this, ___object0, ___method1, method);
+	((  void (*) (Func_2_tB000D160FA55D2DCA5A9163D0D25CC86A334B636 *, RuntimeObject *, intptr_t, const RuntimeMethod*))Func_2__ctor_m09D29582CB5D7A33B4C32EA44DB52D95FD769640_gshared)(__this, ___object0, ___method1, method);
 }
 // System.Collections.Generic.Dictionary`2<!!1,!!2> System.Linq.Enumerable::ToDictionary<Valve.Newtonsoft.Json.Serialization.JsonProperty,Valve.Newtonsoft.Json.Serialization.JsonProperty,Valve.Newtonsoft.Json.Serialization.JsonSerializerInternalReader/PropertyPresence>(System.Collections.Generic.IEnumerable`1<!!0>,System.Func`2<!!0,!!1>,System.Func`2<!!0,!!2>)
 inline Dictionary_2_t285381F1461A747CDA5AB50869E9E777C5FA2931 * Enumerable_ToDictionary_TisJsonProperty_t562068F18C2C1ACF8A641C57943CDF99DB93FAEB_TisJsonProperty_t562068F18C2C1ACF8A641C57943CDF99DB93FAEB_TisPropertyPresence_tF764B794B85E016FBD330E0707C483F4B9DF5122_m107EFA7979AD43958A35609CDAA2FA97B160EB26 (RuntimeObject* ___source0, Func_2_tD9E4CBC9D077995C25584881134390988ED73387 * ___keySelector1, Func_2_tB000D160FA55D2DCA5A9163D0D25CC86A334B636 * ___elementSelector2, const RuntimeMethod* method)

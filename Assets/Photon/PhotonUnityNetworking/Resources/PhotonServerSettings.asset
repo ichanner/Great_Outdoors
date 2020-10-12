@@ -15,7 +15,7 @@ MonoBehaviour:
   AppSettings:
     AppIdRealtime: 2c0f37e1-a90c-4620-84a1-b195013970ff
     AppIdChat: 
-    AppIdVoice: 
+    AppIdVoice: c976aa33-9427-4af8-94ce-71900105d019
     AppVersion: 
     UseNameServer: 1
     FixedRegion: 
@@ -41,6 +41,7 @@ MonoBehaviour:
   - RPC_SpawnPlayer
   - RPC_Test
   - RPC_SpawnPlayerMaster
+  - ChangeColour
   DisableAutoOpenWizard: 1
-  ShowSettings: 0
+  ShowSettings: 1
   DevRegionSetOnce: 1

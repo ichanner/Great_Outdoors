@@ -2301,6 +2301,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421
 	Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34 * retVal = _il2cpp_icall_func(__this);
 	return retVal;
 }
+// System.Void UnityEngine.Canvas::set_worldCamera(UnityEngine.Camera)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Canvas_set_worldCamera_m020A4A35425707F2403E6EBA6AD73F448557F776 (Canvas_tBC28BF1DD8D8499A89B5781505833D3728CF8591 * __this, Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34 * ___value0, const RuntimeMethod* method)
+{
+	typedef void (*Canvas_set_worldCamera_m020A4A35425707F2403E6EBA6AD73F448557F776_ftn) (Canvas_tBC28BF1DD8D8499A89B5781505833D3728CF8591 *, Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34 *);
+	static Canvas_set_worldCamera_m020A4A35425707F2403E6EBA6AD73F448557F776_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Canvas_set_worldCamera_m020A4A35425707F2403E6EBA6AD73F448557F776_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Canvas::set_worldCamera(UnityEngine.Camera)");
+	_il2cpp_icall_func(__this, ___value0);
+}
 // UnityEngine.Material UnityEngine.Canvas::GetDefaultCanvasMaterial()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * Canvas_GetDefaultCanvasMaterial_m972CD867F8C777A55C35A735ACE85BADC628233B (const RuntimeMethod* method)
 {
