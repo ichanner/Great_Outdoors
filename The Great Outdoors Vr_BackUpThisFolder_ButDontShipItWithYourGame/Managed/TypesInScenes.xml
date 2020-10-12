@@ -61,13 +61,15 @@
 		<type fullname="UnityEngine.Terrain" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
-		<type fullname="PlayerBody" preserve="nothing"/>
-		<type fullname="PlayerHead" preserve="nothing"/>
-		<type fullname="PlayerNetworking" preserve="nothing"/>
+		<type fullname="Readme" preserve="nothing"/>
+		<type fullname="TGOV.DisableNetworkedScripts" preserve="nothing"/>
 		<type fullname="TGOV.Entities.Player" preserve="nothing"/>
 		<type fullname="TGOV.Managers.InputManager" preserve="nothing"/>
+		<type fullname="TGOV.Managers.NetworkManager" preserve="nothing"/>
 		<type fullname="TGOV.Managers.PlayerManager" preserve="nothing"/>
-		<type fullname="TGOV.Network.NetworkManager" preserve="nothing"/>
+		<type fullname="TGOV.PlayerBody" preserve="nothing"/>
+		<type fullname="TGOV.PlayerHead" preserve="nothing"/>
+		<type fullname="TGOV.PlayerRig" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="PhotonUnityNetworking.Demos">
 		<type fullname="Photon.Pun.Demo.Asteroids.Asteroid" preserve="nothing"/>

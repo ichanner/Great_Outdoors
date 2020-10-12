@@ -2,24 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
-public class PlayerHead : MonoBehaviour
+
+namespace TGOV
 {
-	/*
-	private PhotonView view;
-	private Camera hmd;
-
-	void Awake()
+	public class PlayerHead : MonoBehaviour
 	{
-		view = GetComponent<PhotonView>();
-		hmd = GetComponent<Camera>();
+	
 	}
-
-	void FixedUpdate()
-	{
-		if (!view.IsMine)
-		{
-			hmd.enabled = false;
-		}
-	}
-	*/
 }

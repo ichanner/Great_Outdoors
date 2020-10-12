@@ -10,21 +10,20 @@ namespace TGOV.Entities
 	{
 		private GameObject entity;
 		private Movement movementComponent;
-		private uint entityId;
+		private string entityId;
 
-		public Entity(/*GameObject entity*/)
-		{
-			//this.entity = entity;
+		public Entity()
+		{	
 		}
 
-		public void initialize(GameObject entity)
+		public void initEntity(GameObject entity)
 		{
 			this.entity = entity;
 		}
 
-		public void createMovementComponent(float acceleration, float deceleration, float maxVelocity)
+		public void createMovementComponent(float acceleration, float deceleration, float maxVelocity, float initialVelocity = 0.0f)
 		{
-			movementComponent = new Movement(entity.transform, acceleration, deceleration, maxVelocity);
+			movementComponent = new Movement(entity.transform, acceleration, deceleration, maxVelocity, initialVelocity);
 		}
 
 		public Transform getTransform()
@@ -37,12 +36,12 @@ namespace TGOV.Entities
 			return entity;
 		}
 
-		public  uint getEntityId()
+		public string getEntityId()
 		{
 			return entityId;
 		}
 
-		public void setEntityId(uint entityId)
+		public void setEntityId(string entityId)
 		{
 			this.entityId = entityId;
 		}

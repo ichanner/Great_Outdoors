@@ -2154,8 +2154,14 @@ IL2CPP_EXTERN_C void DelegatePInvokeWrapper_playerTurnLeftDelegate_t4E729E7609FD
 IL2CPP_EXTERN_C_CONST RuntimeType playerTurnLeftDelegate_t4E729E7609FD4F6E43B51FD0B50218D5672050FA_0_0_0;
 IL2CPP_EXTERN_C void DelegatePInvokeWrapper_playerTurnRightDelegate_t83473E375016FFDE94EC95732EA6AFD8E59F9798();
 IL2CPP_EXTERN_C_CONST RuntimeType playerTurnRightDelegate_t83473E375016FFDE94EC95732EA6AFD8E59F9798_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_playerConnectedDelegate_t48D28F3D4A4214FBC4E5DC1DB1C0FC1C8750BB06();
+IL2CPP_EXTERN_C_CONST RuntimeType playerConnectedDelegate_t48D28F3D4A4214FBC4E5DC1DB1C0FC1C8750BB06_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_playerJoinedLobbyDelegate_t7632B10A1B60F11FEC45DD1F088BC26FF2B31212();
+IL2CPP_EXTERN_C_CONST RuntimeType playerJoinedLobbyDelegate_t7632B10A1B60F11FEC45DD1F088BC26FF2B31212_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_playerJoinedRoomDelegate_t245A9DD78FAE8EAD50EE3547E719B2FE9ED086D1();
+IL2CPP_EXTERN_C_CONST RuntimeType playerJoinedRoomDelegate_t245A9DD78FAE8EAD50EE3547E719B2FE9ED086D1_0_0_0;
 extern Il2CppInteropData g_Il2CppInteropData[];
-Il2CppInteropData g_Il2CppInteropData[779] = 
+Il2CppInteropData g_Il2CppInteropData[782] = 
 {
 	{ DelegatePInvokeWrapper_EtwEnableCallback_tE661421A2F149DA151D5A519A09E09448E396A4A, NULL, NULL, NULL, NULL, NULL, &EtwEnableCallback_tE661421A2F149DA151D5A519A09E09448E396A4A_0_0_0 } /* Microsoft.Win32.UnsafeNativeMethods/ManifestEtw/EtwEnableCallback */,
 	{ NULL, Escape_t7D205DCBE40F7D5FE25F443E2DBF79A63870C5C6_marshal_pinvoke, Escape_t7D205DCBE40F7D5FE25F443E2DBF79A63870C5C6_marshal_pinvoke_back, Escape_t7D205DCBE40F7D5FE25F443E2DBF79A63870C5C6_marshal_pinvoke_cleanup, NULL, NULL, &Escape_t7D205DCBE40F7D5FE25F443E2DBF79A63870C5C6_0_0_0 } /* Mono.Globalization.Unicode.SimpleCollator/Escape */,
@@ -2935,5 +2941,8 @@ Il2CppInteropData g_Il2CppInteropData[779] =
 	{ DelegatePInvokeWrapper_playerJumpDelegate_t321C44838D66EB0205806C92FD9A54692BBC7844, NULL, NULL, NULL, NULL, NULL, &playerJumpDelegate_t321C44838D66EB0205806C92FD9A54692BBC7844_0_0_0 } /* TGOV.Managers.InputManager/playerJumpDelegate */,
 	{ DelegatePInvokeWrapper_playerTurnLeftDelegate_t4E729E7609FD4F6E43B51FD0B50218D5672050FA, NULL, NULL, NULL, NULL, NULL, &playerTurnLeftDelegate_t4E729E7609FD4F6E43B51FD0B50218D5672050FA_0_0_0 } /* TGOV.Managers.InputManager/playerTurnLeftDelegate */,
 	{ DelegatePInvokeWrapper_playerTurnRightDelegate_t83473E375016FFDE94EC95732EA6AFD8E59F9798, NULL, NULL, NULL, NULL, NULL, &playerTurnRightDelegate_t83473E375016FFDE94EC95732EA6AFD8E59F9798_0_0_0 } /* TGOV.Managers.InputManager/playerTurnRightDelegate */,
+	{ DelegatePInvokeWrapper_playerConnectedDelegate_t48D28F3D4A4214FBC4E5DC1DB1C0FC1C8750BB06, NULL, NULL, NULL, NULL, NULL, &playerConnectedDelegate_t48D28F3D4A4214FBC4E5DC1DB1C0FC1C8750BB06_0_0_0 } /* TGOV.Managers.NetworkManager/playerConnectedDelegate */,
+	{ DelegatePInvokeWrapper_playerJoinedLobbyDelegate_t7632B10A1B60F11FEC45DD1F088BC26FF2B31212, NULL, NULL, NULL, NULL, NULL, &playerJoinedLobbyDelegate_t7632B10A1B60F11FEC45DD1F088BC26FF2B31212_0_0_0 } /* TGOV.Managers.NetworkManager/playerJoinedLobbyDelegate */,
+	{ DelegatePInvokeWrapper_playerJoinedRoomDelegate_t245A9DD78FAE8EAD50EE3547E719B2FE9ED086D1, NULL, NULL, NULL, NULL, NULL, &playerJoinedRoomDelegate_t245A9DD78FAE8EAD50EE3547E719B2FE9ED086D1_0_0_0 } /* TGOV.Managers.NetworkManager/playerJoinedRoomDelegate */,
 	NULL,
 };

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using TGOV.Components.Physics;
 
@@ -9,20 +10,22 @@ namespace TGOV
 	{
 		public class PlayerController : MonoBehaviour
 		{
-			Transform playerRig;
-			Rigidbody playerRigidBody;
-			Movement movement;
+			private Transform player;
+			private Rigidbody playerRigidBody;
+			private Movement movement;
+			private CoolDown jumpCoolDown;
 
-			public PlayerController(Transform playerRig, Rigidbody playerRigidBody, Movement movement)
+			public PlayerController(Transform player, Rigidbody playerRigidBody, Movement movement)
 			{
 				this.playerRigidBody = playerRigidBody;
-				this.playerRig = playerRig;
+				this.player = player;
 				this.movement = movement;
+				this.jumpCoolDown = new CoolDown(1f);
 			}
 
 			public void Jump(float jumpHeight, bool grounded)
 			{
-				if (grounded)
+				if (grounded && jumpCoolDown.isExpired())
 				{
 					playerRigidBody.AddForce(Vector3.up * jumpHeight);
 				}
@@ -30,31 +33,29 @@ namespace TGOV
 
 			public void Move(Vector3 axis, Transform point)
 			{
-
 				Vector3 dir = point.TransformDirection(new Vector3(axis.x, 0.0f, axis.y));
-
-				if (axis.x != 0 || axis.y != 0)
+		
+				if (Math.Abs(axis.x) > 0 || Math.Abs(axis.y) > 0)
 				{
 					movement.move(dir);
 				}
-				
 			}
 
 			public void RotateLeft(float rotationSnap, Transform point)
 			{
-				playerRig.transform.RotateAround(point.position, Vector3.up, rotationSnap);
+				player.transform.RotateAround(point.position, Vector3.up, rotationSnap);
 			}
 
 			public void RotateRight(float rotationSnap, Transform point)
 			{
-				playerRig.transform.RotateAround(point.position, Vector3.up, -rotationSnap);
+				player.transform.RotateAround(point.position, Vector3.up, -rotationSnap);
 			}
 
 			public void updateController()
 			{
+				jumpCoolDown.update();
 				movement.update();
 			}
-
 
 		}
 

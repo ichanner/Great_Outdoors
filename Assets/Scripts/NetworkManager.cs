@@ -4,85 +4,72 @@ using UnityEngine;
 using Photon.Pun;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-namespace TGOV.Network
+
+
+namespace TGOV
 {
-
-    public class NetworkManager : MonoBehaviourPunCallbacks
+    namespace Managers
     {
-
-        [HideInInspector]
-        public NetworkManager instance;
-
-
-        void Start()
+        public class NetworkManager : PunSingleton<NetworkManager>
         {
-            if (instance == null)
-            {
-                instance = (NetworkManager)FindObjectOfType(typeof(NetworkManager));
 
-                DontDestroyOnLoad(gameObject);
+            public event playerConnectedDelegate playerConnectedEvent;
+            public delegate void playerConnectedDelegate();
+
+            public event playerJoinedLobbyDelegate playerJoinedLobbyEvent;
+            public delegate void playerJoinedLobbyDelegate();
+
+            public event playerJoinedRoomDelegate playerJoinedRoomEvent;
+            public delegate void playerJoinedRoomDelegate();
+
+            void Start()
+            {
             }
 
-            else
+            public void Connect()
             {
-                Destroy(gameObject);
+                PhotonNetwork.ConnectUsingSettings();
             }
+
+            //Getters & Setters
+
+            public bool isConnected()
+            {
+                return PhotonNetwork.IsConnected;
+            }
+
+            //Callbacks
+
+            public override void OnConnectedToMaster()
+            {
+                playerConnectedEvent?.Invoke();
+                PhotonNetwork.JoinLobby(Photon.Realtime.TypedLobby.Default);
+            }
+
+            public override void OnJoinedLobby()
+            {
+                playerJoinedLobbyEvent?.Invoke();
+                this.JoinRoom("TestRoom"); //Test
+            }
+
+            public override void OnJoinedRoom()
+            {
+                playerJoinedRoomEvent?.Invoke();
+            }
+
+
+            //Functions
+
+            public void JoinRoom(string room, byte maxPlayers = 4)
+            {
+                PhotonNetwork.JoinOrCreateRoom(room, new Photon.Realtime.RoomOptions { MaxPlayers = maxPlayers }, Photon.Realtime.TypedLobby.Default);
+            }
+
+            public void CreateRoom(string room, byte maxPlayers = 4)
+            {
+                PhotonNetwork.CreateRoom(room, new Photon.Realtime.RoomOptions { MaxPlayers = maxPlayers }, Photon.Realtime.TypedLobby.Default);
+            }
+
         }
-
-
-        public void Connect()
-        {
-            Debug.Log("Connecting...");
-            PhotonNetwork.ConnectUsingSettings();
-        }
-
-        public bool isConnected()
-        {
-            return PhotonNetwork.IsConnected;
-        }
-
-        //Callbacks
-
-        public override void OnConnectedToMaster()
-        {
-            Debug.Log("Connected to master");
-
-            PhotonNetwork.JoinLobby(Photon.Realtime.TypedLobby.Default);
-        }
-
-        public override void OnJoinedLobby()
-        {
-            JoinRoom("TestRoom");
-
-            Debug.Log("Joined Lobby");
-         
-        }
-
-        public override void OnJoinedRoom()
-        {
-            //SceneManager.LoadScene(1);//Test
-            Debug.Log("Joined Room");
-
-            PhotonNetwork.Instantiate("PlayerAsset 1", Vector3.zero, Quaternion.identity);
-
-            Debug.Log(PhotonNetwork.LocalPlayer.UserId);
-            Debug.Log(PhotonNetwork.CloudRegion);
-        }
-
-        //Functions
-
-        public void JoinRoom(string room)
-        {
-
-            PhotonNetwork.JoinOrCreateRoom(room, new Photon.Realtime.RoomOptions { MaxPlayers = 20 }, Photon.Realtime.TypedLobby.Default);
-        }
-
-
-        public void CreateRoom(string room)
-        {
-            PhotonNetwork.CreateRoom(room, new Photon.Realtime.RoomOptions { MaxPlayers = 4 }, Photon.Realtime.TypedLobby.Default);
-        }
-
-      
     }
 }

@@ -6,10 +6,9 @@ using System;
 
 namespace TGOV
 {
-
 	namespace Managers
 	{
-		public class InputManager : Singleton<InputManager>
+		public class InputManager : MonoSingleton<InputManager>
 		{
 			//Keybinds
 
@@ -64,7 +63,6 @@ namespace TGOV
 			{
 				if (playerTurnRight.GetStateDown(leftInputKeybinds))
 				{
-				
 				   playerTurnRightEvent?.Invoke();
 				}
 

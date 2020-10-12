@@ -146,9 +146,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.25
-  m_Height: 2
+  m_Height: 2.8020854
   m_Direction: 1
-  m_Center: {x: 0, y: 0.75, z: 0}
+  m_Center: {x: 0, y: 0.09871314, z: 0}
 --- !u!114 &4759351994523126783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,11 +462,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eef5547327336a24a80ca6b20541f1b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 5795590968448316037}
+  scripts: []
+  gameObjects: []
   playerCamera: {fileID: 5795590968660450765}
-  rightHand: {fileID: 5795590970063732818}
-  leftHand: {fileID: 5795590970092410720}
-  rigidBody: {fileID: 4032784981189150240}
+  rightHand: {fileID: 5795590970092410720}
+  leftHand: {fileID: 5795590970063732818}
 --- !u!114 &3985343006105128983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -928,6 +928,7 @@ GameObject:
   - component: {fileID: 5795590970406238030}
   - component: {fileID: 3922461962524709807}
   - component: {fileID: 2097389388357046361}
+  - component: {fileID: 7918018603027380358}
   m_Layer: 0
   m_Name: '[CameraRig]'
   m_TagString: Untagged
@@ -1066,3 +1067,15 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
+--- !u!114 &7918018603027380358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5795590970406238032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26f9b8b2649fdf84095806196aeb22aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -4257,26 +4257,27 @@ IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6785[1];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6786[24];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6787[3];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6789[3];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6790[5];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6792[2];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6793[2];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6796[1];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6797[4];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6798[4];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6799[7];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6800[6];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6801[3];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6802[1];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6803[5];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6804[10];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6809[4];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6790[1];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6791[1];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6792[4];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6793[4];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6794[7];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6795[6];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6796[2];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6797[6];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6798[2];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6803[4];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6804[6];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6805[10];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6810[3];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6811[11];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6812[4];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6815[4];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6816[7];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6814[4];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6815[3];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6816[9];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6817[4];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6820[4];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable6821[7];
 
-IL2CPP_EXTERN_C_CONST int32_t* g_FieldOffsetTable[6817] = 
+IL2CPP_EXTERN_C_CONST int32_t* g_FieldOffsetTable[6822] = 
 {
 	NULL,
 	g_FieldOffsetTable1,
@@ -11069,32 +11070,37 @@ IL2CPP_EXTERN_C_CONST int32_t* g_FieldOffsetTable[6817] =
 	NULL,
 	g_FieldOffsetTable6789,
 	g_FieldOffsetTable6790,
-	NULL,
+	g_FieldOffsetTable6791,
 	g_FieldOffsetTable6792,
 	g_FieldOffsetTable6793,
-	NULL,
-	NULL,
+	g_FieldOffsetTable6794,
+	g_FieldOffsetTable6795,
 	g_FieldOffsetTable6796,
 	g_FieldOffsetTable6797,
 	g_FieldOffsetTable6798,
-	g_FieldOffsetTable6799,
-	g_FieldOffsetTable6800,
-	g_FieldOffsetTable6801,
-	g_FieldOffsetTable6802,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
 	g_FieldOffsetTable6803,
 	g_FieldOffsetTable6804,
+	g_FieldOffsetTable6805,
 	NULL,
 	NULL,
 	NULL,
 	NULL,
-	g_FieldOffsetTable6809,
 	g_FieldOffsetTable6810,
-	g_FieldOffsetTable6811,
-	g_FieldOffsetTable6812,
 	NULL,
 	NULL,
+	NULL,
+	g_FieldOffsetTable6814,
 	g_FieldOffsetTable6815,
 	g_FieldOffsetTable6816,
+	g_FieldOffsetTable6817,
+	NULL,
+	NULL,
+	g_FieldOffsetTable6820,
+	g_FieldOffsetTable6821,
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize0;
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1;
@@ -17913,7 +17919,12 @@ extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6813;
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6814;
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6815;
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6816;
-IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes* g_Il2CppTypeDefinitionSizesTable[6817] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6817;
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6818;
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6819;
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6820;
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6821;
+IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes* g_Il2CppTypeDefinitionSizesTable[6822] = 
 {
 	(&g_typeDefinitionSize0),
 	(&g_typeDefinitionSize1),
@@ -24732,4 +24743,9 @@ IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes* g_Il2CppTypeDefinitionSizesTabl
 	(&g_typeDefinitionSize6814),
 	(&g_typeDefinitionSize6815),
 	(&g_typeDefinitionSize6816),
+	(&g_typeDefinitionSize6817),
+	(&g_typeDefinitionSize6818),
+	(&g_typeDefinitionSize6819),
+	(&g_typeDefinitionSize6820),
+	(&g_typeDefinitionSize6821),
 };

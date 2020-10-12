@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.thegreatoutdoorsvr.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "D:\\New folder\\shitbuild\\New folder\\The-Great-Outdoors-VR-main\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "D:\\New folder\\The-Great-Outdoors-VR\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "The Great Outdoors Vr [Testing]"

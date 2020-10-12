@@ -6,49 +6,67 @@ using Photon.Pun;
 
 namespace TGOV
 {
-
     namespace Managers
     {
 
-        public class PlayerManager : Singleton<PlayerManager>
+        public class PlayerManager : PunSingleton<PlayerManager>
         {
-            public GameObject playerPrefab;
-            private PhotonView photonView;
-            private GameObject localPlayer;
 
-            /// DEBUG : Remove Later
             public TextMeshProUGUI velocityDebugText;
+            public GameObject playerPrefab;
+
+            private GameObject localPlayer;
+            private Dictionary<int, GameObject> players = new Dictionary<int, GameObject>();
 
 
-            private void initValues()
+            private void subscribeToPunCallbacks()
             {
-                this.photonView = GetComponent<PhotonView>();
-            }
-
-            private void initializeLocalPlayer()
-            {
-         
-                //photonView.RPC("RPC_SpawnPlayer", RpcTarget.MasterClient);
+                NetworkManager.instance.playerJoinedRoomEvent += initializeLocalPlayer;
             }
 
             void Start()
             {
-
-                //initValues();
-                //initializeLocalPlayer();
+                subscribeToPunCallbacks();
             }
 
             void FixedUpdate()
             {
-      
+               velocityDebugText.SetText("Velocity " + players[getId()].GetComponent<Entities.Player>().getVelocity() + " m/s");
             }
 
-            [PunRPC]
-            public void RPC_SpawnPlayer()
+            //Getters and setters
+
+            public int getId()
             {
-                PhotonNetwork.Instantiate(playerPrefab.name, Vector3.zero, Quaternion.identity);
+                return localPlayer.GetComponent<PhotonView>().ViewID;
             }
-           
+
+            //Callbacks
+
+            private void initializeLocalPlayer()
+            {
+                localPlayer = PhotonNetwork.Instantiate(playerPrefab.name, Vector3.zero, Quaternion.identity);
+                localPlayer.GetComponent<PhotonView>().RPC("RPC_SpawnPlayer", RpcTarget.AllBuffered);
+            }
+
+            //Player Management
+
+            public void addPlayer(int id, GameObject player)
+            {
+                players.Add(id, player);
+            }
+
+            public GameObject getPlayer(int id)
+            {
+                if (players.ContainsKey(id))
+                {
+
+                    return players[id];
+                }
+
+                return null;
+            }
+
         }
     }
 }

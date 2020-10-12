@@ -4,6 +4,7 @@ using UnityEngine;
 using TGOV.Controllers;
 using Photon.Pun;
 using Valve.VR;
+using TGOV.Managers;
 
 namespace TGOV
 {
@@ -14,27 +15,22 @@ namespace TGOV
 
 			private Rigidbody rigidBody;
 			private PhotonView photonView;
-			private Vector3 targetPos;
-			private Quaternion targetRot;
-		
+	
 			//Controllers
 
 			private PlayerController playerController;
 
 			/// Player Parts
-		
+
 			private GameObject playerHead;
-			private GameObject playerRig;
 			private GameObject playerBody;
+			private GameObject playerRig;
 			private GameObject playerFeet;
 			private GameObject playerHandRight;
 			private GameObject playerHandLeft;
 
-		
-			private void initValues()
+			private void initBodyParts()
 			{
-				rigidBody = GetComponent<Rigidbody>();
-				photonView = GetComponent<PhotonView>();
 				playerRig = GameObject.Find("[CameraRig]");
 				playerHead = GameObject.Find("Camera");
 				playerBody = GameObject.Find("Body");
@@ -45,62 +41,54 @@ namespace TGOV
 
 			private void initComponents()
 			{
-				createMovementComponent(2, 1, 5);
+				this.createMovementComponent(2.4f, 2.5f, 5, 2.0f);
 			}
 
 			private void initControllers()
 			{
-				playerController = new PlayerController(playerRig.transform, rigidBody, getMovementComponent());
+				playerController = new PlayerController(this.getTransform(), rigidBody, getMovementComponent());
 			}
 
 			private void subscribeToInputs()
 			{
-				Managers.InputManager.instance.playerJumpEvent += handleJump;
-				Managers.InputManager.instance.playerLocomotionEvent += handleLocomotion;
-				Managers.InputManager.instance.playerTurnLeftEvent += handleTurnLeft;
-				Managers.InputManager.instance.playerTurnRightEvent += handleTurnRight;
-			
+				InputManager.instance.playerJumpEvent += handleJump;
+				InputManager.instance.playerLocomotionEvent += handleLocomotion;
+				InputManager.instance.playerTurnLeftEvent += handleTurnLeft;
+				InputManager.instance.playerTurnRightEvent += handleTurnRight;
 			}
 
+			void Awake()
+			{
+				rigidBody = GetComponent<Rigidbody>();
+				photonView = GetComponent<PhotonView>();
+			}
 
 			void Start()
 			{
-				initValues();
-				initialize(playerRig);
-				initComponents();
-				subscribeToInputs();
-				initControllers();
-
+				initBodyParts();
+				initEntity(gameObject);
+				
+				if (isLocal())
+				{
+					initComponents();
+					subscribeToInputs();
+					initControllers();
+				}	
 			}
 
 			void FixedUpdate()
 			{
-				this.playerController.updateController();
-			}
-
-		
-
-			/*
-			private void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-			{
-				if (stream.IsWriting)
+				if (isLocal())
 				{
-					stream.SendNext(transform.position);
-					stream.SendNext(transform.rotation);
-				}
-				else
-				{
-					targetPos = (Vector3)stream.ReceiveNext();
-					targetRot = (Quaternion)stream.ReceiveNext();
+					this.playerController.updateController();
 				}
 			}
-			*/
 
 			private bool isGrounded()
 			{
 				RaycastHit hit;
 
-				if (Physics.Raycast(this.playerBody.transform.position, Vector3.down, out hit, playerHead.transform.localPosition.y + 0.1f))
+				if (isLocal() && Physics.Raycast(this.playerBody.transform.position, Vector3.down, out hit, playerHead.transform.localPosition.y + 0.1f))
 				{
 					return true;
 				}
@@ -111,6 +99,17 @@ namespace TGOV
 			public bool isLocal()
 			{
 				return photonView.IsMine ? true : false;
+			}
+
+			public int getId()
+			{
+				return photonView.ViewID;
+			}
+
+			[PunRPC]
+			public void RPC_SpawnPlayer()
+			{
+				PlayerManager.instance.addPlayer(getId(), PhotonView.Find(getId()).gameObject);
 			}
 
 			///Movement Callbacks
@@ -134,9 +133,6 @@ namespace TGOV
 			{
 				playerController.Move(axis, playerHead.transform);
 			}
-
-
-
 		}
 	}
 }

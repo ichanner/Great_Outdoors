@@ -1,15 +1,13 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 
 namespace TGOV
 {
-
 	namespace Components
 	{
-
 		namespace Physics
 		{
-
 			public class Movement : MonoBehaviour
 			{
 
@@ -17,16 +15,18 @@ namespace TGOV
 				private float deceleration;
 				private float acceleration;
 				private float maxVelocity;
+				private float initialVelocity;
 
 				private Transform entity;
 
 		
-				public Movement(Transform entity, float acceleration, float deceleration, float maxVelocity)
+				public Movement(Transform entity, float acceleration, float deceleration, float maxVelocity, float initialVelocity = 0.0f)
 				{
-					this.velocity = 0.0f;
+					this.velocity = initialVelocity;
 					this.deceleration = deceleration;
 					this.acceleration = acceleration;
 					this.maxVelocity = maxVelocity;
+					this.initialVelocity = initialVelocity;
 					this.entity = entity;
 				}
 
@@ -57,8 +57,7 @@ namespace TGOV
 						velocity = maxVelocity;
 					}
 
-					velocity += acceleration * Time.deltaTime;
-
+					velocity += (acceleration + (Math.Abs(direction.x) + Math.Abs(direction.y))) * Time.deltaTime;
 					entity.transform.position += velocity * Time.deltaTime * Vector3.ProjectOnPlane(direction, Vector3.up);
 
 				
@@ -66,9 +65,9 @@ namespace TGOV
 
 				public void update()
 				{
-					if (velocity < 0)
+					if (velocity < initialVelocity)
 					{
-						velocity = 0;
+						velocity = initialVelocity;
 					}
 
 					velocity -= deceleration * Time.deltaTime;
