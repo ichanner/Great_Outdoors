@@ -15,7 +15,8 @@ namespace TGOV
 
 			private Rigidbody rigidBody;
 			private PhotonView photonView;
-	
+			private List<InterpolationController> networkControllers = new List<InterpolationController>();
+
 			//Controllers
 
 			private PlayerController playerController;
@@ -37,6 +38,19 @@ namespace TGOV
 				playerFeet = GameObject.Find("Feet");
 				playerHandRight = GameObject.Find("Controller (right)");
 				playerHandLeft = GameObject.Find("Controller (left)");
+
+				/*
+				networkControllers.Add(new InterpolationController(playerRig.transform, photonView));
+				networkControllers.Add(new InterpolationController(playerFeet.transform, photonView));
+				networkControllers.Add(new InterpolationController(playerBody.transform, photonView));
+				networkControllers.Add(new InterpolationController(playerHead.transform, photonView));
+				networkControllers.Add(new InterpolationController(playerHandRight.transform, photonView));
+				networkControllers.Add(new InterpolationController(playerHandLeft.transform, photonView));
+				*/
+
+				networkControllers.Add(new InterpolationController(playerHead.transform, photonView));
+				networkControllers.Add(new InterpolationController(playerHandRight.transform, photonView));
+				networkControllers.Add(new InterpolationController(playerHandLeft.transform, photonView));
 			}
 
 			private void initComponents()
@@ -76,11 +90,25 @@ namespace TGOV
 				}	
 			}
 
+
+
+
 			void FixedUpdate()
 			{
 				if (isLocal())
 				{
 					this.playerController.updateController();
+				}
+
+			
+				else
+				{
+
+					foreach (var networkController in networkControllers) {
+
+						networkController.smoothMove();
+					}
+					
 				}
 			}
 

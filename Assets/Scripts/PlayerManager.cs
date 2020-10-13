@@ -60,7 +60,6 @@ namespace TGOV
             {
                 if (players.ContainsKey(id))
                 {
-
                     return players[id];
                 }
 

@@ -72,6 +72,7 @@
 		<type fullname="ExitGames.Demos.DemoPunVoice.ThirdPersonController" preserve="nothing"/>
 		<type fullname="PointersController" preserve="nothing"/>
 		<type fullname="ProximityVoiceTrigger" preserve="nothing"/>
+		<type fullname="TGOV.Controllers.InterpolationController" preserve="nothing"/>
 		<type fullname="TGOV.DisableNetworkedScripts" preserve="nothing"/>
 		<type fullname="TGOV.Entities.Player" preserve="nothing"/>
 		<type fullname="TGOV.Managers.InputManager" preserve="nothing"/>

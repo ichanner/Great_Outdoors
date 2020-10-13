@@ -124,9 +124,9 @@ static const Il2CppTokenRangePair s_rgctxIndices[1] =
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[3] = 
 {
-	{ (Il2CppRGCTXDataType)3, 30272 },
-	{ (Il2CppRGCTXDataType)2, 32640 },
-	{ (Il2CppRGCTXDataType)3, 30273 },
+	{ (Il2CppRGCTXDataType)3, 30278 },
+	{ (Il2CppRGCTXDataType)2, 32665 },
+	{ (Il2CppRGCTXDataType)3, 30279 },
 };
 extern const Il2CppCodeGenModule g_UnityEngine_SubsystemsModuleCodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_SubsystemsModuleCodeGenModule = 

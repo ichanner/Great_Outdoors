@@ -15,8 +15,10 @@ namespace TGOV
 
         [Header("Other")]
         public Camera playerCamera;
+        public AudioListener audioListener;
         public SteamVR_Behaviour_Pose rightHand;
         public SteamVR_Behaviour_Pose leftHand;
+  
 
         private PhotonView photonView;
 
@@ -41,6 +43,7 @@ namespace TGOV
                 rightHand.enabled = false;
                 leftHand.enabled = false;
                 playerCamera.enabled = false;
+                audioListener.enabled = false;
             }
         }
 

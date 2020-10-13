@@ -26,6 +26,9 @@ namespace TGOV
             {
             }
 
+         
+
+
             public void Connect()
             {
                 PhotonNetwork.ConnectUsingSettings();
