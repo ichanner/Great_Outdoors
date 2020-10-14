@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Photon.Pun;
+
 
 namespace TGOV
 {
@@ -9,37 +9,18 @@ namespace TGOV
     namespace Controllers
     {
 
-        public class InterpolationController : MonoBehaviourPun
+        public class InterpolationController : MonoBehaviour
         {
 
-            private Transform networkedObject;
-            private PhotonView view;
-            private Vector3 targetPosition;
-            private Quaternion targetRotation;
+            public Transform networkedObject { set; get; }
+            public Vector3 targetPosition { set; get; }
+            public Quaternion targetRotation { set; get; }
+         
 
-
-            public InterpolationController(Transform networkedObject, PhotonView view)
+            public InterpolationController(Transform networkedObject)
             {
                 this.networkedObject = networkedObject;
-                this.view = view;
             }
-
-            
-            private void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-            {
-                if (stream.IsWriting)
-                {
-                    Debug.Log(transform.position);
-                    stream.SendNext(transform.position);
-                    stream.SendNext(transform.rotation);
-                }
-                else
-                {
-                    this.targetPosition = (Vector3)stream.ReceiveNext();
-                    this.targetRotation = (Quaternion)stream.ReceiveNext();
-                }
-            }
-
 
             public void smoothMove(float lerpRate = .25f, float rotationRateOffset = 500f)
             {

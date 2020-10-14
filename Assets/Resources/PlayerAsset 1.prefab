@@ -485,13 +485,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5795590968448316036}
+  - component: {fileID: 813311632168203191}
   - component: {fileID: 5795590968448316037}
   - component: {fileID: 4032784981189150240}
   - component: {fileID: 4032784981189150241}
-  - component: {fileID: 813311632168203191}
   - component: {fileID: 7559930351407623934}
   - component: {fileID: 3985343006105128983}
   - component: {fileID: 5838617567134940082}
+  - component: {fileID: 5232069364814830204}
   m_Layer: 0
   m_Name: PlayerAsset 1
   m_TagString: Untagged
@@ -515,6 +516,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &813311632168203191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5795590968448316038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 5795590968448316037}
+  - {fileID: 3985343006105128983}
+  - {fileID: 5232069364814830204}
+  - {fileID: 2097389388357046361}
+  - {fileID: 878110227448562109}
+  - {fileID: 3724948033298734677}
+  - {fileID: 2200177072682142011}
+  - {fileID: 4437923883207151657}
+  - {fileID: 2307798010188859086}
+  - {fileID: 5687375048925608059}
+  viewIdField: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &5795590968448316037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,6 +560,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1182c4b7ca552814aae495abf39331af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHead: {fileID: 0}
+  playerBody: {fileID: 0}
+  playerRig: {fileID: 0}
+  playerFeet: {fileID: 0}
+  playerHandRight: {fileID: 0}
+  playerHandLeft: {fileID: 0}
 --- !u!54 &4032784981189150240
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -566,36 +605,6 @@ MonoBehaviour:
     actionPath: /actions/default/in/HeadsetOnHead
     needsReinit: 0
   allowToggleTo2D: 0
---- !u!114 &813311632168203191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5795590968448316038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 0
-  ObservedComponents:
-  - {fileID: 3985343006105128983}
-  - {fileID: 2097389388357046361}
-  - {fileID: 878110227448562109}
-  - {fileID: 3724948033298734677}
-  - {fileID: 2200177072682142011}
-  - {fileID: 4437923883207151657}
-  - {fileID: 2307798010188859086}
-  - {fileID: 5687375048925608059}
-  viewIdField: 0
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &7559930351407623934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -649,6 +658,21 @@ MonoBehaviour:
   AutoCreateRecorderIfNotFound: 0
   UsePrimaryRecorder: 1
   SetupDebugSpeaker: 0
+--- !u!114 &5232069364814830204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5795590968448316038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
 --- !u!1 &5795590968660450771
 GameObject:
   m_ObjectHideFlags: 0

@@ -890,6 +890,13 @@
         {
             "managedAssemblyName": "SteamVR.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "Valve.VR.InteractionSystem.Interactable",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "SteamVR.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "Valve.VR.InteractionSystem.Player",
             "moduleName": "",
             "usedInScenes": []

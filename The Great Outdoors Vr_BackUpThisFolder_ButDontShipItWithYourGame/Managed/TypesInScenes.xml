@@ -112,6 +112,7 @@
 		<type fullname="Photon.Voice.Unity.Speaker" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="SteamVR">
+		<type fullname="Valve.VR.InteractionSystem.Interactable" preserve="nothing"/>
 		<type fullname="Valve.VR.InteractionSystem.Player" preserve="nothing"/>
 		<type fullname="Valve.VR.SteamVR_ActivateActionSetOnLoad" preserve="nothing"/>
 		<type fullname="Valve.VR.SteamVR_Behaviour_Pose" preserve="nothing"/>

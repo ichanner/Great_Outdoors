@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TGOV.Controllers;
 using Photon.Pun;
+using Photon;
 using Valve.VR;
 using TGOV.Managers;
 
@@ -10,12 +11,13 @@ namespace TGOV
 {
 	namespace Entities
 	{
-		public class Player : Entity
+		public class Player : Entity, IPunObservable
 		{
 
 			private Rigidbody rigidBody;
-			private PhotonView photonView;
-			private List<InterpolationController> networkControllers = new List<InterpolationController>();
+			private PhotonView view;
+
+			private InterpolationController interpolationController;
 
 			//Controllers
 
@@ -23,12 +25,12 @@ namespace TGOV
 
 			/// Player Parts
 
-			private GameObject playerHead;
-			private GameObject playerBody;
-			private GameObject playerRig;
-			private GameObject playerFeet;
-			private GameObject playerHandRight;
-			private GameObject playerHandLeft;
+			public GameObject playerHead;
+			public GameObject playerBody;
+			public GameObject playerRig;
+			public GameObject playerFeet;
+			public GameObject playerHandRight;
+			public GameObject playerHandLeft;
 
 			private void initBodyParts()
 			{
@@ -38,77 +40,92 @@ namespace TGOV
 				playerFeet = GameObject.Find("Feet");
 				playerHandRight = GameObject.Find("Controller (right)");
 				playerHandLeft = GameObject.Find("Controller (left)");
-
-				/*
-				networkControllers.Add(new InterpolationController(playerRig.transform, photonView));
-				networkControllers.Add(new InterpolationController(playerFeet.transform, photonView));
-				networkControllers.Add(new InterpolationController(playerBody.transform, photonView));
-				networkControllers.Add(new InterpolationController(playerHead.transform, photonView));
-				networkControllers.Add(new InterpolationController(playerHandRight.transform, photonView));
-				networkControllers.Add(new InterpolationController(playerHandLeft.transform, photonView));
-				*/
-
-				networkControllers.Add(new InterpolationController(playerHead.transform, photonView));
-				networkControllers.Add(new InterpolationController(playerHandRight.transform, photonView));
-				networkControllers.Add(new InterpolationController(playerHandLeft.transform, photonView));
 			}
 
 			private void initComponents()
 			{
-				this.createMovementComponent(2.4f, 2.5f, 5, 2.0f);
+				if (isLocal())
+				{
+					this.createMovementComponent(2.4f, 2.5f, 5, 2.0f);
+				}
 			}
 
 			private void initControllers()
 			{
-				playerController = new PlayerController(this.getTransform(), rigidBody, getMovementComponent());
+				if (isLocal())
+				{
+					playerController = new PlayerController(this.getTransform(), rigidBody, getMovementComponent());
+				}
+				else
+				{
+					interpolationController = new InterpolationController(this.getTransform());
+				}
 			}
 
 			private void subscribeToInputs()
 			{
-				InputManager.instance.playerJumpEvent += handleJump;
-				InputManager.instance.playerLocomotionEvent += handleLocomotion;
-				InputManager.instance.playerTurnLeftEvent += handleTurnLeft;
-				InputManager.instance.playerTurnRightEvent += handleTurnRight;
+				if (isLocal()){
+
+					InputManager.instance.playerJumpEvent += handleJump;
+					InputManager.instance.playerLocomotionEvent += handleLocomotion;
+					InputManager.instance.playerTurnLeftEvent += handleTurnLeft;
+					InputManager.instance.playerTurnRightEvent += handleTurnRight;
+				}
+			}
+
+			private void initNetwork()
+			{
+				PhotonNetwork.SendRate = 60;
+				PhotonNetwork.SerializationRate = 30;
+
+				if (view) view.ObservedComponents.Add(this);
 			}
 
 			void Awake()
 			{
 				rigidBody = GetComponent<Rigidbody>();
-				photonView = GetComponent<PhotonView>();
+				view = GetComponent<PhotonView>();
 			}
 
 			void Start()
 			{
-				initBodyParts();
-				initEntity(gameObject);
 				
-				if (isLocal())
-				{
-					initComponents();
-					subscribeToInputs();
-					initControllers();
-				}	
+				initEntity(gameObject);
+				initNetwork();
+				initBodyParts();
+				initComponents();
+				subscribeToInputs();
+				initControllers();
+
+				
 			}
 
 
+			public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+			{
+				if (stream.IsWriting == true)
+				{
+					stream.SendNext(transform.position);
+					stream.SendNext(transform.rotation);	
+				}
 
+				else
+				{
+					interpolationController.targetPosition = (Vector3)stream.ReceiveNext();
+					interpolationController.targetRotation = (Quaternion)stream.ReceiveNext();
+
+					if (!isLocal())
+					{
+						interpolationController.smoothMove();
+					}
+				}
+			}
 
 			void FixedUpdate()
 			{
 				if (isLocal())
 				{
 					this.playerController.updateController();
-				}
-
-			
-				else
-				{
-
-					foreach (var networkController in networkControllers) {
-
-						networkController.smoothMove();
-					}
-					
 				}
 			}
 
@@ -126,12 +143,12 @@ namespace TGOV
 
 			public bool isLocal()
 			{
-				return photonView.IsMine ? true : false;
+				return view.IsMine ? true : false;
 			}
 
 			public int getId()
 			{
-				return photonView.ViewID;
+				return view.ViewID;
 			}
 
 			[PunRPC]

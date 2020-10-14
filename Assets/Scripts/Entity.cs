@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using TGOV.Components;
 using TGOV.Components.Physics;
+using Photon.Pun;
 
 namespace TGOV.Entities
 {
-	public class Entity : MonoBehaviour
+	public class Entity : MonoBehaviourPun
 	{
 		private GameObject entity;
 		private Movement movementComponent;
