@@ -115,8 +115,8 @@ namespace TGOV
 
 			
 			holding.transform.position = transform.position;
-			///joint.connectedBody = holding.GetComponent<Rigidbody>();
-			holding.transform.SetParent(transform);
+			joint.connectedBody = holding.GetComponent<Rigidbody>();
+			//holding.transform.SetParent(transform);
 
 			view.RPC("RPC_PickUpObject", RpcTarget.Others, holding.view.ViewID);
 
@@ -145,9 +145,9 @@ namespace TGOV
 
 					Throw(holding.GetComponent<Rigidbody>());
 
-					holding.transform.parent = null;
+					//holding.transform.parent = null;
 
-					//joint.connectedBody = null;
+					joint.connectedBody = null;
 
 					if (!freeGrab)
 					{
