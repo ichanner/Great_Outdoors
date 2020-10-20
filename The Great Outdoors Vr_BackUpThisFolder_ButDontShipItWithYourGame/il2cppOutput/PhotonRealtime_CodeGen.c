@@ -2018,12 +2018,12 @@ static const Il2CppTokenRangePair s_rgctxIndices[2] =
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[6] = 
 {
-	{ (Il2CppRGCTXDataType)3, 30400 },
-	{ (Il2CppRGCTXDataType)3, 30401 },
-	{ (Il2CppRGCTXDataType)2, 34187 },
-	{ (Il2CppRGCTXDataType)2, 34223 },
-	{ (Il2CppRGCTXDataType)3, 30402 },
-	{ (Il2CppRGCTXDataType)3, 30403 },
+	{ (Il2CppRGCTXDataType)3, 30779 },
+	{ (Il2CppRGCTXDataType)3, 30780 },
+	{ (Il2CppRGCTXDataType)2, 34349 },
+	{ (Il2CppRGCTXDataType)2, 34385 },
+	{ (Il2CppRGCTXDataType)3, 30781 },
+	{ (Il2CppRGCTXDataType)3, 30782 },
 };
 extern const Il2CppCodeGenModule g_PhotonRealtimeCodeGenModule;
 const Il2CppCodeGenModule g_PhotonRealtimeCodeGenModule = 

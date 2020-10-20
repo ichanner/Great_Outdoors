@@ -62,6 +62,11 @@ namespace TGOV
 				}
 			}
 
+			public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+			{
+
+			}
+
 			private void subscribeToInputs()
 			{
 				if (isLocal()){
@@ -100,15 +105,15 @@ namespace TGOV
 				
 			}
 
-
+			/*
 			public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
 			{
 				if (stream.IsWriting == true)
 				{
-					stream.SendNext(transform.position);
-					stream.SendNext(transform.rotation);	
+					stream.SendNext(getTransform());
+					stream.SendNext(getTransform());	
 				}
-
+				
 				else
 				{
 					interpolationController.targetPosition = (Vector3)stream.ReceiveNext();
@@ -119,9 +124,10 @@ namespace TGOV
 						interpolationController.smoothMove();
 					}
 				}
-			}
+				
+		}*/
 
-			void FixedUpdate()
+		void FixedUpdate()
 			{
 				if (isLocal())
 				{
@@ -157,6 +163,19 @@ namespace TGOV
 				PlayerManager.instance.addPlayer(getId(), PhotonView.Find(getId()).gameObject);
 			}
 
+			[PunRPC]
+			public void RPC_PickUpObject(int id)
+			{
+				PhotonView.Find(id).gameObject.GetComponent<Rigidbody>().isKinematic = true;
+			}
+
+			[PunRPC]
+			public void RPC_DropObject(int id)
+			{
+				PhotonView.Find(id).gameObject.GetComponent<Rigidbody>().isKinematic = false;
+			}
+
+
 			///Movement Callbacks
 
 			private void handleTurnLeft()
@@ -171,7 +190,7 @@ namespace TGOV
 
 			private void handleJump()
 			{
-				playerController.Jump(400, isGrounded());
+				playerController.Jump(800, isGrounded());
 			}
 
 			private void handleLocomotion(Vector2 axis)

@@ -1516,6 +1516,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Physics_get_gravity_Injected_m7B5CE9CF65
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Physics_get_defaultPhysicsScene_Injected_mEAB07CA5307D0DDB331A31E6A6BA28CF83009262 (PhysicsScene_tC24001806A99648F6EFD4D63957D47D8AB1668F5 * ___ret0, const RuntimeMethod* method);
 // System.Void UnityEngine.Physics::IgnoreCollision(UnityEngine.Collider,UnityEngine.Collider,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Physics_IgnoreCollision_mF7183C0761289A45400F0E2C1B223B980EBE5F8B (Collider_t0FEEB36760860AD21B3B1F0509C365B393EC4BDF * ___collider10, Collider_t0FEEB36760860AD21B3B1F0509C365B393EC4BDF * ___collider21, bool ___ignore2, const RuntimeMethod* method);
+// System.Void UnityEngine.Physics::IgnoreLayerCollision(System.Int32,System.Int32,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Physics_IgnoreLayerCollision_m0DFDA0BBDFA1F0737524272504E3D85989989C32 (int32_t ___layer10, int32_t ___layer21, bool ___ignore2, const RuntimeMethod* method);
 // UnityEngine.PhysicsScene UnityEngine.Physics::get_defaultPhysicsScene()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PhysicsScene_tC24001806A99648F6EFD4D63957D47D8AB1668F5  Physics_get_defaultPhysicsScene_mEA96CE906577479223C956BFF0B8D0B79BB47B30 (const RuntimeMethod* method);
 // System.Boolean UnityEngine.PhysicsScene::Raycast(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
@@ -2422,6 +2424,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Physics_IgnoreCollision_m2F9164DBBB3036E
 		Collider_t0FEEB36760860AD21B3B1F0509C365B393EC4BDF * L_0 = ___collider10;
 		Collider_t0FEEB36760860AD21B3B1F0509C365B393EC4BDF * L_1 = ___collider21;
 		Physics_IgnoreCollision_mF7183C0761289A45400F0E2C1B223B980EBE5F8B(L_0, L_1, (bool)1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Physics::IgnoreLayerCollision(System.Int32,System.Int32,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Physics_IgnoreLayerCollision_m0DFDA0BBDFA1F0737524272504E3D85989989C32 (int32_t ___layer10, int32_t ___layer21, bool ___ignore2, const RuntimeMethod* method)
+{
+	typedef void (*Physics_IgnoreLayerCollision_m0DFDA0BBDFA1F0737524272504E3D85989989C32_ftn) (int32_t, int32_t, bool);
+	static Physics_IgnoreLayerCollision_m0DFDA0BBDFA1F0737524272504E3D85989989C32_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Physics_IgnoreLayerCollision_m0DFDA0BBDFA1F0737524272504E3D85989989C32_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Physics::IgnoreLayerCollision(System.Int32,System.Int32,System.Boolean)");
+	_il2cpp_icall_func(___layer10, ___layer21, ___ignore2);
+}
+// System.Void UnityEngine.Physics::IgnoreLayerCollision(System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Physics_IgnoreLayerCollision_m21F8A3A611C8DB8CA7D80C3D7E9DB836126C0C2B (int32_t ___layer10, int32_t ___layer21, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___layer10;
+		int32_t L_1 = ___layer21;
+		Physics_IgnoreLayerCollision_m0DFDA0BBDFA1F0737524272504E3D85989989C32(L_0, L_1, (bool)1, /*hidden argument*/NULL);
 		return;
 	}
 }

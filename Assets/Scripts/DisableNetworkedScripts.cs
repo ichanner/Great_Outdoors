@@ -18,7 +18,8 @@ namespace TGOV
         public AudioListener audioListener;
         public SteamVR_Behaviour_Pose rightHand;
         public SteamVR_Behaviour_Pose leftHand;
-  
+        public Transform handL;
+        public Transform handR;
 
         private PhotonView photonView;
 
@@ -44,6 +45,7 @@ namespace TGOV
                 leftHand.enabled = false;
                 playerCamera.enabled = false;
                 audioListener.enabled = false;
+               
             }
         }
 

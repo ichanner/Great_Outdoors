@@ -60,105 +60,109 @@ extern void SteamVR_Input_ActionSet_default_get_Thumbstick_mFD8B8D9E7E38F59FF662
 extern void SteamVR_Input_ActionSet_default_get_Touchpad_mAF5E57266FAEF57ED18B8FB655D85B4325D877F2 (void);
 // 0x00000014 Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Input_ActionSet_default::get_BButton()
 extern void SteamVR_Input_ActionSet_default_get_BButton_mFC55BB76B982EBE4A11BC1BFFC557291129F04F4 (void);
-// 0x00000015 Valve.VR.SteamVR_Action_Vibration Valve.VR.SteamVR_Input_ActionSet_default::get_Haptic()
+// 0x00000015 Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Input_ActionSet_default::get_AButton()
+extern void SteamVR_Input_ActionSet_default_get_AButton_m217158A46E3EAD530CF5AC12CAF7BD6012A7CA5B (void);
+// 0x00000016 Valve.VR.SteamVR_Action_Vibration Valve.VR.SteamVR_Input_ActionSet_default::get_Haptic()
 extern void SteamVR_Input_ActionSet_default_get_Haptic_mCA5C9D97EDB56E03CE40AAFEC3E66CCE140C3219 (void);
-// 0x00000016 System.Void Valve.VR.SteamVR_Input_ActionSet_default::.ctor()
+// 0x00000017 System.Void Valve.VR.SteamVR_Input_ActionSet_default::.ctor()
 extern void SteamVR_Input_ActionSet_default__ctor_m91C0FDD7C01338CB7B62FBB1538185A96EF9806B (void);
-// 0x00000017 Valve.VR.SteamVR_Action_Pose Valve.VR.SteamVR_Input_ActionSet_mixedreality::get_ExternalCamera()
+// 0x00000018 Valve.VR.SteamVR_Action_Pose Valve.VR.SteamVR_Input_ActionSet_mixedreality::get_ExternalCamera()
 extern void SteamVR_Input_ActionSet_mixedreality_get_ExternalCamera_m97E0DCCF282EE9AE8A53E1A4F7B3AC9B3B628CF6 (void);
-// 0x00000018 System.Void Valve.VR.SteamVR_Input_ActionSet_mixedreality::.ctor()
+// 0x00000019 System.Void Valve.VR.SteamVR_Input_ActionSet_mixedreality::.ctor()
 extern void SteamVR_Input_ActionSet_mixedreality__ctor_m04FAD6F50E4212859522FAAB8CE628D149F9E835 (void);
-// 0x00000019 Valve.VR.SteamVR_Action_Vector2 Valve.VR.SteamVR_Input_ActionSet_platformer::get_Move()
+// 0x0000001A Valve.VR.SteamVR_Action_Vector2 Valve.VR.SteamVR_Input_ActionSet_platformer::get_Move()
 extern void SteamVR_Input_ActionSet_platformer_get_Move_mF2B7BF0E7567E09FF5B3474DE0A1C8F9FFECF96F (void);
-// 0x0000001A Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Input_ActionSet_platformer::get_Jump()
+// 0x0000001B Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Input_ActionSet_platformer::get_Jump()
 extern void SteamVR_Input_ActionSet_platformer_get_Jump_m5B0B1FA0E5B571586C63C10E31DC2A5752978BDE (void);
-// 0x0000001B System.Void Valve.VR.SteamVR_Input_ActionSet_platformer::.ctor()
+// 0x0000001C System.Void Valve.VR.SteamVR_Input_ActionSet_platformer::.ctor()
 extern void SteamVR_Input_ActionSet_platformer__ctor_mAD6E556D0BA303458CE91F3421103C7457F30F32 (void);
-// 0x0000001C Valve.VR.SteamVR_Action_Vector2 Valve.VR.SteamVR_Input_ActionSet_tgov::get_Thumbstick()
+// 0x0000001D Valve.VR.SteamVR_Action_Vector2 Valve.VR.SteamVR_Input_ActionSet_tgov::get_Thumbstick()
 extern void SteamVR_Input_ActionSet_tgov_get_Thumbstick_m3F8707AB04FA53D34ADA0C6C2698E49255C478AA (void);
-// 0x0000001D Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Input_ActionSet_tgov::get_TurnLeft()
+// 0x0000001E Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Input_ActionSet_tgov::get_TurnLeft()
 extern void SteamVR_Input_ActionSet_tgov_get_TurnLeft_m135E359A253B52820C9B5541116EDAB7E8DC030C (void);
-// 0x0000001E Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Input_ActionSet_tgov::get_TurnRight()
+// 0x0000001F Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Input_ActionSet_tgov::get_TurnRight()
 extern void SteamVR_Input_ActionSet_tgov_get_TurnRight_mC15EF73D5FF89A63DAD24422D6F43FB94AB052E1 (void);
-// 0x0000001F Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Input_ActionSet_tgov::get_Jump()
+// 0x00000020 Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Input_ActionSet_tgov::get_Jump()
 extern void SteamVR_Input_ActionSet_tgov_get_Jump_m4D14E5681EB925483C8EF249C66DEDEE12EE357E (void);
-// 0x00000020 System.Void Valve.VR.SteamVR_Input_ActionSet_tgov::.ctor()
+// 0x00000021 System.Void Valve.VR.SteamVR_Input_ActionSet_tgov::.ctor()
 extern void SteamVR_Input_ActionSet_tgov__ctor_mA4B218FEA33F39DA5706EA650D1FE937916DA846 (void);
-// 0x00000021 Valve.VR.SteamVR_Input_ActionSet_default Valve.VR.SteamVR_Actions::get__default()
+// 0x00000022 Valve.VR.SteamVR_Input_ActionSet_default Valve.VR.SteamVR_Actions::get__default()
 extern void SteamVR_Actions_get__default_m137E968F56C058FB164095009912D2970BF1712F (void);
-// 0x00000022 Valve.VR.SteamVR_Input_ActionSet_platformer Valve.VR.SteamVR_Actions::get_platformer()
+// 0x00000023 Valve.VR.SteamVR_Input_ActionSet_platformer Valve.VR.SteamVR_Actions::get_platformer()
 extern void SteamVR_Actions_get_platformer_m176BA93E211F9CE366065F5B4501024D63E48065 (void);
-// 0x00000023 Valve.VR.SteamVR_Input_ActionSet_buggy Valve.VR.SteamVR_Actions::get_buggy()
+// 0x00000024 Valve.VR.SteamVR_Input_ActionSet_buggy Valve.VR.SteamVR_Actions::get_buggy()
 extern void SteamVR_Actions_get_buggy_mFF4BB0264F09AD75941B682C89FD3AEC447C91BD (void);
-// 0x00000024 Valve.VR.SteamVR_Input_ActionSet_mixedreality Valve.VR.SteamVR_Actions::get_mixedreality()
+// 0x00000025 Valve.VR.SteamVR_Input_ActionSet_mixedreality Valve.VR.SteamVR_Actions::get_mixedreality()
 extern void SteamVR_Actions_get_mixedreality_mB0B09D53D72D05A80219B4A28D1AE50035F1E1BF (void);
-// 0x00000025 Valve.VR.SteamVR_Input_ActionSet_tgov Valve.VR.SteamVR_Actions::get_tgov()
+// 0x00000026 Valve.VR.SteamVR_Input_ActionSet_tgov Valve.VR.SteamVR_Actions::get_tgov()
 extern void SteamVR_Actions_get_tgov_mE9827887F2F5DE689A8167DA74C8A7239CFA4E0F (void);
-// 0x00000026 Valve.VR.SteamVR_Input_ActionSet_NewSet Valve.VR.SteamVR_Actions::get_NewSet()
+// 0x00000027 Valve.VR.SteamVR_Input_ActionSet_NewSet Valve.VR.SteamVR_Actions::get_NewSet()
 extern void SteamVR_Actions_get_NewSet_mB6F5BD91FA32FCFD72F0EEC80E1C4F2A215C0B7F (void);
-// 0x00000027 System.Void Valve.VR.SteamVR_Actions::StartPreInitActionSets()
+// 0x00000028 System.Void Valve.VR.SteamVR_Actions::StartPreInitActionSets()
 extern void SteamVR_Actions_StartPreInitActionSets_mFDAF2F9635F4953C5A1ACE4E5B1D948F37FC33B3 (void);
-// 0x00000028 Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_default_InteractUI()
+// 0x00000029 Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_default_InteractUI()
 extern void SteamVR_Actions_get_default_InteractUI_m0ED3991855BC6CD8A2B6CB10778FB84BAA731F50 (void);
-// 0x00000029 Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_default_Teleport()
+// 0x0000002A Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_default_Teleport()
 extern void SteamVR_Actions_get_default_Teleport_mFE1A1658452AAD51FA3759F8A83B113BFC68A710 (void);
-// 0x0000002A Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_default_GrabPinch()
+// 0x0000002B Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_default_GrabPinch()
 extern void SteamVR_Actions_get_default_GrabPinch_m444626B221F27D0116B323E7F619D71559E0243C (void);
-// 0x0000002B Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_default_GrabGrip()
+// 0x0000002C Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_default_GrabGrip()
 extern void SteamVR_Actions_get_default_GrabGrip_mB61124AED50E5BEC134B1C1E9E756E404EC6E336 (void);
-// 0x0000002C Valve.VR.SteamVR_Action_Pose Valve.VR.SteamVR_Actions::get_default_Pose()
+// 0x0000002D Valve.VR.SteamVR_Action_Pose Valve.VR.SteamVR_Actions::get_default_Pose()
 extern void SteamVR_Actions_get_default_Pose_mE0C7C2998E78175D62846B95D594B10FAE347B9B (void);
-// 0x0000002D Valve.VR.SteamVR_Action_Skeleton Valve.VR.SteamVR_Actions::get_default_SkeletonLeftHand()
+// 0x0000002E Valve.VR.SteamVR_Action_Skeleton Valve.VR.SteamVR_Actions::get_default_SkeletonLeftHand()
 extern void SteamVR_Actions_get_default_SkeletonLeftHand_mC3F54657EA1C39A0498CF19A8803669BD8A76722 (void);
-// 0x0000002E Valve.VR.SteamVR_Action_Skeleton Valve.VR.SteamVR_Actions::get_default_SkeletonRightHand()
+// 0x0000002F Valve.VR.SteamVR_Action_Skeleton Valve.VR.SteamVR_Actions::get_default_SkeletonRightHand()
 extern void SteamVR_Actions_get_default_SkeletonRightHand_m8E9440367D5E2B1241749F701ECBCECB5D1A6BD0 (void);
-// 0x0000002F Valve.VR.SteamVR_Action_Single Valve.VR.SteamVR_Actions::get_default_Squeeze()
+// 0x00000030 Valve.VR.SteamVR_Action_Single Valve.VR.SteamVR_Actions::get_default_Squeeze()
 extern void SteamVR_Actions_get_default_Squeeze_mAC555FA90B1411CF6E2B23FDAEEF7C96DD24AE23 (void);
-// 0x00000030 Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_default_HeadsetOnHead()
+// 0x00000031 Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_default_HeadsetOnHead()
 extern void SteamVR_Actions_get_default_HeadsetOnHead_mF63FBEF99E1273CE65ABA3D80D1DCCE079F6DE02 (void);
-// 0x00000031 Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_default_SnapTurnLeft()
+// 0x00000032 Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_default_SnapTurnLeft()
 extern void SteamVR_Actions_get_default_SnapTurnLeft_mDC0BEA69C8FD228EE49B45759C06EA9CE2E034A4 (void);
-// 0x00000032 Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_default_SnapTurnRight()
+// 0x00000033 Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_default_SnapTurnRight()
 extern void SteamVR_Actions_get_default_SnapTurnRight_m6F46BD895D871CBB70653F8FE31ED06D15542DB7 (void);
-// 0x00000033 Valve.VR.SteamVR_Action_Vector2 Valve.VR.SteamVR_Actions::get_default_Thumbstick()
+// 0x00000034 Valve.VR.SteamVR_Action_Vector2 Valve.VR.SteamVR_Actions::get_default_Thumbstick()
 extern void SteamVR_Actions_get_default_Thumbstick_m67926297C7D247759C2DE1F40189D2326ECE091B (void);
-// 0x00000034 Valve.VR.SteamVR_Action_Vector2 Valve.VR.SteamVR_Actions::get_default_Touchpad()
+// 0x00000035 Valve.VR.SteamVR_Action_Vector2 Valve.VR.SteamVR_Actions::get_default_Touchpad()
 extern void SteamVR_Actions_get_default_Touchpad_m876E5718A1ADFF2FB217F88335984ED56A320972 (void);
-// 0x00000035 Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_default_BButton()
+// 0x00000036 Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_default_BButton()
 extern void SteamVR_Actions_get_default_BButton_mAC5C038A0A3A0F4939DB290D6C8E04D5E3056617 (void);
-// 0x00000036 Valve.VR.SteamVR_Action_Vibration Valve.VR.SteamVR_Actions::get_default_Haptic()
+// 0x00000037 Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_default_AButton()
+extern void SteamVR_Actions_get_default_AButton_m09F0C098DA7B609510BB4CE012BC6D1E33892E91 (void);
+// 0x00000038 Valve.VR.SteamVR_Action_Vibration Valve.VR.SteamVR_Actions::get_default_Haptic()
 extern void SteamVR_Actions_get_default_Haptic_m015ECF04DBC22007685265E3D08FC01DAF8AD87A (void);
-// 0x00000037 Valve.VR.SteamVR_Action_Vector2 Valve.VR.SteamVR_Actions::get_platformer_Move()
+// 0x00000039 Valve.VR.SteamVR_Action_Vector2 Valve.VR.SteamVR_Actions::get_platformer_Move()
 extern void SteamVR_Actions_get_platformer_Move_m08E1D0CF1BC6557B55EE238A7F2603108FBD8101 (void);
-// 0x00000038 Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_platformer_Jump()
+// 0x0000003A Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_platformer_Jump()
 extern void SteamVR_Actions_get_platformer_Jump_mFBB2FA2D4DDE37EDDE4FDC3429FB85DF5DC4C5B8 (void);
-// 0x00000039 Valve.VR.SteamVR_Action_Vector2 Valve.VR.SteamVR_Actions::get_buggy_Steering()
+// 0x0000003B Valve.VR.SteamVR_Action_Vector2 Valve.VR.SteamVR_Actions::get_buggy_Steering()
 extern void SteamVR_Actions_get_buggy_Steering_mACFBE60FC8A4375B54577D48B78BB8E6CCF2BF67 (void);
-// 0x0000003A Valve.VR.SteamVR_Action_Single Valve.VR.SteamVR_Actions::get_buggy_Throttle()
+// 0x0000003C Valve.VR.SteamVR_Action_Single Valve.VR.SteamVR_Actions::get_buggy_Throttle()
 extern void SteamVR_Actions_get_buggy_Throttle_m9A4D94F6F3D705D809121F8FE2A563315265B55A (void);
-// 0x0000003B Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_buggy_Brake()
+// 0x0000003D Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_buggy_Brake()
 extern void SteamVR_Actions_get_buggy_Brake_mF7BBFC21DB3777B3564FD504CEC87E38B960F475 (void);
-// 0x0000003C Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_buggy_Reset()
+// 0x0000003E Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_buggy_Reset()
 extern void SteamVR_Actions_get_buggy_Reset_mB2F59EB793926228BFD7BCEEBA59CC5F36E96668 (void);
-// 0x0000003D Valve.VR.SteamVR_Action_Pose Valve.VR.SteamVR_Actions::get_mixedreality_ExternalCamera()
+// 0x0000003F Valve.VR.SteamVR_Action_Pose Valve.VR.SteamVR_Actions::get_mixedreality_ExternalCamera()
 extern void SteamVR_Actions_get_mixedreality_ExternalCamera_m7FA9C9C3C84A2BA9B4259467E65A91E251ED0FFA (void);
-// 0x0000003E Valve.VR.SteamVR_Action_Vector2 Valve.VR.SteamVR_Actions::get_tgov_Thumbstick()
+// 0x00000040 Valve.VR.SteamVR_Action_Vector2 Valve.VR.SteamVR_Actions::get_tgov_Thumbstick()
 extern void SteamVR_Actions_get_tgov_Thumbstick_m2E592F8F743CC46D2C5924C7DEC7184BFD59D5D4 (void);
-// 0x0000003F Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_tgov_TurnLeft()
+// 0x00000041 Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_tgov_TurnLeft()
 extern void SteamVR_Actions_get_tgov_TurnLeft_m9DDC3BAA461C05C6D6892C6A8D783A19CF687324 (void);
-// 0x00000040 Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_tgov_TurnRight()
+// 0x00000042 Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_tgov_TurnRight()
 extern void SteamVR_Actions_get_tgov_TurnRight_m27FDF5501464E587D1E06DA6492A92B3747F00A6 (void);
-// 0x00000041 Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_tgov_Jump()
+// 0x00000043 Valve.VR.SteamVR_Action_Boolean Valve.VR.SteamVR_Actions::get_tgov_Jump()
 extern void SteamVR_Actions_get_tgov_Jump_mFDD5FD406C8DCADF7A7EEFA88E4AE7A5FFD629F2 (void);
-// 0x00000042 System.Void Valve.VR.SteamVR_Actions::InitializeActionArrays()
+// 0x00000044 System.Void Valve.VR.SteamVR_Actions::InitializeActionArrays()
 extern void SteamVR_Actions_InitializeActionArrays_mB53CB6429FAFF8E09E06B8E91A3D3128A6BC7C32 (void);
-// 0x00000043 System.Void Valve.VR.SteamVR_Actions::PreInitActions()
+// 0x00000045 System.Void Valve.VR.SteamVR_Actions::PreInitActions()
 extern void SteamVR_Actions_PreInitActions_mB88641D0D0A29103B393CC2A384177F1D7CEEF9F (void);
-// 0x00000044 System.Void Valve.VR.SteamVR_Actions::PreInitialize()
+// 0x00000046 System.Void Valve.VR.SteamVR_Actions::PreInitialize()
 extern void SteamVR_Actions_PreInitialize_mD006A8E4045B875A7163885CBDB7C0DE92D44B5A (void);
-// 0x00000045 System.Void Valve.VR.SteamVR_Actions::.ctor()
+// 0x00000047 System.Void Valve.VR.SteamVR_Actions::.ctor()
 extern void SteamVR_Actions__ctor_mEBD092CDF34BF7C44D544C5F14DDDDE52E0FE97D (void);
-static Il2CppMethodPointer s_methodPointers[69] = 
+static Il2CppMethodPointer s_methodPointers[71] = 
 {
 	SteamVR_Input_ActionSet_NewSet__ctor_mEEC8FE8FB0D6E149DEF7EE4BED7A62C2ACA6F86F,
 	SteamVR_Input_ActionSet_buggy_get_Steering_m013B5FB7171B11F564B602CAA2A9CFE4071D5794,
@@ -180,6 +184,7 @@ static Il2CppMethodPointer s_methodPointers[69] =
 	SteamVR_Input_ActionSet_default_get_Thumbstick_mFD8B8D9E7E38F59FF662658865694FB8CEB3705C,
 	SteamVR_Input_ActionSet_default_get_Touchpad_mAF5E57266FAEF57ED18B8FB655D85B4325D877F2,
 	SteamVR_Input_ActionSet_default_get_BButton_mFC55BB76B982EBE4A11BC1BFFC557291129F04F4,
+	SteamVR_Input_ActionSet_default_get_AButton_m217158A46E3EAD530CF5AC12CAF7BD6012A7CA5B,
 	SteamVR_Input_ActionSet_default_get_Haptic_mCA5C9D97EDB56E03CE40AAFEC3E66CCE140C3219,
 	SteamVR_Input_ActionSet_default__ctor_m91C0FDD7C01338CB7B62FBB1538185A96EF9806B,
 	SteamVR_Input_ActionSet_mixedreality_get_ExternalCamera_m97E0DCCF282EE9AE8A53E1A4F7B3AC9B3B628CF6,
@@ -213,6 +218,7 @@ static Il2CppMethodPointer s_methodPointers[69] =
 	SteamVR_Actions_get_default_Thumbstick_m67926297C7D247759C2DE1F40189D2326ECE091B,
 	SteamVR_Actions_get_default_Touchpad_m876E5718A1ADFF2FB217F88335984ED56A320972,
 	SteamVR_Actions_get_default_BButton_mAC5C038A0A3A0F4939DB290D6C8E04D5E3056617,
+	SteamVR_Actions_get_default_AButton_m09F0C098DA7B609510BB4CE012BC6D1E33892E91,
 	SteamVR_Actions_get_default_Haptic_m015ECF04DBC22007685265E3D08FC01DAF8AD87A,
 	SteamVR_Actions_get_platformer_Move_m08E1D0CF1BC6557B55EE238A7F2603108FBD8101,
 	SteamVR_Actions_get_platformer_Jump_mFBB2FA2D4DDE37EDDE4FDC3429FB85DF5DC4C5B8,
@@ -230,7 +236,7 @@ static Il2CppMethodPointer s_methodPointers[69] =
 	SteamVR_Actions_PreInitialize_mD006A8E4045B875A7163885CBDB7C0DE92D44B5A,
 	SteamVR_Actions__ctor_mEBD092CDF34BF7C44D544C5F14DDDDE52E0FE97D,
 };
-static const int32_t s_InvokerIndices[69] = 
+static const int32_t s_InvokerIndices[71] = 
 {
 	23,
 	14,
@@ -238,6 +244,7 @@ static const int32_t s_InvokerIndices[69] =
 	14,
 	14,
 	23,
+	14,
 	14,
 	14,
 	14,
@@ -271,6 +278,7 @@ static const int32_t s_InvokerIndices[69] =
 	4,
 	4,
 	3,
+	4,
 	4,
 	4,
 	4,
@@ -306,7 +314,7 @@ extern const Il2CppCodeGenModule g_SteamVR_ActionsCodeGenModule;
 const Il2CppCodeGenModule g_SteamVR_ActionsCodeGenModule = 
 {
 	"SteamVR_Actions.dll",
-	69,
+	71,
 	s_methodPointers,
 	s_InvokerIndices,
 	0,

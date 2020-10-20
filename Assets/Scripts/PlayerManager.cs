@@ -4,6 +4,8 @@ using UnityEngine;
 using TMPro;
 using Photon.Pun;
 
+
+
 namespace TGOV
 {
     namespace Managers
@@ -41,7 +43,7 @@ namespace TGOV
                 return localPlayer.GetComponent<PhotonView>().ViewID;
             }
 
-            //Callbacks
+         
 
             private void initializeLocalPlayer()
             {

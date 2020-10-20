@@ -39,10 +39,11 @@
 		<type fullname="UnityEngine.Rigidbody" preserve="nothing"/>
 		<type fullname="UnityEngine.Collider" preserve="nothing"/>
 		<type fullname="UnityEngine.CharacterController" preserve="nothing"/>
-		<type fullname="UnityEngine.MeshCollider" preserve="nothing"/>
 		<type fullname="UnityEngine.CapsuleCollider" preserve="nothing"/>
 		<type fullname="UnityEngine.BoxCollider" preserve="nothing"/>
 		<type fullname="UnityEngine.SphereCollider" preserve="nothing"/>
+		<type fullname="UnityEngine.Joint" preserve="nothing"/>
+		<type fullname="UnityEngine.FixedJoint" preserve="nothing"/>
 		<type fullname="UnityEngine.Canvas" preserve="nothing"/>
 		<type fullname="UnityEngine.RectTransform" preserve="nothing"/>
 		<type fullname="UnityEngine.Motion" preserve="nothing"/>
@@ -61,7 +62,7 @@
 		<type fullname="UnityEngine.Cubemap" preserve="nothing"/>
 		<type fullname="UnityEngine.LightProbes" preserve="nothing"/>
 		<type fullname="UnityEngine.RenderSettings" preserve="nothing"/>
-		<type fullname="UnityEngine.Terrain" preserve="nothing"/>
+		<type fullname="UnityEngine.PhysicMaterial" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="ChangeColor" preserve="nothing"/>
@@ -70,15 +71,21 @@
 		<type fullname="ExitGames.Demos.DemoPunVoice.Highlighter" preserve="nothing"/>
 		<type fullname="ExitGames.Demos.DemoPunVoice.OrthographicController" preserve="nothing"/>
 		<type fullname="ExitGames.Demos.DemoPunVoice.ThirdPersonController" preserve="nothing"/>
+		<type fullname="Gizmo" preserve="nothing"/>
+		<type fullname="Outline" preserve="nothing"/>
 		<type fullname="PointersController" preserve="nothing"/>
 		<type fullname="ProximityVoiceTrigger" preserve="nothing"/>
+		<type fullname="TGOV.Components.Interactable" preserve="nothing"/>
 		<type fullname="TGOV.Controllers.InterpolationController" preserve="nothing"/>
 		<type fullname="TGOV.DisableNetworkedScripts" preserve="nothing"/>
 		<type fullname="TGOV.Entities.Player" preserve="nothing"/>
+		<type fullname="TGOV.IgnoreColliders" preserve="nothing"/>
 		<type fullname="TGOV.Managers.InputManager" preserve="nothing"/>
 		<type fullname="TGOV.Managers.NetworkManager" preserve="nothing"/>
+		<type fullname="TGOV.Managers.OutputManager" preserve="nothing"/>
 		<type fullname="TGOV.Managers.PlayerManager" preserve="nothing"/>
 		<type fullname="TGOV.PlayerBody" preserve="nothing"/>
+		<type fullname="TGOV.PlayerHand" preserve="nothing"/>
 		<type fullname="TGOV.PlayerHead" preserve="nothing"/>
 		<type fullname="TGOV.PlayerRig" preserve="nothing"/>
 	</assembly>
@@ -112,7 +119,6 @@
 		<type fullname="Photon.Voice.Unity.Speaker" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="SteamVR">
-		<type fullname="Valve.VR.InteractionSystem.Interactable" preserve="nothing"/>
 		<type fullname="Valve.VR.InteractionSystem.Player" preserve="nothing"/>
 		<type fullname="Valve.VR.SteamVR_ActivateActionSetOnLoad" preserve="nothing"/>
 		<type fullname="Valve.VR.SteamVR_Behaviour_Pose" preserve="nothing"/>

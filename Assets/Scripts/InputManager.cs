@@ -19,9 +19,31 @@ namespace TGOV
 			public SteamVR_Action_Boolean playerJump;
 			public SteamVR_Action_Boolean playerTurnLeft;
 			public SteamVR_Action_Boolean playerTurnRight;
+			public SteamVR_Action_Boolean playerPickup;
+			public SteamVR_Action_Boolean playerLock;
 
 
-			/// Events
+			/// Interaction Events
+
+			public event playerLeftLockDelegate playerLeftLockEvent;
+			public delegate void playerLeftLockDelegate();
+
+			public event playerRightLockDelegate playerRightLockEvent;
+			public delegate void playerRightLockDelegate();
+
+			public event playerLeftPickupDelegate playerLeftPickupEvent;
+			public delegate void playerLeftPickupDelegate();
+
+			public event playerLeftDropDelegate playerLeftDropEvent;
+			public delegate void playerLeftDropDelegate(bool freeGrab = false);
+
+			public event playerRightPickupDelegate playerRightPickupEvent;
+			public delegate void playerRightPickupDelegate();
+
+			public event playerRightDropDelegate playerRightDropEvent;
+			public delegate void playerRightDropDelegate(bool freeGrab = false);
+
+			/// Movement Events
 
 			public event playeLocomotionDelegate playerLocomotionEvent;
 			public delegate void playeLocomotionDelegate(Vector2 axis);
@@ -42,6 +64,7 @@ namespace TGOV
 				playerTurnInput();
 				playerLocomtionInput();
 				playerJumpInput();
+				playerInteractionInput();
 			}
 
 			//Functions
@@ -69,6 +92,40 @@ namespace TGOV
 				else if (playerTurnLeft.GetStateDown(leftInputKeybinds))
 				{
 					playerTurnLeftEvent?.Invoke();
+				}
+			}
+
+
+			private void playerInteractionInput()
+			{
+				if (playerPickup.GetStateDown(SteamVR_Input_Sources.RightHand)) {
+
+					playerRightPickupEvent?.Invoke();
+				}
+
+				if (playerPickup.GetStateUp(SteamVR_Input_Sources.RightHand))
+				{
+					playerRightDropEvent?.Invoke();
+				}
+
+				if (playerPickup.GetStateDown(SteamVR_Input_Sources.LeftHand))
+				{
+					playerLeftPickupEvent?.Invoke();
+				}
+
+				if (playerPickup.GetStateUp(SteamVR_Input_Sources.LeftHand))
+				{
+					playerLeftDropEvent?.Invoke();
+				}
+
+				if (playerLock.GetStateDown(SteamVR_Input_Sources.LeftHand))
+				{
+					playerLeftLockEvent?.Invoke();
+				}
+
+				if (playerLock.GetStateDown(SteamVR_Input_Sources.RightHand))
+				{
+					playerRightLockEvent?.Invoke();
 				}
 			}
 
