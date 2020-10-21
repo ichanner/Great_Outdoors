@@ -515,6 +515,8 @@ struct SteamVR_Behaviour_Pose_DeviceIndexChangedEvent_tB4204CD58F5763D655B3B020C
 struct SteamVR_Behaviour_Pose_TrackingChangedEvent_tC76D95F0E8D943109311BCE1B35E1D8CDC3C2E6E;
 // Valve.VR.SteamVR_HistoryBuffer
 struct SteamVR_HistoryBuffer_tB82B2932C03165695AE1BE7BE8EDCADC6AE4A6E8;
+// Void
+struct Void_tC309ED9D5B3C5EB287A292180B7606D2601B4B7E;
 
 IL2CPP_EXTERN_C RuntimeClass* AnimationCurve_tD2F265379583AAF1BF8D84F1BB8DB12980FA504C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ArgumentNullException_t581DF992B1F3E0EC6EFB30CC5DC43519A79B27AD_il2cpp_TypeInfo_var;
@@ -8441,6 +8443,24 @@ public:
 };
 
 
+// Void
+struct  Void_tC309ED9D5B3C5EB287A292180B7606D2601B4B7E  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
+{
+public:
+	// UnityEngine.Vector3 Void::pos
+	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___pos_4;
+
+public:
+	inline static int32_t get_offset_of_pos_4() { return static_cast<int32_t>(offsetof(Void_tC309ED9D5B3C5EB287A292180B7606D2601B4B7E, ___pos_4)); }
+	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  get_pos_4() const { return ___pos_4; }
+	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * get_address_of_pos_4() { return &___pos_4; }
+	inline void set_pos_4(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  value)
+	{
+		___pos_4 = value;
+	}
+};
+
+
 // Photon.Pun.MonoBehaviourPunCallbacks
 struct  MonoBehaviourPunCallbacks_t1C6D230D24896A20359CB7016C7AD6E4654B885D  : public MonoBehaviourPun_t41335C3B2B6804088B520155103E3A0EEA4F814A
 {
@@ -14109,6 +14129,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Lerp_m9A74C5A0C37D0CDF45EE66E7774D12A9B93B1364 (float ___a0, float ___b1, float ___t2, const RuntimeMethod* method);
 // System.Void UnityEngine.Transform::set_eulerAngles(UnityEngine.Vector3)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_eulerAngles_m4B2B374C0B089A7ED0B522A3A4C56FA868992685 (Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___value0, const RuntimeMethod* method);
+// UnityEngine.Transform UnityEngine.GameObject::get_transform()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method);
+// UnityEngine.Transform UnityEngine.Transform::get_parent()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * Transform_get_parent_m8FA24E38A1FA29D90CBF3CDC9F9F017C65BB3403 (Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * __this, const RuntimeMethod* method);
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -20362,6 +20386,59 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraState__ctor_m4A83DF36C7D280050EA1B
 {
 	{
 		Object__ctor_m925ECA5E85CA100E3FB86A4F9E15C120E9A184C0(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Void::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Void_Start_m78EE624BDD15DAABEA6E320A6E086D7B4F93BF93 (Void_tC309ED9D5B3C5EB287A292180B7606D2601B4B7E * __this, const RuntimeMethod* method)
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void Void::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Void_Update_m276C80C62D5D5CBA97E7B1885FD62783E040AFE0 (Void_tC309ED9D5B3C5EB287A292180B7606D2601B4B7E * __this, const RuntimeMethod* method)
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void Void::OnTriggerEnter(UnityEngine.Collider)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Void_OnTriggerEnter_m223141AEE7E595BB5614D9D96F21F3D5221E35AD (Void_tC309ED9D5B3C5EB287A292180B7606D2601B4B7E * __this, Collider_t0FEEB36760860AD21B3B1F0509C365B393EC4BDF * ___other0, const RuntimeMethod* method)
+{
+	{
+		// other.gameObject.transform.parent.transform.position = pos;
+		Collider_t0FEEB36760860AD21B3B1F0509C365B393EC4BDF * L_0 = ___other0;
+		NullCheck(L_0);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_1 = Component_get_gameObject_m0B0570BA8DDD3CD78A9DB568EA18D7317686603C(L_0, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_2 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_1, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_3 = Transform_get_parent_m8FA24E38A1FA29D90CBF3CDC9F9F017C65BB3403(L_2, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_4 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(L_3, /*hidden argument*/NULL);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_5 = __this->get_pos_4();
+		NullCheck(L_4);
+		Transform_set_position_mDA89E4893F14ECA5CBEEE7FB80A5BF7C1B8EA6DC(L_4, L_5, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void Void::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Void__ctor_mE895C42C5E5653DDDFA6C26F8A118DE55C58DF8C (Void_tC309ED9D5B3C5EB287A292180B7606D2601B4B7E * __this, const RuntimeMethod* method)
+{
+	{
+		MonoBehaviour__ctor_mEAEC84B222C60319D593E456D769B3311DFCEF97(__this, /*hidden argument*/NULL);
 		return;
 	}
 }

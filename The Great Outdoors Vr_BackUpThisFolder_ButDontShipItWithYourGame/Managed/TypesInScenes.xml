@@ -89,6 +89,7 @@
 		<type fullname="TGOV.PlayerHand" preserve="nothing"/>
 		<type fullname="TGOV.PlayerHead" preserve="nothing"/>
 		<type fullname="TGOV.PlayerRig" preserve="nothing"/>
+		<type fullname="Void" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="PhotonUnityNetworking.Demos">
 		<type fullname="Photon.Pun.Demo.Asteroids.Asteroid" preserve="nothing"/>

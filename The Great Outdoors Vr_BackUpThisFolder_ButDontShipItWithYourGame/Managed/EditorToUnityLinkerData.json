@@ -815,6 +815,13 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Void",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "PhotonUnityNetworking.Demos.dll",
             "nativeClass": "",
             "fullManagedTypeName": "Photon.Pun.Demo.Asteroids.Asteroid",
