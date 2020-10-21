@@ -14,10 +14,14 @@ namespace TGOV
             [HideInInspector] public PlayerHand activeHand;
             [HideInInspector] public PlayerHand hoveringHand;
 
+            public float proximity;
+
             public bool canLock;
             public bool lockOnGrab;
             public bool freeGrab;
-            public float proximity;
+            public bool canBeStolen;
+            public bool isHeld;
+            public bool outline;
 
             public bool locked { set; get; }
             public Transform joint { get; set; }
@@ -27,10 +31,7 @@ namespace TGOV
               
             }
 
-     
-
-
-
+   
             private void initizializeJoint()
             {
                 foreach (Transform child in transform)
@@ -57,12 +58,8 @@ namespace TGOV
 
             void FixedUpdate()
             {
-              
-               updateOutline();
-                
+               updateOutline();  
             }
-
-        
 
             public void onGrab()
             {
@@ -76,10 +73,8 @@ namespace TGOV
 
             public void onRelease()
             {
-               // view.TransferOwnership(null);
+              
             }
-
-          
           
             public void resetPivot()
             {
@@ -117,7 +112,6 @@ namespace TGOV
 
                 if (hoveringHand != null && !activeHand)
                 {
-                    //Hovering :D
                     if (hoveringHand.hovering == this)
                     {
                         outline.enabled = true;

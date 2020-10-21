@@ -14,10 +14,12 @@ namespace TGOV
 	{
 		public Interactable hovering = null;
 
-		private FixedJoint joint;
 		private Interactable holding = null;
+		private Interactable climbing = null;
+
 		private SteamVR_Behaviour_Pose pose;
 		private Dictionary<int, Interactable> interactablesInRange = new Dictionary<int, Interactable>();
+		private Dictionary<int, Interactable> climbablesInRange = new Dictionary<int, Interactable>();
 
 		[SerializeField] public PhotonView view;
 
@@ -41,44 +43,36 @@ namespace TGOV
 
 		void Awake()
 		{
-			joint = GetComponent<FixedJoint>();
 			pose = GetComponent<SteamVR_Behaviour_Pose>();
 		}
 
 		void Start()
 		{
-	
-
 			if (view.IsMine)
 			{
-				
 				subscribeToInputs();
 			}
 		}
 
 		void FixedUpdate()
 		{
-			hovering = getClosestObject();
+			hovering = getClosestObject(interactablesInRange);
 		}
 
 		private void OnTriggerEnter(Collider other)
 		{
-		
-			if (!other.gameObject.CompareTag("Interactable"))
-				return;
-
-			interactablesInRange.Add(other.gameObject.GetComponent<PhotonView>().ViewID, other.gameObject.GetComponent<Interactable>());
+			
+			if (other.gameObject.CompareTag("Interactable"))
+				interactablesInRange.Add(other.gameObject.GetComponent<PhotonView>().ViewID, other.gameObject.GetComponent<Interactable>());
 			
 		}
 
 		private void OnTriggerExit(Collider other)
 		{
-	
-			if (!other.gameObject.CompareTag("Interactable"))
-				return;
 
-			interactablesInRange.Remove(other.gameObject.GetComponent<PhotonView>().ViewID);
-			
+			if (other.gameObject.CompareTag("Interactable"))
+				interactablesInRange.Remove(other.gameObject.GetComponent<PhotonView>().ViewID);
+
 		}
 
 
@@ -87,12 +81,15 @@ namespace TGOV
 			return interactablesInRange;
 		}
 
+		private float getDistanceFromObject() {
 
+			return (holding.joint.position - transform.position).sqrMagnitude;
+		}
 
 
 		private void PickUp()
 		{
-			holding = getClosestObject();
+			holding = getClosestObject(interactablesInRange);
 
 			holding.onGrab();
 
@@ -104,29 +101,21 @@ namespace TGOV
 				SwapHands();
 			}
 
-			var distance = (holding.transform.position - transform.position).sqrMagnitude;
-
-			if (distance <= holding.proximity)
+			if (getDistanceFromObject() <= holding.proximity)
 			{
 				holding.setPivot(transform.position);
 			}
 
+			GetComponent<Collider>().enabled = false;
+			
 			OutputManager.instance.Pulse(0, .1f, 10, 8, pose.inputSource);
-
 			
 			holding.transform.position = transform.position;
-			//joint.connectedBody = holding.GetComponent<Rigidbody>();
 			holding.transform.SetParent(transform);
 
 			view.RPC("RPC_PickUpObject", RpcTarget.AllBuffered, holding.view.ViewID);
 
-			//holding.transform.SetParent(transform);
-
-			//holding.GetComponent<Rigidbody>().isKinematic = true;
-
 			holding.activeHand = this;
-
-			
 		}
 
 
@@ -134,7 +123,6 @@ namespace TGOV
 
 		private void Drop(bool freeGrab = false)
 		{
-		
 			if (!holding.locked)
 			{
 				if (holding != null)
@@ -146,8 +134,6 @@ namespace TGOV
 					Throw(holding.GetComponent<Rigidbody>());
 
 					holding.transform.parent = null;
-
-					//joint.connectedBody = null;
 
 					if (!freeGrab)
 					{
@@ -162,43 +148,33 @@ namespace TGOV
 		}
 
 
-
-
 		private void SwapHands()
 		{
-			var objectDistance = (holding.joint.position - transform.position).sqrMagnitude;
+			holding.activeHand.Drop(true);
 
-			if (objectDistance <= holding.proximity && holding.freeGrab)
+			if (getDistanceFromObject() <= holding.proximity && holding.freeGrab)
 			{
-				holding.activeHand.Drop(true);
 				holding.setPivot(transform.position);
 			}
 			else
 			{
-				holding.activeHand.Drop(true);
 				holding.resetPivot();
 			}
-		
 		}
-
-
 
 
 		private void Throw(Rigidbody rigidBody)
 		{
-		
 			Transform handOrgin = pose.origin;
 
-			rigidBody.isKinematic = false;
 			view.RPC("RPC_DropObject", RpcTarget.AllBuffered, holding.view.ViewID);
-
+			
+			rigidBody.isKinematic = false;
 			rigidBody.velocity = handOrgin.TransformVector(pose.GetVelocity());
 			rigidBody.angularVelocity = handOrgin.TransformVector(pose.GetAngularVelocity());
-			
+
+			GetComponent<Collider>().enabled = true;
 		}
-
-
-
 
 		private void Lock()
 		{
@@ -217,17 +193,15 @@ namespace TGOV
 					holding.locked = true;
 				}
 			}
-			
 		}
 
 
 
-
-		public Interactable getClosestObject()
+		public Interactable getClosestObject(Dictionary<int, Interactable> list)
 		{
 			List<float> distances = new List<float>();
 			
-			foreach (var interactable in interactablesInRange)
+			foreach (var interactable in list)
 			{
 				var distance = (interactable.Value.transform.position - transform.position).sqrMagnitude;
 

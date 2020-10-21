@@ -21,6 +21,7 @@ namespace TGOV
 			public SteamVR_Action_Boolean playerTurnRight;
 			public SteamVR_Action_Boolean playerPickup;
 			public SteamVR_Action_Boolean playerLock;
+			public SteamVR_Action_Boolean playerClimb;
 
 
 			/// Interaction Events
@@ -42,6 +43,8 @@ namespace TGOV
 
 			public event playerRightDropDelegate playerRightDropEvent;
 			public delegate void playerRightDropDelegate(bool freeGrab = false);
+
+
 
 			/// Movement Events
 
@@ -95,6 +98,7 @@ namespace TGOV
 				}
 			}
 
+			
 
 			private void playerInteractionInput()
 			{
