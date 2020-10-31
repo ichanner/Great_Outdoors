@@ -6,7 +6,7 @@ using Photon.Pun;
 using Photon;
 using Valve.VR;
 using TGOV.Managers;
-
+using TGOV.Components;
 namespace TGOV
 {
 	namespace Entities
@@ -21,7 +21,7 @@ namespace TGOV
 
 			//Controllers
 
-			private PlayerController playerController;
+			public PlayerController playerController;
 
 			/// Player Parts
 
@@ -34,12 +34,12 @@ namespace TGOV
 
 			private void initBodyParts()
 			{
-				playerRig = GameObject.Find("[CameraRig]");
-				playerHead = GameObject.Find("Camera");
-				playerBody = GameObject.Find("Body");
-				playerFeet = GameObject.Find("Feet");
-				playerHandRight = GameObject.Find("Controller (right)");
-				playerHandLeft = GameObject.Find("Controller (left)");
+				playerRig = transform.GetChild(0).gameObject;
+				playerFeet = transform.GetChild(0).transform.GetChild(0).gameObject;
+				playerBody = transform.GetChild(0).transform.GetChild(1).gameObject;
+				playerHandRight = transform.GetChild(0).transform.GetChild(2).gameObject;
+				playerHandLeft = transform.GetChild(0).transform.GetChild(3).gameObject;
+				playerHead = transform.GetChild(0).transform.GetChild(4).gameObject;
 			}
 
 			private void initComponents()
@@ -127,7 +127,7 @@ namespace TGOV
 				
 		}*/
 
-		void FixedUpdate()
+		    void FixedUpdate()
 			{
 				if (isLocal())
 				{
@@ -164,19 +164,32 @@ namespace TGOV
 			}
 
 			[PunRPC]
-			public void RPC_PickUpObject(int id)
+			public void RPC_PickUpObject(int objectId)
 			{
-				PhotonView.Find(id).gameObject.GetComponent<Rigidbody>().isKinematic = true;
+				GameObject item = PhotonView.Find(objectId).gameObject;
+
+				item.GetComponent<Interactable>().isHeld = true;
+				item.GetComponent<Rigidbody>().isKinematic = true;
+
 			}
 
 			[PunRPC]
-			public void RPC_DropObject(int id)
+			public void RPC_DropObject(int objectId)
 			{
-				PhotonView.Find(id).gameObject.GetComponent<Rigidbody>().isKinematic = false;
+				GameObject item = PhotonView.Find(objectId).gameObject;
+
+				item.GetComponent<Interactable>().isHeld = false;
+				item.GetComponent<Rigidbody>().isKinematic = false;
+
 			}
 
 
 			///Movement Callbacks
+
+			public void handleClimb(PlayerHand hand)
+			{
+				playerController.Climb(hand);
+			}
 
 			private void handleTurnLeft()
 			{

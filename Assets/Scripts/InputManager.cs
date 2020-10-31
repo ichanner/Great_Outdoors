@@ -36,14 +36,27 @@ namespace TGOV
 			public delegate void playerLeftPickupDelegate();
 
 			public event playerLeftDropDelegate playerLeftDropEvent;
-			public delegate void playerLeftDropDelegate(bool freeGrab = false);
+			public delegate void playerLeftDropDelegate();
 
 			public event playerRightPickupDelegate playerRightPickupEvent;
 			public delegate void playerRightPickupDelegate();
 
 			public event playerRightDropDelegate playerRightDropEvent;
-			public delegate void playerRightDropDelegate(bool freeGrab = false);
+			public delegate void playerRightDropDelegate();
 
+			//Climbing
+
+			public event playerLeftClimbDelegate playerLeftClimbEvent;
+			public delegate void playerLeftClimbDelegate();
+
+			public event playerLeftStopClimbDelegate playerLeftStopClimbEvent;
+			public delegate void playerLeftStopClimbDelegate();
+
+			public event playerRightClimbDelegate playerRightClimbEvent;
+			public delegate void playerRightClimbDelegate();
+
+			public event playerRightStopClimbDelegate playerRightStopClimbEvent;
+			public delegate void playerRightStopClimbDelegate();
 
 
 			/// Movement Events
@@ -64,10 +77,12 @@ namespace TGOV
 
 			void Update()
 			{
+				playerClimbInput();
 				playerTurnInput();
 				playerLocomtionInput();
 				playerJumpInput();
 				playerInteractionInput();
+		
 			}
 
 			//Functions
@@ -98,7 +113,29 @@ namespace TGOV
 				}
 			}
 
-			
+
+			private void playerClimbInput()
+			{
+				if (playerClimb.GetStateDown(SteamVR_Input_Sources.RightHand)){
+					
+					playerRightClimbEvent?.Invoke();
+				}
+
+				if (playerClimb.GetStateUp(SteamVR_Input_Sources.RightHand)){
+
+				   playerRightStopClimbEvent?.Invoke();
+				}
+
+				if (playerClimb.GetStateDown(SteamVR_Input_Sources.LeftHand))
+				{
+					playerLeftClimbEvent?.Invoke();
+				}
+
+				if (playerClimb.GetStateUp(SteamVR_Input_Sources.LeftHand))
+				{
+					playerLeftStopClimbEvent?.Invoke();
+				}
+			}
 
 			private void playerInteractionInput()
 			{

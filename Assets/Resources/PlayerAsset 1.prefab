@@ -155,9 +155,10 @@ GameObject:
   - component: {fileID: 4746539443931378200}
   - component: {fileID: 5143540764070756507}
   - component: {fileID: 8133359674184653921}
+  - component: {fileID: 8950044743450788827}
   m_Layer: 8
   m_Name: Left Hand
-  m_TagString: Untagged
+  m_TagString: Hand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -228,6 +229,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!135 &8950044743450788827
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3279980198442806418}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5000001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2498271005865061923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,9 +313,10 @@ GameObject:
   - component: {fileID: 2528077334860241685}
   - component: {fileID: 4513112670466738928}
   - component: {fileID: 5687375048925608059}
+  - component: {fileID: 1292016478637343424}
   m_Layer: 8
   m_Name: Right Hand
-  m_TagString: Untagged
+  m_TagString: Hand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -382,6 +397,19 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
+--- !u!135 &1292016478637343424
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4592716376509047244}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5000001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5795590968448316038
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,6 +495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1182c4b7ca552814aae495abf39331af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
   playerHead: {fileID: 0}
   playerBody: {fileID: 0}
   playerRig: {fileID: 0}
@@ -810,7 +839,6 @@ GameObject:
   - component: {fileID: 5795590970063732818}
   - component: {fileID: 4437923883207151657}
   - component: {fileID: 8378850827966948514}
-  - component: {fileID: 5930996529557023435}
   - component: {fileID: 1734823641747622075}
   - component: {fileID: 4327244823200787517}
   m_Layer: 0
@@ -895,21 +923,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ec08c23165c4b049b3eafc85c04e6d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hovering: {fileID: 0}
   view: {fileID: 813311632168203191}
---- !u!65 &5930996529557023435
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5795590970063732820}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.4262768, y: 2.34157, z: 2.257858}
-  m_Center: {x: -0.02966796, y: 0.29517245, z: 0.8784519}
+  pose: {fileID: 0}
+  hovering: {fileID: 0}
+  holding: {fileID: 0}
+  climbing: {fileID: 0}
 --- !u!54 &1734823641747622075
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1031,7 +1049,6 @@ GameObject:
   - component: {fileID: 5795590970092410720}
   - component: {fileID: 2200177072682142011}
   - component: {fileID: 5951337441299157883}
-  - component: {fileID: 9211696805842702780}
   - component: {fileID: 8271629212191945523}
   - component: {fileID: 3138198464144547807}
   m_Layer: 0
@@ -1116,21 +1133,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ec08c23165c4b049b3eafc85c04e6d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hovering: {fileID: 0}
   view: {fileID: 813311632168203191}
---- !u!65 &9211696805842702780
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5795590970092410722}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.4262768, y: 2.34157, z: 2.257858}
-  m_Center: {x: -0.02966796, y: 0.29517245, z: 0.8784519}
+  pose: {fileID: 0}
+  hovering: {fileID: 0}
+  holding: {fileID: 0}
+  climbing: {fileID: 0}
 --- !u!54 &8271629212191945523
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1343,6 +1350,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 7489623796608573161, guid: 18919a4fc191fbb48828de6705814aed,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8692634989755750587, guid: 18919a4fc191fbb48828de6705814aed,
         type: 3}
       propertyPath: head
@@ -1405,18 +1417,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18919a4fc191fbb48828de6705814aed, type: 3}
---- !u!114 &3724948033298734677 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 657315108834462993, guid: 18919a4fc191fbb48828de6705814aed,
-    type: 3}
-  m_PrefabInstance: {fileID: 4228576704951276356}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3902815184867366752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &4899936722440579355 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9128513213177707103, guid: 18919a4fc191fbb48828de6705814aed,
@@ -1429,3 +1429,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4228576704951276356}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3724948033298734677 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 657315108834462993, guid: 18919a4fc191fbb48828de6705814aed,
+    type: 3}
+  m_PrefabInstance: {fileID: 4228576704951276356}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3902815184867366752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -2,43 +2,68 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using TGOV.Entities;
 
-public class PunSingleton<T> : MonoBehaviourPunCallbacks where T : MonoBehaviourPunCallbacks
+namespace TGOV
 {
-	public static T instance { get; set; }
-
-	protected void Awake()
+	public class PunSingleton<T> : MonoBehaviourPunCallbacks where T : MonoBehaviourPunCallbacks
 	{
-		if (instance == null)
-		{
-			instance = (T)FindObjectOfType(typeof(T));
+		public static T instance { get; set; }
 
-			DontDestroyOnLoad(gameObject);
-		}
-
-		else
+		protected void Awake()
 		{
-			Destroy(gameObject);
+			if (instance == null)
+			{
+				instance = (T)FindObjectOfType(typeof(T));
+
+				DontDestroyOnLoad(gameObject);
+			}
+
+			else
+			{
+				Destroy(gameObject);
+			}
 		}
 	}
-}
 
-public class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
-{
-	public static T instance { get; set; }
-
-	protected void Awake()
+	public class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
 	{
-		if (instance == null)
-		{
-			instance = (T)FindObjectOfType(typeof(T));
+		public static T instance { get; set; }
 
-			DontDestroyOnLoad(gameObject);
+		protected void Awake()
+		{
+			if (instance == null)
+			{
+				instance = (T)FindObjectOfType(typeof(T));
+
+				DontDestroyOnLoad(gameObject);
+			}
+
+			else
+			{
+				Destroy(gameObject);
+			}
 		}
+	}
 
-		else
+
+	public class EntitySingleton<T> : Entity where T : Entity
+	{
+		public static T instance { get; set; }
+
+		protected void Awake()
 		{
-			Destroy(gameObject);
+			if (instance == null)
+			{
+				instance = (T)FindObjectOfType(typeof(T));
+
+				DontDestroyOnLoad(gameObject);
+			}
+
+			else
+			{
+				Destroy(gameObject);
+			}
 		}
 	}
 }

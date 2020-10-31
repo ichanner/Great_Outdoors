@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TGOV.Components;
-using TGOV.Components.Physics;
+using TGOV.Components.TGOVPhysics;
 using Photon.Pun;
 
 namespace TGOV.Entities

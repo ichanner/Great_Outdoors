@@ -6,7 +6,7 @@ namespace TGOV
 {
 	namespace Components
 	{
-		namespace Physics
+		namespace TGOVPhysics
 		{
 			public class Movement : MonoBehaviour
 			{

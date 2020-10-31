@@ -33,7 +33,8 @@ namespace TGOV
 
             void FixedUpdate()
             {
-               velocityDebugText.SetText("Velocity " + players[getId()].GetComponent<Entities.Player>().getVelocity() + " m/s");
+              
+              // velocityDebugText.SetText("Velocity " + players[getId()].GetComponent<Entities.Player>().getVelocity() + " m/s");
             }
 
             //Getters and setters
@@ -48,6 +49,7 @@ namespace TGOV
             private void initializeLocalPlayer()
             {
                 localPlayer = PhotonNetwork.Instantiate(playerPrefab.name, Vector3.zero, Quaternion.identity);
+              
                 localPlayer.GetComponent<PhotonView>().RPC("RPC_SpawnPlayer", RpcTarget.AllBuffered);
             }
 
